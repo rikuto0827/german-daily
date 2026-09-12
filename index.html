@@ -135,10 +135,10 @@ a{color:#1d4ed8}
 
   <div id="footer-actions">
     <button class="btn primary" onclick="exportCsv()">⬇ 全学習データをCSVでダウンロード</button>
-    <a class="btn" href="archive.html">📦 アーカイブ（8日目以前のバックアップ）</a>
+    <a class="btn" href="archive.html">📦 アーカイブ（15日目以前のバックアップ）</a>
   </div>
   <div id="footer-note">
-    公開ページには直近7日分のみを表示しています。それより前のデータは自動的に archive.html に移動され、削除されることはありません。全期間のデータはいつでもCSVでダウンロードできます。🔊ボタンはブラウザ内蔵の音声合成機能（Web Speech API, de-DE）を使用しており、音声ファイルは一切保存していません。
+    公開ページには直近14日分のみを表示しています。それより前のデータは自動的に archive.html に移動され、削除されることはありません。全期間のデータはいつでもCSVでダウンロードできます。🔊ボタンはブラウザ内蔵の音声合成機能（Web Speech API, de-DE）を使用しており、音声ファイルは一切保存していません。
   </div>
 </div>
 
@@ -514,7 +514,7 @@ function renderAll(){
   const totalToday = GERMAN_REPORTS.reduce(function(s, x){
     return s + x.coreItems.length + x.adjectives.length + x.phrases.length;
   }, 0);
-  document.getElementById('stat-badge').textContent = '直近7日で ' + totalToday + ' 語彙・表現を掲載中';
+  document.getElementById('stat-badge').textContent = '直近14日で ' + totalToday + ' 語彙・表現を掲載中';
 }
 
 function speak(text){
