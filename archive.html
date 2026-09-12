@@ -41,13 +41,13 @@ a{color:#1d4ed8}
 <body>
 <div id="site-header">
   <div id="header-row">
-    <h1>📦 Daily German Lab Archive <span class="sub">8日目以前のバックアップデータ</span></h1>
+    <h1>📦 Daily German Lab Archive <span class="sub">15日目以前のバックアップデータ</span></h1>
   </div>
 </div>
 <div id="tab-nav"><div id="tab-nav-inner"></div></div>
 <div class="wrap">
   <div id="panels"></div>
-  <div id="footer-actions"><a class="btn" href="index.html">← 最新7日分（トップページ）に戻る</a></div>
+  <div id="footer-actions"><a class="btn" href="index.html">← 最新14日分（トップページ）に戻る</a></div>
 </div>
 
 <script>
@@ -92,7 +92,7 @@ function selectDay(i){ currentIdx = i; renderTabs(); renderAll(); }
 function renderAll(){
   const panels = document.getElementById('panels');
   if(GERMAN_REPORTS.length === 0){
-    panels.innerHTML = '<div id="empty-note">まだアーカイブデータはありません。index.html が8日分を超えると、直近7日より前のエントリーが自動的にここへ移動します。</div>';
+    panels.innerHTML = '<div id="empty-note">まだアーカイブデータはありません。index.html が15日分を超えると、直近14日より前のエントリーが自動的にここへ移動します。</div>';
     document.getElementById('tab-nav').style.display = 'none';
     return;
   }
