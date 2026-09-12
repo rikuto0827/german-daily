@@ -267,9 +267,142 @@ const GERMAN_REPORTS = [
     { question: "Ergänze: „Ich ___ neue Schuhe.\"（brauchenを正しい形に）", choices: ["brauche", "brauchst", "braucht", "brauchen"], answerIndex: 0, explanation: "主語がich（1人称単数）なのでbraucheが正解。" },
     { question: "「Das macht nichts.」の意味は？", choices: ["それは大丈夫、気にしないで", "ありがとう", "さようなら", "お腹が空いた"], answerIndex: 0, explanation: "謝罪への返答として使われる「気にしないで、大丈夫だよ」という意味の定型句。" }
   ]
+},
+{
+  date: "2026-09-12",
+  dateLabel: "2026年9月12日（土）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "die Familie", plural: "die Familien",
+      meaning_ja: "家族",
+      examples: [
+        { de: "Meine Familie wohnt in München.", ja: "私の家族はミュンヘンに住んでいます。" },
+        { de: "Wir haben eine große Familie.", ja: "私たちは大家族です。" }
+      ],
+      related: [ { term: "die Eltern", note_ja: "「両親」。常に複数形で使う語で、単数形はない。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Familien で語尾に -n を付けるだけの規則的なパターン。meine Familie（私の家族）のように所有冠詞とセットで使うことが多い。"
+    },
+    {
+      type: "noun", term: "der Preis", plural: "die Preise",
+      meaning_ja: "値段、価格",
+      examples: [
+        { de: "Der Preis ist sehr hoch.", ja: "その値段はとても高いです。" },
+        { de: "Wie ist der Preis für dieses Buch?", ja: "この本の値段はいくらですか？" }
+      ],
+      related: [ { term: "kosten", note_ja: "動詞「（値段が）〜である」。„Was kostet das?“（いくらですか）で頻出。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Preise で語尾に -e を付けるパターン。値段の高さそのものは teuer/billig という形容詞で表すのが自然。"
+    },
+    {
+      type: "noun", term: "die Zeit", plural: "die Zeiten",
+      meaning_ja: "時間",
+      examples: [
+        { de: "Ich habe heute keine Zeit.", ja: "私は今日時間がありません。" },
+        { de: "Die Zeit vergeht sehr schnell.", ja: "時間はとても早く過ぎます。" }
+      ],
+      related: [ { term: "pünktlich", note_ja: "「時間通りに」。„keine Zeit haben“（時間がない）とセットでよく使う。" } ],
+      explanation_ja: "女性名詞（die）。複数形 die Zeiten は主に「時代」や複数の時間帯を指すときに使う。„Zeit haben“（時間がある）は否定形 keine Zeit haben で頻出。"
+    },
+    {
+      type: "verb", term: "kaufen", conjugation: "ich kaufe / du kaufst / er-sie-es kauft",
+      meaning_ja: "買う",
+      examples: [
+        { de: "Ich kaufe ein neues Handy.", ja: "私は新しい携帯電話を買います。" },
+        { de: "Wo kaufst du dein Brot?", ja: "あなたはどこでパンを買いますか？" }
+      ],
+      related: [ { term: "verkaufen", note_ja: "「売る」。ver-を付けると反対の意味になる代表例。" } ],
+      explanation_ja: "規則動詞。語幹 kauf- に -e/-st/-t を付けるだけ。買い物で最頻出の動詞の一つで、分離動詞 einkaufen（買い物をする）とセットで覚えると効率的。"
+    },
+    {
+      type: "verb", term: "sehen", conjugation: "ich sehe / du siehst / er-sie-es sieht",
+      meaning_ja: "見る",
+      examples: [
+        { de: "Ich sehe einen Film.", ja: "私は映画を見ます。" },
+        { de: "Siehst du das Auto dort?", ja: "あそこの車が見えますか？" }
+      ],
+      related: [ { term: "fernsehen", note_ja: "「テレビを見る」。sehenを含む分離動詞で日常会話によく出る。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→ie）。du/erの形で sehe→siehst/sieht に変化するのがA2の重要ポイント。"
+    },
+    {
+      type: "verb", term: "tragen", conjugation: "ich trage / du trägst / er-sie-es trägt",
+      meaning_ja: "着る、運ぶ",
+      examples: [
+        { de: "Sie trägt ein rotes Kleid.", ja: "彼女は赤いドレスを着ています。" },
+        { de: "Er trägt die Tasche für mich.", ja: "彼は私のためにそのバッグを運びます。" }
+      ],
+      related: [ { term: "anziehen", note_ja: "「（服を）着る」という動作を表す分離動詞。tragenは「着ている状態」に近い。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 a→ä）。du/erの形で trage→trägst/trägt に変化する。「着る」と「運ぶ」の2つの意味を持つ点に注意。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "teuer",
+      meaning_ja: "（値段が）高い",
+      examples: [
+        { de: "Das Auto ist zu teuer.", ja: "その車は高すぎます。" },
+        { de: "Diese Uhr ist sehr teuer.", ja: "この時計はとても高価です。" }
+      ],
+      related: [ { term: "billig", note_ja: "「安い」。teuer⇔billigは買い物での必須の対義語ペア。" } ],
+      explanation_ja: "値段について話すときの最頻出形容詞。„zu teuer“（高すぎる）のように zu と組み合わせると「〜すぎる」という意味になる。"
+    },
+    {
+      term: "kalt",
+      meaning_ja: "寒い、冷たい",
+      examples: [
+        { de: "Heute ist es sehr kalt.", ja: "今日はとても寒いです。" },
+        { de: "Das Wasser ist kalt.", ja: "その水は冷たいです。" }
+      ],
+      related: [ { term: "warm", note_ja: "「暖かい」。天気や飲食物の温度を表すときの対義語ペア。" } ],
+      explanation_ja: "天気や温度を表す基本形容詞。„Es ist kalt.“のように非人称主語esと組み合わせて天気表現によく使う。"
+    },
+    {
+      term: "früh",
+      meaning_ja: "早い、早く",
+      examples: [
+        { de: "Ich stehe jeden Tag früh auf.", ja: "私は毎日早く起きます。" },
+        { de: "Es ist noch früh.", ja: "まだ早いです。" }
+      ],
+      related: [ { term: "spät", note_ja: "「遅い」。früh⇔spätは時間に関する基本の対義語ペア。" } ],
+      explanation_ja: "形容詞にも副詞にもなる語。分離動詞 aufstehen（起きる）と組み合わせた früh aufstehen（早起きする）という表現でよく使われる。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Was kostet das?",
+      meaning_ja: "これはいくらですか？",
+      examples: [
+        { de: "Entschuldigung, was kostet das?", ja: "すみません、これはいくらですか？" },
+        { de: "Das kostet zehn Euro.", ja: "それは10ユーロです。" }
+      ],
+      explanation_ja: "買い物で値段を尋ねる最も基本的なフレーズ。動詞kostenは物を主語にして使い、人を主語にはしない。"
+    },
+    {
+      phrase: "Wie spät ist es?",
+      meaning_ja: "今何時ですか？",
+      examples: [
+        { de: "Entschuldigung, wie spät ist es?", ja: "すみません、今何時ですか？" },
+        { de: "Es ist schon spät.", ja: "もう遅い時間です。" }
+      ],
+      explanation_ja: "時刻を尋ねる定番フレーズ。同じ意味で „Wie viel Uhr ist es?“ も使われる。答えるときは „Es ist ... Uhr.“ の形になる。"
+    }
+  ],
+  grammarTip: {
+    title: "動詞は2番目！ドイツ語の語順の基本ルール",
+    body_ja: "ドイツ語の平叙文では、定形動詞（人称変化した動詞）は必ず文の2番目の要素に置かれます。主語が1番目とは限らず、時間や場所を表す語句を文頭に置くこともでき、その場合は主語と動詞の位置が入れ替わります（例: „Heute kaufe ich Brot.“＝「今日、私はパンを買います」）。英語や日本語のような固定された語順とは異なるため、A2では「文頭に別の要素を置いたら、動詞はそのまま2番目、主語は動詞の後ろに移動する」というルールを意識して練習することが大切です。"
+  },
+  todayQuiz: [
+    { question: "「Familie（家族）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 1, explanation: "Familieは女性名詞なのでdie Familieが正解。" },
+    { question: "Ergänze: „Ich ___ ein neues Handy.\"（kaufenを正しい形に）", choices: ["kaufe", "kaufst", "kauft", "kaufen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。kaufeが正解。" },
+    { question: "Ergänze: „Du ___ das Auto dort.\"（sehenを正しい形に）", choices: ["sehst", "siehst", "sieht", "sehe"], answerIndex: 1, explanation: "sehenは不規則動詞（e→ie）。du の形は siehst になる。" },
+    { question: "「teuer」の反対の意味を持つ形容詞は？", choices: ["billig", "kalt", "früh", "spät"], answerIndex: 0, explanation: "teuer（高い）の反対はbillig（安い）。" },
+    { question: "値段を尋ねるときに使うフレーズはどれ？", choices: ["Was kostet das?", "Wie spät ist es?", "Wie geht es dir?", "Das macht nichts."], answerIndex: 0, explanation: "„Was kostet das?“が値段を尋ねる基本フレーズ。" },
+    { question: "「der Preis」の複数形は？", choices: ["die Preise", "die Preisen", "der Preise", "das Preise"], answerIndex: 0, explanation: "複数形は die Preise で、語尾に -e を付けるパターン。" },
+    { question: "ドイツ語の平叙文で、定形動詞は文の何番目に置かれる？", choices: ["1番目", "2番目", "3番目", "最後"], answerIndex: 1, explanation: "定形第二位の法則により、動詞は常に文の2番目に置かれる。" },
+    { question: "Ergänze: „Sie ___ ein rotes Kleid.\"（tragenを正しい形に）", choices: ["trage", "trägst", "trägt", "tragen"], answerIndex: 2, explanation: "sieは3人称単数。tragenは不規則動詞（a→ä）なので trägt が正解。" }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: SEED / セットアップ時に置き換える)
+// ── END_DATA ──  (last sync: 2026-09-12)
 
 function esc(s){
   if(s===undefined||s===null) return '';
