@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇩🇪 Daily German Lab | ドイツ語A2トレーニング</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Hiragino Sans','Yu Gothic',Arial,sans-serif;background:#f7f5f0;color:#25211b;min-height:100vh;line-height:1.6}
+a{color:#1d4ed8}
+
+#site-header{background:linear-gradient(135deg,#1f2937 0%,#7f1d1d 55%,#111827 100%);color:#fff;padding:16px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 16px rgba(0,0,0,.35)}
+#header-row{display:flex;justify-content:space-between;align-items:center;max-width:1160px;margin:0 auto;flex-wrap:wrap;gap:10px}
+#site-header h1{font-size:19px;font-weight:800;letter-spacing:-.3px}
+#site-header h1 .sub{font-size:12px;font-weight:400;opacity:.62;margin-left:8px}
+#stat-badge{background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.35);color:#fde68a;font-size:11.5px;padding:5px 13px;border-radius:20px;white-space:nowrap}
+
+#tab-nav{background:#fff;border-bottom:2px solid #e7e2d8;position:sticky;top:60px;z-index:100;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#tab-nav::-webkit-scrollbar{display:none}
+#tab-nav-inner{display:inline-flex;padding:0 20px;min-width:100%;max-width:1160px;margin:0 auto}
+.tab-btn{border:none;background:none;padding:10px 18px;font-size:13px;font-weight:600;color:#7a7364;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap}
+.tab-btn:hover{color:#7f1d1d}
+.tab-btn.active{color:#7f1d1d;border-bottom-color:#dc2626}
+.tab-btn .dow{display:block;font-size:10px;color:#a8a190;font-weight:400;margin-top:1px}
+.tab-btn.active .dow{color:#f87171}
+
+.wrap{max-width:1160px;margin:0 auto;padding:22px 20px 60px}
+.report-panel{display:none}
+.report-panel.active{display:block}
+.meta-bar{display:flex;align-items:center;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.meta-date{font-size:17px;font-weight:800;color:#1f2937}
+.meta-time{font-size:11.5px;background:#eef2f0;color:#7f1d1d;padding:4px 11px;border-radius:20px;font-weight:700}
+
+.section{margin-bottom:32px}
+.sec-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#8a8371;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.sec-title::after{content:'';flex:1;height:1px;background:#e7e2d8}
+
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:760px){.card-grid{grid-template-columns:1fr}}
+
+.vcard{background:#fff;border-radius:14px;padding:18px 19px;box-shadow:0 1px 6px rgba(0,0,0,.06);border:1px solid #efe9dc;border-top:4px solid #94a3b8}
+.vcard.tp-noun{border-top-color:#2563eb}
+.vcard.tp-verb{border-top-color:#dc2626}
+.vcard.tp-adj{border-top-color:#d97706}
+.vcard.tp-phrase{border-top-color:#0d9488}
+
+.vc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px}
+.vc-badge{font-size:10px;font-weight:700;padding:2px 9px;border-radius:20px;text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}
+.b-noun{background:#dbeafe;color:#1d4ed8}
+.b-verb{background:#fee2e2;color:#b91c1c}
+.b-adj{background:#fffbeb;color:#b45309}
+.b-phrase{background:#f0fdfa;color:#0f766e}
+
+.vc-term{font-size:19px;font-weight:800;color:#1f2937;letter-spacing:-.3px;display:flex;align-items:center;flex-wrap:wrap;gap:2px}
+.spk-btn{border:none;background:#eef2f0;color:#7f1d1d;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:12px;display:inline-flex;align-items:center;justify-content:center;margin-left:8px;flex:0 0 auto}
+.spk-btn:hover{background:#fde2e2}
+.spk-btn.small{width:19px;height:19px;font-size:9px;margin-left:0;margin-top:1px}
+
+.vc-mean-ja{font-size:14.5px;font-weight:700;color:#7f1d1d;margin-top:6px}
+.vc-grammar{margin-top:9px;background:#f8fafc;border-radius:9px;padding:9px 12px;font-size:12.5px;color:#374151}
+.vc-grammar b{color:#1f2937}
+
+.vc-ex{margin-top:12px;display:flex;flex-direction:column;gap:7px;padding-left:13px;border-left:3px solid #eef2f0}
+.ex-row{display:flex;align-items:flex-start;gap:6px}
+.ex-text{font-size:12.5px;color:#4b4638;line-height:1.6}
+.ex-ja{font-size:11.5px;color:#8a8371;margin-left:26px}
+
+.vc-rel{margin-top:12px;background:#faf9f5;border-radius:9px;padding:10px 12px}
+.vc-rel-lbl{font-size:10px;font-weight:700;color:#a8a190;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.rel-row{font-size:12px;margin-bottom:5px}
+.rel-row:last-child{margin-bottom:0}
+.rel-term{font-weight:700;color:#7f1d1d}
+.rel-note{color:#5c5647}
+
+.ja-details{margin-top:13px}
+.ja-details summary{cursor:pointer;font-size:11.5px;font-weight:700;color:#7f1d1d;background:#eef2f0;padding:8px 12px;border-radius:8px;list-style:none;user-select:none}
+.ja-details summary::-webkit-details-marker{display:none}
+.ja-details summary::marker{content:''}
+.ja-details summary:hover{background:#fde2e2}
+.ja-details[open] summary{background:#fde2e2;margin-bottom:10px}
+.vc-expl{background:linear-gradient(135deg,#fffbf0,#fff8ec);border:1px solid #f3e6c8;border-radius:9px;padding:11px 13px}
+.vc-expl-lbl{font-size:10px;font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.vc-expl p{font-size:12.5px;color:#4b4638;line-height:1.75}
+
+.grammar-tip-box{background:#fff;border-radius:14px;padding:20px;box-shadow:0 1px 6px rgba(0,0,0,.06);border:1px solid #efe9dc;border-left:5px solid #7f1d1d}
+.grammar-tip-title{font-size:14px;font-weight:800;color:#7f1d1d;margin-bottom:8px}
+.grammar-tip-body{font-size:13px;color:#3a352b;line-height:1.8}
+.grammar-tip-body code{background:#f1f5f9;padding:1px 6px;border-radius:5px;font-size:12px}
+
+.quiz-box{background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06);border:1px solid #efe9dc;margin-bottom:12px}
+.quiz-q{font-size:13.5px;font-weight:700;color:#1f2937;margin-bottom:11px;line-height:1.6}
+.quiz-choices{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:600px){.quiz-choices{grid-template-columns:1fr}}
+.quiz-choice{text-align:left;padding:9px 13px;border:1.5px solid #e7e2d8;border-radius:9px;background:#fff;font-size:12.5px;color:#3a352b;cursor:pointer}
+.quiz-choice:hover:not(:disabled){border-color:#dc2626;background:#fef2f2}
+.quiz-choice:disabled{cursor:default}
+.quiz-choice.correct{background:#dcfce7;border-color:#16a34a;color:#15803d;font-weight:700}
+.quiz-choice.wrong{background:#fee2e2;border-color:#dc2626;color:#b91c1c}
+.quiz-expl{margin-top:10px;font-size:12px;color:#5c5647;background:#faf9f5;border-radius:8px;padding:10px 12px;display:none;line-height:1.7}
+.quiz-expl.show{display:block}
+
+#review-section{margin-top:10px;background:#fff;border-radius:16px;padding:22px;box-shadow:0 2px 10px rgba(0,0,0,.06);border:1px solid #efe9dc}
+#review-section h2{font-size:15px;font-weight:800;color:#1f2937;margin-bottom:5px}
+#review-section .rv-sub{font-size:12px;color:#8a8371;margin-bottom:16px}
+#rv-start-btn{background:#7f1d1d;color:#fff;border:none;padding:11px 22px;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer}
+#rv-start-btn:hover{background:#991b1b}
+#rv-empty{font-size:12.5px;color:#a8a190}
+#rv-body{margin-top:14px}
+
+#footer-actions{margin-top:34px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{padding:10px 18px;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;border:1.5px solid #d9d3c2;background:#fff;color:#3a352b}
+.btn:hover{border-color:#dc2626;color:#7f1d1d}
+.btn.primary{background:#7f1d1d;color:#fff;border-color:#7f1d1d}
+.btn.primary:hover{background:#991b1b}
+#footer-note{font-size:11px;color:#a8a190;margin-top:14px;line-height:1.7}
+</style>
+</head>
+<body>
+<div id="site-header">
+  <div id="header-row">
+    <h1>🇩🇪 Daily German Lab <span class="sub">ドイツ語A2トレーニング — 名詞・動詞・形容詞・フレーズ</span></h1>
+    <div id="stat-badge">読み込み中...</div>
+  </div>
+</div>
+<div id="tab-nav"><div id="tab-nav-inner"></div></div>
+<div class="wrap">
+  <div id="panels"></div>
+
+  <div id="review-section">
+    <h2>🔁 復習クイズ</h2>
+    <div class="rv-sub">これまでに登場した単語・表現からランダムに出題します。忘れかけた頃に思い出すことが定着への近道です。</div>
+    <div id="rv-pre"><button id="rv-start-btn" onclick="startReview()">復習クイズを始める</button></div>
+    <div id="rv-body"></div>
+  </div>
+
+  <div id="footer-actions">
+    <button class="btn primary" onclick="exportCsv()">⬇ 全学習データをCSVでダウンロード</button>
+    <a class="btn" href="archive.html">📦 アーカイブ（8日目以前のバックアップ）</a>
+  </div>
+  <div id="footer-note">
+    公開ページには直近7日分のみを表示しています。それより前のデータは自動的に archive.html に移動され、削除されることはありません。全期間のデータはいつでもCSVでダウンロードできます。🔊ボタンはブラウザ内蔵の音声合成機能（Web Speech API, de-DE）を使用しており、音声ファイルは一切保存していません。
+  </div>
+</div>
+
+<script>
+// ── START_DATA ──
+const GERMAN_REPORTS = [
+{
+  date: "2026-01-01",
+  dateLabel: "サンプル日（実際の初日はセットアップ時に生成）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "das Haus", plural: "die Häuser",
+      meaning_ja: "家",
+      examples: [
+        { de: "Das Haus ist sehr groß.", ja: "その家はとても大きいです。" },
+        { de: "Wir wohnen in einem kleinen Haus.", ja: "私たちは小さな家に住んでいます。" }
+      ],
+      related: [ { term: "die Wohnung", note_ja: "「マンション・アパートの一室」。Hausは一戸建てのイメージ、Wohnungは集合住宅の1室。" } ],
+      explanation_ja: "中性名詞（das）。複数形は語幹の母音がウムラウト化して die Häuser になる、よくあるパターン。家に関する語（zu Hause=家で、nach Hause=家へ）とセットで覚えると効率的。"
+    },
+    {
+      type: "noun", term: "die Arbeit", plural: "die Arbeiten",
+      meaning_ja: "仕事、労働",
+      examples: [
+        { de: "Ich gehe jeden Tag zur Arbeit.", ja: "私は毎日仕事に行きます。" },
+        { de: "Die Arbeit macht mir Spaß.", ja: "仕事は楽しいです。" }
+      ],
+      related: [ { term: "arbeiten", note_ja: "動詞形「働く」。名詞Arbeitと語源が同じで、seiまとめて覚えると語彙が2倍になる。" } ],
+      explanation_ja: "女性名詞（die）。\"zur Arbeit gehen\"（仕事に行く）は日常会話で非常によく使う定型表現。"
+    },
+    {
+      type: "noun", term: "der Freund / die Freundin", plural: "die Freunde",
+      meaning_ja: "友達（男性形／女性形）",
+      examples: [
+        { de: "Er ist mein bester Freund.", ja: "彼は私の親友です。" },
+        { de: "Sie hat viele Freundinnen.", ja: "彼女には友達（女性）がたくさんいます。" }
+      ],
+      related: [ { term: "der Kollege / die Kollegin", note_ja: "「同僚」。friend/colleagueの区別が日本語よりはっきりしているのがドイツ語の特徴。" } ],
+      explanation_ja: "男性名詞・女性名詞のペア。ドイツ語では人を表す名詞の多くに男性形/女性形（-in）のペアがある。恋人の意味にもなりうる（文脈で判断）。"
+    },
+    {
+      type: "verb", term: "wohnen", conjugation: "ich wohne / du wohnst / er-sie-es wohnt",
+      meaning_ja: "住む",
+      examples: [
+        { de: "Ich wohne in Tokio.", ja: "私は東京に住んでいます。" },
+        { de: "Wo wohnst du?", ja: "あなたはどこに住んでいますか？" }
+      ],
+      related: [ { term: "leben", note_ja: "「生きる、暮らす」。wohnenは「住所として住む」、lebenはより広く「生活する・生きる」というニュアンス。" } ],
+      explanation_ja: "規則動詞（規則的に変化する動詞）。語幹 wohn- に -e/-st/-t を付けるだけなので、規則変化のお手本として最初に覚えるべき動詞の一つ。"
+    },
+    {
+      type: "verb", term: "brauchen", conjugation: "ich brauche / du brauchst / er-sie-es braucht",
+      meaning_ja: "必要とする",
+      examples: [
+        { de: "Ich brauche deine Hilfe.", ja: "私はあなたの助けが必要です。" },
+        { de: "Wir brauchen mehr Zeit.", ja: "私たちにはもっと時間が必要です。" }
+      ],
+      related: [ { term: "benötigen", note_ja: "同じ「必要とする」だが、よりフォーマルな響き。日常会話ではbrauchenが圧倒的に多い。" } ],
+      explanation_ja: "規則動詞。\"brauchen + 4格（Akkusativ）\"の形を取る（＝目的語は4格）。ドイツ語学習の最初期に格変化の練習として使われることが多い動詞。"
+    },
+    {
+      type: "verb", term: "helfen", conjugation: "ich helfe / du hilfst / er-sie-es hilft",
+      meaning_ja: "助ける、手伝う",
+      examples: [
+        { de: "Kannst du mir helfen?", ja: "私を手伝ってもらえますか？" },
+        { de: "Er hilft seiner Mutter.", ja: "彼は母親を手伝います。" }
+      ],
+      related: [ { term: "die Hilfe", note_ja: "名詞形「助け」。\"Hilfe!\"だけで「助けて！」という叫び声にもなる。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形でhelfe→hilfst/hilftと変化するのがA2の重要ポイント。さらに\"helfen\"は3格（Dativ）を取る動詞（＝目的語が3格）という、日本人学習者が間違えやすい重要な例外。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "wichtig",
+      meaning_ja: "重要な",
+      examples: [
+        { de: "Das ist mir sehr wichtig.", ja: "それは私にとってとても重要です。" },
+        { de: "Eine wichtige Frage.", ja: "重要な質問。" }
+      ],
+      related: [ { term: "unwichtig", note_ja: "「重要でない」。un-を付けると反対の意味になるパターンは他の形容詞にも応用できる。" } ],
+      explanation_ja: "\"mir wichtig\"（私にとって重要）のように、人称代名詞の3格と組み合わせるのが定番パターン。"
+    },
+    {
+      term: "müde",
+      meaning_ja: "疲れた、眠い",
+      examples: [
+        { de: "Ich bin heute sehr müde.", ja: "私は今日とても疲れています。" },
+        { de: "Bist du müde?", ja: "あなたは疲れていますか？" }
+      ],
+      related: [ { term: "fit", note_ja: "「元気な、調子がいい」。müde⇔fitで対比的に覚えると定着しやすい。" } ],
+      explanation_ja: "\"sein\"（〜である）と組み合わせて体調・状態を表す最頻出の形容詞の一つ。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Wie geht es dir?",
+      meaning_ja: "元気？（くだけた言い方、親しい相手に）",
+      examples: [
+        { de: "Hallo! Wie geht es dir?", ja: "こんにちは！元気？" },
+        { de: "Mir geht es gut, danke. Und dir?", ja: "元気だよ、ありがとう。あなたは？" }
+      ],
+      explanation_ja: "フォーマルな場面では \"Wie geht es Ihnen?\"（Sie形）を使う。答え方の定番は \"Mir geht es gut/schlecht/so lala.\""
+    },
+    {
+      phrase: "Das macht nichts.",
+      meaning_ja: "気にしないで、大丈夫だよ",
+      examples: [
+        { de: "Entschuldigung, ich bin spät! – Das macht nichts.", ja: "遅れてごめん！ — 大丈夫だよ。" },
+        { de: "Das macht nichts, das kann jedem passieren.", ja: "気にしないで、誰にでも起こりうることだから。" }
+      ],
+      explanation_ja: "直訳は「それは何もしない（＝影響しない）」。謝罪への返答として非常によく使われる定型句。"
+    }
+  ],
+  grammarTip: {
+    title: "なぜ3つも冠詞があるの？ der / die / das のイメージ",
+    body_ja: "ドイツ語の名詞にはすべて「文法上の性」があり、それぞれ der（男性）・die（女性）・das（中性）という冠詞が付きます。これは日本語にも英語にもない概念で、多くの学習者がつまずくポイントです。重要なのは「実際の性別と一致するとは限らない」ということ — 例えば das Mädchen（少女）は中性名詞です。効率的な学習法は、単語を覚えるときに必ず冠詞ごとセットで覚えること（\"Haus\" ではなく \"das Haus\" として記憶する）。この習慣が、後の格変化（Nominativ/Akkusativ/Dativ）の理解を大きく助けます。"
+  },
+  todayQuiz: [
+    { question: "「Haus（家）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Hausは中性名詞なのでdas Hausが正解。複数形はdie Häuser。" },
+    { question: "Ergänze: „Ich ___ in Berlin.\"（wohnenを正しい形に）", choices: ["wohne", "wohnst", "wohnt", "wohnen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。ich wohneが正解。" },
+    { question: "Ergänze: „Er ___ mir.\"（helfenを正しい形に）", choices: ["helft", "hilfst", "hilft", "helfe"], answerIndex: 2, explanation: "helfenは幹母音変化する不規則動詞。3人称単数（er）はhilftになる（e→i）。" },
+    { question: "「müde」の意味は？", choices: ["重要な", "疲れた", "友達", "家"], answerIndex: 1, explanation: "müdeは「疲れた、眠い」という意味の形容詞。" },
+    { question: "親しい相手に「元気？」と聞くドイツ語のフレーズは？", choices: ["Wie geht es dir?", "Das macht nichts.", "Ich brauche Hilfe.", "Wo wohnst du?"], answerIndex: 0, explanation: "「Wie geht es dir?」がくだけた「元気？」にあたる定番フレーズ。" },
+    { question: "「der Freund」の複数形は？", choices: ["die Freunde", "die Freunds", "der Freunde", "das Freunde"], answerIndex: 0, explanation: "複数形はdie Freunde。ドイツ語の複数形にはdieを使うのが基本ルール。" },
+    { question: "Ergänze: „Ich ___ neue Schuhe.\"（brauchenを正しい形に）", choices: ["brauche", "brauchst", "braucht", "brauchen"], answerIndex: 0, explanation: "主語がich（1人称単数）なのでbraucheが正解。" },
+    { question: "「Das macht nichts.」の意味は？", choices: ["それは大丈夫、気にしないで", "ありがとう", "さようなら", "お腹が空いた"], answerIndex: 0, explanation: "謝罪への返答として使われる「気にしないで、大丈夫だよ」という意味の定型句。" }
+  ]
+}
+];
+// ── END_DATA ──  (last sync: SEED / セットアップ時に置き換える)
+
+function esc(s){
+  if(s===undefined||s===null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+const TYPE_META = {
+  noun:   { label: '名詞', badge: 'b-noun', border: 'tp-noun' },
+  verb:   { label: '動詞', badge: 'b-verb', border: 'tp-verb' },
+  adj:    { label: '形容詞', badge: 'b-adj', border: 'tp-adj' },
+  phrase: { label: 'フレーズ', badge: 'b-phrase', border: 'tp-phrase' }
+};
+
+function renderSpeakBtn(text, sizeClass){
+  return '<button type="button" class="spk-btn'+(sizeClass?' '+sizeClass:'')+'" data-speak="'+esc(text)+'" aria-label="Aussprache anhören">🔊</button>';
+}
+
+function renderExamples(exs){
+  return '<div class="vc-ex">' + (exs||[]).map(function(e){
+    return '<div class="ex-row">'+renderSpeakBtn(e.de,'small')+'<span class="ex-text">„'+esc(e.de)+'“</span></div><div class="ex-ja">'+esc(e.ja)+'</div>';
+  }).join('') + '</div>';
+}
+
+function renderRelated(rel){
+  if(!rel || !rel.length) return '';
+  return '<div class="vc-rel"><div class="vc-rel-lbl">関連語・対になる語</div>' +
+    rel.map(function(r){
+      return '<div class="rel-row"><span class="rel-term">'+esc(r.term)+renderSpeakBtn(r.term,'small')+'</span> — <span class="rel-note">'+esc(r.note_ja)+'</span></div>';
+    }).join('') + '</div>';
+}
+
+function renderVCard(it, meta){
+  const termText = it.term || it.phrase;
+  let grammarLine = '';
+  if(it.plural){ grammarLine = '<div class="vc-grammar"><b>複数形:</b> '+esc(it.plural)+'</div>'; }
+  if(it.conjugation){ grammarLine = '<div class="vc-grammar"><b>現在人称変化:</b> '+esc(it.conjugation)+'</div>'; }
+  return '<div class="vcard '+meta.border+'">' +
+    '<div class="vc-top"><span class="vc-badge '+meta.badge+'">'+meta.label+'</span></div>' +
+    '<div class="vc-term">'+esc(termText)+renderSpeakBtn(termText)+'</div>' +
+    '<div class="vc-mean-ja">'+esc(it.meaning_ja)+'</div>' +
+    grammarLine +
+    renderExamples(it.examples) +
+    renderRelated(it.related) +
+    '<details class="ja-details"><summary>🔍 もっと詳しく（語源・使い方のコツ）</summary>' +
+      '<div class="vc-expl"><p>'+esc(it.explanation_ja)+'</p></div>' +
+    '</details>' +
+    '</div>';
+}
+
+function renderQuiz(qs, prefix){
+  return qs.map(function(q, i){
+    const qid = prefix+'-'+i;
+    return '<div class="quiz-box">' +
+      '<div class="quiz-q">Q'+(i+1)+'. '+esc(q.question)+'</div>' +
+      '<div class="quiz-choices" id="'+qid+'-choices">' +
+        q.choices.map(function(c, ci){
+          return '<button class="quiz-choice" onclick="answerQuiz(\''+qid+'\', '+ci+', '+q.answerIndex+')">'+esc(c)+'</button>';
+        }).join('') +
+      '</div>' +
+      '<div class="quiz-expl" id="'+qid+'-expl">'+esc(q.explanation)+'</div>' +
+      '</div>';
+  }).join('');
+}
+
+function answerQuiz(qid, chosenIdx, answerIdx){
+  const box = document.getElementById(qid+'-choices');
+  const btns = box.querySelectorAll('.quiz-choice');
+  btns.forEach(function(b, i){
+    b.disabled = true;
+    if(i === answerIdx) b.classList.add('correct');
+    else if(i === chosenIdx) b.classList.add('wrong');
+  });
+  document.getElementById(qid+'-expl').classList.add('show');
+}
+
+function renderPanel(r, idx){
+  const html =
+    '<div class="meta-bar"><div class="meta-date">'+esc(r.dateLabel)+'</div><div class="meta-time">⏱ 目安 '+r.readTimeMin+'分</div></div>' +
+    '<div class="section"><div class="sec-title">📚 今日の名詞・動詞</div><div class="card-grid">' +
+      r.coreItems.map(function(it){ return renderVCard(it, TYPE_META[it.type]); }).join('') + '</div></div>' +
+    '<div class="section"><div class="sec-title">✨ 今日の形容詞</div><div class="card-grid">' +
+      r.adjectives.map(function(it){ return renderVCard(it, TYPE_META.adj); }).join('') + '</div></div>' +
+    '<div class="section"><div class="sec-title">💬 今日の基本フレーズ</div><div class="card-grid">' +
+      r.phrases.map(function(it){ return renderVCard(it, TYPE_META.phrase); }).join('') + '</div></div>' +
+    '<div class="section"><div class="sec-title">📖 今日の文法ワンポイント</div>' +
+      '<div class="grammar-tip-box"><div class="grammar-tip-title">'+esc(r.grammarTip.title)+'</div><div class="grammar-tip-body">'+esc(r.grammarTip.body_ja)+'</div></div></div>' +
+    '<div class="section"><div class="sec-title">📝 本日のクイズ</div>' +
+      renderQuiz(r.todayQuiz, 'today-'+idx) + '</div>';
+  return html;
+}
+
+let currentIdx = GERMAN_REPORTS.length - 1;
+
+function renderTabs(){
+  const nav = document.getElementById('tab-nav-inner');
+  nav.innerHTML = GERMAN_REPORTS.map(function(r, i){
+    const d = new Date(r.date+'T00:00:00');
+    const dow = ['日','月','火','水','木','金','土'][d.getDay()];
+    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+r.date.slice(5)+'<span class="dow">'+dow+'曜</span></button>';
+  }).join('');
+}
+
+function selectDay(i){ currentIdx = i; renderTabs(); renderAll(); }
+
+function renderAll(){
+  const panels = document.getElementById('panels');
+  const r = GERMAN_REPORTS[currentIdx];
+  panels.innerHTML = '<div class="report-panel active">' + renderPanel(r, currentIdx) + '</div>';
+  const totalToday = GERMAN_REPORTS.reduce(function(s, x){
+    return s + x.coreItems.length + x.adjectives.length + x.phrases.length;
+  }, 0);
+  document.getElementById('stat-badge').textContent = '直近7日で ' + totalToday + ' 語彙・表現を掲載中';
+}
+
+function speak(text){
+  if(!('speechSynthesis' in window)){ alert('お使いのブラウザは音声読み上げに対応していません。'); return; }
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'de-DE';
+  u.rate = 0.9;
+  window.speechSynthesis.speak(u);
+}
+document.addEventListener('click', function(e){
+  const btn = e.target.closest('.spk-btn');
+  if(!btn) return;
+  speak(btn.getAttribute('data-speak'));
+});
+
+function flattenPool(reports, excludeLastOf){
+  const pool = [];
+  reports.forEach(function(r){
+    if(r.date === excludeLastOf) return;
+    r.coreItems.forEach(function(it){ pool.push({ label: it.term, meaning: it.meaning_ja }); });
+    r.adjectives.forEach(function(it){ pool.push({ label: it.term, meaning: it.meaning_ja }); });
+    r.phrases.forEach(function(it){ pool.push({ label: it.phrase, meaning: it.meaning_ja }); });
+  });
+  return pool.filter(function(p){ return p.meaning; });
+}
+
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]] = [a[j],a[i]]; }
+  return a;
+}
+
+async function fetchArchiveReports(){
+  try{
+    const res = await fetch('archive.html', {cache:'no-store'});
+    if(!res.ok) return [];
+    const text = await res.text();
+    const m = text.match(/const GERMAN_REPORTS = (\[[\s\S]*?\]);\s*\/\/\s*── END_DATA/);
+    if(!m) return [];
+    return new Function('return ' + m[1])();
+  }catch(e){ return []; }
+}
+
+async function startReview(){
+  document.getElementById('rv-pre').style.display = 'none';
+  const body = document.getElementById('rv-body');
+  body.innerHTML = '<div id="rv-empty">読み込み中...</div>';
+  const archiveReports = await fetchArchiveReports();
+  const latestDate = GERMAN_REPORTS[GERMAN_REPORTS.length-1].date;
+  const allReports = archiveReports.concat(GERMAN_REPORTS);
+  const pool = flattenPool(allReports, latestDate);
+  if(pool.length < 4){
+    body.innerHTML = '<div id="rv-empty">まだ復習コンテンツが十分にありません。学習日数が増えると表示されます。</div>';
+    return;
+  }
+  const picks = shuffle(pool).slice(0, Math.min(8, pool.length));
+  const questions = picks.map(function(item){
+    const distractors = shuffle(pool.filter(function(p){ return p.meaning !== item.meaning; })).slice(0,3).map(function(p){ return p.meaning; });
+    const choices = shuffle([item.meaning].concat(distractors));
+    const answerIndex = choices.indexOf(item.meaning);
+    return { question: '「'+item.label+'」の意味として最も適切なものは？', choices: choices, answerIndex: answerIndex, explanation: '正解: '+item.meaning };
+  });
+  body.innerHTML = renderQuiz(questions, 'review');
+}
+
+function csvField(s){
+  const v = (s===undefined||s===null) ? '' : String(s);
+  return '"' + v.replace(/"/g,'""') + '"';
+}
+
+function entryToRows(r){
+  const rows = [];
+  function push(cat, term, grammar, it){
+    rows.push([r.date, cat, term, grammar||'', it.meaning_ja,
+      (it.examples||[]).map(function(e){ return e.de+' / '+e.ja; }).join(' | '),
+      (it.related||[]).map(function(x){ return x.term+':'+x.note_ja; }).join(' ; '),
+      it.explanation_ja]);
+  }
+  r.coreItems.forEach(function(it){ push(TYPE_META[it.type].label, it.term, it.plural||it.conjugation, it); });
+  r.adjectives.forEach(function(it){ push('形容詞', it.term, '', it); });
+  r.phrases.forEach(function(it){ push('フレーズ', it.phrase, '', it); });
+  return rows;
+}
+
+async function exportCsv(){
+  const archiveReports = await fetchArchiveReports();
+  const allReports = archiveReports.concat(GERMAN_REPORTS);
+  const header = ['date','category','term','grammar_info','meaning_ja','examples','related','explanation_ja'];
+  let rows = [header];
+  allReports.forEach(function(r){ rows = rows.concat(entryToRows(r)); });
+  const csv = rows.map(function(row){ return row.map(csvField).join(','); }).join('\r\n');
+  const blob = new Blob(["﻿"+csv], {type:'text/csv;charset=utf-8;'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'german_daily_vocab.csv';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+renderTabs();
+renderAll();
+</script>
+</body>
+</html>
