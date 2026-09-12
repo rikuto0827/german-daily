@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📦 Daily German Lab Archive | 過去の学習データ</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Hiragino Sans','Yu Gothic',Arial,sans-serif;background:#f7f5f0;color:#25211b;min-height:100vh;line-height:1.6}
+a{color:#1d4ed8}
+#site-header{background:linear-gradient(135deg,#1f2937 0%,#7f1d1d 55%,#111827 100%);color:#fff;padding:16px 24px}
+#header-row{display:flex;justify-content:space-between;align-items:center;max-width:1160px;margin:0 auto;flex-wrap:wrap;gap:10px}
+#site-header h1{font-size:18px;font-weight:800}
+#site-header h1 .sub{font-size:12px;font-weight:400;opacity:.62;margin-left:8px}
+.wrap{max-width:1160px;margin:0 auto;padding:22px 20px 60px}
+#tab-nav{background:#fff;border-bottom:2px solid #e7e2d8;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#tab-nav::-webkit-scrollbar{display:none}
+#tab-nav-inner{display:inline-flex;padding:0 20px}
+.tab-btn{border:none;background:none;padding:10px 16px;font-size:12.5px;font-weight:600;color:#7a7364;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab-btn.active{color:#7f1d1d;border-bottom-color:#dc2626}
+.meta-bar{margin:20px 0}
+.meta-date{font-size:16px;font-weight:800;color:#1f2937}
+.section{margin-bottom:28px}
+.sec-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#8a8371;margin-bottom:14px}
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:760px){.card-grid{grid-template-columns:1fr}}
+.vcard{background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06);border:1px solid #efe9dc;border-top:4px solid #94a3b8}
+.vc-term{font-size:17px;font-weight:800;color:#1f2937}
+.vc-mean-ja{font-size:13.5px;font-weight:700;color:#7f1d1d;margin-top:5px}
+.vc-grammar{font-size:11.5px;color:#374151;margin-top:5px}
+.vc-ex{margin-top:9px;padding-left:12px;border-left:3px solid #eef2f0}
+.vc-ex p{font-size:12px;color:#4b4638;margin-bottom:2px}
+.vc-ex .ja{font-size:11px;color:#8a8371;margin-bottom:4px}
+.vc-expl{margin-top:10px;background:#fffbf0;border:1px solid #f3e6c8;border-radius:9px;padding:10px 12px}
+.vc-expl p{font-size:12px;color:#4b4638;line-height:1.7}
+#empty-note{color:#a8a190;font-size:13px;padding:30px 0}
+#footer-actions{margin-top:20px}
+.btn{padding:9px 16px;border-radius:9px;font-size:12.5px;font-weight:700;cursor:pointer;border:1.5px solid #d9d3c2;background:#fff;color:#3a352b;text-decoration:none}
+</style>
+</head>
+<body>
+<div id="site-header">
+  <div id="header-row">
+    <h1>📦 Daily German Lab Archive <span class="sub">8日目以前のバックアップデータ</span></h1>
+  </div>
+</div>
+<div id="tab-nav"><div id="tab-nav-inner"></div></div>
+<div class="wrap">
+  <div id="panels"></div>
+  <div id="footer-actions"><a class="btn" href="index.html">← 最新7日分（トップページ）に戻る</a></div>
+</div>
+
+<script>
+// ── START_DATA ──
+const GERMAN_REPORTS = [];
+// ── END_DATA ──  (last sync: none yet / automated refresh)
+
+function esc(s){
+  if(s===undefined||s===null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+function card(term, grammar, meaningJa, exs, explJa){
+  return '<div class="vcard">' +
+    '<div class="vc-term">'+esc(term)+'</div>' +
+    (grammar?'<div class="vc-grammar">'+esc(grammar)+'</div>':'') +
+    '<div class="vc-mean-ja">'+esc(meaningJa)+'</div>' +
+    '<div class="vc-ex">' + (exs||[]).map(function(e){ return '<p>„'+esc(e.de)+'“</p><div class="ja">'+esc(e.ja)+'</div>'; }).join('') + '</div>' +
+    '<div class="vc-expl"><p>'+esc(explJa)+'</p></div>' +
+    '</div>';
+}
+
+function renderPanel(r){
+  return '<div class="meta-bar"><div class="meta-date">'+esc(r.dateLabel)+'</div></div>' +
+    '<div class="section"><div class="sec-title">名詞・動詞</div><div class="card-grid">' +
+      r.coreItems.map(function(it){ return card(it.term, it.plural||it.conjugation, it.meaning_ja, it.examples, it.explanation_ja); }).join('') + '</div></div>' +
+    '<div class="section"><div class="sec-title">形容詞</div><div class="card-grid">' +
+      r.adjectives.map(function(it){ return card(it.term, '', it.meaning_ja, it.examples, it.explanation_ja); }).join('') + '</div></div>' +
+    '<div class="section"><div class="sec-title">基本フレーズ</div><div class="card-grid">' +
+      r.phrases.map(function(it){ return card(it.phrase, '', it.meaning_ja, it.examples, it.explanation_ja); }).join('') + '</div></div>';
+}
+
+let currentIdx = GERMAN_REPORTS.length - 1;
+
+function renderTabs(){
+  const nav = document.getElementById('tab-nav-inner');
+  nav.innerHTML = GERMAN_REPORTS.map(function(r, i){
+    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+r.date+'</button>';
+  }).join('');
+}
+function selectDay(i){ currentIdx = i; renderTabs(); renderAll(); }
+function renderAll(){
+  const panels = document.getElementById('panels');
+  if(GERMAN_REPORTS.length === 0){
+    panels.innerHTML = '<div id="empty-note">まだアーカイブデータはありません。index.html が8日分を超えると、直近7日より前のエントリーが自動的にここへ移動します。</div>';
+    document.getElementById('tab-nav').style.display = 'none';
+    return;
+  }
+  panels.innerHTML = renderPanel(GERMAN_REPORTS[currentIdx]);
+}
+renderTabs();
+renderAll();
+</script>
+</body>
+</html>
