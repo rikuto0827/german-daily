@@ -401,8 +401,141 @@ const GERMAN_REPORTS = [
     { question: "Ergänze: „Sie ___ ein rotes Kleid.\"（tragenを正しい形に）", choices: ["trage", "trägst", "trägt", "tragen"], answerIndex: 2, explanation: "sieは3人称単数。tragenは不規則動詞（a→ä）なので trägt が正解。" }
   ]
 }
+,
+{
+  date: "2026-09-13",
+  dateLabel: "2026年9月13日（日）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "die Stadt", plural: "die Städte",
+      meaning_ja: "町、都市",
+      examples: [
+        { de: "Ich wohne in einer kleinen Stadt.", ja: "私は小さな町に住んでいます。" },
+        { de: "Die Stadt ist sehr alt.", ja: "その町はとても古いです。" }
+      ],
+      related: [ { term: "das Dorf", note_ja: "「村」。Stadt（町・都市）と対比される、より小さな居住地を指す語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Städte で、語幹の母音がウムラウト化するパターン（a→ä）。das Haus→die Häuser と同じタイプのウムラウト複数形。"
+    },
+    {
+      type: "noun", term: "der Tisch", plural: "die Tische",
+      meaning_ja: "テーブル、机",
+      examples: [
+        { de: "Das Buch liegt auf dem Tisch.", ja: "本はテーブルの上にあります。" },
+        { de: "Wir kaufen einen neuen Tisch.", ja: "私たちは新しいテーブルを買います。" }
+      ],
+      related: [ { term: "der Stuhl", note_ja: "「椅子」。Tisch（テーブル）とセットでよく使われる家具の語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Tische で、語尾に -e を付けるだけの規則的なパターン。前置詞 auf と組み合わせて „auf dem Tisch“（テーブルの上に）のように使うことが多い。"
+    },
+    {
+      type: "noun", term: "das Fenster", plural: "die Fenster",
+      meaning_ja: "窓",
+      examples: [
+        { de: "Das Fenster ist offen.", ja: "その窓は開いています。" },
+        { de: "Kannst du das Fenster schließen?", ja: "窓を閉めてもらえますか？" }
+      ],
+      related: [ { term: "die Tür", note_ja: "「ドア」。Fenster（窓）とセットで部屋の設備を表す基本語。" } ],
+      explanation_ja: "中性名詞（das）。複数形は単数形と同じ die Fenster で変化しない、A2で覚えておくべき無変化パターンの代表例。"
+    },
+    {
+      type: "verb", term: "gehen", conjugation: "ich gehe / du gehst / er-sie-es geht",
+      meaning_ja: "行く、歩く",
+      examples: [
+        { de: "Ich gehe heute ins Kino.", ja: "私は今日映画館に行きます。" },
+        { de: "Gehst du morgen zur Schule?", ja: "あなたは明日学校に行きますか？" }
+      ],
+      related: [ { term: "der Gang", note_ja: "名詞形「歩み、通路」。gehenと語源が同じ。" } ],
+      explanation_ja: "規則的に変化する基本動詞。„ins Kino gehen“（映画に行く）のように „gehen“ の前に行き先を示す前置詞句を置くパターンが頻出。"
+    },
+    {
+      type: "verb", term: "sprechen", conjugation: "ich spreche / du sprichst / er-sie-es spricht",
+      meaning_ja: "話す",
+      examples: [
+        { de: "Ich spreche ein bisschen Deutsch.", ja: "私は少しドイツ語を話します。" },
+        { de: "Sprichst du Englisch?", ja: "あなたは英語を話しますか？" }
+      ],
+      related: [ { term: "die Sprache", note_ja: "名詞形「言語」。sprechenと語源が同じで、Fremdsprache（外国語）などの複合語にもなる。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形で spreche→sprichst/spricht に変化するのがA2の重要ポイント。helfenやsehenと同じ変化パターンのグループ。"
+    },
+    {
+      type: "verb", term: "schlafen", conjugation: "ich schlafe / du schläfst / er-sie-es schläft",
+      meaning_ja: "眠る",
+      examples: [
+        { de: "Ich schlafe jede Nacht acht Stunden.", ja: "私は毎晩8時間眠ります。" },
+        { de: "Das Baby schläft schon.", ja: "赤ちゃんはもう眠っています。" }
+      ],
+      related: [ { term: "müde", note_ja: "形容詞「疲れた」。schlafen（眠る）とセットでよく使われる状態を表す語。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 a→ä）。du/erの形で schlafe→schläfst/schläft に変化する。tragenと同じ変化パターンのグループ。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "schön",
+      meaning_ja: "美しい、素敵な、良い",
+      examples: [
+        { de: "Das Wetter ist heute schön.", ja: "今日は天気がいいです。" },
+        { de: "Sie hat ein schönes Kleid.", ja: "彼女は素敵なドレスを持っています。" }
+      ],
+      related: [ { term: "hässlich", note_ja: "「醜い」。schön⇔hässlichは外見を表す基本の対義語ペア。" } ],
+      explanation_ja: "外見だけでなく天気や状況の「良さ」全般に使える万能な形容詞。„Schön!“単独で「いいね！」という相槌にもなる。"
+    },
+    {
+      term: "laut",
+      meaning_ja: "うるさい、大きい音の",
+      examples: [
+        { de: "Die Musik ist zu laut.", ja: "その音楽はうるさすぎます。" },
+        { de: "Sei bitte nicht so laut.", ja: "どうかそんなにうるさくしないで。" }
+      ],
+      related: [ { term: "leise", note_ja: "「静かな」。laut⇔leiseは音量に関する基本の対義語ペア。" } ],
+      explanation_ja: "音の大きさを表す基本形容詞。副詞としても使え、„laut sprechen“（大きな声で話す）のように動詞を修飾する。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Es tut mir leid.",
+      meaning_ja: "ごめんなさい、申し訳ありません",
+      examples: [
+        { de: "Es tut mir leid, ich habe keine Zeit.", ja: "すみません、時間がありません。" },
+        { de: "Das tut mir wirklich leid.", ja: "それは本当に申し訳なく思います。" }
+      ],
+      explanation_ja: "„Entschuldigung“より少し丁寧で気持ちのこもった謝罪表現。直訳は「それは私にとって痛む」。"
+    },
+    {
+      phrase: "Kein Problem.",
+      meaning_ja: "問題ない、大丈夫だよ",
+      examples: [
+        { de: "Kannst du mir helfen? – Klar, kein Problem.", ja: "手伝ってもらえる？—もちろん、大丈夫だよ。" },
+        { de: "Kein Problem, ich habe Zeit.", ja: "問題ないよ、時間はあるから。" }
+      ],
+      explanation_ja: "依頼を快く引き受けるときやお礼への返答に使う口語的なフレーズ。„Das macht nichts.“と似ているが、より幅広いカジュアルな場面で使われる。"
+    },
+    {
+      phrase: "Bis später!",
+      meaning_ja: "またあとで！",
+      examples: [
+        { de: "Ich muss jetzt gehen. Bis später!", ja: "もう行かないと。またあとで！" },
+        { de: "Bis später, wir sehen uns um sechs.", ja: "またあとで、6時に会いましょう。" }
+      ],
+      explanation_ja: "別れ際の挨拶の一つ。同じ日にまた会う予定がある時に使う（Bis morgen!＝また明日、Bis bald!＝またすぐに、なども同系統の表現）。"
+    }
+  ],
+  grammarTip: {
+    title: "動詞が分裂する？ドイツ語の分離動詞のしくみ",
+    body_ja: "ドイツ語には「aufstehen（起きる）」「einkaufen（買い物する）」のように、前綴り（auf-, ein-など）と動詞本体が組み合わさった分離動詞があります。文中で人称変化して使うときは、前綴りが動詞から離れて文末に移動するのが最大の特徴です。例えば„Ich stehe um sieben Uhr auf.“（私は7時に起きます）のように、steheが2番目、aufが文末に来ます。辞書に載っている形（aufstehen）と実際に使う形が見た目上大きく変わるため、A2では「前綴りは必ず文末」というルールを意識して練習することが大切です。"
+  },
+  todayQuiz: [
+    { question: "「Tisch（テーブル）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Tischは男性名詞なのでder Tischが正解。複数形はdie Tische。" },
+    { question: "Ergänze: „Du ___ sehr gut Deutsch.\"（sprechenを正しい形に）", choices: ["spreche", "sprichst", "spricht", "sprechen"], answerIndex: 1, explanation: "sprechenは不規則動詞（e→i）。du の形は sprichst になる。" },
+    { question: "Ergänze: „Er ___ jeden Tag acht Stunden.\"（schlafenを正しい形に）", choices: ["schlafe", "schläfst", "schläft", "schlafen"], answerIndex: 2, explanation: "schlafenは不規則動詞（a→ä）。3人称単数（er）の形は schläft になる。" },
+    { question: "「Fenster（窓）」の複数形は？", choices: ["die Fenster", "die Fensters", "die Fensteren", "der Fenster"], answerIndex: 0, explanation: "Fensterは単数形と複数形が同じ die Fenster になる無変化パターン。" },
+    { question: "「schön」の意味として正しいものは？", choices: ["美しい、素敵な", "うるさい", "速い", "静かな"], answerIndex: 0, explanation: "schönは「美しい、素敵な」という意味の形容詞。天気の良さを表すときにもよく使う。" },
+    { question: "「laut」の反対の意味を持つ形容詞は？", choices: ["leise", "schnell", "schön", "langsam"], answerIndex: 0, explanation: "laut（うるさい）の反対はleise（静かな）。" },
+    { question: "謝るときに使う丁寧なフレーズはどれ？", choices: ["Es tut mir leid.", "Kein Problem.", "Bis später!", "Wie spät ist es?"], answerIndex: 0, explanation: "„Es tut mir leid.“は「ごめんなさい」という気持ちのこもった謝罪表現。" },
+    { question: "ドイツ語の分離動詞について正しい説明はどれ？", choices: ["文中で前綴りが文末に移動する", "主語によって形が変わらない", "すべて不規則動詞である", "前綴りは常に動詞の前に残る"], answerIndex: 0, explanation: "分離動詞は人称変化すると前綴りが動詞本体から離れて文末に置かれる。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-12)
+// ── END_DATA ──  (last sync: 2026-09-13)
 
 function esc(s){
   if(s===undefined||s===null) return '';
