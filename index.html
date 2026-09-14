@@ -534,8 +534,151 @@ const GERMAN_REPORTS = [
     { question: "ドイツ語の分離動詞について正しい説明はどれ？", choices: ["文中で前綴りが文末に移動する", "主語によって形が変わらない", "すべて不規則動詞である", "前綴りは常に動詞の前に残る"], answerIndex: 0, explanation: "分離動詞は人称変化すると前綴りが動詞本体から離れて文末に置かれる。" }
   ]
 }
+,
+{
+  date: "2026-09-14",
+  dateLabel: "2026年9月14日（月）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Tag", plural: "die Tage",
+      meaning_ja: "日、一日",
+      examples: [
+        { de: "Ich habe heute einen langen Tag.", ja: "私は今日、長い一日を過ごしています。" },
+        { de: "Welcher Tag ist heute?", ja: "今日は何曜日ですか？" }
+      ],
+      related: [ { term: "der Morgen", note_ja: "「朝」。1日の時間帯を表す語で、Tagとセットで覚えると時間表現が広がる。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Tage で語尾に -e を付ける規則的なパターン。„jeden Tag“（毎日）、„Guten Tag“（こんにちは、直訳「良い一日を」）など頻出表現に登場する基礎語。"
+    },
+    {
+      type: "noun", term: "das Buch", plural: "die Bücher",
+      meaning_ja: "本",
+      examples: [
+        { de: "Ich lese ein interessantes Buch.", ja: "私は面白い本を読んでいます。" },
+        { de: "Wo ist mein Buch?", ja: "私の本はどこですか？" }
+      ],
+      related: [ { term: "lesen", note_ja: "動詞「読む」。Buch（本）とセットで使う最頻出の組み合わせ。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Bücher で、語幹の母音がウムラウト化するパターン（u→ü）。das Haus→die Häuser と同じタイプのウムラウト複数形。"
+    },
+    {
+      type: "noun", term: "die Straße", plural: "die Straßen",
+      meaning_ja: "道、通り",
+      examples: [
+        { de: "Die Straße ist sehr lang.", ja: "その道はとても長いです。" },
+        { de: "Ich wohne in dieser Straße.", ja: "私はこの通りに住んでいます。" }
+      ],
+      related: [ { term: "der Weg", note_ja: "「道、道のり」。Straßeは車道・通りの名前、Wegはより広く「道・道のり」を指す。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Straßen で語尾に -n を付ける規則的なパターン。住所を言うときに „in der ...straße“ の形でよく使われる。"
+    },
+    {
+      type: "verb", term: "essen", conjugation: "ich esse / du isst / er-sie-es isst",
+      meaning_ja: "食べる",
+      examples: [
+        { de: "Ich esse gern Pizza.", ja: "私はピザを食べるのが好きです。" },
+        { de: "Was isst du heute?", ja: "あなたは今日何を食べますか？" }
+      ],
+      related: [ { term: "das Essen", note_ja: "名詞形「食事」。essenと同じ語で、大文字にすると名詞になる。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i）。du と er の形がどちらも isst になる点に注意（語幹の -ss- と du の語尾 -st が重なるため）。名詞形 das Essen（食事）とセットで覚えると効率的。"
+    },
+    {
+      type: "verb", term: "trinken", conjugation: "ich trinke / du trinkst / er-sie-es trinkt",
+      meaning_ja: "飲む",
+      examples: [
+        { de: "Ich trinke jeden Morgen Kaffee.", ja: "私は毎朝コーヒーを飲みます。" },
+        { de: "Trinkst du gern Tee?", ja: "あなたは紅茶を飲むのが好きですか？" }
+      ],
+      related: [ { term: "das Getränk", note_ja: "名詞形「飲み物」。trinkenと語源が近い関連語。" } ],
+      explanation_ja: "規則動詞。語幹 trink- に -e/-st/-t を付けるだけなので、essenと対で覚えると食事の話題がしやすくなる。"
+    },
+    {
+      type: "verb", term: "fahren", conjugation: "ich fahre / du fährst / er-sie-es fährt",
+      meaning_ja: "（乗り物で）行く、運転する",
+      examples: [
+        { de: "Ich fahre morgen nach Berlin.", ja: "私は明日ベルリンへ行きます（乗り物で）。" },
+        { de: "Fährst du mit dem Bus?", ja: "あなたはバスで行きますか？" }
+      ],
+      related: [ { term: "die Fahrt", note_ja: "名詞形「（乗り物での）移動」。fahrenと同じ語源。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 a→ä）。「乗り物で移動する」ときに使い、歩いて行くことを表す gehen とは区別される点がA2の重要ポイント。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "groß",
+      meaning_ja: "大きい、背が高い",
+      examples: [
+        { de: "Das Haus ist sehr groß.", ja: "その家はとても大きいです。" },
+        { de: "Er ist groß und schlank.", ja: "彼は背が高くて細いです。" }
+      ],
+      related: [ { term: "klein", note_ja: "「小さい」。großの対義語として必ずセットで覚える。" } ],
+      explanation_ja: "大きさ・背の高さを表す基本形容詞。比較級は größer、最上級は am größten と不規則変化する点にも注意。"
+    },
+    {
+      term: "klein",
+      meaning_ja: "小さい",
+      examples: [
+        { de: "Die Wohnung ist klein, aber gemütlich.", ja: "その部屋は小さいですが居心地がいいです。" },
+        { de: "Das Kind ist noch klein.", ja: "その子供はまだ小さいです。" }
+      ],
+      related: [ { term: "groß", note_ja: "「大きい」。kleinの対義語。" } ],
+      explanation_ja: "großの対義語で、大きさを表す最頻出の形容詞ペア。規則的に変化する形容詞で比較級は kleiner。"
+    },
+    {
+      term: "neu",
+      meaning_ja: "新しい",
+      examples: [
+        { de: "Ich habe ein neues Auto.", ja: "私は新しい車を持っています。" },
+        { de: "Das ist meine neue Adresse.", ja: "これが私の新しい住所です。" }
+      ],
+      related: [ { term: "alt", note_ja: "「古い、年をとった」。neuの対義語。" } ],
+      explanation_ja: "名詞の前に置くと性・格に応じて語尾が変わる（ein neues Auto、meine neue Adresseなど）。単独で使うとき（„Das Auto ist neu.“）は語尾がつかない点に注意。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Wie heißt du?",
+      meaning_ja: "お名前は？（くだけた言い方）",
+      examples: [
+        { de: "Hallo, wie heißt du?", ja: "こんにちは、お名前は？" },
+        { de: "Ich heiße Anna. Und du?", ja: "私はアンナといいます。あなたは？" }
+      ],
+      explanation_ja: "heißenは「〜という名前である」という意味の動詞。フォーマルな場面では „Wie heißen Sie?“ を使う。"
+    },
+    {
+      phrase: "Guten Appetit!",
+      meaning_ja: "召し上がれ！（食事の前のあいさつ）",
+      examples: [
+        { de: "Das Essen ist fertig. Guten Appetit!", ja: "食事の準備ができました。召し上がれ！" },
+        { de: "Guten Appetit! – Danke, gleichfalls.", ja: "召し上がれ！—ありがとう、あなたもどうぞ。" }
+      ],
+      explanation_ja: "食事を始める前にかける定番のあいさつ。返答は „Danke, gleichfalls.“（ありがとう、あなたもね）が定番。"
+    },
+    {
+      phrase: "Schönen Tag noch!",
+      meaning_ja: "良い一日を！",
+      examples: [
+        { de: "Auf Wiedersehen! Schönen Tag noch!", ja: "さようなら！良い一日を！" },
+        { de: "Danke, Ihnen auch einen schönen Tag!", ja: "ありがとう、あなたも良い一日を！" }
+      ],
+      explanation_ja: "別れ際にかける「良い一日を」という挨拶。店員と客のやり取りなど日常のさまざまな場面で使われる。"
+    }
+  ],
+  grammarTip: {
+    title: "4格（Akkusativ）とは？ der→den に変わる仕組み",
+    body_ja: "ドイツ語の名詞は文中の役割によって格が変わり、直接目的語（〜を）になるときは Akkusativ（4格）という形になります。die/das の冠詞は Nominativ（1格・主語の形）と同じままですが、男性名詞の der だけが den に変わるのがポイントです。例えば „der Mann“（その男性）が目的語になると „Ich sehe den Mann.“（私はその男性が見えます）のように den になります。不定冠詞 ein も einen に変わります（„Ich brauche einen Tisch.“）。まずは「男性名詞の冠詞だけ変わる」というルールをしっかり覚えることが、格変化を理解するA2の第一歩です。"
+  },
+  todayQuiz: [
+    { question: "「Buch（本）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Buchは中性名詞なのでdas Buchが正解。複数形はdie Bücher。" },
+    { question: "Ergänze: „Was ___ du heute?\"（essenを正しい形に）", choices: ["esse", "isst", "esst", "essen"], answerIndex: 1, explanation: "essenは不規則動詞（e→i）。duの形はisstになる。" },
+    { question: "Ergänze: „Er ___ mit dem Bus.\"（fahrenを正しい形に）", choices: ["fahre", "fährst", "fährt", "fahren"], answerIndex: 2, explanation: "fahrenは不規則動詞（a→ä）。3人称単数（er）の形はfährt。" },
+    { question: "「groß」の反対の意味を持つ形容詞は？", choices: ["klein", "neu", "alt", "laut"], answerIndex: 0, explanation: "groß（大きい）の反対はklein（小さい）。" },
+    { question: "Akkusativ（4格）で「der Mann」はどう変わる？", choices: ["der Mann", "die Mann", "den Mann", "dem Mann"], answerIndex: 2, explanation: "男性名詞の定冠詞はAkkusativでderからdenに変わる。" },
+    { question: "食事の前にかける定番のあいさつはどれ？", choices: ["Guten Appetit!", "Schönen Tag noch!", "Wie heißt du?", "Kein Problem."], answerIndex: 0, explanation: "„Guten Appetit!“は食事を始める前にかけるあいさつ。" },
+    { question: "「die Straße」の複数形は？", choices: ["die Straßen", "die Straße", "die Straßes", "der Straßen"], answerIndex: 0, explanation: "複数形はdie Straßenで、語尾に-nを付ける規則的なパターン。" },
+    { question: "Ergänze: „Ich ___ jeden Morgen Kaffee.\"（trinkenを正しい形に）", choices: ["trinke", "trinkst", "trinkt", "trinken"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。trinkeが正解。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-13)
+// ── END_DATA ──  (last sync: 2026-09-14)
 
 function esc(s){
   if(s===undefined||s===null) return '';
