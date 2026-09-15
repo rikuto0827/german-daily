@@ -677,8 +677,151 @@ const GERMAN_REPORTS = [
     { question: "Ergänze: „Ich ___ jeden Morgen Kaffee.\"（trinkenを正しい形に）", choices: ["trinke", "trinkst", "trinkt", "trinken"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。trinkeが正解。" }
   ]
 }
+,
+{
+  date: "2026-09-15",
+  dateLabel: "2026年9月15日（火）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "das Zimmer", plural: "die Zimmer",
+      meaning_ja: "部屋",
+      examples: [
+        { de: "Mein Zimmer ist klein, aber gemütlich.", ja: "私の部屋は小さいですが居心地がいいです。" },
+        { de: "Ist das dein Zimmer?", ja: "これはあなたの部屋ですか？" }
+      ],
+      related: [ { term: "der Raum", note_ja: "「空間、部屋」。Zimmerは家庭的な部屋を指し、Raumはより広い空間全般を指すフォーマルな類義語。" } ],
+      explanation_ja: "中性名詞（das）。複数形は単数形と同じ die Zimmer で変化しない、Fensterと同じ無変化パターン。„mein Zimmer“のように所有冠詞とセットで使うことが多い。"
+    },
+    {
+      type: "noun", term: "die Küche", plural: "die Küchen",
+      meaning_ja: "台所、キッチン",
+      examples: [
+        { de: "Die Küche ist sehr modern.", ja: "台所はとてもモダンです。" },
+        { de: "Ich koche gern in der Küche.", ja: "私は台所で料理するのが好きです。" }
+      ],
+      related: [ { term: "kochen", note_ja: "動詞「料理する」。Kücheと語源が同じで、セットで覚えると語彙が広がる。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Küchen で語尾に -n を付ける規則的なパターン。前置詞inと組み合わせて „in der Küche“（台所で）の形でよく使われる。"
+    },
+    {
+      type: "noun", term: "der Stuhl", plural: "die Stühle",
+      meaning_ja: "椅子",
+      examples: [
+        { de: "Der Stuhl ist sehr bequem.", ja: "その椅子はとても座り心地がいいです。" },
+        { de: "Ich brauche einen neuen Stuhl.", ja: "私は新しい椅子が必要です。" }
+      ],
+      related: [ { term: "der Tisch", note_ja: "「テーブル、机」。Stuhl（椅子）とセットで使われる基本の家具語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Stühle で語幹の母音がウムラウト化するパターン（u→ü）。die Stadtと同じタイプのウムラウト複数形。"
+    },
+    {
+      type: "verb", term: "kommen", conjugation: "ich komme / du kommst / er-sie-es kommt",
+      meaning_ja: "来る",
+      examples: [
+        { de: "Ich komme aus Japan.", ja: "私は日本から来ました。" },
+        { de: "Kommst du morgen zur Party?", ja: "あなたは明日パーティーに来ますか？" }
+      ],
+      related: [ { term: "die Ankunft", note_ja: "名詞形「到着」。kommenと語源が同じで、分離動詞ankommen（到着する）にもつながる。" } ],
+      explanation_ja: "規則動詞。語幹 komm- に -e/-st/-t を付けるだけ。„Ich komme aus...“（〜出身です）は自己紹介で必須の表現。"
+    },
+    {
+      type: "verb", term: "machen", conjugation: "ich mache / du machst / er-sie-es macht",
+      meaning_ja: "する、作る",
+      examples: [
+        { de: "Was machst du heute?", ja: "あなたは今日何をしますか？" },
+        { de: "Ich mache das Essen.", ja: "私が食事を作ります。" }
+      ],
+      related: [ { term: "die Hausaufgabe", note_ja: "「宿題」。„Hausaufgaben machen“（宿題をする）のように、machenは幅広い動作に使える万能動詞。" } ],
+      explanation_ja: "規則動詞。「する」「作る」など非常に幅広い意味を持つ万能動詞。„Was machst du?“（何してるの？）は日常会話で最頻出の質問の一つ。"
+    },
+    {
+      type: "verb", term: "lesen", conjugation: "ich lese / du liest / er-sie-es liest",
+      meaning_ja: "読む",
+      examples: [
+        { de: "Ich lese jeden Abend ein Buch.", ja: "私は毎晩本を読みます。" },
+        { de: "Liest du gern Zeitung?", ja: "あなたは新聞を読むのが好きですか？" }
+      ],
+      related: [ { term: "das Buch", note_ja: "「本」。lesen（読む）と組み合わせて使う最頻出の名詞。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→ie）。du/erの形で lese→liest/liest に変化し、duとerが同じ形になる点に注意（essenのisstと似たパターン）。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "hell",
+      meaning_ja: "明るい",
+      examples: [
+        { de: "Das Zimmer ist sehr hell.", ja: "その部屋はとても明るいです。" },
+        { de: "Sie hat helle Haare.", ja: "彼女は明るい髪の色をしています。" }
+      ],
+      related: [ { term: "dunkel", note_ja: "「暗い」。hellの対義語。" } ],
+      explanation_ja: "部屋や色の明るさを表す基本形容詞。„Es wird hell.“（明るくなる）のように非人称esとも組み合わせて使われる。"
+    },
+    {
+      term: "dunkel",
+      meaning_ja: "暗い",
+      examples: [
+        { de: "Im Winter wird es früh dunkel.", ja: "冬は早く暗くなります。" },
+        { de: "Das Zimmer ist zu dunkel.", ja: "その部屋は暗すぎます。" }
+      ],
+      related: [ { term: "hell", note_ja: "「明るい」。dunkelの対義語。" } ],
+      explanation_ja: "hellの対義語で、明るさを表す基本の対義語ペア。天気や部屋の状態を表すときによく使われる。"
+    },
+    {
+      term: "bequem",
+      meaning_ja: "快適な、座り心地の良い",
+      examples: [
+        { de: "Der Stuhl ist sehr bequem.", ja: "その椅子はとても座り心地がいいです。" },
+        { de: "Diese Schuhe sind bequem.", ja: "この靴は履き心地がいいです。" }
+      ],
+      related: [ { term: "unbequem", note_ja: "「不快な、座り心地が悪い」。un-を付けると反対の意味になるパターン。" } ],
+      explanation_ja: "家具や服・靴の「快適さ」を表す頻出形容詞。„bequem sitzen“（快適に座る）のように副詞的にも使われる。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Ich hätte gern...",
+      meaning_ja: "〜が欲しいのですが（丁寧な注文・依頼表現）",
+      examples: [
+        { de: "Ich hätte gern einen Kaffee, bitte.", ja: "コーヒーを一つお願いします。" },
+        { de: "Ich hätte gern das Buch dort.", ja: "あそこの本が欲しいのですが。" }
+      ],
+      explanation_ja: "お店やレストランで注文するときの丁寧な定型表現。„Ich will...“より柔らかく、控えめなニュアンスを持つ言い方。"
+    },
+    {
+      phrase: "Alles klar!",
+      meaning_ja: "了解！、わかった！",
+      examples: [
+        { de: "Wir treffen uns um acht. – Alles klar!", ja: "8時に会いましょう。—了解！" },
+        { de: "Alles klar, bis morgen!", ja: "了解、また明日！" }
+      ],
+      explanation_ja: "「すべて明確」が直訳の、了解・同意を示すカジュアルな表現。„Verstanden!“と似た使い方で日常会話に頻出。"
+    },
+    {
+      phrase: "Herzlich willkommen!",
+      meaning_ja: "ようこそ！",
+      examples: [
+        { de: "Herzlich willkommen in Deutschland!", ja: "ドイツへようこそ！" },
+        { de: "Herzlich willkommen bei uns!", ja: "私たちのところへようこそ！" }
+      ],
+      explanation_ja: "人を歓迎するときの定型表現。お店の入口やイベントの挨拶でもよく使われる、フォーマル・カジュアル問わず使える便利な表現。"
+    }
+  ],
+  grammarTip: {
+    title: "話法の助動詞（können, müssen, wollen）— 動詞が2つに分かれる文",
+    body_ja: "ドイツ語では können（〜できる）、müssen（〜しなければならない）、wollen（〜したい）などの話法の助動詞を使うと、動詞が2つの部分に分かれます。人称変化した助動詞は文の2番目に置かれ、本来の動詞は不定形（辞書の形）のまま文末に置かれます。例えば„Ich kann gut Deutsch sprechen.“（私は上手にドイツ語を話せます）では、kannが2番目、sprechenが文末です。分離動詞の前綴りが文末に来るルールと同じ「動詞は最後」という感覚で捉えると理解しやすくなります。"
+  },
+  todayQuiz: [
+    { question: "「Zimmer（部屋）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Zimmerは中性名詞なのでdas Zimmerが正解。複数形もdie Zimmerで変化しない。" },
+    { question: "Ergänze: „Ich ___ aus Japan.\"（kommenを正しい形に）", choices: ["komme", "kommst", "kommt", "kommen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。kommeが正解。" },
+    { question: "Ergänze: „Was ___ du heute?\"（machenを正しい形に）", choices: ["mache", "machst", "macht", "machen"], answerIndex: 1, explanation: "主語がdu（2人称単数）なので語尾は-st。machstが正解。" },
+    { question: "Ergänze: „Er ___ jeden Abend ein Buch.\"（lesenを正しい形に）", choices: ["lese", "liest", "lesst", "lesen"], answerIndex: 1, explanation: "lesenは不規則動詞（e→ie）。3人称単数（er）の形はliest。" },
+    { question: "「hell」の反対の意味を持つ形容詞は？", choices: ["dunkel", "bequem", "klein", "laut"], answerIndex: 0, explanation: "hell（明るい）の反対はdunkel（暗い）。" },
+    { question: "「der Stuhl」の複数形は？", choices: ["die Stühle", "die Stuhle", "die Stühlen", "der Stühle"], answerIndex: 0, explanation: "複数形はdie Stühleで、語幹の母音がウムラウト化するパターン（u→ü）。" },
+    { question: "お店で丁寧に注文するときに使う表現はどれ？", choices: ["Ich hätte gern...", "Alles klar!", "Herzlich willkommen!", "Kein Problem."], answerIndex: 0, explanation: "„Ich hätte gern...“は丁寧な注文・依頼を表す定型表現。" },
+    { question: "話法の助動詞を使う文で、本来の動詞（不定形）はどこに置かれる？", choices: ["文頭", "2番目", "文末", "助動詞の直後"], answerIndex: 2, explanation: "話法の助動詞が2番目に置かれ、本来の動詞は不定形のまま文末に置かれる。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-14)
+// ── END_DATA ──  (last sync: 2026-09-15)
 
 function esc(s){
   if(s===undefined||s===null) return '';
