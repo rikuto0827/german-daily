@@ -820,8 +820,151 @@ const GERMAN_REPORTS = [
     { question: "話法の助動詞を使う文で、本来の動詞（不定形）はどこに置かれる？", choices: ["文頭", "2番目", "文末", "助動詞の直後"], answerIndex: 2, explanation: "話法の助動詞が2番目に置かれ、本来の動詞は不定形のまま文末に置かれる。" }
   ]
 }
+,
+{
+  date: "2026-09-16",
+  dateLabel: "2026年9月16日（水）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "die Mutter", plural: "die Mütter",
+      meaning_ja: "母、お母さん",
+      examples: [
+        { de: "Meine Mutter ist Lehrerin.", ja: "私の母は教師です。" },
+        { de: "Meine Mutter kocht sehr gut.", ja: "私の母はとても料理が上手です。" }
+      ],
+      related: [ { term: "der Vater", note_ja: "「父」。Mutterと対になる語。両親を指すときは常に複数形の die Eltern を使う。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Mütter で語幹の母音がウムラウト化するパターン（u→ü）。所有冠詞と組み合わせて „meine Mutter“（私の母）のように使うのが基本形。"
+    },
+    {
+      type: "noun", term: "das Kind", plural: "die Kinder",
+      meaning_ja: "子供",
+      examples: [
+        { de: "Das Kind spielt im Garten.", ja: "その子供は庭で遊んでいます。" },
+        { de: "Wir haben zwei Kinder.", ja: "私たちには子供が2人います。" }
+      ],
+      related: [ { term: "die Kindheit", note_ja: "「子供時代」。Kindと語源が同じ名詞。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Kinder で語尾に -er を付けるパターン（ウムラウトなし）。数を数えるときも „zwei Kinder“ のように同じ複数形を使う点に注意。"
+    },
+    {
+      type: "noun", term: "die Woche", plural: "die Wochen",
+      meaning_ja: "週",
+      examples: [
+        { de: "Ich habe diese Woche viel Arbeit.", ja: "私は今週たくさんの仕事があります。" },
+        { de: "Nächste Woche fahre ich nach Berlin.", ja: "来週私はベルリンへ行きます。" }
+      ],
+      related: [ { term: "das Wochenende", note_ja: "「週末」。Wocheを含む複合語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Wochen で語尾に -n を付ける規則的なパターン。„diese Woche“（今週）、„nächste Woche“（来週）など時間表現に必須の語。"
+    },
+    {
+      type: "verb", term: "sein", conjugation: "ich bin / du bist / er-sie-es ist",
+      meaning_ja: "〜である、〜だ",
+      examples: [
+        { de: "Ich bin müde.", ja: "私は疲れています。" },
+        { de: "Er ist Lehrer.", ja: "彼は教師です。" }
+      ],
+      related: [ { term: "werden", note_ja: "「〜になる」。seinは今の状態、werdenは変化した後の状態を表す。" } ],
+      explanation_ja: "完全不規則動詞で、A2で最も重要な動詞の一つ。ich/du/er-sie-esの形がbin/bist/istと語形そのものが変わるため、活用は暗記するしかない。状態・性質・職業などを表すときに使う基本動詞。"
+    },
+    {
+      type: "verb", term: "haben", conjugation: "ich habe / du hast / er-sie-es hat",
+      meaning_ja: "持っている",
+      examples: [
+        { de: "Ich habe einen Bruder.", ja: "私には兄弟が1人います。" },
+        { de: "Hast du Zeit?", ja: "あなたは時間がありますか？" }
+      ],
+      related: [ { term: "besitzen", note_ja: "「所有する」。habenよりフォーマルな響きを持つ類義語。" } ],
+      explanation_ja: "不規則動詞。duとerの形で語幹が変化し hast/hat になる。所有だけでなく „Hunger haben“（お腹が空いている）のように身体感覚を表す表現にも使われる、seinと並ぶ最重要動詞。"
+    },
+    {
+      type: "verb", term: "spielen", conjugation: "ich spiele / du spielst / er-sie-es spielt",
+      meaning_ja: "遊ぶ、（スポーツ・楽器を）する",
+      examples: [
+        { de: "Die Kinder spielen im Park.", ja: "子供たちは公園で遊んでいます。" },
+        { de: "Ich spiele gern Fußball.", ja: "私はサッカーをするのが好きです。" }
+      ],
+      related: [ { term: "das Spiel", note_ja: "名詞形「遊び、試合」。spielenと語源が同じ。" } ],
+      explanation_ja: "規則動詞。語幹 spiel- に -e/-st/-t を付けるだけ。スポーツをするときは „Fußball spielen“、楽器を弾くときは „Klavier spielen“ のように目的語を伴って使う。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "gut",
+      meaning_ja: "良い、上手な",
+      examples: [
+        { de: "Das Essen ist sehr gut.", ja: "その食事はとても美味しいです。" },
+        { de: "Sie spricht gut Deutsch.", ja: "彼女は上手にドイツ語を話します。" }
+      ],
+      related: [ { term: "schlecht", note_ja: "「悪い」。gutの対義語。" } ],
+      explanation_ja: "最頻出の形容詞の一つ。比較級 besser、最上級 am besten と大きく不規則変化する点に注意（英語のgood-better-bestと似た変化）。"
+    },
+    {
+      term: "schnell",
+      meaning_ja: "速い、早く",
+      examples: [
+        { de: "Das Auto ist sehr schnell.", ja: "その車はとても速いです。" },
+        { de: "Kannst du schnell kommen?", ja: "早く来てもらえますか？" }
+      ],
+      related: [ { term: "langsam", note_ja: "「遅い、ゆっくり」。schnellの対義語。" } ],
+      explanation_ja: "形容詞にも副詞にもなる基本語。„schnell fahren“（速く運転する）のように動詞を修飾する使い方も頻出。"
+    },
+    {
+      term: "jung",
+      meaning_ja: "若い",
+      examples: [
+        { de: "Meine Schwester ist noch jung.", ja: "私の妹はまだ若いです。" },
+        { de: "Er sieht sehr jung aus.", ja: "彼はとても若く見えます。" }
+      ],
+      related: [ { term: "alt", note_ja: "「年をとった、古い」。jungの対義語。" } ],
+      explanation_ja: "年齢を表す基本形容詞。名詞の前に置くと語尾変化する（ein junger Mann）。„aussehen“（〜に見える）と組み合わせて外見の若さを表現できる。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Guten Morgen!",
+      meaning_ja: "おはようございます！",
+      examples: [
+        { de: "Guten Morgen! Hast du gut geschlafen?", ja: "おはよう！よく眠れた？" },
+        { de: "Guten Morgen, Frau Schmidt!", ja: "おはようございます、シュミットさん！" }
+      ],
+      explanation_ja: "朝のあいさつの定番。昼は „Guten Tag!“、夜は „Guten Abend!“ を使い分ける、時間帯に応じたあいさつパターンの一つ。"
+    },
+    {
+      phrase: "Freut mich!",
+      meaning_ja: "はじめまして！（お会いできて嬉しいです）",
+      examples: [
+        { de: "Ich heiße Tom. – Freut mich!", ja: "トムといいます。—はじめまして！" },
+        { de: "Freut mich, Sie kennenzulernen.", ja: "お会いできて嬉しいです。" }
+      ],
+      explanation_ja: "初対面の挨拶で使う定型句。正式には „Es freut mich, Sie kennenzulernen.“ の短縮形で、カジュアルな場面では „Freut mich!“ だけでもよく使われる。"
+    },
+    {
+      phrase: "Ich verstehe nicht.",
+      meaning_ja: "わかりません（理解できません）",
+      examples: [
+        { de: "Entschuldigung, ich verstehe nicht.", ja: "すみません、わかりません。" },
+        { de: "Kannst du das noch einmal sagen? Ich verstehe nicht.", ja: "もう一度言ってもらえますか？わかりません。" }
+      ],
+      explanation_ja: "会話でわからないときに使う基本表現。動詞 verstehen（理解する）の否定形で、„Ich habe das nicht verstanden.“ という言い方もよく使われる。"
+    }
+  ],
+  grammarTip: {
+    title: "nicht と kein — ドイツ語の否定の2つの形",
+    body_ja: "ドイツ語の否定には主に2種類あります。不定冠詞（ein/eine）が付いた名詞や無冠詞の名詞を否定するときは kein を使い、名詞そのものを打ち消します（例: „Ich habe kein Auto.“＝私は車を持っていません）。それ以外、つまり動詞・形容詞・定冠詞付きの名詞などを否定するときは nicht を使います（例: „Ich verstehe nicht.“、„Das Auto ist nicht neu.“）。判断のコツは「ein/eineを打ち消すならkein、それ以外はnicht」と覚えること。keinはein系と同じように性・格に応じて語尾変化する（keinen, keine, keinなど）点もA2の重要ポイントです。"
+  },
+  todayQuiz: [
+    { question: "「Mutter（母）」の複数形は？", choices: ["die Mütter", "die Muttern", "die Mutteren", "der Mütter"], answerIndex: 0, explanation: "複数形は die Mütter で、語幹の母音がウムラウト化するパターン（u→ü）。" },
+    { question: "Ergänze: „Ich ___ müde.\"（seinを正しい形に）", choices: ["bin", "bist", "ist", "sind"], answerIndex: 0, explanation: "主語がich（1人称単数）なのでbinが正解。seinは完全に不規則な変化をする。" },
+    { question: "Ergänze: „___ du Zeit?\"（habenを正しい形に、疑問文）", choices: ["Habe", "Hast", "Hat", "Haben"], answerIndex: 1, explanation: "主語がdu（2人称単数）なのでHastが正解。疑問文では動詞が文頭に来る。" },
+    { question: "「jung」の反対の意味を持つ形容詞は？", choices: ["alt", "schnell", "gut", "klein"], answerIndex: 0, explanation: "jung（若い）の反対はalt（年をとった）。" },
+    { question: "否定文「Ich habe ___ Auto.」（私は車を持っていません）に入る正しい語は？", choices: ["nicht", "kein", "keine", "keinen"], answerIndex: 1, explanation: "das Autoは中性名詞で無冠詞名詞の否定にはkeinを使う。中性のNominativ/Akkusativではkeinに語尾がつかない。" },
+    { question: "「Guten Morgen!」を使う時間帯は？", choices: ["朝", "昼", "晩", "深夜"], answerIndex: 0, explanation: "Guten Morgen!は朝のあいさつ。昼はGuten Tag!、晩はGuten Abend!を使う。" },
+    { question: "Ergänze: „Die Kinder ___ im Park.\"（spielenを正しい形に）", choices: ["spiele", "spielst", "spielt", "spielen"], answerIndex: 3, explanation: "主語die Kinderは複数（sie/they相当）なので語尾は-en。spielenが正解。" },
+    { question: "「Ich verstehe nicht.」の意味は？", choices: ["わかりません", "おはよう", "はじめまして", "ありがとう"], answerIndex: 0, explanation: "「Ich verstehe nicht.」は「わかりません」という意味の基本表現。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-15)
+// ── END_DATA ──  (last sync: 2026-09-16)
 
 function esc(s){
   if(s===undefined||s===null) return '';
