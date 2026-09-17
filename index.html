@@ -963,8 +963,141 @@ const GERMAN_REPORTS = [
     { question: "「Ich verstehe nicht.」の意味は？", choices: ["わかりません", "おはよう", "はじめまして", "ありがとう"], answerIndex: 0, explanation: "「Ich verstehe nicht.」は「わかりません」という意味の基本表現。" }
   ]
 }
+,
+{
+  date: "2026-09-17",
+  dateLabel: "2026年9月17日（木）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Bruder", plural: "die Brüder",
+      meaning_ja: "兄、弟（男のきょうだい）",
+      examples: [
+        { de: "Mein Bruder wohnt in Hamburg.", ja: "私の兄（弟）はハンブルクに住んでいます。" },
+        { de: "Ich habe zwei Brüder.", ja: "私には兄弟が2人います。" }
+      ],
+      related: [ { term: "die Schwester", note_ja: "「姉、妹」。Bruderと対になる語で、複数形は die Schwestern。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Brüder で語幹の母音がウムラウト化するパターン（u→ü）。die Mutter→die Mütterと同じタイプ。ドイツ語のBruderは日本語のように「兄」「弟」を区別せず、年齢を示したい場合は „älterer/jüngerer Bruder“ のように形容詞を加える。"
+    },
+    {
+      type: "noun", term: "die Uhr", plural: "die Uhren",
+      meaning_ja: "時計",
+      examples: [
+        { de: "Die Uhr hängt an der Wand.", ja: "その時計は壁にかかっています。" },
+        { de: "Ich brauche eine neue Uhr.", ja: "私は新しい時計が必要です。" }
+      ],
+      related: [ { term: "die Zeit", note_ja: "「時間」。Uhr（時計・時刻）とZeit（時間そのもの）は意味が異なるので区別して覚える。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Uhren で語尾に -en を付ける規則的なパターン。時刻を言うときにも „Es ist drei Uhr.“（3時です）のように使う、時間表現に欠かせない語。"
+    },
+    {
+      type: "noun", term: "der Garten", plural: "die Gärten",
+      meaning_ja: "庭",
+      examples: [
+        { de: "Die Kinder spielen im Garten.", ja: "子供たちは庭で遊んでいます。" },
+        { de: "Unser Garten ist sehr groß.", ja: "私たちの庭はとても大きいです。" }
+      ],
+      related: [ { term: "der Park", note_ja: "「公園」。Gartenは個人の家の庭、Parkは公共の公園を指す。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Gärten で語幹の母音がウムラウト化するパターン（a→ä）。der Stadt→die Städteと同じタイプ。前置詞inと組み合わせて „im Garten“（庭で）の形でよく使われる。"
+    },
+    {
+      type: "verb", term: "heißen", conjugation: "ich heiße / du heißt / er-sie-es heißt",
+      meaning_ja: "〜という名前である",
+      examples: [
+        { de: "Ich heiße Lena.", ja: "私はレーナといいます。" },
+        { de: "Wie heißt dieses Gericht?", ja: "この料理は何という名前ですか？" }
+      ],
+      related: [ { term: "der Name", note_ja: "名詞形「名前」。heißenと組み合わせて „Mein Name ist...“（私の名前は〜です）という言い方もできる。" } ],
+      explanation_ja: "規則動詞だが、語幹がßで終わるためduとerの形がどちらも heißt になる（essenのisstと同じ現象）。„Wie heißt du?“ という形ですでに登場した基本動詞。"
+    },
+    {
+      type: "verb", term: "arbeiten", conjugation: "ich arbeite / du arbeitest / er-sie-es arbeitet",
+      meaning_ja: "働く",
+      examples: [
+        { de: "Ich arbeite bei einer Firma in Berlin.", ja: "私はベルリンの会社で働いています。" },
+        { de: "Arbeitest du heute?", ja: "あなたは今日働きますか？" }
+      ],
+      related: [ { term: "die Arbeit", note_ja: "名詞形「仕事」。arbeitenと語源が同じ。" } ],
+      explanation_ja: "規則動詞だが、語幹が-tで終わるため、du/erの語尾の前に発音しやすくするための -e- が入る（arbeite-st→arbeitest、arbeite-t→arbeitet）。語幹がt/dで終わる動詞（例: arbeiten, finden）に共通するパターン。"
+    },
+    {
+      type: "verb", term: "nehmen", conjugation: "ich nehme / du nimmst / er-sie-es nimmt",
+      meaning_ja: "取る、（乗り物に）乗る",
+      examples: [
+        { de: "Ich nehme den Bus zur Arbeit.", ja: "私はバスで仕事に行きます（バスを取ります）。" },
+        { de: "Nimmst du Zucker in den Kaffee?", ja: "コーヒーに砂糖を入れますか？" }
+      ],
+      related: [ { term: "geben", note_ja: "「与える」。nehmen（取る）と対になる動詞。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i、さらに子音hが脱落してmが重なる）。du/erの形で nehme→nimmst/nimmt と大きく変化するため、A2でよく間違えやすい動詞の一つ。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "billig",
+      meaning_ja: "安い",
+      examples: [
+        { de: "Dieses Restaurant ist billig.", ja: "このレストランは安いです。" },
+        { de: "Ich suche billige Schuhe.", ja: "私は安い靴を探しています。" }
+      ],
+      related: [ { term: "teuer", note_ja: "「高い」。billigの対義語。" } ],
+      explanation_ja: "値段の安さを表す基本形容詞。teuer⇔billigは買い物での必須の対義語ペアとしてセットで覚える。"
+    },
+    {
+      term: "langsam",
+      meaning_ja: "遅い、ゆっくりの",
+      examples: [
+        { de: "Der Zug fährt heute langsam.", ja: "今日は電車がゆっくり走っています。" },
+        { de: "Sprich bitte langsam.", ja: "どうかゆっくり話してください。" }
+      ],
+      related: [ { term: "schnell", note_ja: "「速い」。langsamの対義語。" } ],
+      explanation_ja: "速度の遅さを表す基本形容詞。„Sprich langsam!“（ゆっくり話して！）は会話でわからないときに使える便利な表現。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Guten Abend!",
+      meaning_ja: "こんばんは！",
+      examples: [
+        { de: "Guten Abend! Wie war Ihr Tag?", ja: "こんばんは！今日一日どうでしたか？" },
+        { de: "Guten Abend, herzlich willkommen!", ja: "こんばんは、ようこそ！" }
+      ],
+      explanation_ja: "夕方から夜にかけて使うあいさつ。朝はGuten Morgen!、昼はGuten Tag!、夜はGuten Abend!と時間帯によって使い分ける。"
+    },
+    {
+      phrase: "Gute Nacht!",
+      meaning_ja: "おやすみなさい！",
+      examples: [
+        { de: "Ich bin müde. Gute Nacht!", ja: "眠いです。おやすみなさい！" },
+        { de: "Gute Nacht, schlaf gut!", ja: "おやすみ、よく眠ってね！" }
+      ],
+      explanation_ja: "寝る前にかける別れのあいさつ。Guten Abend!が「出会ったとき」のあいさつなのに対し、Gute Nacht!は「別れるとき」専用の表現である点に注意。"
+    },
+    {
+      phrase: "Viel Glück!",
+      meaning_ja: "頑張って！（幸運を祈ります）",
+      examples: [
+        { de: "Morgen habe ich eine Prüfung. – Viel Glück!", ja: "明日試験があります。—頑張って！" },
+        { de: "Viel Glück bei der Arbeit!", ja: "お仕事頑張ってください！" }
+      ],
+      explanation_ja: "試験や大事な出来事の前に相手を励ますときの定型句。直訳は「たくさんの幸運を」。似た表現に „Viel Erfolg!“（成功を祈ります）もある。"
+    }
+  ],
+  grammarTip: {
+    title: "3格（Dativ）とは？ mir / dir / ihm / ihr の基本",
+    body_ja: "ドイツ語には人称代名詞にも格変化があり、「〜に」という間接目的語を表すときはDativ（3格）の形を使います。ich→mir、du→dir、er→ihm、sie→ihrのように変化し、„Kannst du mir helfen?“（私を手伝ってくれますか）のように使います。helfen・gebenなど一部の動詞は目的語がAkkusativ（4格）ではなくDativを取るため、動詞ごとにどちらの格を取るか覚える必要があります。定冠詞もder→dem、die→der、das→demと変化するので、まずは人称代名詞のDativ形から慣れていくのが効率的です。"
+  },
+  todayQuiz: [
+    { question: "「Bruder（兄・弟）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Bruderは男性名詞なのでder Bruderが正解。複数形はdie Brüder。" },
+    { question: "Ergänze: „Ich ___ Lena.\"（heißenを正しい形に）", choices: ["heiße", "heißt", "heißen", "heißest"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。heißeが正解。" },
+    { question: "Ergänze: „Du ___ heute?\"（arbeitenを正しい形に、疑問文）", choices: ["arbeite", "arbeitest", "arbeitet", "arbeiten"], answerIndex: 1, explanation: "語幹がtで終わるため、duの形には発音しやすくする-e-が入りarbeitestになる。" },
+    { question: "Ergänze: „Er ___ den Bus.\"（nehmenを正しい形に）", choices: ["nehme", "nimmst", "nimmt", "nehmen"], answerIndex: 2, explanation: "nehmenは不規則動詞（e→i）。3人称単数（er）の形はnimmt。" },
+    { question: "「billig」の反対の意味を持つ形容詞は？", choices: ["teuer", "langsam", "schnell", "klein"], answerIndex: 0, explanation: "billig（安い）の反対はteuer（高い）。" },
+    { question: "「Garten（庭）」の複数形は？", choices: ["die Gärten", "die Garten", "die Gärtens", "der Gärten"], answerIndex: 0, explanation: "複数形はdie Gärtenで、語幹の母音がウムラウト化するパターン（a→ä）。" },
+    { question: "Dativ（3格）で人称代名詞ichはどう変わる？", choices: ["mich", "mir", "mein", "ich"], answerIndex: 1, explanation: "ichのDativ形はmir。„Kannst du mir helfen?“のように使う。" },
+    { question: "寝る前にかけるあいさつはどれ？", choices: ["Gute Nacht!", "Guten Abend!", "Viel Glück!", "Guten Morgen!"], answerIndex: 0, explanation: "Gute Nacht!は寝る前・別れるときにかけるあいさつ。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-16)
+// ── END_DATA ──  (last sync: 2026-09-17)
 
 function esc(s){
   if(s===undefined||s===null) return '';
