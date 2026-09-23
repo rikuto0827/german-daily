@@ -1496,8 +1496,151 @@ const GERMAN_REPORTS = [
     { question: "「der Zug」の複数形は？", choices: ["die Züge", "die Zuge", "die Zügen", "der Züge"], answerIndex: 0, explanation: "複数形はdie Zügeで、語幹の母音がウムラウト化するパターン（u→ü）。" }
   ]
 }
+,
+{
+  date: "2026-09-23",
+  dateLabel: "2026年9月23日（水）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Mann", plural: "die Männer",
+      meaning_ja: "男性、夫",
+      examples: [
+        { de: "Der Mann dort ist mein Vater.", ja: "あそこの男性は私の父です。" },
+        { de: "Sie hat einen netten Mann.", ja: "彼女は優しい夫がいます。" }
+      ],
+      related: [ { term: "die Frau", note_ja: "「女性、妻」。Mannと対になる基本語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Männer で語幹の母音がウムラウト化するパターン（a→ä）。「男性」だけでなく「夫」の意味でもよく使われ、文脈で判断する。"
+    },
+    {
+      type: "noun", term: "die Frau", plural: "die Frauen",
+      meaning_ja: "女性、妻",
+      examples: [
+        { de: "Die Frau neben mir heißt Anna.", ja: "私の隣の女性はアンナといいます。" },
+        { de: "Meine Frau arbeitet in Berlin.", ja: "私の妻はベルリンで働いています。" }
+      ],
+      related: [ { term: "der Mann", note_ja: "「男性、夫」。Frauと対になる基本語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Frauen で語尾に -en を付ける規則的なパターン。既婚・未婚に関わらず成人女性を指す一般的な語。"
+    },
+    {
+      type: "noun", term: "der Vater", plural: "die Väter",
+      meaning_ja: "父",
+      examples: [
+        { de: "Mein Vater kocht sehr gut.", ja: "私の父はとても料理が上手です。" },
+        { de: "Ist das dein Vater?", ja: "これはあなたのお父さんですか？" }
+      ],
+      related: [ { term: "die Mutter", note_ja: "「母」。Vaterと対になる語で、両親をまとめて指すときは die Eltern を使う。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Väter で die Mutter→die Mütter と同じくウムラウト化するパターン（a→ä）。所有冠詞 mein/dein などと組み合わせて „mein Vater“（私の父）のように使うのが基本。"
+    },
+    {
+      type: "verb", term: "können", conjugation: "ich kann / du kannst / er-sie-es kann",
+      meaning_ja: "〜できる",
+      examples: [
+        { de: "Ich kann gut schwimmen.", ja: "私は上手に泳げます。" },
+        { de: "Kannst du mir helfen?", ja: "私を手伝ってもらえますか？" }
+      ],
+      related: [ { term: "das Können", note_ja: "名詞形「能力」。könnenを大文字にした名詞用法。" } ],
+      explanation_ja: "話法の助動詞（不規則変化）。ich・er/sie/esの形はどちらも kann で語尾がつかない点に注意。„können + 動詞の不定形（文末）“の形で使う。"
+    },
+    {
+      type: "verb", term: "kennen", conjugation: "ich kenne / du kennst / er-sie-es kennt",
+      meaning_ja: "（人・場所を）知っている",
+      examples: [
+        { de: "Ich kenne diese Stadt gut.", ja: "私はこの町をよく知っています。" },
+        { de: "Kennst du meinen Vater?", ja: "あなたは私の父を知っていますか？" }
+      ],
+      related: [ { term: "wissen", note_ja: "「（事実を）知っている」。kennenは人や場所など対象を直接知っている場合に、wissenは情報・事実を知っている場合に使う。" } ],
+      explanation_ja: "規則動詞。語幹 kenn- に -e/-st/-t を付ける。知っている対象が人・場所・物のときはkennenを、事実・情報のときはwissenを使う使い分けがA2の重要ポイント。"
+    },
+    {
+      type: "verb", term: "wissen", conjugation: "ich weiß / du weißt / er-sie-es weiß",
+      meaning_ja: "（事実を）知っている",
+      examples: [
+        { de: "Ich weiß die Antwort nicht.", ja: "私はその答えを知りません。" },
+        { de: "Weißt du, wie spät es ist?", ja: "今何時か知っていますか？" }
+      ],
+      related: [ { term: "kennen", note_ja: "「（人・場所を）知っている」。wissenは事実・情報について使う。" } ],
+      explanation_ja: "不規則動詞。ich・er/sie/esの形はどちらも weiß になる特殊な変化（duはweißt）。„Ich weiß nicht.“（わかりません）という形ですでに登場した基本動詞。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "stark",
+      meaning_ja: "強い",
+      examples: [
+        { de: "Er ist sehr stark.", ja: "彼はとても強いです。" },
+        { de: "Der Kaffee ist stark.", ja: "そのコーヒーは濃いです。" }
+      ],
+      related: [ { term: "schwach", note_ja: "「弱い」。starkの対義語。" } ],
+      explanation_ja: "力の強さだけでなく、味の濃さ（starker Kaffee＝濃いコーヒー）にも使える基本形容詞。"
+    },
+    {
+      term: "schwach",
+      meaning_ja: "弱い",
+      examples: [
+        { de: "Nach der Krankheit war er schwach.", ja: "病気の後、彼は弱っていました。" },
+        { de: "Das Signal ist schwach.", ja: "その信号は弱いです。" }
+      ],
+      related: [ { term: "stark", note_ja: "「強い」。schwachの対義語。" } ],
+      explanation_ja: "starkの対義語で、体力や電波・信号の弱さなど幅広く使われる基本形容詞。"
+    },
+    {
+      term: "glücklich",
+      meaning_ja: "幸せな",
+      examples: [
+        { de: "Ich bin sehr glücklich.", ja: "私はとても幸せです。" },
+        { de: "Sie hat ein glückliches Leben.", ja: "彼女は幸せな人生を送っています。" }
+      ],
+      related: [ { term: "traurig", note_ja: "「悲しい」。glücklichの対義語。" } ],
+      explanation_ja: "感情の「幸せ」を表す基本形容詞。名詞 das Glück（幸運）と語源が同じで、„Viel Glück!“（頑張って）ともつながる。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Danke schön!",
+      meaning_ja: "どうもありがとうございます",
+      examples: [
+        { de: "Danke schön für Ihre Hilfe!", ja: "お手伝いいただき、どうもありがとうございます！" },
+        { de: "Danke schön, das ist sehr nett von dir.", ja: "どうもありがとう、とても親切だね。" }
+      ],
+      explanation_ja: "„Danke.“よりも丁寧・強調した感謝の表現。schönを付けることで気持ちを強める、日常でもよく使われる言い方。"
+    },
+    {
+      phrase: "Bitte schön!",
+      meaning_ja: "どういたしまして／どうぞ",
+      examples: [
+        { de: "Danke schön! – Bitte schön!", ja: "どうもありがとう！—どういたしまして！" },
+        { de: "Hier ist Ihr Kaffee, bitte schön.", ja: "コーヒーをどうぞ。" }
+      ],
+      explanation_ja: "お礼への返答「どういたしまして」だけでなく、物を渡すときの「どうぞ」としても使える便利な表現。"
+    },
+    {
+      phrase: "Alles Gute!",
+      meaning_ja: "お元気で！、幸運を！",
+      examples: [
+        { de: "Zum Geburtstag alles Gute!", ja: "誕生日おめでとう（すべて良いことがありますように）！" },
+        { de: "Alles Gute für die Zukunft!", ja: "これからも幸せに！" }
+      ],
+      explanation_ja: "誕生日や別れ際など、相手の今後の幸運や健康を祈るときに使う万能な決まり文句。"
+    }
+  ],
+  grammarTip: {
+    title: "所有冠詞 mein / dein / sein / ihr — 「〜の」を表す言い方",
+    body_ja: "「私の」「あなたの」のように所有を表す語は所有冠詞（Possessivartikel）と呼ばれ、ich→mein、du→dein、er→sein、sie→ihr、wir→unser、ihr→euer、sie/Sie→ihr/Ihrのように変化します。これらは不定冠詞einと同じ変化パターンを取るため「ein型の語」とも呼ばれ、後ろに続く名詞の性・格に応じて語尾が変わります（例: mein Vater〈男性・Nominativ〉、meine Mutter〈女性〉、mein Kind〈中性〉）。まずは名詞の性を意識しながら、mein/dein/seinの基本形から練習するのが効率的です。"
+  },
+  todayQuiz: [
+    { question: "「Mann（男性）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Mannは男性名詞なのでder Mannが正解。複数形はdie Männer。" },
+    { question: "Ergänze: „Ich ___ gut schwimmen.\"（könnenを正しい形に）", choices: ["kann", "kannst", "könnt", "können"], answerIndex: 0, explanation: "話法の助動詞könnenはichの形で語尾がつかずkannになる。" },
+    { question: "Ergänze: „___ du meinen Vater?\"（kennenを正しい形に）", choices: ["kenne", "kennst", "kennt", "kennen"], answerIndex: 1, explanation: "主語がdu（2人称単数）なので語尾は-st。kennstが正解。" },
+    { question: "「事実・情報を知っている」という意味で使う動詞はどれ？", choices: ["kennen", "wissen", "kommen", "wohnen"], answerIndex: 1, explanation: "wissenは事実・情報について、kennenは人や場所について使う。" },
+    { question: "「stark」の反対の意味を持つ形容詞は？", choices: ["schwach", "glücklich", "traurig", "klein"], answerIndex: 0, explanation: "stark（強い）の反対はschwach（弱い）。" },
+    { question: "「Vater（父）」の複数形は？", choices: ["die Väter", "die Vaters", "die Vateren", "der Väter"], answerIndex: 0, explanation: "複数形はdie Väterで、語幹の母音がウムラウト化するパターン（a→ä）。" },
+    { question: "お礼を言われたときの返答として使えるフレーズはどれ？", choices: ["Bitte schön!", "Alles Gute!", "Guten Appetit!", "Viel Glück!"], answerIndex: 0, explanation: "„Bitte schön!“はDanke schön!への定番の返答。" },
+    { question: "所有冠詞で「彼の」を表す語はどれ？", choices: ["mein", "dein", "sein", "ihr"], answerIndex: 2, explanation: "erに対応する所有冠詞はsein。「彼女の」はihr。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-22)
+// ── END_DATA ──  (last sync: 2026-09-23)
 
 function esc(s){
   if(s===undefined||s===null) return '';
