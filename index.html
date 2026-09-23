@@ -1353,8 +1353,151 @@ const GERMAN_REPORTS = [
     { question: "「das Auto」の複数形は？", choices: ["die Autos", "die Auten", "die Autoe", "der Autos"], answerIndex: 0, explanation: "Autoは外来語らしく複数形は-sを付けてdie Autosになる。" }
   ]
 }
+,
+{
+  date: "2026-09-22",
+  dateLabel: "2026年9月22日（火）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Supermarkt", plural: "die Supermärkte",
+      meaning_ja: "スーパーマーケット",
+      examples: [
+        { de: "Ich kaufe Brot im Supermarkt.", ja: "私はスーパーでパンを買います。" },
+        { de: "Der Supermarkt ist um acht Uhr geöffnet.", ja: "そのスーパーは8時に開店します。" }
+      ],
+      related: [ { term: "das Geschäft", note_ja: "「店」全般を指すより広い語。Supermarktは食品などを扱う大型店を指す。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Supermärkte で語幹の母音がウムラウト化するパターン（a→ä）。„im Supermarkt“（前置詞in＋Dativ「〜の中で」）の形で場所を表すのが基本パターン。"
+    },
+    {
+      type: "noun", term: "das Geschenk", plural: "die Geschenke",
+      meaning_ja: "プレゼント、贈り物",
+      examples: [
+        { de: "Ich habe ein Geschenk für dich.", ja: "私はあなたへのプレゼントを持っています。" },
+        { de: "Das Geschenk ist sehr schön.", ja: "そのプレゼントはとても素敵です。" }
+      ],
+      related: [ { term: "der Geburtstag", note_ja: "「誕生日」。Geschenkは誕生日や記念日に贈る物としてセットで使われることが多い。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Geschenke で語尾に -e を付ける規則的なパターン。„ein Geschenk für jemanden“（〜へのプレゼント）のように前置詞 für＋Akkusativの形でよく使う。"
+    },
+    {
+      type: "noun", term: "der Zug", plural: "die Züge",
+      meaning_ja: "電車、列車",
+      examples: [
+        { de: "Der Zug kommt um neun Uhr.", ja: "その電車は9時に来ます。" },
+        { de: "Ich fahre mit dem Zug nach Hamburg.", ja: "私は電車でハンブルクへ行きます。" }
+      ],
+      related: [ { term: "der Bahnhof", note_ja: "「駅」。Zug（電車）に乗るための場所としてセットで覚える。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Züge で語幹の母音がウムラウト化するパターン（u→ü）。„mit dem Zug fahren“（電車で行く）は交通手段を表す最頻出パターンの一つ。"
+    },
+    {
+      type: "verb", term: "schreiben", conjugation: "ich schreibe / du schreibst / er-sie-es schreibt",
+      meaning_ja: "書く",
+      examples: [
+        { de: "Ich schreibe einen Brief an meine Mutter.", ja: "私は母に手紙を書きます。" },
+        { de: "Schreibst du eine E-Mail?", ja: "あなたはメールを書きますか？" }
+      ],
+      related: [ { term: "der Brief", note_ja: "名詞「手紙」。schreibenと組み合わせて使う最頻出の名詞。" } ],
+      explanation_ja: "規則動詞。語幹 schreib- に -e/-st/-t を付けるだけ。„an＋4格（Akkusativ）“で「〜宛てに」という相手を示すことが多い。"
+    },
+    {
+      type: "verb", term: "finden", conjugation: "ich finde / du findest / er-sie-es findet",
+      meaning_ja: "見つける、〜だと思う",
+      examples: [
+        { de: "Ich finde meinen Schlüssel nicht.", ja: "私は鍵が見つかりません。" },
+        { de: "Wie findest du das Buch?", ja: "あなたはその本をどう思いますか？" }
+      ],
+      related: [ { term: "suchen", note_ja: "「探す」。finden（見つける）は探した結果を表す動詞で、suchenとセットで使われることが多い。" } ],
+      explanation_ja: "規則動詞だが、語幹が -d で終わるため、du/erの語尾の前に発音しやすくするための余分な -e- が入る（findest, findet）。「〜を見つける」だけでなく「〜だと思う」という意見を表す意味でも非常によく使われる。"
+    },
+    {
+      type: "verb", term: "geben", conjugation: "ich gebe / du gibst / er-sie-es gibt",
+      meaning_ja: "与える、あげる",
+      examples: [
+        { de: "Ich gebe dir mein Buch.", ja: "私はあなたに私の本をあげます。" },
+        { de: "Gibst du mir bitte das Salz?", ja: "塩を取ってもらえますか？" }
+      ],
+      related: [ { term: "nehmen", note_ja: "「取る」。geben（与える）と対になる動詞。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形で gebe→gibst/gibt に変化する。「geben＋3格（人）＋4格（物）」の語順（〜に〜をあげる）がA2の重要な文型。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "leicht",
+      meaning_ja: "軽い、簡単な",
+      examples: [
+        { de: "Die Tasche ist sehr leicht.", ja: "そのバッグはとても軽いです。" },
+        { de: "Diese Übung ist leicht.", ja: "この練習問題は簡単です。" }
+      ],
+      related: [ { term: "schwer", note_ja: "「重い、難しい」。leichtの対義語。" } ],
+      explanation_ja: "「軽い」と「簡単な」の両方の意味を持つ語。文脈によって物理的な重さか難易度かを判断する。"
+    },
+    {
+      term: "schwer",
+      meaning_ja: "重い、難しい",
+      examples: [
+        { de: "Der Koffer ist sehr schwer.", ja: "そのスーツケースはとても重いです。" },
+        { de: "Die Prüfung war schwer.", ja: "その試験は難しかったです。" }
+      ],
+      related: [ { term: "leicht", note_ja: "「軽い、簡単な」。schwerの対義語。" } ],
+      explanation_ja: "leichtと同様に「重さ」と「難易度」の二つの意味を持つ基本形容詞。"
+    },
+    {
+      term: "freundlich",
+      meaning_ja: "親切な、フレンドリーな",
+      examples: [
+        { de: "Die Verkäuferin ist sehr freundlich.", ja: "その店員はとても親切です。" },
+        { de: "Er ist immer freundlich zu allen.", ja: "彼はいつも皆に親切です。" }
+      ],
+      related: [ { term: "unfreundlich", note_ja: "「不親切な」。un-を付けると反対の意味になるパターン。" } ],
+      explanation_ja: "人の性格を表す基本形容詞。„freundlich zu jemandem“（〜に対して親切）のように前置詞zu＋Dativと組み合わせることが多い。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Auf Wiedersehen!",
+      meaning_ja: "さようなら（フォーマル）",
+      examples: [
+        { de: "Auf Wiedersehen, bis morgen!", ja: "さようなら、また明日！" },
+        { de: "Vielen Dank und auf Wiedersehen!", ja: "どうもありがとうございました、さようなら。" }
+      ],
+      explanation_ja: "フォーマルな別れの挨拶。店員と客など、あまり親しくない相手との別れ際に使う。親しい相手には„Tschüss!“がよく使われる。"
+    },
+    {
+      phrase: "Ich weiß nicht.",
+      meaning_ja: "わかりません、知りません",
+      examples: [
+        { de: "Wo ist der Bahnhof? – Ich weiß nicht, tut mir leid.", ja: "駅はどこですか？—わかりません、すみません。" },
+        { de: "Ich weiß nicht, wie spät es ist.", ja: "今何時か私にはわかりません。" }
+      ],
+      explanation_ja: "„wissen“（知っている）の否定形。知識・情報を知らないときに使い、„Ich verstehe nicht.“（理解できない）とは区別する。"
+    },
+    {
+      phrase: "Herzlichen Glückwunsch!",
+      meaning_ja: "おめでとう！",
+      examples: [
+        { de: "Herzlichen Glückwunsch zum Geburtstag!", ja: "お誕生日おめでとう！" },
+        { de: "Herzlichen Glückwunsch zur bestandenen Prüfung!", ja: "試験合格おめでとう！" }
+      ],
+      explanation_ja: "お祝いの言葉。„zum/zur ...“（〜に対して）と組み合わせて何を祝うかを示すのが基本パターン。"
+    }
+  ],
+  grammarTip: {
+    title: "前置詞が格を選ぶ？ Wechselpräpositionen（3・4格を取る前置詞）",
+    body_ja: "in, auf, an, über, unter, vor, hinter, neben, zwischen などの前置詞は、意味によってAkkusativ（4格）とDativ（3格）を使い分けます。「どこへ？（wohin?）」という移動・方向を表すときはAkkusativ、「どこに？（wo?）」という場所・位置を表すときはDativを使います。例えば „Ich lege das Buch auf den Tisch.“（本をテーブルの上に置く＝移動＝Akkusativ）に対して、„Das Buch liegt auf dem Tisch.“（本はテーブルの上にある＝位置＝Dativ）のように変わります。legen（置く）／liegen（ある）のような動詞のペアと合わせて覚えると理解しやすくなります。"
+  },
+  todayQuiz: [
+    { question: "「Supermarkt（スーパー）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Supermarktは男性名詞なのでder Supermarktが正解。複数形はdie Supermärkte。" },
+    { question: "Ergänze: „Ich ___ einen Brief an meine Mutter.\"（schreibenを正しい形に）", choices: ["schreibe", "schreibst", "schreibt", "schreiben"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。schreibeが正解。" },
+    { question: "Ergänze: „Er ___ mir bitte das Salz.\"（gebenを正しい形に）", choices: ["gebe", "gibst", "gibt", "geben"], answerIndex: 2, explanation: "gebenは不規則動詞（e→i）。3人称単数（er）の形はgibt。" },
+    { question: "Ergänze: „Du ___ meinen Schlüssel nicht.\"（findenを正しい形に）", choices: ["finde", "findest", "findet", "finden"], answerIndex: 1, explanation: "語幹が-dで終わるため、duの語尾の前に-e-が入りfindestになる。" },
+    { question: "「schwer」の反対の意味を持つ形容詞は？", choices: ["leicht", "freundlich", "unfreundlich", "schnell"], answerIndex: 0, explanation: "schwer（重い・難しい）の反対はleicht（軽い・簡単な）。" },
+    { question: "フォーマルな別れの挨拶はどれ？", choices: ["Auf Wiedersehen!", "Ich weiß nicht.", "Herzlichen Glückwunsch!", "Guten Appetit!"], answerIndex: 0, explanation: "„Auf Wiedersehen!“はフォーマルな別れの挨拶。親しい相手にはTschüss!を使う。" },
+    { question: "„Ich lege das Buch auf ___ Tisch.\"（移動を表すのでAkkusativ）正しい形はどれ？", choices: ["der", "die", "das", "den"], answerIndex: 3, explanation: "移動（wohin?）を表すのでAkkusativになり、男性名詞der Tischはdenに変わる。" },
+    { question: "「der Zug」の複数形は？", choices: ["die Züge", "die Zuge", "die Zügen", "der Züge"], answerIndex: 0, explanation: "複数形はdie Zügeで、語幹の母音がウムラウト化するパターン（u→ü）。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-21)
+// ── END_DATA ──  (last sync: 2026-09-22)
 
 function esc(s){
   if(s===undefined||s===null) return '';
