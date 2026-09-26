@@ -1639,8 +1639,112 @@ const GERMAN_REPORTS = [
     { question: "所有冠詞で「彼の」を表す語はどれ？", choices: ["mein", "dein", "sein", "ihr"], answerIndex: 2, explanation: "erに対応する所有冠詞はsein。「彼女の」はihr。" }
   ]
 }
+,
+{
+  date: "2026-09-26",
+  dateLabel: "2026年9月26日（土・復習）",
+  readTimeMin: 12,
+  coreItems: [
+    {
+      type: "noun", term: "die Woche", plural: "die Wochen",
+      meaning_ja: "週",
+      examples: [
+        { de: "Ich habe diese Woche viel Arbeit.", ja: "私は今週たくさんの仕事があります。" },
+        { de: "Nächste Woche fahre ich nach Berlin.", ja: "来週私はベルリンへ行きます。" }
+      ],
+      related: [ { term: "das Wochenende", note_ja: "「週末」。Wocheを含む複合語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Wochen で語尾に -n を付ける規則的なパターン。„diese Woche“（今週）、„nächste Woche“（来週）など時間表現に必須の語。"
+    },
+    {
+      type: "noun", term: "der Zug", plural: "die Züge",
+      meaning_ja: "電車、列車",
+      examples: [
+        { de: "Der Zug kommt um neun Uhr.", ja: "その電車は9時に来ます。" },
+        { de: "Ich fahre mit dem Zug nach Hamburg.", ja: "私は電車でハンブルクへ行きます。" }
+      ],
+      related: [ { term: "der Bahnhof", note_ja: "「駅」。Zug（電車）に乗るための場所としてセットで覚える。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Züge で語幹の母音がウムラウト化するパターン（u→ü）。„mit dem Zug fahren“（電車で行く）は交通手段を表す最頻出パターンの一つ。"
+    },
+    {
+      type: "verb", term: "können", conjugation: "ich kann / du kannst / er-sie-es kann",
+      meaning_ja: "〜できる",
+      examples: [
+        { de: "Ich kann gut schwimmen.", ja: "私は上手に泳げます。" },
+        { de: "Kannst du mir helfen?", ja: "私を手伝ってもらえますか？" }
+      ],
+      related: [ { term: "das Können", note_ja: "名詞形「能力」。könnenを大文字にした名詞用法。" } ],
+      explanation_ja: "話法の助動詞（不規則変化）。ich・er/sie/esの形はどちらも kann で語尾がつかない点に注意。„können + 動詞の不定形（文末）“の形で使う。"
+    },
+    {
+      type: "verb", term: "treffen", conjugation: "ich treffe / du triffst / er-sie-es trifft",
+      meaning_ja: "会う",
+      examples: [
+        { de: "Ich treffe morgen meine Freunde.", ja: "私は明日友達に会います。" },
+        { de: "Triffst du sie oft?", ja: "あなたは彼女によく会いますか？" }
+      ],
+      related: [ { term: "das Treffen", note_ja: "名詞形「会合、待ち合わせ」。treffenと同じ語で、大文字にすると名詞になる。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形で treffe→triffst/trifft に変化するのがA2の重要ポイント。sprechenやhelfenと同じ変化パターンのグループ。treffen＋4格（人）で「〜と会う」という意味になる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "jung",
+      meaning_ja: "若い",
+      examples: [
+        { de: "Meine Schwester ist noch jung.", ja: "私の妹はまだ若いです。" },
+        { de: "Er sieht sehr jung aus.", ja: "彼はとても若く見えます。" }
+      ],
+      related: [ { term: "alt", note_ja: "「年をとった、古い」。jungの対義語。" } ],
+      explanation_ja: "年齢を表す基本形容詞。名詞の前に置くと語尾変化する（ein junger Mann）。„aussehen“（〜に見える）と組み合わせて外見の若さを表現できる。"
+    },
+    {
+      term: "freundlich",
+      meaning_ja: "親切な、フレンドリーな",
+      examples: [
+        { de: "Die Verkäuferin ist sehr freundlich.", ja: "その店員はとても親切です。" },
+        { de: "Er ist immer freundlich zu allen.", ja: "彼はいつも皆に親切です。" }
+      ],
+      related: [ { term: "unfreundlich", note_ja: "「不親切な」。un-を付けると反対の意味になるパターン。" } ],
+      explanation_ja: "人の性格を表す基本形容詞。„freundlich zu jemandem“（〜に対して親切）のように前置詞zu＋Dativと組み合わせることが多い。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Viel Glück!",
+      meaning_ja: "頑張って！（幸運を祈ります）",
+      examples: [
+        { de: "Morgen habe ich eine Prüfung. – Viel Glück!", ja: "明日試験があります。—頑張って！" },
+        { de: "Viel Glück bei der Arbeit!", ja: "お仕事頑張ってください！" }
+      ],
+      explanation_ja: "試験や大事な出来事の前に相手を励ますときの定型句。直訳は「たくさんの幸運を」。似た表現に „Viel Erfolg!“（成功を祈ります）もある。"
+    },
+    {
+      phrase: "Alles Gute!",
+      meaning_ja: "お元気で！、幸運を！",
+      examples: [
+        { de: "Zum Geburtstag alles Gute!", ja: "誕生日おめでとう（すべて良いことがありますように）！" },
+        { de: "Alles Gute für die Zukunft!", ja: "これからも幸せに！" }
+      ],
+      explanation_ja: "誕生日や別れ際など、相手の今後の幸運や健康を祈るときに使う万能な決まり文句。"
+    }
+  ],
+  grammarTip: {
+    title: "今週の復習：Perfekt・前置詞・所有冠詞のまとめ",
+    body_ja: "今週は3つの重要文法を学びました。①過去の出来事を語る現在完了形（Perfekt）は「haben/sein（2番目）＋過去分詞（文末）」という骨組みで作ります。②in・auf・anなどの前置詞は、「どこへ？」の移動ならAkkusativ、「どこに？」の位置ならDativを取ります（Wechselpräpositionen）。③「私の」「あなたの」を表す所有冠詞（mein/dein/sein/ihrなど）はeinと同じ変化パターンで、後ろの名詞の性・格に応じて語尾が変わります。どれも「語尾や語順が文中の役割によって変わる」という共通の感覚を意識して復習しましょう。"
+  },
+  todayQuiz: [
+    { question: "「die Woche（週）」の複数形は？", choices: ["die Wochen", "die Woche", "die Wochens", "der Wochen"], answerIndex: 0, explanation: "複数形はdie Wochenで、語尾に-nを付ける規則的なパターン。" },
+    { question: "Ergänze: „Wir ___ uns morgen im Park.\"（treffenを正しい形に）", choices: ["treffe", "triffst", "trefft", "treffen"], answerIndex: 3, explanation: "treffenの幹母音変化（e→i）はdu/erの形のみで起こる。wir（複数）はtreffenのまま変化しない。" },
+    { question: "「der Zug（電車）」の複数形は？", choices: ["die Züge", "die Zuge", "die Zügen", "der Züge"], answerIndex: 0, explanation: "複数形はdie Zügeで、語幹の母音がウムラウト化するパターン（u→ü）。" },
+    { question: "Ergänze: „Er ___ gut Deutsch sprechen.\"（könnenを正しい形に）", choices: ["kann", "kannst", "könnt", "können"], answerIndex: 0, explanation: "話法の助動詞könnenはich・er/sie/esの形がどちらもkannで語尾がつかない。" },
+    { question: "「jung」の反対の意味を持つ形容詞は？", choices: ["alt", "schnell", "gut", "klein"], answerIndex: 0, explanation: "jung（若い）の反対はalt（年をとった、古い）。" },
+    { question: "「freundlich」の意味として正しいものは？", choices: ["親切な、フレンドリーな", "重い、難しい", "軽い、簡単な", "強い"], answerIndex: 0, explanation: "freundlichは人の性格を表す「親切な」という意味の形容詞。反対語はunfreundlich。" },
+    { question: "試験前に相手を励ますときに使うフレーズはどれ？", choices: ["Viel Glück!", "Viel Spaß!", "Wie bitte?", "Auf Wiedersehen!"], answerIndex: 0, explanation: "„Viel Glück!“は試験や大事な出来事の前に励ますフレーズ。Viel Spaß!（楽しんでね）とは区別する。" },
+    { question: "現在完了形（Perfekt）で、過去分詞はどこに置かれる？", choices: ["文頭", "2番目", "文末", "助動詞の直前"], answerIndex: 2, explanation: "Perfektはhaben/seinが2番目、過去分詞は文末に置かれる。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-23)
+// ── END_DATA ──  (last sync: 2026-09-26)
 
 function esc(s){
   if(s===undefined||s===null) return '';
