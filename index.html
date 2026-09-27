@@ -1743,8 +1743,132 @@ const GERMAN_REPORTS = [
     { question: "現在完了形（Perfekt）で、過去分詞はどこに置かれる？", choices: ["文頭", "2番目", "文末", "助動詞の直前"], answerIndex: 2, explanation: "Perfektはhaben/seinが2番目、過去分詞は文末に置かれる。" }
   ]
 }
+,
+{
+  date: "2026-09-27",
+  dateLabel: "2026年9月27日（日・復習）",
+  readTimeMin: 12,
+  coreItems: [
+    {
+      type: "noun", term: "die Mutter", plural: "die Mütter",
+      meaning_ja: "母、お母さん",
+      examples: [
+        { de: "Meine Mutter ist Lehrerin.", ja: "私の母は教師です。" },
+        { de: "Meine Mutter kocht sehr gut.", ja: "私の母はとても料理が上手です。" }
+      ],
+      related: [ { term: "der Vater", note_ja: "「父」。Mutterと対になる語。両親を指すときは常に複数形の die Eltern を使う。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Mütter で語幹の母音がウムラウト化するパターン（u→ü）。所有冠詞と組み合わせて „meine Mutter“（私の母）のように使うのが基本形。"
+    },
+    {
+      type: "noun", term: "der Monat", plural: "die Monate",
+      meaning_ja: "月（暦の）",
+      examples: [
+        { de: "Der nächste Monat ist Oktober.", ja: "来月は10月です。" },
+        { de: "Ich lerne seit einem Monat Deutsch.", ja: "私は1か月前からドイツ語を勉強しています。" }
+      ],
+      related: [ { term: "das Jahr", note_ja: "「年」。Monat（月）はJahr（年）の下位区分で、時間表現でセットで使う。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Monate で語尾に -e を付ける規則的なパターン。「〜か月前から」は seit + Dativ（3格）で表す点にも注意。"
+    },
+    {
+      type: "noun", term: "der Supermarkt", plural: "die Supermärkte",
+      meaning_ja: "スーパーマーケット",
+      examples: [
+        { de: "Ich kaufe Brot im Supermarkt.", ja: "私はスーパーでパンを買います。" },
+        { de: "Der Supermarkt ist um acht Uhr geöffnet.", ja: "そのスーパーは8時に開店します。" }
+      ],
+      related: [ { term: "das Geschäft", note_ja: "「店」全般を指すより広い語。Supermarktは食品などを扱う大型店を指す。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Supermärkte で語幹の母音がウムラウト化するパターン（a→ä）。„im Supermarkt“（前置詞in＋Dativ「〜の中で」）の形で場所を表すのが基本パターン。"
+    },
+    {
+      type: "verb", term: "haben", conjugation: "ich habe / du hast / er-sie-es hat",
+      meaning_ja: "持っている",
+      examples: [
+        { de: "Ich habe einen Bruder.", ja: "私には兄弟が1人います。" },
+        { de: "Hast du Zeit?", ja: "あなたは時間がありますか？" }
+      ],
+      related: [ { term: "besitzen", note_ja: "「所有する」。habenよりフォーマルな響きを持つ類義語。" } ],
+      explanation_ja: "不規則動詞。duとerの形で語幹が変化し hast/hat になる。所有だけでなく „Hunger haben“（お腹が空いている）のように身体感覚を表す表現にも使われる、seinと並ぶ最重要動詞。"
+    },
+    {
+      type: "verb", term: "nehmen", conjugation: "ich nehme / du nimmst / er-sie-es nimmt",
+      meaning_ja: "取る、（乗り物に）乗る",
+      examples: [
+        { de: "Ich nehme den Bus zur Arbeit.", ja: "私はバスで仕事に行きます（バスを取ります）。" },
+        { de: "Nimmst du Zucker in den Kaffee?", ja: "コーヒーに砂糖を入れますか？" }
+      ],
+      related: [ { term: "geben", note_ja: "「与える」。nehmen（取る）と対になる動詞。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i、さらに子音hが脱落してmが重なる）。du/erの形で nehme→nimmst/nimmt と大きく変化するため、A2でよく間違えやすい動詞の一つ。"
+    },
+    {
+      type: "verb", term: "geben", conjugation: "ich gebe / du gibst / er-sie-es gibt",
+      meaning_ja: "与える、あげる",
+      examples: [
+        { de: "Ich gebe dir mein Buch.", ja: "私はあなたに私の本をあげます。" },
+        { de: "Gibst du mir bitte das Salz?", ja: "塩を取ってもらえますか？" }
+      ],
+      related: [ { term: "nehmen", note_ja: "「取る」。geben（与える）と対になる動詞。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形で gebe→gibst/gibt に変化する。「geben＋3格（人）＋4格（物）」の語順（〜に〜をあげる）がA2の重要な文型。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "kurz",
+      meaning_ja: "短い",
+      examples: [
+        { de: "Der Film war sehr kurz.", ja: "その映画はとても短かったです。" },
+        { de: "Ich habe nur kurz Zeit.", ja: "私は少しの時間しかありません。" }
+      ],
+      related: [ { term: "lang", note_ja: "「長い」。kurzの対義語。" } ],
+      explanation_ja: "長さ・時間の短さを表す基本形容詞。„kurz Zeit haben“（時間が少ししかない）のように時間表現にもよく使われる。"
+    },
+    {
+      term: "stark",
+      meaning_ja: "強い",
+      examples: [
+        { de: "Er ist sehr stark.", ja: "彼はとても強いです。" },
+        { de: "Der Kaffee ist stark.", ja: "そのコーヒーは濃いです。" }
+      ],
+      related: [ { term: "schwach", note_ja: "「弱い」。starkの対義語。" } ],
+      explanation_ja: "力の強さだけでなく、味の濃さ（starker Kaffee＝濃いコーヒー）にも使える基本形容詞。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Guten Abend!",
+      meaning_ja: "こんばんは！",
+      examples: [
+        { de: "Guten Abend! Wie war Ihr Tag?", ja: "こんばんは！今日一日どうでしたか？" },
+        { de: "Guten Abend, herzlich willkommen!", ja: "こんばんは、ようこそ！" }
+      ],
+      explanation_ja: "夕方から夜にかけて使うあいさつ。朝はGuten Morgen!、昼はGuten Tag!、夜はGuten Abend!と時間帯によって使い分ける。"
+    },
+    {
+      phrase: "Danke schön!",
+      meaning_ja: "どうもありがとうございます",
+      examples: [
+        { de: "Danke schön für Ihre Hilfe!", ja: "お手伝いいただき、どうもありがとうございます！" },
+        { de: "Danke schön, das ist sehr nett von dir.", ja: "どうもありがとう、とても親切だね。" }
+      ],
+      explanation_ja: "„Danke.“よりも丁寧・強調した感謝の表現。schönを付けることで気持ちを強める、日常でもよく使われる言い方。"
+    }
+  ],
+  grammarTip: {
+    title: "過去を語る第一歩：現在完了形（Perfekt）の作り方",
+    body_ja: "ドイツ語で過去のことを話すとき、日常会話では現在完了形（Perfekt）が最もよく使われます。作り方は「haben または sein（2番目の位置）＋ 過去分詞（文末）」という組み合わせです。規則動詞の過去分詞は ge-＋語幹＋-t（例: kochen→gekocht）、不規則動詞は ge-＋語幹（変化あり）＋-en（例: sehen→gesehen）になることが多いです。移動や状態変化を表す動詞（gehen, kommen, fahrenなど）は haben ではなく sein を使う点がA2の重要な注意点です。"
+  },
+  todayQuiz: [
+    { question: "「Mutter（母）」の複数形は？", choices: ["die Mütter", "die Muttern", "die Mutteren", "der Mütter"], answerIndex: 0, explanation: "複数形は die Mütter で、語幹の母音がウムラウト化するパターン（u→ü）。" },
+    { question: "Ergänze: „Er ___ einen Bruder.\"（habenを正しい形に）", choices: ["habe", "hast", "hat", "haben"], answerIndex: 2, explanation: "主語がer（3人称単数）なのでhatが正解。habenはduとerの形で語幹が変化する不規則動詞。" },
+    { question: "Ergänze: „Ich ___ den Bus zur Arbeit.\"（nehmenを正しい形に）", choices: ["nehme", "nimmst", "nimmt", "nehmen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。nehmenの幹母音変化はdu/erの形のみで起こる。" },
+    { question: "夕方から夜にかけて使うあいさつはどれ？", choices: ["Guten Abend!", "Guten Morgen!", "Gute Nacht!", "Guten Tag!"], answerIndex: 0, explanation: "Guten Abend!は夕方から夜にかけて使うあいさつ。寝る前の別れの挨拶はGute Nacht!。" },
+    { question: "「Monat（月）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Monatは男性名詞なのでder Monatが正解。複数形はdie Monate。" },
+    { question: "「kurz」の反対の意味を持つ形容詞は？", choices: ["lang", "schnell", "laut", "klein"], answerIndex: 0, explanation: "kurz（短い）の反対はlang（長い）。" },
+    { question: "「Supermarkt（スーパー）」の複数形は？", choices: ["die Supermärkte", "die Supermarkte", "die Supermärkten", "der Supermärkte"], answerIndex: 0, explanation: "複数形はdie Supermärkteで、語幹の母音がウムラウト化するパターン（a→ä）。" },
+    { question: "Ergänze: „Sie ___ mir das Buch.\"（gebenを正しい形に）", choices: ["gebe", "gibst", "gibt", "geben"], answerIndex: 2, explanation: "sieは3人称単数。gebenは不規則動詞（e→i）なのでgibtが正解。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-26)
+// ── END_DATA ──  (last sync: 2026-09-27)
 
 function esc(s){
   if(s===undefined||s===null) return '';
