@@ -1867,8 +1867,141 @@ const GERMAN_REPORTS = [
     { question: "Ergänze: „Sie ___ mir das Buch.\"（gebenを正しい形に）", choices: ["gebe", "gibst", "gibt", "geben"], answerIndex: 2, explanation: "sieは3人称単数。gebenは不規則動詞（e→i）なのでgibtが正解。" }
   ]
 }
+,
+{
+  date: "2026-09-28",
+  dateLabel: "2026年9月28日（月）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "die Tasche", plural: "die Taschen",
+      meaning_ja: "かばん、バッグ",
+      examples: [
+        { de: "Meine Tasche ist sehr schwer.", ja: "私のかばんはとても重いです。" },
+        { de: "Ich suche meine Tasche.", ja: "私はかばんを探しています。" }
+      ],
+      related: [ { term: "der Rucksack", note_ja: "「リュックサック」。Tascheは手提げ・肩掛けのバッグ全般を指し、背負うタイプはRucksackと呼び分ける。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Taschen で語尾に -n を付ける規則的なパターン。„Einkaufstasche“（買い物袋）のように複合語としてもよく使われる。動詞 suchen（探す）とセットで使うことが多い。"
+    },
+    {
+      type: "noun", term: "der Schlüssel", plural: "die Schlüssel",
+      meaning_ja: "鍵",
+      examples: [
+        { de: "Wo ist mein Schlüssel?", ja: "私の鍵はどこですか？" },
+        { de: "Ich habe den Schlüssel verloren.", ja: "私は鍵をなくしました。" }
+      ],
+      related: [ { term: "die Tür", note_ja: "「ドア」。Schlüssel（鍵）とTür（ドア）はセットで使われる基本語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は単数形と同じ die Schlüssel で変化しない無変化パターン（Fenster、Zimmerと同じグループ）。„den Schlüssel verlieren“（鍵をなくす）は日常会話で使うトラブル表現の定番。"
+    },
+    {
+      type: "noun", term: "die Schule", plural: "die Schulen",
+      meaning_ja: "学校",
+      examples: [
+        { de: "Die Kinder gehen zur Schule.", ja: "子供たちは学校へ行きます。" },
+        { de: "Die Schule beginnt um acht Uhr.", ja: "学校は8時に始まります。" }
+      ],
+      related: [ { term: "der Lehrer / die Lehrerin", note_ja: "「先生（男性形／女性形）」。Schuleに関連する基本の職業語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Schulen で語尾に -n を付ける規則的なパターン。„zur Schule gehen“（学校へ行く）は „zur Arbeit gehen“ と同じ文型で、前置詞zu＋3格（Dativ）で行き先を表す。"
+    },
+    {
+      type: "verb", term: "warten", conjugation: "ich warte / du wartest / er-sie-es wartet",
+      meaning_ja: "待つ",
+      examples: [
+        { de: "Ich warte auf den Bus.", ja: "私はバスを待っています。" },
+        { de: "Kannst du kurz warten?", ja: "少し待ってもらえますか？" }
+      ],
+      related: [ { term: "die Geduld", note_ja: "名詞「忍耐」。„Geduld haben“（辛抱強く待つ）という表現もよく使われる。" } ],
+      explanation_ja: "規則動詞だが、語幹 wart- が -t で終わるため発音しやすくするために du/er の形に -e- が入り wartest/wartet になる（arbeitenと同じパターン）。„warten auf + 4格（Akkusativ）“（〜を待つ）という前置詞の使い方がA2の重要ポイント。"
+    },
+    {
+      type: "verb", term: "öffnen", conjugation: "ich öffne / du öffnest / er-sie-es öffnet",
+      meaning_ja: "開ける",
+      examples: [
+        { de: "Ich öffne das Fenster.", ja: "私は窓を開けます。" },
+        { de: "Der Supermarkt öffnet um neun Uhr.", ja: "そのスーパーは9時に開店します。" }
+      ],
+      related: [ { term: "schließen", note_ja: "「閉める」。öffnenの対義語。" } ],
+      explanation_ja: "規則動詞だが、語幹 öffn- が子音 n で終わるため発音しやすくするために du/er の形に -e- が入り öffnest/öffnet になる（wartenと同じ理由によるパターン）。店の開店時間を言うときにも„öffnet um ... Uhr“の形でよく使われる。"
+    },
+    {
+      type: "verb", term: "verstehen", conjugation: "ich verstehe / du verstehst / er-sie-es versteht",
+      meaning_ja: "理解する",
+      examples: [
+        { de: "Ich verstehe die Frage nicht.", ja: "私はその質問が理解できません。" },
+        { de: "Verstehst du mich?", ja: "私の言うことが分かりますか？" }
+      ],
+      related: [ { term: "die Sprache", note_ja: "「言語」。verstehenは外国語学習で „ich verstehe kein Deutsch“ のようによく使われる動詞。" } ],
+      explanation_ja: "規則的に変化する動詞（語幹 versteh- に -e/-st/-t）。既出フレーズ „Ich verstehe nicht.“ はこの動詞の否定形にあたる。否定文„nicht verstehen“の形で日常会話に頻出。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "warm",
+      meaning_ja: "暖かい、温かい",
+      examples: [
+        { de: "Im Sommer ist es warm.", ja: "夏は暖かいです。" },
+        { de: "Die Suppe ist noch warm.", ja: "スープはまだ温かいです。" }
+      ],
+      related: [ { term: "kalt", note_ja: "「寒い、冷たい」。warmの対義語。" } ],
+      explanation_ja: "天気や飲食物の温度を表す基本形容詞。„Es ist warm.“のように非人称主語esと組み合わせて天気表現によく使う（kaltと対で覚えると効率的）。"
+    },
+    {
+      term: "interessant",
+      meaning_ja: "面白い、興味深い",
+      examples: [
+        { de: "Das Buch ist sehr interessant.", ja: "その本はとても面白いです。" },
+        { de: "Ich finde Deutsch interessant.", ja: "私はドイツ語が面白いと思います。" }
+      ],
+      related: [ { term: "langweilig", note_ja: "「退屈な」。interessantの対義語。" } ],
+      explanation_ja: "„finden + 4格 + 形容詞“（〜を〜だと思う）という文型でよく使われる形容詞。„Ich finde es interessant.“のパターンは感想を述べるときに頻出。"
+    },
+    {
+      term: "langweilig",
+      meaning_ja: "退屈な",
+      examples: [
+        { de: "Der Film war langweilig.", ja: "その映画は退屈でした。" },
+        { de: "Mir ist langweilig.", ja: "私は退屈です。" }
+      ],
+      related: [ { term: "interessant", note_ja: "「面白い」。langweiligの対義語。" } ],
+      explanation_ja: "„Mir ist langweilig.“（私は退屈だ）のように、人を3格（Dativ）にして状態を表す非人称構文がA2で押さえておきたいポイント。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Woher kommst du?",
+      meaning_ja: "どこの出身ですか？（くだけた言い方）",
+      examples: [
+        { de: "Hallo, woher kommst du?", ja: "こんにちは、どこの出身ですか？" },
+        { de: "Ich komme aus Japan. Und du?", ja: "私は日本出身です。あなたは？" }
+      ],
+      explanation_ja: "自己紹介でよく使う質問。フォーマルな場面では „Woher kommen Sie?“ を使う。答えるときは „Ich komme aus + 国名“ の形になる。"
+    },
+    {
+      phrase: "Ich habe eine Frage.",
+      meaning_ja: "質問があります",
+      examples: [
+        { de: "Entschuldigung, ich habe eine Frage.", ja: "すみません、質問があります。" },
+        { de: "Ich habe noch eine Frage zur Hausaufgabe.", ja: "宿題についてもう一つ質問があります。" }
+      ],
+      explanation_ja: "授業や会話の中で質問を切り出すときの定番フレーズ。„eine Frage haben“（質問を持っている＝質問がある）という基本文型。"
+    }
+  ],
+  grammarTip: {
+    title: "比べてみよう！形容詞の比較級・最上級（Komparativ/Superlativ）",
+    body_ja: "ドイツ語の形容詞は、比較するときに語尾を変化させます。比較級（〜より）は語尾に -er を付け（schnell→schneller）、最上級（一番〜）は am -sten の形にします（schnell→am schnellsten）。1音節の多くの形容詞は母音がウムラウト化します（groß→größer→am größten、alt→älter→am ältesten）。gut→besser→am besten、viel→mehr→am meisten のように不規則に変化する重要な単語もあるので、基本パターンと合わせて個別に覚えておきましょう。"
+  },
+  todayQuiz: [
+    { question: "「Tasche（かばん）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 1, explanation: "Tascheは女性名詞なのでdie Tascheが正解。複数形はdie Taschen。" },
+    { question: "Ergänze: „Ich ___ auf den Bus.\"（wartenを正しい形に）", choices: ["warte", "wartest", "wartet", "warten"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。warteが正解。" },
+    { question: "Ergänze: „Er ___ das Fenster.\"（öffnenを正しい形に）", choices: ["öffne", "öffnest", "öffnet", "öffnen"], answerIndex: 2, explanation: "3人称単数（er）の形は、語幹が子音で終わるため-eを挟んでöffnetになる。" },
+    { question: "「Schlüssel（鍵）」の複数形は？", choices: ["die Schlüssel", "die Schlüssels", "die Schlüsseln", "der Schlüssel"], answerIndex: 0, explanation: "Schlüsselは単数形と複数形が同じdie Schlüsselになる無変化パターン。" },
+    { question: "「langweilig」の反対の意味を持つ形容詞は？", choices: ["interessant", "warm", "kalt", "schwer"], answerIndex: 0, explanation: "langweilig（退屈な）の反対はinteressant（面白い）。" },
+    { question: "比較級（〜より）を作るときの基本の語尾は？", choices: ["-er", "-st", "-en", "-lich"], answerIndex: 0, explanation: "比較級はschnell→schnellerのように語尾に-erを付けるのが基本ルール。" },
+    { question: "自己紹介で出身を尋ねるフレーズはどれ？", choices: ["Woher kommst du?", "Ich habe eine Frage.", "Wie spät ist es?", "Kein Problem."], answerIndex: 0, explanation: "„Woher kommst du?“は「どこの出身ですか？」と尋ねる自己紹介の定番フレーズ。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-27)
+// ── END_DATA ──  (last sync: 2026-09-28)
 
 function esc(s){
   if(s===undefined||s===null) return '';
