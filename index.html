@@ -146,129 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-01-01",
-  dateLabel: "サンプル日（実際の初日はセットアップ時に生成）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "das Haus", plural: "die Häuser",
-      meaning_ja: "家",
-      examples: [
-        { de: "Das Haus ist sehr groß.", ja: "その家はとても大きいです。" },
-        { de: "Wir wohnen in einem kleinen Haus.", ja: "私たちは小さな家に住んでいます。" }
-      ],
-      related: [ { term: "die Wohnung", note_ja: "「マンション・アパートの一室」。Hausは一戸建てのイメージ、Wohnungは集合住宅の1室。" } ],
-      explanation_ja: "中性名詞（das）。複数形は語幹の母音がウムラウト化して die Häuser になる、よくあるパターン。家に関する語（zu Hause=家で、nach Hause=家へ）とセットで覚えると効率的。"
-    },
-    {
-      type: "noun", term: "die Arbeit", plural: "die Arbeiten",
-      meaning_ja: "仕事、労働",
-      examples: [
-        { de: "Ich gehe jeden Tag zur Arbeit.", ja: "私は毎日仕事に行きます。" },
-        { de: "Die Arbeit macht mir Spaß.", ja: "仕事は楽しいです。" }
-      ],
-      related: [ { term: "arbeiten", note_ja: "動詞形「働く」。名詞Arbeitと語源が同じで、seiまとめて覚えると語彙が2倍になる。" } ],
-      explanation_ja: "女性名詞（die）。\"zur Arbeit gehen\"（仕事に行く）は日常会話で非常によく使う定型表現。"
-    },
-    {
-      type: "noun", term: "der Freund / die Freundin", plural: "die Freunde",
-      meaning_ja: "友達（男性形／女性形）",
-      examples: [
-        { de: "Er ist mein bester Freund.", ja: "彼は私の親友です。" },
-        { de: "Sie hat viele Freundinnen.", ja: "彼女には友達（女性）がたくさんいます。" }
-      ],
-      related: [ { term: "der Kollege / die Kollegin", note_ja: "「同僚」。friend/colleagueの区別が日本語よりはっきりしているのがドイツ語の特徴。" } ],
-      explanation_ja: "男性名詞・女性名詞のペア。ドイツ語では人を表す名詞の多くに男性形/女性形（-in）のペアがある。恋人の意味にもなりうる（文脈で判断）。"
-    },
-    {
-      type: "verb", term: "wohnen", conjugation: "ich wohne / du wohnst / er-sie-es wohnt",
-      meaning_ja: "住む",
-      examples: [
-        { de: "Ich wohne in Tokio.", ja: "私は東京に住んでいます。" },
-        { de: "Wo wohnst du?", ja: "あなたはどこに住んでいますか？" }
-      ],
-      related: [ { term: "leben", note_ja: "「生きる、暮らす」。wohnenは「住所として住む」、lebenはより広く「生活する・生きる」というニュアンス。" } ],
-      explanation_ja: "規則動詞（規則的に変化する動詞）。語幹 wohn- に -e/-st/-t を付けるだけなので、規則変化のお手本として最初に覚えるべき動詞の一つ。"
-    },
-    {
-      type: "verb", term: "brauchen", conjugation: "ich brauche / du brauchst / er-sie-es braucht",
-      meaning_ja: "必要とする",
-      examples: [
-        { de: "Ich brauche deine Hilfe.", ja: "私はあなたの助けが必要です。" },
-        { de: "Wir brauchen mehr Zeit.", ja: "私たちにはもっと時間が必要です。" }
-      ],
-      related: [ { term: "benötigen", note_ja: "同じ「必要とする」だが、よりフォーマルな響き。日常会話ではbrauchenが圧倒的に多い。" } ],
-      explanation_ja: "規則動詞。\"brauchen + 4格（Akkusativ）\"の形を取る（＝目的語は4格）。ドイツ語学習の最初期に格変化の練習として使われることが多い動詞。"
-    },
-    {
-      type: "verb", term: "helfen", conjugation: "ich helfe / du hilfst / er-sie-es hilft",
-      meaning_ja: "助ける、手伝う",
-      examples: [
-        { de: "Kannst du mir helfen?", ja: "私を手伝ってもらえますか？" },
-        { de: "Er hilft seiner Mutter.", ja: "彼は母親を手伝います。" }
-      ],
-      related: [ { term: "die Hilfe", note_ja: "名詞形「助け」。\"Hilfe!\"だけで「助けて！」という叫び声にもなる。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形でhelfe→hilfst/hilftと変化するのがA2の重要ポイント。さらに\"helfen\"は3格（Dativ）を取る動詞（＝目的語が3格）という、日本人学習者が間違えやすい重要な例外。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "wichtig",
-      meaning_ja: "重要な",
-      examples: [
-        { de: "Das ist mir sehr wichtig.", ja: "それは私にとってとても重要です。" },
-        { de: "Eine wichtige Frage.", ja: "重要な質問。" }
-      ],
-      related: [ { term: "unwichtig", note_ja: "「重要でない」。un-を付けると反対の意味になるパターンは他の形容詞にも応用できる。" } ],
-      explanation_ja: "\"mir wichtig\"（私にとって重要）のように、人称代名詞の3格と組み合わせるのが定番パターン。"
-    },
-    {
-      term: "müde",
-      meaning_ja: "疲れた、眠い",
-      examples: [
-        { de: "Ich bin heute sehr müde.", ja: "私は今日とても疲れています。" },
-        { de: "Bist du müde?", ja: "あなたは疲れていますか？" }
-      ],
-      related: [ { term: "fit", note_ja: "「元気な、調子がいい」。müde⇔fitで対比的に覚えると定着しやすい。" } ],
-      explanation_ja: "\"sein\"（〜である）と組み合わせて体調・状態を表す最頻出の形容詞の一つ。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Wie geht es dir?",
-      meaning_ja: "元気？（くだけた言い方、親しい相手に）",
-      examples: [
-        { de: "Hallo! Wie geht es dir?", ja: "こんにちは！元気？" },
-        { de: "Mir geht es gut, danke. Und dir?", ja: "元気だよ、ありがとう。あなたは？" }
-      ],
-      explanation_ja: "フォーマルな場面では \"Wie geht es Ihnen?\"（Sie形）を使う。答え方の定番は \"Mir geht es gut/schlecht/so lala.\""
-    },
-    {
-      phrase: "Das macht nichts.",
-      meaning_ja: "気にしないで、大丈夫だよ",
-      examples: [
-        { de: "Entschuldigung, ich bin spät! – Das macht nichts.", ja: "遅れてごめん！ — 大丈夫だよ。" },
-        { de: "Das macht nichts, das kann jedem passieren.", ja: "気にしないで、誰にでも起こりうることだから。" }
-      ],
-      explanation_ja: "直訳は「それは何もしない（＝影響しない）」。謝罪への返答として非常によく使われる定型句。"
-    }
-  ],
-  grammarTip: {
-    title: "なぜ3つも冠詞があるの？ der / die / das のイメージ",
-    body_ja: "ドイツ語の名詞にはすべて「文法上の性」があり、それぞれ der（男性）・die（女性）・das（中性）という冠詞が付きます。これは日本語にも英語にもない概念で、多くの学習者がつまずくポイントです。重要なのは「実際の性別と一致するとは限らない」ということ — 例えば das Mädchen（少女）は中性名詞です。効率的な学習法は、単語を覚えるときに必ず冠詞ごとセットで覚えること（\"Haus\" ではなく \"das Haus\" として記憶する）。この習慣が、後の格変化（Nominativ/Akkusativ/Dativ）の理解を大きく助けます。"
-  },
-  todayQuiz: [
-    { question: "「Haus（家）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Hausは中性名詞なのでdas Hausが正解。複数形はdie Häuser。" },
-    { question: "Ergänze: „Ich ___ in Berlin.\"（wohnenを正しい形に）", choices: ["wohne", "wohnst", "wohnt", "wohnen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。ich wohneが正解。" },
-    { question: "Ergänze: „Er ___ mir.\"（helfenを正しい形に）", choices: ["helft", "hilfst", "hilft", "helfe"], answerIndex: 2, explanation: "helfenは幹母音変化する不規則動詞。3人称単数（er）はhilftになる（e→i）。" },
-    { question: "「müde」の意味は？", choices: ["重要な", "疲れた", "友達", "家"], answerIndex: 1, explanation: "müdeは「疲れた、眠い」という意味の形容詞。" },
-    { question: "親しい相手に「元気？」と聞くドイツ語のフレーズは？", choices: ["Wie geht es dir?", "Das macht nichts.", "Ich brauche Hilfe.", "Wo wohnst du?"], answerIndex: 0, explanation: "「Wie geht es dir?」がくだけた「元気？」にあたる定番フレーズ。" },
-    { question: "「der Freund」の複数形は？", choices: ["die Freunde", "die Freunds", "der Freunde", "das Freunde"], answerIndex: 0, explanation: "複数形はdie Freunde。ドイツ語の複数形にはdieを使うのが基本ルール。" },
-    { question: "Ergänze: „Ich ___ neue Schuhe.\"（brauchenを正しい形に）", choices: ["brauche", "brauchst", "braucht", "brauchen"], answerIndex: 0, explanation: "主語がich（1人称単数）なのでbraucheが正解。" },
-    { question: "「Das macht nichts.」の意味は？", choices: ["それは大丈夫、気にしないで", "ありがとう", "さようなら", "お腹が空いた"], answerIndex: 0, explanation: "謝罪への返答として使われる「気にしないで、大丈夫だよ」という意味の定型句。" }
-  ]
-},
-{
   date: "2026-09-12",
   dateLabel: "2026年9月12日（土）",
   readTimeMin: 18,
@@ -2000,8 +1877,151 @@ const GERMAN_REPORTS = [
     { question: "自己紹介で出身を尋ねるフレーズはどれ？", choices: ["Woher kommst du?", "Ich habe eine Frage.", "Wie spät ist es?", "Kein Problem."], answerIndex: 0, explanation: "„Woher kommst du?“は「どこの出身ですか？」と尋ねる自己紹介の定番フレーズ。" }
   ]
 }
+,
+{
+  date: "2026-09-29",
+  dateLabel: "2026年9月29日（火）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "die Tante", plural: "die Tanten",
+      meaning_ja: "おば",
+      examples: [
+        { de: "Meine Tante wohnt in Hamburg.", ja: "私のおばはハンブルクに住んでいます。" },
+        { de: "Ich besuche meine Tante am Wochenende.", ja: "私は週末におばを訪ねます。" }
+      ],
+      related: [ { term: "der Onkel", note_ja: "「おじ」。Tanteと対になる家族を表す語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Tanten で語尾に -n を付ける規則的なパターン。家族の呼び方は所有冠詞（meine Tante＝私のおば）とセットで使うことが多い。"
+    },
+    {
+      type: "noun", term: "der Onkel", plural: "die Onkel",
+      meaning_ja: "おじ",
+      examples: [
+        { de: "Mein Onkel arbeitet als Lehrer.", ja: "私のおじは教師として働いています。" },
+        { de: "Ist das dein Onkel?", ja: "これはあなたのおじですか？" }
+      ],
+      related: [ { term: "die Großeltern", note_ja: "「祖父母」。常に複数形で使われる家族名詞。" } ],
+      explanation_ja: "男性名詞（der）。複数形は単数形と同じ die Onkel で変化しない無変化パターン（Fenster、Schlüsselと同じグループ）。"
+    },
+    {
+      type: "noun", term: "das Handy", plural: "die Handys",
+      meaning_ja: "携帯電話、スマートフォン",
+      examples: [
+        { de: "Mein Handy ist kaputt.", ja: "私の携帯電話は壊れています。" },
+        { de: "Wo ist dein Handy?", ja: "あなたの携帯電話はどこですか？" }
+      ],
+      related: [ { term: "anrufen", note_ja: "「電話をかける」。Handyとセットでよく使われる分離動詞。" } ],
+      explanation_ja: "中性名詞（das）。英語由来の外来語で、複数形はドイツ語特有の変化パターンではなく英語式に -s を付けて die Handys になる。外来語にはこの -s 複数パターンが多い点を覚えておくと便利。"
+    },
+    {
+      type: "verb", term: "waschen", conjugation: "ich wasche / du wäschst / er-sie-es wäscht",
+      meaning_ja: "洗う",
+      examples: [
+        { de: "Ich wasche mein Auto am Samstag.", ja: "私は土曜日に車を洗います。" },
+        { de: "Wäschst du deine Hände vor dem Essen?", ja: "食事の前に手を洗いますか？" }
+      ],
+      related: [ { term: "sich waschen", note_ja: "再帰代名詞sichを付けると「自分の体を洗う」という意味の再帰動詞になる。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 a→ä）。du/erの形でwasche→wäschst/wäschtに変化する、tragenやfahrenと同じグループ。"
+    },
+    {
+      type: "verb", term: "putzen", conjugation: "ich putze / du putzt / er-sie-es putzt",
+      meaning_ja: "掃除する、磨く",
+      examples: [
+        { de: "Ich putze jeden Samstag die Wohnung.", ja: "私は毎週土曜日に部屋を掃除します。" },
+        { de: "Er putzt sich die Zähne.", ja: "彼は歯を磨きます。" }
+      ],
+      related: [ { term: "sauber", note_ja: "「きれいな」。putzenをした結果の状態を表す形容詞。" } ],
+      explanation_ja: "規則動詞だが、語幹が -z で終わるため du の形は wartest のように -st を付けず putzt になる（-s/-ß/-z/-xで終わる動詞はduに-tのみを付ける例外ルール）。"
+    },
+    {
+      type: "verb", term: "scheinen", conjugation: "ich scheine / du scheinst / er-sie-es scheint",
+      meaning_ja: "輝く、〜のように見える",
+      examples: [
+        { de: "Die Sonne scheint heute den ganzen Tag.", ja: "今日は一日中太陽が輝いています。" },
+        { de: "Er scheint müde zu sein.", ja: "彼は疲れているように見えます。" }
+      ],
+      related: [ { term: "die Sonne", note_ja: "「太陽」。„Die Sonne scheint.“（太陽が輝いている＝晴れている）は天気表現の定番。" } ],
+      explanation_ja: "規則動詞。「輝く」と「〜のように見える」という2つの意味を持つ点に注意。天気表現と、印象を述べる表現の両方で頻出する。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "nass",
+      meaning_ja: "濡れた",
+      examples: [
+        { de: "Meine Kleidung ist nass.", ja: "私の服は濡れています。" },
+        { de: "Es ist nass draußen.", ja: "外は濡れています（雨などで）。" }
+      ],
+      related: [ { term: "trocken", note_ja: "「乾いた」。nassの対義語。" } ],
+      explanation_ja: "天気や物の状態を表す基本形容詞。„Es ist nass.“のように非人称主語esと組み合わせて天気表現にも使う。"
+    },
+    {
+      term: "trocken",
+      meaning_ja: "乾いた",
+      examples: [
+        { de: "Das Handtuch ist trocken.", ja: "そのタオルは乾いています。" },
+        { de: "Im Sommer ist die Luft oft trocken.", ja: "夏は空気が乾燥していることが多いです。" }
+      ],
+      related: [ { term: "nass", note_ja: "「濡れた」。trockenの対義語。" } ],
+      explanation_ja: "nassの対義語で、天気・気候・洗濯物の状態などを表すときによく使う基本形容詞。"
+    },
+    {
+      term: "sauber",
+      meaning_ja: "きれいな、清潔な",
+      examples: [
+        { de: "Die Küche ist sauber.", ja: "台所はきれいです。" },
+        { de: "Bitte halte dein Zimmer sauber.", ja: "部屋をきれいに保ってください。" }
+      ],
+      related: [ { term: "schmutzig", note_ja: "「汚い」。sauberの対義語。" } ],
+      explanation_ja: "掃除（putzen）の結果の状態を表す形容詞。„sauber halten“（きれいに保つ）という表現でもよく使われる。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Wie ist das Wetter heute?",
+      meaning_ja: "今日の天気はどうですか？",
+      examples: [
+        { de: "Wie ist das Wetter heute in Berlin?", ja: "今日ベルリンの天気はどうですか？" },
+        { de: "Das Wetter ist heute schön.", ja: "今日の天気はいいです。" }
+      ],
+      explanation_ja: "天気を尋ねる基本フレーズ。答えるときは „Es ist ... “ の後に sonnig（晴れの）や regnerisch（雨の）などの形容詞を続ける。"
+    },
+    {
+      phrase: "Ich habe keine Ahnung.",
+      meaning_ja: "全然わかりません、見当もつきません",
+      examples: [
+        { de: "Wo ist der Bahnhof? – Ich habe keine Ahnung.", ja: "駅はどこですか？—全然分かりません。" },
+        { de: "Ich habe keine Ahnung, wie spät es ist.", ja: "今何時か全然分かりません。" }
+      ],
+      explanation_ja: "„Ich weiß nicht.“よりもカジュアルで強調的な「まったく分からない」という表現。"
+    },
+    {
+      phrase: "Mach's gut!",
+      meaning_ja: "じゃあね、元気でね（くだけた別れの挨拶）",
+      examples: [
+        { de: "Ich muss jetzt los. Mach's gut!", ja: "もう行かなきゃ。じゃあね！" },
+        { de: "Mach's gut, bis nächste Woche!", ja: "元気でね、また来週！" }
+      ],
+      explanation_ja: "親しい相手との別れ際に使うくだけた挨拶。„Mach es gut“の短縮形で、直訳は「うまくやってね」。"
+    }
+  ],
+  grammarTip: {
+    title: "自分に返ってくる動詞？再帰代名詞 sich の基本",
+    body_ja: "ドイツ語には、動作が主語自身に返ってくる「再帰動詞」があります。例えば „sich waschen“（自分の体を洗う）は、主語に合わせて再帰代名詞（mich, dich, sich, uns, euch, sich）を動詞の後ろに置きます：„Ich wasche mich.“（私は体を洗う）。再帰代名詞は基本的に4格（Akkusativ）ですが、体の部位など他に目的語がある場合は3格（Dativ）になります：„Er putzt sich die Zähne.“（彼は歯を磨く）。1・2人称は人称代名詞と同じ形で、3人称と敬称Sieはすべてsichになる点を覚えておきましょう。"
+  },
+  todayQuiz: [
+    { question: "「Handy（携帯電話）」の複数形は？", choices: ["die Handys", "die Handies", "die Handy", "die Hände"], answerIndex: 0, explanation: "Handyのような外来語（英語由来）の複数形は、ドイツ語特有のパターンではなく英語式に-sを付けることが多い。die Handysが正解。" },
+    { question: "Ergänze: „Du ___ deine Hände vor dem Essen.\"（waschenを正しい形に）", choices: ["wasche", "wäschst", "wäscht", "waschen"], answerIndex: 1, explanation: "waschenは不規則動詞（a→ä）。duの形はwäschstになる。" },
+    { question: "Ergänze: „Du ___ jeden Samstag die Wohnung.\"（putzenを正しい形に）", choices: ["putzst", "putzt", "putzest", "putzen"], answerIndex: 1, explanation: "putzenの語幹は-zで終わるため、duの形はputzstではなくputztになる（-s/-ß/-z/-xで終わる動詞は例外的にduに-stではなく-tのみを付ける）。" },
+    { question: "「Die Sonne scheint.」の意味は？", choices: ["太陽が輝いている（晴れている）", "雨が降っている", "風が吹いている", "雪が降っている"], answerIndex: 0, explanation: "scheinenは「輝く」という意味。天気表現でdie Sonne scheintは「晴れている」ことを表す。" },
+    { question: "「nass」の反対の意味を持つ形容詞は？", choices: ["trocken", "sauber", "schmutzig", "kalt"], answerIndex: 0, explanation: "nass（濡れた）の反対はtrocken（乾いた）。" },
+    { question: "天気を尋ねるときに使うフレーズはどれ？", choices: ["Wie ist das Wetter heute?", "Ich habe keine Ahnung.", "Mach's gut!", "Wie heißt du?"], answerIndex: 0, explanation: "„Wie ist das Wetter heute?“が天気を尋ねる基本フレーズ。" },
+    { question: "「Ich wasche ___.」（自分の体を洗う、と言いたいとき）に入る再帰代名詞は？", choices: ["mich", "mir", "dich", "sich"], answerIndex: 0, explanation: "主語がich（1人称単数）の場合、4格の再帰代名詞はmichになる。" },
+    { question: "「Onkel（おじ）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Onkelは男性名詞なのでder Onkelが正解。複数形はdie Onkel（無変化）。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-28)
+// ── END_DATA ──  (last sync: 2026-09-29)
 
 function esc(s){
   if(s===undefined||s===null) return '';
