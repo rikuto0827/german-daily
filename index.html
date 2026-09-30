@@ -146,140 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-09-12",
-  dateLabel: "2026年9月12日（土）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "die Familie", plural: "die Familien",
-      meaning_ja: "家族",
-      examples: [
-        { de: "Meine Familie wohnt in München.", ja: "私の家族はミュンヘンに住んでいます。" },
-        { de: "Wir haben eine große Familie.", ja: "私たちは大家族です。" }
-      ],
-      related: [ { term: "die Eltern", note_ja: "「両親」。常に複数形で使う語で、単数形はない。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Familien で語尾に -n を付けるだけの規則的なパターン。meine Familie（私の家族）のように所有冠詞とセットで使うことが多い。"
-    },
-    {
-      type: "noun", term: "der Preis", plural: "die Preise",
-      meaning_ja: "値段、価格",
-      examples: [
-        { de: "Der Preis ist sehr hoch.", ja: "その値段はとても高いです。" },
-        { de: "Wie ist der Preis für dieses Buch?", ja: "この本の値段はいくらですか？" }
-      ],
-      related: [ { term: "kosten", note_ja: "動詞「（値段が）〜である」。„Was kostet das?“（いくらですか）で頻出。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Preise で語尾に -e を付けるパターン。値段の高さそのものは teuer/billig という形容詞で表すのが自然。"
-    },
-    {
-      type: "noun", term: "die Zeit", plural: "die Zeiten",
-      meaning_ja: "時間",
-      examples: [
-        { de: "Ich habe heute keine Zeit.", ja: "私は今日時間がありません。" },
-        { de: "Die Zeit vergeht sehr schnell.", ja: "時間はとても早く過ぎます。" }
-      ],
-      related: [ { term: "pünktlich", note_ja: "「時間通りに」。„keine Zeit haben“（時間がない）とセットでよく使う。" } ],
-      explanation_ja: "女性名詞（die）。複数形 die Zeiten は主に「時代」や複数の時間帯を指すときに使う。„Zeit haben“（時間がある）は否定形 keine Zeit haben で頻出。"
-    },
-    {
-      type: "verb", term: "kaufen", conjugation: "ich kaufe / du kaufst / er-sie-es kauft",
-      meaning_ja: "買う",
-      examples: [
-        { de: "Ich kaufe ein neues Handy.", ja: "私は新しい携帯電話を買います。" },
-        { de: "Wo kaufst du dein Brot?", ja: "あなたはどこでパンを買いますか？" }
-      ],
-      related: [ { term: "verkaufen", note_ja: "「売る」。ver-を付けると反対の意味になる代表例。" } ],
-      explanation_ja: "規則動詞。語幹 kauf- に -e/-st/-t を付けるだけ。買い物で最頻出の動詞の一つで、分離動詞 einkaufen（買い物をする）とセットで覚えると効率的。"
-    },
-    {
-      type: "verb", term: "sehen", conjugation: "ich sehe / du siehst / er-sie-es sieht",
-      meaning_ja: "見る",
-      examples: [
-        { de: "Ich sehe einen Film.", ja: "私は映画を見ます。" },
-        { de: "Siehst du das Auto dort?", ja: "あそこの車が見えますか？" }
-      ],
-      related: [ { term: "fernsehen", note_ja: "「テレビを見る」。sehenを含む分離動詞で日常会話によく出る。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→ie）。du/erの形で sehe→siehst/sieht に変化するのがA2の重要ポイント。"
-    },
-    {
-      type: "verb", term: "tragen", conjugation: "ich trage / du trägst / er-sie-es trägt",
-      meaning_ja: "着る、運ぶ",
-      examples: [
-        { de: "Sie trägt ein rotes Kleid.", ja: "彼女は赤いドレスを着ています。" },
-        { de: "Er trägt die Tasche für mich.", ja: "彼は私のためにそのバッグを運びます。" }
-      ],
-      related: [ { term: "anziehen", note_ja: "「（服を）着る」という動作を表す分離動詞。tragenは「着ている状態」に近い。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 a→ä）。du/erの形で trage→trägst/trägt に変化する。「着る」と「運ぶ」の2つの意味を持つ点に注意。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "teuer",
-      meaning_ja: "（値段が）高い",
-      examples: [
-        { de: "Das Auto ist zu teuer.", ja: "その車は高すぎます。" },
-        { de: "Diese Uhr ist sehr teuer.", ja: "この時計はとても高価です。" }
-      ],
-      related: [ { term: "billig", note_ja: "「安い」。teuer⇔billigは買い物での必須の対義語ペア。" } ],
-      explanation_ja: "値段について話すときの最頻出形容詞。„zu teuer“（高すぎる）のように zu と組み合わせると「〜すぎる」という意味になる。"
-    },
-    {
-      term: "kalt",
-      meaning_ja: "寒い、冷たい",
-      examples: [
-        { de: "Heute ist es sehr kalt.", ja: "今日はとても寒いです。" },
-        { de: "Das Wasser ist kalt.", ja: "その水は冷たいです。" }
-      ],
-      related: [ { term: "warm", note_ja: "「暖かい」。天気や飲食物の温度を表すときの対義語ペア。" } ],
-      explanation_ja: "天気や温度を表す基本形容詞。„Es ist kalt.“のように非人称主語esと組み合わせて天気表現によく使う。"
-    },
-    {
-      term: "früh",
-      meaning_ja: "早い、早く",
-      examples: [
-        { de: "Ich stehe jeden Tag früh auf.", ja: "私は毎日早く起きます。" },
-        { de: "Es ist noch früh.", ja: "まだ早いです。" }
-      ],
-      related: [ { term: "spät", note_ja: "「遅い」。früh⇔spätは時間に関する基本の対義語ペア。" } ],
-      explanation_ja: "形容詞にも副詞にもなる語。分離動詞 aufstehen（起きる）と組み合わせた früh aufstehen（早起きする）という表現でよく使われる。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Was kostet das?",
-      meaning_ja: "これはいくらですか？",
-      examples: [
-        { de: "Entschuldigung, was kostet das?", ja: "すみません、これはいくらですか？" },
-        { de: "Das kostet zehn Euro.", ja: "それは10ユーロです。" }
-      ],
-      explanation_ja: "買い物で値段を尋ねる最も基本的なフレーズ。動詞kostenは物を主語にして使い、人を主語にはしない。"
-    },
-    {
-      phrase: "Wie spät ist es?",
-      meaning_ja: "今何時ですか？",
-      examples: [
-        { de: "Entschuldigung, wie spät ist es?", ja: "すみません、今何時ですか？" },
-        { de: "Es ist schon spät.", ja: "もう遅い時間です。" }
-      ],
-      explanation_ja: "時刻を尋ねる定番フレーズ。同じ意味で „Wie viel Uhr ist es?“ も使われる。答えるときは „Es ist ... Uhr.“ の形になる。"
-    }
-  ],
-  grammarTip: {
-    title: "動詞は2番目！ドイツ語の語順の基本ルール",
-    body_ja: "ドイツ語の平叙文では、定形動詞（人称変化した動詞）は必ず文の2番目の要素に置かれます。主語が1番目とは限らず、時間や場所を表す語句を文頭に置くこともでき、その場合は主語と動詞の位置が入れ替わります（例: „Heute kaufe ich Brot.“＝「今日、私はパンを買います」）。英語や日本語のような固定された語順とは異なるため、A2では「文頭に別の要素を置いたら、動詞はそのまま2番目、主語は動詞の後ろに移動する」というルールを意識して練習することが大切です。"
-  },
-  todayQuiz: [
-    { question: "「Familie（家族）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 1, explanation: "Familieは女性名詞なのでdie Familieが正解。" },
-    { question: "Ergänze: „Ich ___ ein neues Handy.\"（kaufenを正しい形に）", choices: ["kaufe", "kaufst", "kauft", "kaufen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。kaufeが正解。" },
-    { question: "Ergänze: „Du ___ das Auto dort.\"（sehenを正しい形に）", choices: ["sehst", "siehst", "sieht", "sehe"], answerIndex: 1, explanation: "sehenは不規則動詞（e→ie）。du の形は siehst になる。" },
-    { question: "「teuer」の反対の意味を持つ形容詞は？", choices: ["billig", "kalt", "früh", "spät"], answerIndex: 0, explanation: "teuer（高い）の反対はbillig（安い）。" },
-    { question: "値段を尋ねるときに使うフレーズはどれ？", choices: ["Was kostet das?", "Wie spät ist es?", "Wie geht es dir?", "Das macht nichts."], answerIndex: 0, explanation: "„Was kostet das?“が値段を尋ねる基本フレーズ。" },
-    { question: "「der Preis」の複数形は？", choices: ["die Preise", "die Preisen", "der Preise", "das Preise"], answerIndex: 0, explanation: "複数形は die Preise で、語尾に -e を付けるパターン。" },
-    { question: "ドイツ語の平叙文で、定形動詞は文の何番目に置かれる？", choices: ["1番目", "2番目", "3番目", "最後"], answerIndex: 1, explanation: "定形第二位の法則により、動詞は常に文の2番目に置かれる。" },
-    { question: "Ergänze: „Sie ___ ein rotes Kleid.\"（tragenを正しい形に）", choices: ["trage", "trägst", "trägt", "tragen"], answerIndex: 2, explanation: "sieは3人称単数。tragenは不規則動詞（a→ä）なので trägt が正解。" }
-  ]
-}
-,
-{
   date: "2026-09-13",
   dateLabel: "2026年9月13日（日）",
   readTimeMin: 18,
@@ -2020,8 +1886,151 @@ const GERMAN_REPORTS = [
     { question: "「Onkel（おじ）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Onkelは男性名詞なのでder Onkelが正解。複数形はdie Onkel（無変化）。" }
   ]
 }
+,
+{
+  date: "2026-09-30",
+  dateLabel: "2026年9月30日（水）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "das Brot", plural: "die Brote",
+      meaning_ja: "パン",
+      examples: [
+        { de: "Ich esse morgens gern Brot mit Butter.", ja: "私は朝、パンにバターを付けて食べるのが好きです。" },
+        { de: "Das Brot ist noch ganz frisch.", ja: "そのパンはまだとても新鮮です。" }
+      ],
+      related: [ { term: "backen", note_ja: "動詞「（パンなどを）焼く」。Brotと相性のいい関連語。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Brote で語尾に -e を付ける規則的なパターン。„Brot“は単数形で「パン」全体を指すことが多く、種類を数えるときは „ein Brot“（一個のパン）のように数える。"
+    },
+    {
+      type: "noun", term: "die Farbe", plural: "die Farben",
+      meaning_ja: "色",
+      examples: [
+        { de: "Welche Farbe hat dein neues Auto?", ja: "あなたの新しい車は何色ですか？" },
+        { de: "Rot ist meine Lieblingsfarbe.", ja: "赤は私の一番好きな色です。" }
+      ],
+      related: [ { term: "malen", note_ja: "動詞「（絵を）描く」。Farbe（色・絵の具）と一緒に使われることが多い関連語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Farben で語尾に -n を付ける規則的なパターン。好きな色を聞く „Welche Farbe...?“ は日常会話でよく使う疑問文の形。"
+    },
+    {
+      type: "noun", term: "der Kaffee", plural: "die Kaffees",
+      meaning_ja: "コーヒー",
+      examples: [
+        { de: "Ich trinke jeden Morgen einen Kaffee.", ja: "私は毎朝コーヒーを一杯飲みます。" },
+        { de: "Möchtest du einen Kaffee?", ja: "コーヒーはいかがですか？" }
+      ],
+      related: [ { term: "der Tee", note_ja: "「お茶、紅茶」。Kaffeeとセットで飲み物の話題によく使われる語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Kaffees で、外来語らしく語尾に -s を付けるパターン（das Autoと同じタイプ）。„Kaffee“は普通は数えない飲み物だが、„ein Kaffee“（コーヒー1杯）のように注文するときは数えられる名詞として使う。"
+    },
+    {
+      type: "verb", term: "wollen", conjugation: "ich will / du willst / er-sie-es will",
+      meaning_ja: "〜したい",
+      examples: [
+        { de: "Ich will heute Abend zu Hause bleiben.", ja: "私は今夜家にいたいです。" },
+        { de: "Was willst du essen?", ja: "あなたは何を食べたいですか？" }
+      ],
+      related: [ { term: "mögen", note_ja: "「〜が好き」。wollen（〜したい）より控えめな願望・好みを表す関連語。" } ],
+      explanation_ja: "話法の助動詞（不規則変化）。ich と er-sie-es の形がどちらも will になり、語尾がつかない点に注意（könnenのkannと同じパターン）。„wollen＋動詞の不定形（文末）“の形で使う。"
+    },
+    {
+      type: "verb", term: "sitzen", conjugation: "ich sitze / du sitzt / er-sie-es sitzt",
+      meaning_ja: "座っている",
+      examples: [
+        { de: "Ich sitze auf dem Stuhl.", ja: "私は椅子に座っています。" },
+        { de: "Wo sitzt du normalerweise?", ja: "あなたは普段どこに座っていますか？" }
+      ],
+      related: [ { term: "stehen", note_ja: "「立つ、立っている」。sitzen（座る）と対になる動作の動詞。" } ],
+      explanation_ja: "語幹が -tz で終わるため、du と er-sie-es の形がどちらも sitzt になる（heißenのheißtと同じ現象）。„auf＋Dativ（3格）“で「〜の上に座っている」という位置を表す、状態を表す動詞。"
+    },
+    {
+      type: "verb", term: "bezahlen", conjugation: "ich bezahle / du bezahlst / er-sie-es bezahlt",
+      meaning_ja: "支払う",
+      examples: [
+        { de: "Ich bezahle immer mit Karte.", ja: "私はいつもカードで支払います。" },
+        { de: "Bezahlst du bar oder mit Karte?", ja: "あなたは現金かカード、どちらで支払いますか？" }
+      ],
+      related: [ { term: "die Rechnung", note_ja: "「会計、請求書」。bezahlen（支払う）と一緒によく使われる関連語。" } ],
+      explanation_ja: "規則動詞。be- という前綴りが付くと自動詞 zahlen（支払う）が「〜を支払う」という他動詞的な意味を持つようになる。„mit Karte“（カードで）、„bar“（現金で）は支払い方法を表す基本表現。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "bunt",
+      meaning_ja: "色とりどりの、カラフルな",
+      examples: [
+        { de: "Der Rock ist sehr bunt.", ja: "そのスカートはとてもカラフルです。" },
+        { de: "Ich mag bunte Blumen.", ja: "私は色とりどりの花が好きです。" }
+      ],
+      related: [ { term: "einfarbig", note_ja: "「単色の」。buntの対義語に近い語。" } ],
+      explanation_ja: "複数の色が使われている様子を表す形容詞。名詞の前に置くと語尾変化する（bunte Blumen）点は他の形容詞と同じルール。"
+    },
+    {
+      term: "voll",
+      meaning_ja: "いっぱいの、混んでいる",
+      examples: [
+        { de: "Das Glas ist voll.", ja: "そのグラスはいっぱいです。" },
+        { de: "Der Bus ist heute sehr voll.", ja: "そのバスは今日とても混んでいます。" }
+      ],
+      related: [ { term: "leer", note_ja: "「空の」。vollの対義語。" } ],
+      explanation_ja: "物の中身がいっぱいの状態と、乗り物や場所が「混んでいる」状態の両方に使える基本形容詞。"
+    },
+    {
+      term: "hungrig",
+      meaning_ja: "お腹が空いた",
+      examples: [
+        { de: "Ich bin sehr hungrig.", ja: "私はとてもお腹が空いています。" },
+        { de: "Bist du schon hungrig?", ja: "あなたはもうお腹が空いていますか？" }
+      ],
+      related: [ { term: "durstig", note_ja: "「喉が渇いた」。hungrigと同じ形の形容詞で、身体感覚を表すときのペア。" } ],
+      explanation_ja: "„sein＋hungrig“（お腹が空いている）の形で使う。同じ意味を „haben＋Hunger“（Hungerを持っている）という表現で言うこともでき、両方の言い方がよく使われる。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Ich habe Hunger.",
+      meaning_ja: "お腹が空いた",
+      examples: [
+        { de: "Ich habe Hunger. Wollen wir essen gehen?", ja: "お腹が空きました。食事に行きませんか？" },
+        { de: "Hast du auch Hunger?", ja: "あなたもお腹が空いていますか？" }
+      ],
+      explanation_ja: "haben＋無冠詞の名詞Hungerで身体感覚を表す定型表現。„Ich bin hungrig.“と同じ意味だが、日常会話ではこちらもよく使われる。"
+    },
+    {
+      phrase: "Zahlen, bitte!",
+      meaning_ja: "お会計お願いします！",
+      examples: [
+        { de: "Entschuldigung, zahlen, bitte!", ja: "すみません、お会計お願いします！" },
+        { de: "Können wir zahlen, bitte?", ja: "お会計お願いできますか？" }
+      ],
+      explanation_ja: "レストランやカフェで会計を頼むときの定番フレーズ。動詞zahlenはbezahlenのより口語的で短い形。"
+    },
+    {
+      phrase: "Das schmeckt gut!",
+      meaning_ja: "これは美味しいです！",
+      examples: [
+        { de: "Das Brot schmeckt sehr gut!", ja: "このパンはとても美味しいです！" },
+        { de: "Schmeckt dir der Kaffee?", ja: "コーヒーは美味しいですか？" }
+      ],
+      explanation_ja: "食べ物・飲み物の味について感想を言う基本表現。動詞schmecken（美味しい、味がする）は「人に3格＋味の主語」の形をとる（„Schmeckt dir der Kaffee?“は直訳「コーヒーはあなたにとって美味しく味わえますか」）。"
+    }
+  ],
+  grammarTip: {
+    title: "「お腹が空いた」もhabenで表す？ 身体感覚を表すhaben＋名詞",
+    body_ja: "ドイツ語では「お腹が空いた」「喉が渇いた」「怖い」などの身体的・心理的な感覚を、„Ich bin hungrig.“のようにsein＋形容詞で表すだけでなく、haben＋無冠詞の名詞という形でもよく表現します。„Ich habe Hunger.“（お腹が空いた）、„Ich habe Durst.“（喉が渇いた）、„Ich habe Angst.“（怖い）のように、Hunger・Durst・Angstはいずれも冠詞をつけずに使うのが基本です。sein＋形容詞とhaben＋名詞、どちらの言い方にも慣れておくと表現の幅が広がります。"
+  },
+  todayQuiz: [
+    { question: "「Brot（パン）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Brotは中性名詞なのでdas Brotが正解。複数形はdie Brote。" },
+    { question: "Ergänze: „Was ___ du trinken?“（wollenを正しい形に）", choices: ["will", "willst", "wollt", "wollen"], answerIndex: 1, explanation: "主語がdu（2人称単数）。wollenは不規則変化するが、duの形はwillstになる。" },
+    { question: "Ergänze: „Ich ___ auf dem Stuhl.“（sitzenを正しい形に）", choices: ["sitze", "sitzt", "sitzen", "sitzest"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。sitzeが正解。" },
+    { question: "Ergänze: „___ du bar oder mit Karte?“（bezahlenを正しい形に、疑問文）", choices: ["bezahle", "bezahlst", "bezahlt", "bezahlen"], answerIndex: 1, explanation: "主語がdu（2人称単数）なので語尾は-st。bezahlstが正解。" },
+    { question: "「voll」の反対の意味を持つ形容詞は？", choices: ["leer", "bunt", "hungrig", "klein"], answerIndex: 0, explanation: "voll（いっぱいの）の反対はleer（空の）。" },
+    { question: "「die Farbe」の複数形は？", choices: ["die Farben", "die Farbe", "die Färben", "der Farben"], answerIndex: 0, explanation: "複数形はdie Farbenで、語尾に-nを付ける規則的なパターン。" },
+    { question: "お腹が空いたことを表すドイツ語の表現はどれ？", choices: ["Ich habe Hunger.", "Ich habe Angst.", "Das schmeckt gut!", "Zahlen, bitte!"], answerIndex: 0, explanation: "„Ich habe Hunger.“はhaben＋無冠詞名詞で身体感覚を表す定型表現。" },
+    { question: "レストランで会計を頼むときに使う表現はどれ？", choices: ["Zahlen, bitte!", "Das schmeckt gut!", "Guten Appetit!", "Ich habe Hunger."], answerIndex: 0, explanation: "„Zahlen, bitte!“は会計を頼むときの定番フレーズ。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-29)
+// ── END_DATA ──  (last sync: 2026-09-30)
 
 function esc(s){
   if(s===undefined||s===null) return '';
