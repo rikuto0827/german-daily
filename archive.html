@@ -54,130 +54,140 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-01-01",
-  dateLabel: "サンプル日（実際の初日はセットアップ時に生成）",
+  date: "2026-09-12",
+  dateLabel: "2026年9月12日（土）",
   readTimeMin: 18,
   coreItems: [
     {
-      type: "noun", term: "das Haus", plural: "die Häuser",
-      meaning_ja: "家",
+      type: "noun", term: "die Familie", plural: "die Familien",
+      meaning_ja: "家族",
       examples: [
-        { de: "Das Haus ist sehr groß.", ja: "その家はとても大きいです。" },
-        { de: "Wir wohnen in einem kleinen Haus.", ja: "私たちは小さな家に住んでいます。" }
+        { de: "Meine Familie wohnt in München.", ja: "私の家族はミュンヘンに住んでいます。" },
+        { de: "Wir haben eine große Familie.", ja: "私たちは大家族です。" }
       ],
-      related: [ { term: "die Wohnung", note_ja: "「マンション・アパートの一室」。Hausは一戸建てのイメージ、Wohnungは集合住宅の1室。" } ],
-      explanation_ja: "中性名詞（das）。複数形は語幹の母音がウムラウト化して die Häuser になる、よくあるパターン。家に関する語（zu Hause=家で、nach Hause=家へ）とセットで覚えると効率的。"
+      related: [ { term: "die Eltern", note_ja: "「両親」。常に複数形で使う語で、単数形はない。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Familien で語尾に -n を付けるだけの規則的なパターン。meine Familie（私の家族）のように所有冠詞とセットで使うことが多い。"
     },
     {
-      type: "noun", term: "die Arbeit", plural: "die Arbeiten",
-      meaning_ja: "仕事、労働",
+      type: "noun", term: "der Preis", plural: "die Preise",
+      meaning_ja: "値段、価格",
       examples: [
-        { de: "Ich gehe jeden Tag zur Arbeit.", ja: "私は毎日仕事に行きます。" },
-        { de: "Die Arbeit macht mir Spaß.", ja: "仕事は楽しいです。" }
+        { de: "Der Preis ist sehr hoch.", ja: "その値段はとても高いです。" },
+        { de: "Wie ist der Preis für dieses Buch?", ja: "この本の値段はいくらですか？" }
       ],
-      related: [ { term: "arbeiten", note_ja: "動詞形「働く」。名詞Arbeitと語源が同じで、seiまとめて覚えると語彙が2倍になる。" } ],
-      explanation_ja: "女性名詞（die）。\"zur Arbeit gehen\"（仕事に行く）は日常会話で非常によく使う定型表現。"
+      related: [ { term: "kosten", note_ja: "動詞「（値段が）〜である」。„Was kostet das?“（いくらですか）で頻出。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Preise で語尾に -e を付けるパターン。値段の高さそのものは teuer/billig という形容詞で表すのが自然。"
     },
     {
-      type: "noun", term: "der Freund / die Freundin", plural: "die Freunde",
-      meaning_ja: "友達（男性形／女性形）",
+      type: "noun", term: "die Zeit", plural: "die Zeiten",
+      meaning_ja: "時間",
       examples: [
-        { de: "Er ist mein bester Freund.", ja: "彼は私の親友です。" },
-        { de: "Sie hat viele Freundinnen.", ja: "彼女には友達（女性）がたくさんいます。" }
+        { de: "Ich habe heute keine Zeit.", ja: "私は今日時間がありません。" },
+        { de: "Die Zeit vergeht sehr schnell.", ja: "時間はとても早く過ぎます。" }
       ],
-      related: [ { term: "der Kollege / die Kollegin", note_ja: "「同僚」。friend/colleagueの区別が日本語よりはっきりしているのがドイツ語の特徴。" } ],
-      explanation_ja: "男性名詞・女性名詞のペア。ドイツ語では人を表す名詞の多くに男性形/女性形（-in）のペアがある。恋人の意味にもなりうる（文脈で判断）。"
+      related: [ { term: "pünktlich", note_ja: "「時間通りに」。„keine Zeit haben“（時間がない）とセットでよく使う。" } ],
+      explanation_ja: "女性名詞（die）。複数形 die Zeiten は主に「時代」や複数の時間帯を指すときに使う。„Zeit haben“（時間がある）は否定形 keine Zeit haben で頻出。"
     },
     {
-      type: "verb", term: "wohnen", conjugation: "ich wohne / du wohnst / er-sie-es wohnt",
-      meaning_ja: "住む",
+      type: "verb", term: "kaufen", conjugation: "ich kaufe / du kaufst / er-sie-es kauft",
+      meaning_ja: "買う",
       examples: [
-        { de: "Ich wohne in Tokio.", ja: "私は東京に住んでいます。" },
-        { de: "Wo wohnst du?", ja: "あなたはどこに住んでいますか？" }
+        { de: "Ich kaufe ein neues Handy.", ja: "私は新しい携帯電話を買います。" },
+        { de: "Wo kaufst du dein Brot?", ja: "あなたはどこでパンを買いますか？" }
       ],
-      related: [ { term: "leben", note_ja: "「生きる、暮らす」。wohnenは「住所として住む」、lebenはより広く「生活する・生きる」というニュアンス。" } ],
-      explanation_ja: "規則動詞（規則的に変化する動詞）。語幹 wohn- に -e/-st/-t を付けるだけなので、規則変化のお手本として最初に覚えるべき動詞の一つ。"
+      related: [ { term: "verkaufen", note_ja: "「売る」。ver-を付けると反対の意味になる代表例。" } ],
+      explanation_ja: "規則動詞。語幹 kauf- に -e/-st/-t を付けるだけ。買い物で最頻出の動詞の一つで、分離動詞 einkaufen（買い物をする）とセットで覚えると効率的。"
     },
     {
-      type: "verb", term: "brauchen", conjugation: "ich brauche / du brauchst / er-sie-es braucht",
-      meaning_ja: "必要とする",
+      type: "verb", term: "sehen", conjugation: "ich sehe / du siehst / er-sie-es sieht",
+      meaning_ja: "見る",
       examples: [
-        { de: "Ich brauche deine Hilfe.", ja: "私はあなたの助けが必要です。" },
-        { de: "Wir brauchen mehr Zeit.", ja: "私たちにはもっと時間が必要です。" }
+        { de: "Ich sehe einen Film.", ja: "私は映画を見ます。" },
+        { de: "Siehst du das Auto dort?", ja: "あそこの車が見えますか？" }
       ],
-      related: [ { term: "benötigen", note_ja: "同じ「必要とする」だが、よりフォーマルな響き。日常会話ではbrauchenが圧倒的に多い。" } ],
-      explanation_ja: "規則動詞。\"brauchen + 4格（Akkusativ）\"の形を取る（＝目的語は4格）。ドイツ語学習の最初期に格変化の練習として使われることが多い動詞。"
+      related: [ { term: "fernsehen", note_ja: "「テレビを見る」。sehenを含む分離動詞で日常会話によく出る。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→ie）。du/erの形で sehe→siehst/sieht に変化するのがA2の重要ポイント。"
     },
     {
-      type: "verb", term: "helfen", conjugation: "ich helfe / du hilfst / er-sie-es hilft",
-      meaning_ja: "助ける、手伝う",
+      type: "verb", term: "tragen", conjugation: "ich trage / du trägst / er-sie-es trägt",
+      meaning_ja: "着る、運ぶ",
       examples: [
-        { de: "Kannst du mir helfen?", ja: "私を手伝ってもらえますか？" },
-        { de: "Er hilft seiner Mutter.", ja: "彼は母親を手伝います。" }
+        { de: "Sie trägt ein rotes Kleid.", ja: "彼女は赤いドレスを着ています。" },
+        { de: "Er trägt die Tasche für mich.", ja: "彼は私のためにそのバッグを運びます。" }
       ],
-      related: [ { term: "die Hilfe", note_ja: "名詞形「助け」。\"Hilfe!\"だけで「助けて！」という叫び声にもなる。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形でhelfe→hilfst/hilftと変化するのがA2の重要ポイント。さらに\"helfen\"は3格（Dativ）を取る動詞（＝目的語が3格）という、日本人学習者が間違えやすい重要な例外。"
+      related: [ { term: "anziehen", note_ja: "「（服を）着る」という動作を表す分離動詞。tragenは「着ている状態」に近い。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 a→ä）。du/erの形で trage→trägst/trägt に変化する。「着る」と「運ぶ」の2つの意味を持つ点に注意。"
     }
   ],
   adjectives: [
     {
-      term: "wichtig",
-      meaning_ja: "重要な",
+      term: "teuer",
+      meaning_ja: "（値段が）高い",
       examples: [
-        { de: "Das ist mir sehr wichtig.", ja: "それは私にとってとても重要です。" },
-        { de: "Eine wichtige Frage.", ja: "重要な質問。" }
+        { de: "Das Auto ist zu teuer.", ja: "その車は高すぎます。" },
+        { de: "Diese Uhr ist sehr teuer.", ja: "この時計はとても高価です。" }
       ],
-      related: [ { term: "unwichtig", note_ja: "「重要でない」。un-を付けると反対の意味になるパターンは他の形容詞にも応用できる。" } ],
-      explanation_ja: "\"mir wichtig\"（私にとって重要）のように、人称代名詞の3格と組み合わせるのが定番パターン。"
+      related: [ { term: "billig", note_ja: "「安い」。teuer⇔billigは買い物での必須の対義語ペア。" } ],
+      explanation_ja: "値段について話すときの最頻出形容詞。„zu teuer“（高すぎる）のように zu と組み合わせると「〜すぎる」という意味になる。"
     },
     {
-      term: "müde",
-      meaning_ja: "疲れた、眠い",
+      term: "kalt",
+      meaning_ja: "寒い、冷たい",
       examples: [
-        { de: "Ich bin heute sehr müde.", ja: "私は今日とても疲れています。" },
-        { de: "Bist du müde?", ja: "あなたは疲れていますか？" }
+        { de: "Heute ist es sehr kalt.", ja: "今日はとても寒いです。" },
+        { de: "Das Wasser ist kalt.", ja: "その水は冷たいです。" }
       ],
-      related: [ { term: "fit", note_ja: "「元気な、調子がいい」。müde⇔fitで対比的に覚えると定着しやすい。" } ],
-      explanation_ja: "\"sein\"（〜である）と組み合わせて体調・状態を表す最頻出の形容詞の一つ。"
+      related: [ { term: "warm", note_ja: "「暖かい」。天気や飲食物の温度を表すときの対義語ペア。" } ],
+      explanation_ja: "天気や温度を表す基本形容詞。„Es ist kalt.“のように非人称主語esと組み合わせて天気表現によく使う。"
+    },
+    {
+      term: "früh",
+      meaning_ja: "早い、早く",
+      examples: [
+        { de: "Ich stehe jeden Tag früh auf.", ja: "私は毎日早く起きます。" },
+        { de: "Es ist noch früh.", ja: "まだ早いです。" }
+      ],
+      related: [ { term: "spät", note_ja: "「遅い」。früh⇔spätは時間に関する基本の対義語ペア。" } ],
+      explanation_ja: "形容詞にも副詞にもなる語。分離動詞 aufstehen（起きる）と組み合わせた früh aufstehen（早起きする）という表現でよく使われる。"
     }
   ],
   phrases: [
     {
-      phrase: "Wie geht es dir?",
-      meaning_ja: "元気？（くだけた言い方、親しい相手に）",
+      phrase: "Was kostet das?",
+      meaning_ja: "これはいくらですか？",
       examples: [
-        { de: "Hallo! Wie geht es dir?", ja: "こんにちは！元気？" },
-        { de: "Mir geht es gut, danke. Und dir?", ja: "元気だよ、ありがとう。あなたは？" }
+        { de: "Entschuldigung, was kostet das?", ja: "すみません、これはいくらですか？" },
+        { de: "Das kostet zehn Euro.", ja: "それは10ユーロです。" }
       ],
-      explanation_ja: "フォーマルな場面では \"Wie geht es Ihnen?\"（Sie形）を使う。答え方の定番は \"Mir geht es gut/schlecht/so lala.\""
+      explanation_ja: "買い物で値段を尋ねる最も基本的なフレーズ。動詞kostenは物を主語にして使い、人を主語にはしない。"
     },
     {
-      phrase: "Das macht nichts.",
-      meaning_ja: "気にしないで、大丈夫だよ",
+      phrase: "Wie spät ist es?",
+      meaning_ja: "今何時ですか？",
       examples: [
-        { de: "Entschuldigung, ich bin spät! – Das macht nichts.", ja: "遅れてごめん！ — 大丈夫だよ。" },
-        { de: "Das macht nichts, das kann jedem passieren.", ja: "気にしないで、誰にでも起こりうることだから。" }
+        { de: "Entschuldigung, wie spät ist es?", ja: "すみません、今何時ですか？" },
+        { de: "Es ist schon spät.", ja: "もう遅い時間です。" }
       ],
-      explanation_ja: "直訳は「それは何もしない（＝影響しない）」。謝罪への返答として非常によく使われる定型句。"
+      explanation_ja: "時刻を尋ねる定番フレーズ。同じ意味で „Wie viel Uhr ist es?“ も使われる。答えるときは „Es ist ... Uhr.“ の形になる。"
     }
   ],
   grammarTip: {
-    title: "なぜ3つも冠詞があるの？ der / die / das のイメージ",
-    body_ja: "ドイツ語の名詞にはすべて「文法上の性」があり、それぞれ der（男性）・die（女性）・das（中性）という冠詞が付きます。これは日本語にも英語にもない概念で、多くの学習者がつまずくポイントです。重要なのは「実際の性別と一致するとは限らない」ということ — 例えば das Mädchen（少女）は中性名詞です。効率的な学習法は、単語を覚えるときに必ず冠詞ごとセットで覚えること（\"Haus\" ではなく \"das Haus\" として記憶する）。この習慣が、後の格変化（Nominativ/Akkusativ/Dativ）の理解を大きく助けます。"
+    title: "動詞は2番目！ドイツ語の語順の基本ルール",
+    body_ja: "ドイツ語の平叙文では、定形動詞（人称変化した動詞）は必ず文の2番目の要素に置かれます。主語が1番目とは限らず、時間や場所を表す語句を文頭に置くこともでき、その場合は主語と動詞の位置が入れ替わります（例: „Heute kaufe ich Brot.“＝「今日、私はパンを買います」）。英語や日本語のような固定された語順とは異なるため、A2では「文頭に別の要素を置いたら、動詞はそのまま2番目、主語は動詞の後ろに移動する」というルールを意識して練習することが大切です。"
   },
   todayQuiz: [
-    { question: "「Haus（家）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Hausは中性名詞なのでdas Hausが正解。複数形はdie Häuser。" },
-    { question: "Ergänze: „Ich ___ in Berlin.\"（wohnenを正しい形に）", choices: ["wohne", "wohnst", "wohnt", "wohnen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。ich wohneが正解。" },
-    { question: "Ergänze: „Er ___ mir.\"（helfenを正しい形に）", choices: ["helft", "hilfst", "hilft", "helfe"], answerIndex: 2, explanation: "helfenは幹母音変化する不規則動詞。3人称単数（er）はhilftになる（e→i）。" },
-    { question: "「müde」の意味は？", choices: ["重要な", "疲れた", "友達", "家"], answerIndex: 1, explanation: "müdeは「疲れた、眠い」という意味の形容詞。" },
-    { question: "親しい相手に「元気？」と聞くドイツ語のフレーズは？", choices: ["Wie geht es dir?", "Das macht nichts.", "Ich brauche Hilfe.", "Wo wohnst du?"], answerIndex: 0, explanation: "「Wie geht es dir?」がくだけた「元気？」にあたる定番フレーズ。" },
-    { question: "「der Freund」の複数形は？", choices: ["die Freunde", "die Freunds", "der Freunde", "das Freunde"], answerIndex: 0, explanation: "複数形はdie Freunde。ドイツ語の複数形にはdieを使うのが基本ルール。" },
-    { question: "Ergänze: „Ich ___ neue Schuhe.\"（brauchenを正しい形に）", choices: ["brauche", "brauchst", "braucht", "brauchen"], answerIndex: 0, explanation: "主語がich（1人称単数）なのでbraucheが正解。" },
-    { question: "「Das macht nichts.」の意味は？", choices: ["それは大丈夫、気にしないで", "ありがとう", "さようなら", "お腹が空いた"], answerIndex: 0, explanation: "謝罪への返答として使われる「気にしないで、大丈夫だよ」という意味の定型句。" }
+    { question: "「Familie（家族）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 1, explanation: "Familieは女性名詞なのでdie Familieが正解。" },
+    { question: "Ergänze: „Ich ___ ein neues Handy.\"（kaufenを正しい形に）", choices: ["kaufe", "kaufst", "kauft", "kaufen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。kaufeが正解。" },
+    { question: "Ergänze: „Du ___ das Auto dort.\"（sehenを正しい形に）", choices: ["sehst", "siehst", "sieht", "sehe"], answerIndex: 1, explanation: "sehenは不規則動詞（e→ie）。du の形は siehst になる。" },
+    { question: "「teuer」の反対の意味を持つ形容詞は？", choices: ["billig", "kalt", "früh", "spät"], answerIndex: 0, explanation: "teuer（高い）の反対はbillig（安い）。" },
+    { question: "値段を尋ねるときに使うフレーズはどれ？", choices: ["Was kostet das?", "Wie spät ist es?", "Wie geht es dir?", "Das macht nichts."], answerIndex: 0, explanation: "„Was kostet das?“が値段を尋ねる基本フレーズ。" },
+    { question: "「der Preis」の複数形は？", choices: ["die Preise", "die Preisen", "der Preise", "das Preise"], answerIndex: 0, explanation: "複数形は die Preise で、語尾に -e を付けるパターン。" },
+    { question: "ドイツ語の平叙文で、定形動詞は文の何番目に置かれる？", choices: ["1番目", "2番目", "3番目", "最後"], answerIndex: 1, explanation: "定形第二位の法則により、動詞は常に文の2番目に置かれる。" },
+    { question: "Ergänze: „Sie ___ ein rotes Kleid.\"（tragenを正しい形に）", choices: ["trage", "trägst", "trägt", "tragen"], answerIndex: 2, explanation: "sieは3人称単数。tragenは不規則動詞（a→ä）なので trägt が正解。" }
   ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-29)
+// ── END_DATA ──  (last sync: 2026-09-30)
 
 function esc(s){
   if(s===undefined||s===null) return '';
