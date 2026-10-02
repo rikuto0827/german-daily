@@ -146,139 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-09-13",
-  dateLabel: "2026年9月13日（日）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "die Stadt", plural: "die Städte",
-      meaning_ja: "町、都市",
-      examples: [
-        { de: "Ich wohne in einer kleinen Stadt.", ja: "私は小さな町に住んでいます。" },
-        { de: "Die Stadt ist sehr alt.", ja: "その町はとても古いです。" }
-      ],
-      related: [ { term: "das Dorf", note_ja: "「村」。Stadt（町・都市）と対比される、より小さな居住地を指す語。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Städte で、語幹の母音がウムラウト化するパターン（a→ä）。das Haus→die Häuser と同じタイプのウムラウト複数形。"
-    },
-    {
-      type: "noun", term: "der Tisch", plural: "die Tische",
-      meaning_ja: "テーブル、机",
-      examples: [
-        { de: "Das Buch liegt auf dem Tisch.", ja: "本はテーブルの上にあります。" },
-        { de: "Wir kaufen einen neuen Tisch.", ja: "私たちは新しいテーブルを買います。" }
-      ],
-      related: [ { term: "der Stuhl", note_ja: "「椅子」。Tisch（テーブル）とセットでよく使われる家具の語。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Tische で、語尾に -e を付けるだけの規則的なパターン。前置詞 auf と組み合わせて „auf dem Tisch“（テーブルの上に）のように使うことが多い。"
-    },
-    {
-      type: "noun", term: "das Fenster", plural: "die Fenster",
-      meaning_ja: "窓",
-      examples: [
-        { de: "Das Fenster ist offen.", ja: "その窓は開いています。" },
-        { de: "Kannst du das Fenster schließen?", ja: "窓を閉めてもらえますか？" }
-      ],
-      related: [ { term: "die Tür", note_ja: "「ドア」。Fenster（窓）とセットで部屋の設備を表す基本語。" } ],
-      explanation_ja: "中性名詞（das）。複数形は単数形と同じ die Fenster で変化しない、A2で覚えておくべき無変化パターンの代表例。"
-    },
-    {
-      type: "verb", term: "gehen", conjugation: "ich gehe / du gehst / er-sie-es geht",
-      meaning_ja: "行く、歩く",
-      examples: [
-        { de: "Ich gehe heute ins Kino.", ja: "私は今日映画館に行きます。" },
-        { de: "Gehst du morgen zur Schule?", ja: "あなたは明日学校に行きますか？" }
-      ],
-      related: [ { term: "der Gang", note_ja: "名詞形「歩み、通路」。gehenと語源が同じ。" } ],
-      explanation_ja: "規則的に変化する基本動詞。„ins Kino gehen“（映画に行く）のように „gehen“ の前に行き先を示す前置詞句を置くパターンが頻出。"
-    },
-    {
-      type: "verb", term: "sprechen", conjugation: "ich spreche / du sprichst / er-sie-es spricht",
-      meaning_ja: "話す",
-      examples: [
-        { de: "Ich spreche ein bisschen Deutsch.", ja: "私は少しドイツ語を話します。" },
-        { de: "Sprichst du Englisch?", ja: "あなたは英語を話しますか？" }
-      ],
-      related: [ { term: "die Sprache", note_ja: "名詞形「言語」。sprechenと語源が同じで、Fremdsprache（外国語）などの複合語にもなる。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形で spreche→sprichst/spricht に変化するのがA2の重要ポイント。helfenやsehenと同じ変化パターンのグループ。"
-    },
-    {
-      type: "verb", term: "schlafen", conjugation: "ich schlafe / du schläfst / er-sie-es schläft",
-      meaning_ja: "眠る",
-      examples: [
-        { de: "Ich schlafe jede Nacht acht Stunden.", ja: "私は毎晩8時間眠ります。" },
-        { de: "Das Baby schläft schon.", ja: "赤ちゃんはもう眠っています。" }
-      ],
-      related: [ { term: "müde", note_ja: "形容詞「疲れた」。schlafen（眠る）とセットでよく使われる状態を表す語。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 a→ä）。du/erの形で schlafe→schläfst/schläft に変化する。tragenと同じ変化パターンのグループ。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "schön",
-      meaning_ja: "美しい、素敵な、良い",
-      examples: [
-        { de: "Das Wetter ist heute schön.", ja: "今日は天気がいいです。" },
-        { de: "Sie hat ein schönes Kleid.", ja: "彼女は素敵なドレスを持っています。" }
-      ],
-      related: [ { term: "hässlich", note_ja: "「醜い」。schön⇔hässlichは外見を表す基本の対義語ペア。" } ],
-      explanation_ja: "外見だけでなく天気や状況の「良さ」全般に使える万能な形容詞。„Schön!“単独で「いいね！」という相槌にもなる。"
-    },
-    {
-      term: "laut",
-      meaning_ja: "うるさい、大きい音の",
-      examples: [
-        { de: "Die Musik ist zu laut.", ja: "その音楽はうるさすぎます。" },
-        { de: "Sei bitte nicht so laut.", ja: "どうかそんなにうるさくしないで。" }
-      ],
-      related: [ { term: "leise", note_ja: "「静かな」。laut⇔leiseは音量に関する基本の対義語ペア。" } ],
-      explanation_ja: "音の大きさを表す基本形容詞。副詞としても使え、„laut sprechen“（大きな声で話す）のように動詞を修飾する。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Es tut mir leid.",
-      meaning_ja: "ごめんなさい、申し訳ありません",
-      examples: [
-        { de: "Es tut mir leid, ich habe keine Zeit.", ja: "すみません、時間がありません。" },
-        { de: "Das tut mir wirklich leid.", ja: "それは本当に申し訳なく思います。" }
-      ],
-      explanation_ja: "„Entschuldigung“より少し丁寧で気持ちのこもった謝罪表現。直訳は「それは私にとって痛む」。"
-    },
-    {
-      phrase: "Kein Problem.",
-      meaning_ja: "問題ない、大丈夫だよ",
-      examples: [
-        { de: "Kannst du mir helfen? – Klar, kein Problem.", ja: "手伝ってもらえる？—もちろん、大丈夫だよ。" },
-        { de: "Kein Problem, ich habe Zeit.", ja: "問題ないよ、時間はあるから。" }
-      ],
-      explanation_ja: "依頼を快く引き受けるときやお礼への返答に使う口語的なフレーズ。„Das macht nichts.“と似ているが、より幅広いカジュアルな場面で使われる。"
-    },
-    {
-      phrase: "Bis später!",
-      meaning_ja: "またあとで！",
-      examples: [
-        { de: "Ich muss jetzt gehen. Bis später!", ja: "もう行かないと。またあとで！" },
-        { de: "Bis später, wir sehen uns um sechs.", ja: "またあとで、6時に会いましょう。" }
-      ],
-      explanation_ja: "別れ際の挨拶の一つ。同じ日にまた会う予定がある時に使う（Bis morgen!＝また明日、Bis bald!＝またすぐに、なども同系統の表現）。"
-    }
-  ],
-  grammarTip: {
-    title: "動詞が分裂する？ドイツ語の分離動詞のしくみ",
-    body_ja: "ドイツ語には「aufstehen（起きる）」「einkaufen（買い物する）」のように、前綴り（auf-, ein-など）と動詞本体が組み合わさった分離動詞があります。文中で人称変化して使うときは、前綴りが動詞から離れて文末に移動するのが最大の特徴です。例えば„Ich stehe um sieben Uhr auf.“（私は7時に起きます）のように、steheが2番目、aufが文末に来ます。辞書に載っている形（aufstehen）と実際に使う形が見た目上大きく変わるため、A2では「前綴りは必ず文末」というルールを意識して練習することが大切です。"
-  },
-  todayQuiz: [
-    { question: "「Tisch（テーブル）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Tischは男性名詞なのでder Tischが正解。複数形はdie Tische。" },
-    { question: "Ergänze: „Du ___ sehr gut Deutsch.\"（sprechenを正しい形に）", choices: ["spreche", "sprichst", "spricht", "sprechen"], answerIndex: 1, explanation: "sprechenは不規則動詞（e→i）。du の形は sprichst になる。" },
-    { question: "Ergänze: „Er ___ jeden Tag acht Stunden.\"（schlafenを正しい形に）", choices: ["schlafe", "schläfst", "schläft", "schlafen"], answerIndex: 2, explanation: "schlafenは不規則動詞（a→ä）。3人称単数（er）の形は schläft になる。" },
-    { question: "「Fenster（窓）」の複数形は？", choices: ["die Fenster", "die Fensters", "die Fensteren", "der Fenster"], answerIndex: 0, explanation: "Fensterは単数形と複数形が同じ die Fenster になる無変化パターン。" },
-    { question: "「schön」の意味として正しいものは？", choices: ["美しい、素敵な", "うるさい", "速い", "静かな"], answerIndex: 0, explanation: "schönは「美しい、素敵な」という意味の形容詞。天気の良さを表すときにもよく使う。" },
-    { question: "「laut」の反対の意味を持つ形容詞は？", choices: ["leise", "schnell", "schön", "langsam"], answerIndex: 0, explanation: "laut（うるさい）の反対はleise（静かな）。" },
-    { question: "謝るときに使う丁寧なフレーズはどれ？", choices: ["Es tut mir leid.", "Kein Problem.", "Bis später!", "Wie spät ist es?"], answerIndex: 0, explanation: "„Es tut mir leid.“は「ごめんなさい」という気持ちのこもった謝罪表現。" },
-    { question: "ドイツ語の分離動詞について正しい説明はどれ？", choices: ["文中で前綴りが文末に移動する", "主語によって形が変わらない", "すべて不規則動詞である", "前綴りは常に動詞の前に残る"], answerIndex: 0, explanation: "分離動詞は人称変化すると前綴りが動詞本体から離れて文末に置かれる。" }
-  ]
-}
-,
-{
   date: "2026-09-14",
   dateLabel: "2026年9月14日（月）",
   readTimeMin: 18,
@@ -2029,8 +1896,151 @@ const GERMAN_REPORTS = [
     { question: "レストランで会計を頼むときに使う表現はどれ？", choices: ["Zahlen, bitte!", "Das schmeckt gut!", "Guten Appetit!", "Ich habe Hunger."], answerIndex: 0, explanation: "„Zahlen, bitte!“は会計を頼むときの定番フレーズ。" }
   ]
 }
+,
+{
+  date: "2026-10-01",
+  dateLabel: "2026年10月1日（木）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Freund", plural: "die Freunde",
+      meaning_ja: "友達、ボーイフレンド",
+      examples: [
+        { de: "Mein Freund heißt Paul.", ja: "私の友達はパウルという名前です。" },
+        { de: "Ich treffe heute meine Freunde.", ja: "私は今日友達に会います。" }
+      ],
+      related: [ { term: "die Freundin", note_ja: "「女友達、ガールフレンド」。Freundの女性形で、文脈によって『友達』『彼女』のどちらの意味にもなる。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Freunde で語尾に -e を付ける規則的なパターン。„mein Freund“は文脈により『男友達』だけでなく『彼（ボーイフレンド）』の意味にもなるため、女性形 die Freundin と合わせて使い分けに注意する。"
+    },
+    {
+      type: "noun", term: "die Wohnung", plural: "die Wohnungen",
+      meaning_ja: "住まい、アパートの一室",
+      examples: [
+        { de: "Meine Wohnung ist nicht sehr groß.", ja: "私の住まいはあまり大きくありません。" },
+        { de: "Wir suchen eine neue Wohnung.", ja: "私たちは新しい住まいを探しています。" }
+      ],
+      related: [ { term: "das Haus", note_ja: "「家、一戸建て」。Wohnungは建物内の一室（マンション・アパート）を指し、Hausは一戸建ての建物全体を指す。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Wohnungen で語尾に -en を付ける規則的なパターン。„in der Wohnung“（住まいの中で）のように前置詞inと組み合わせて場所を表すことが多い。"
+    },
+    {
+      type: "noun", term: "das Ei", plural: "die Eier",
+      meaning_ja: "卵",
+      examples: [
+        { de: "Ich esse morgens gern ein Ei.", ja: "私は朝、卵を1個食べるのが好きです。" },
+        { de: "Wir brauchen noch zwei Eier.", ja: "私たちはあと卵が2個必要です。" }
+      ],
+      related: [ { term: "das Brot", note_ja: "「パン」。Brotと一緒に朝食の話題でよく使われる基本的な食べ物の語。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Eier で語尾に -er を付けるパターン（ウムラウトなし）。das Kind→die Kinder と同じタイプの複数形で、数えるときは „zwei Eier“ のようにそのまま複数形を使う。"
+    },
+    {
+      type: "verb", term: "wohnen", conjugation: "ich wohne / du wohnst / er-sie-es wohnt",
+      meaning_ja: "住む",
+      examples: [
+        { de: "Ich wohne seit zwei Jahren in Berlin.", ja: "私は2年前からベルリンに住んでいます。" },
+        { de: "Wo wohnst du jetzt?", ja: "あなたは今どこに住んでいますか？" }
+      ],
+      related: [ { term: "die Wohnung", note_ja: "名詞形「住まい」。wohnenと語源が同じで、セットで覚えると効率的。" } ],
+      explanation_ja: "規則動詞。語幹 wohn- に -e/-st/-t を付けるだけ。„wohnen in + Dativ（3格）“の形で場所を表すのが基本パターンで、„Ich wohne in Berlin.“のように使う。歩いて移動するgehenとは異なり、『住む・暮らす』という状態を表す動詞。"
+    },
+    {
+      type: "verb", term: "mögen", conjugation: "ich mag / du magst / er-sie-es mag",
+      meaning_ja: "〜が好き",
+      examples: [
+        { de: "Ich mag Schokolade sehr.", ja: "私はチョコレートがとても好きです。" },
+        { de: "Magst du klassische Musik?", ja: "あなたはクラシック音楽が好きですか？" }
+      ],
+      related: [ { term: "möchten", note_ja: "「〜したい」。mögenから派生した控えめな願望表現で、wollenよりも丁寧な響きを持つ。" } ],
+      explanation_ja: "話法の助動詞の仲間（不規則変化）。ich と er-sie-es の形がどちらも mag になり、語尾がつかない点に注意（könnenのkannと同じパターン）。好きな対象（名詞）をそのまま4格（Akkusativ）で続けるのが基本で、„mögen + 動詞の不定形“はあまり使わず、代わりに派生形 möchten を使う点もA2の重要ポイント。"
+    },
+    {
+      type: "verb", term: "besuchen", conjugation: "ich besuche / du besuchst / er-sie-es besucht",
+      meaning_ja: "訪ねる、見学する",
+      examples: [
+        { de: "Ich besuche meine Freunde am Wochenende.", ja: "私は週末に友達を訪ねます。" },
+        { de: "Besuchst du oft deine Großeltern?", ja: "あなたは祖父母をよく訪ねますか？" }
+      ],
+      related: [ { term: "der Besuch", note_ja: "名詞形「訪問」。besuchenと語源が同じで、„zu Besuch kommen“（訪ねてくる）という表現にもつながる。" } ],
+      explanation_ja: "規則動詞。be-という前綴りが付くため分離しない非分離動詞で、文中でも常にひとまとまりのまま使う。訪ねる相手を4格（Akkusativ）の直接目的語で表すのが基本文型で、„Ich besuche dich.“（私はあなたを訪ねます）のように人称代名詞も4格になる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "müde",
+      meaning_ja: "疲れた、眠い",
+      examples: [
+        { de: "Ich bin heute sehr müde.", ja: "私は今日とても疲れています。" },
+        { de: "Die Kinder sind schon müde.", ja: "子供たちはもう眠そうです。" }
+      ],
+      related: [ { term: "schlafen", note_ja: "「眠る」。müde（疲れた）な状態のときに行う動作として組み合わせて使う動詞。" } ],
+      explanation_ja: "„sein + müde“の形で状態を表す基本形容詞。身体的な疲れだけでなく『眠い』というニュアンスでも使え、„Ich bin müde.“は日常会話で非常によく使われる一言。"
+    },
+    {
+      term: "traurig",
+      meaning_ja: "悲しい",
+      examples: [
+        { de: "Warum bist du so traurig?", ja: "なぜそんなに悲しいのですか？" },
+        { de: "Der Film war sehr traurig.", ja: "その映画はとても悲しかったです。" }
+      ],
+      related: [ { term: "glücklich", note_ja: "「幸せな」。traurigの対義語。" } ],
+      explanation_ja: "感情の『悲しさ』を表す基本形容詞。既出の glücklich（幸せな）と対になる語として覚えると効率的。„Warum bist du traurig?“のように理由を尋ねる疑問文でもよく使われる。"
+    },
+    {
+      term: "nett",
+      meaning_ja: "親切な、素敵な",
+      examples: [
+        { de: "Deine Freunde sind sehr nett.", ja: "あなたの友達はとても親切です。" },
+        { de: "Das ist sehr nett von dir.", ja: "それはとても親切ですね（あなたらしい優しさです）。" }
+      ],
+      related: [ { term: "freundlich", note_ja: "「親切な」。nettとほぼ同じ意味で使われる類義語。nettの方が少しくだけた響きを持つ。" } ],
+      explanation_ja: "freundlichとほぼ同義で使われる形容詞だが、より口語的で親しみのある響きを持つ。„Das ist nett von dir.“（それは親切ですね）は、相手の気遣いに感謝するときの定番表現。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Wie geht es dir?",
+      meaning_ja: "元気ですか？（くだけた言い方）",
+      examples: [
+        { de: "Hallo! Wie geht es dir?", ja: "こんにちは！元気ですか？" },
+        { de: "Wie geht es dir heute?", ja: "今日は元気ですか？" }
+      ],
+      explanation_ja: "親しい相手の様子を尋ねる基本フレーズ。答えるときは „Mir geht es gut/schlecht.“（私は元気です／元気じゃないです）のように人を3格（Dativ）にして答える。フォーマルな場面では „Wie geht es Ihnen?“ を使う。"
+    },
+    {
+      phrase: "Entschuldigung!",
+      meaning_ja: "すみません！、ごめんなさい！",
+      examples: [
+        { de: "Entschuldigung, wo ist der Bahnhof?", ja: "すみません、駅はどこですか？" },
+        { de: "Entschuldigung, das war mein Fehler.", ja: "ごめんなさい、それは私のミスでした。" }
+      ],
+      explanation_ja: "人に声をかけるときの『すみません』と、軽い謝罪の『ごめんなさい』の両方に使える便利な一言。より気持ちを込めて謝るときは „Es tut mir leid.“ を使う。"
+    },
+    {
+      phrase: "Komm rein!",
+      meaning_ja: "入って！（家に招き入れるとき）",
+      examples: [
+        { de: "Komm rein! Es ist kalt draußen.", ja: "入って！外は寒いよ。" },
+        { de: "Kommt rein und setzt euch!", ja: "入って座って！" }
+      ],
+      explanation_ja: "家や部屋に人を招き入れるときのくだけた表現。reinは hereinの口語的な短縮形で、分離動詞 „hereinkommen“（中に入ってくる）の命令形にあたる。"
+    }
+  ],
+  grammarTip: {
+    title: "4格の人称代名詞：mich / dich / ihn / sie / es の基本",
+    body_ja: "人称代名詞は目的語になるとAkkusativ（4格）の形に変化します。ich→mich、du→dich、er→ihn、sie→sie、es→esのように変わり、„Ich besuche dich.“（私はあなたを訪ねます）のように動詞の直後に置きます。dasを受けるときのesや、sieの単数（彼女）・複数（彼ら）が同じ形になる点に注意が必要です。これまで学んだDativ（mir/dir/ihm/ihr）と形を混同しやすいので、『〜を』ならAkkusativ、『〜に』ならDativという基本の役割分担をまず押さえましょう。"
+  },
+  todayQuiz: [
+    { question: "「Freund（友達）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Freundは男性名詞なのでder Freundが正解。女性形はdie Freundin。" },
+    { question: "Ergänze: „Ich ___ seit zwei Jahren in Berlin.\"（wohnenを正しい形に）", choices: ["wohne", "wohnst", "wohnt", "wohnen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。wohneが正解。" },
+    { question: "Ergänze: „Er ___ Schokolade sehr.\"（mögenを正しい形に）", choices: ["mag", "magst", "mögt", "mögen"], answerIndex: 0, explanation: "mögenは不規則動詞で、ich・er-sie-esの形がどちらもmagになり語尾がつかない。" },
+    { question: "Ergänze: „Ich ___ meine Freunde am Wochenende.\"（besuchenを正しい形に）", choices: ["besuche", "besuchst", "besucht", "besuchen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。besucheが正解。" },
+    { question: "「die Wohnung（住まい）」の複数形は？", choices: ["die Wohnungen", "die Wohnung", "die Wohnungse", "der Wohnungen"], answerIndex: 0, explanation: "複数形はdie Wohnungenで、語尾に-enを付ける規則的なパターン。" },
+    { question: "4格（Akkusativ）の人称代名詞でichはどう変わる？", choices: ["mich", "mir", "mein", "ich"], answerIndex: 0, explanation: "ichのAkkusativ形はmich。『〜に』を表すDativ形のmirと区別する。" },
+    { question: "「müde」の意味として正しいものは？", choices: ["疲れた、眠い", "悲しい", "親切な", "新しい"], answerIndex: 0, explanation: "müdeは『疲れた、眠い』という状態を表す基本形容詞。" },
+    { question: "家に人を招き入れるときに使うくだけた表現はどれ？", choices: ["Komm rein!", "Entschuldigung!", "Wie geht es dir?", "Bis bald!"], answerIndex: 0, explanation: "„Komm rein!“は家や部屋に人を招き入れるときのくだけた表現。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-09-30)
+// ── END_DATA ──  (last sync: 2026-10-01)
 
 function esc(s){
   if(s===undefined||s===null) return '';
