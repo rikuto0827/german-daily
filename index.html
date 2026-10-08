@@ -146,130 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-09-20",
-  dateLabel: "2026年9月20日（日・復習）",
-  readTimeMin: 12,
-  coreItems: [
-    {
-      type: "noun", term: "der Tag", plural: "die Tage",
-      meaning_ja: "日、一日",
-      examples: [
-        { de: "Ich habe heute einen langen Tag.", ja: "私は今日、長い一日を過ごしています。" },
-        { de: "Welcher Tag ist heute?", ja: "今日は何曜日ですか？" }
-      ],
-      related: [ { term: "der Morgen", note_ja: "「朝」。1日の時間帯を表す語で、Tagとセットで覚えると時間表現が広がる。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Tage で語尾に -e を付ける規則的なパターン。„jeden Tag“（毎日）、„Guten Tag“（こんにちは、直訳「良い一日を」）など頻出表現に登場する基礎語。"
-    },
-    {
-      type: "noun", term: "die Küche", plural: "die Küchen",
-      meaning_ja: "台所、キッチン",
-      examples: [
-        { de: "Die Küche ist sehr modern.", ja: "台所はとてもモダンです。" },
-        { de: "Ich koche gern in der Küche.", ja: "私は台所で料理するのが好きです。" }
-      ],
-      related: [ { term: "kochen", note_ja: "動詞「料理する」。Kücheと語源が同じで、セットで覚えると語彙が広がる。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Küchen で語尾に -n を付ける規則的なパターン。前置詞inと組み合わせて „in der Küche“（台所で）の形でよく使われる。"
-    },
-    {
-      type: "noun", term: "der Bruder", plural: "die Brüder",
-      meaning_ja: "兄、弟（男のきょうだい）",
-      examples: [
-        { de: "Mein Bruder wohnt in Hamburg.", ja: "私の兄（弟）はハンブルクに住んでいます。" },
-        { de: "Ich habe zwei Brüder.", ja: "私には兄弟が2人います。" }
-      ],
-      related: [ { term: "die Schwester", note_ja: "「姉、妹」。Bruderと対になる語で、複数形は die Schwestern。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Brüder で語幹の母音がウムラウト化するパターン（u→ü）。die Mutter→die Mütterと同じタイプ。ドイツ語のBruderは日本語のように「兄」「弟」を区別せず、年齢を示したい場合は „älterer/jüngerer Bruder“ のように形容詞を加える。"
-    },
-    {
-      type: "verb", term: "lesen", conjugation: "ich lese / du liest / er-sie-es liest",
-      meaning_ja: "読む",
-      examples: [
-        { de: "Ich lese jeden Abend ein Buch.", ja: "私は毎晩本を読みます。" },
-        { de: "Liest du gern Zeitung?", ja: "あなたは新聞を読むのが好きですか？" }
-      ],
-      related: [ { term: "das Buch", note_ja: "「本」。lesen（読む）と組み合わせて使う最頻出の名詞。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→ie）。du/erの形で lese→liest/liest に変化し、duとerが同じ形になる点に注意（essenのisstと似たパターン）。"
-    },
-    {
-      type: "verb", term: "sein", conjugation: "ich bin / du bist / er-sie-es ist",
-      meaning_ja: "〜である、〜だ",
-      examples: [
-        { de: "Ich bin müde.", ja: "私は疲れています。" },
-        { de: "Er ist Lehrer.", ja: "彼は教師です。" }
-      ],
-      related: [ { term: "werden", note_ja: "「〜になる」。seinは今の状態、werdenは変化した後の状態を表す。" } ],
-      explanation_ja: "完全不規則動詞で、A2で最も重要な動詞の一つ。ich/du/er-sie-esの形がbin/bist/istと語形そのものが変わるため、活用は暗記するしかない。状態・性質・職業などを表すときに使う基本動詞。"
-    },
-    {
-      type: "verb", term: "nehmen", conjugation: "ich nehme / du nimmst / er-sie-es nimmt",
-      meaning_ja: "取る、（乗り物に）乗る",
-      examples: [
-        { de: "Ich nehme den Bus zur Arbeit.", ja: "私はバスで仕事に行きます（バスを取ります）。" },
-        { de: "Nimmst du Zucker in den Kaffee?", ja: "コーヒーに砂糖を入れますか？" }
-      ],
-      related: [ { term: "geben", note_ja: "「与える」。nehmen（取る）と対になる動詞。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→i、さらに子音hが脱落してmが重なる）。du/erの形で nehme→nimmst/nimmt と大きく変化するため、A2でよく間違えやすい動詞の一つ。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "bequem",
-      meaning_ja: "快適な、座り心地の良い",
-      examples: [
-        { de: "Der Stuhl ist sehr bequem.", ja: "その椅子はとても座り心地がいいです。" },
-        { de: "Diese Schuhe sind bequem.", ja: "この靴は履き心地がいいです。" }
-      ],
-      related: [ { term: "unbequem", note_ja: "「不快な、座り心地が悪い」。un-を付けると反対の意味になるパターン。" } ],
-      explanation_ja: "家具や服・靴の「快適さ」を表す頻出形容詞。„bequem sitzen“（快適に座る）のように副詞的にも使われる。"
-    },
-    {
-      term: "gut",
-      meaning_ja: "良い、上手な",
-      examples: [
-        { de: "Das Essen ist sehr gut.", ja: "その食事はとても美味しいです。" },
-        { de: "Sie spricht gut Deutsch.", ja: "彼女は上手にドイツ語を話します。" }
-      ],
-      related: [ { term: "schlecht", note_ja: "「悪い」。gutの対義語。" } ],
-      explanation_ja: "最頻出の形容詞の一つ。比較級 besser、最上級 am besten と大きく不規則変化する点に注意（英語のgood-better-bestと似た変化）。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Wie heißt du?",
-      meaning_ja: "お名前は？（くだけた言い方）",
-      examples: [
-        { de: "Hallo, wie heißt du?", ja: "こんにちは、お名前は？" },
-        { de: "Ich heiße Anna. Und du?", ja: "私はアンナといいます。あなたは？" }
-      ],
-      explanation_ja: "heißenは「〜という名前である」という意味の動詞。フォーマルな場面では „Wie heißen Sie?“ を使う。"
-    },
-    {
-      phrase: "Guten Morgen!",
-      meaning_ja: "おはようございます！",
-      examples: [
-        { de: "Guten Morgen! Hast du gut geschlafen?", ja: "おはよう！よく眠れた？" },
-        { de: "Guten Morgen, Frau Schmidt!", ja: "おはようございます、シュミットさん！" }
-      ],
-      explanation_ja: "朝のあいさつの定番。昼は „Guten Tag!“、夜は „Guten Abend!“ を使い分ける、時間帯に応じたあいさつパターンの一つ。"
-    }
-  ],
-  grammarTip: {
-    title: "今週の復習：格変化と文の骨組みのまとめ",
-    body_ja: "今週は格変化と文構造を中心に学びました。目的語が「〜を」ならAkkusativ（4格）でderがdenに変わり、「〜に」ならDativ（3格）で人称代名詞はmir/dir/ihm/ihrになります。否定文では、ein系の名詞を打ち消すときはkein、それ以外はnichtを使い分けるのがポイントでした。さらにkönnen/müssenなどの話法の助動詞を使うと、人称変化した助動詞が文の2番目、本来の動詞は不定形のまま文末に置かれます。「動詞や語尾は文中の役割に応じて形を変える」という感覚を意識しながら、今週の単語で実際に文を作って復習してみましょう。"
-  },
-  todayQuiz: [
-    { question: "「der Tag」の複数形は？", choices: ["die Tage", "die Tagen", "die Täge", "der Tage"], answerIndex: 0, explanation: "複数形は die Tage で、語尾に -e を付ける規則的なパターン。" },
-    { question: "Ergänze: „Ich ___ jeden Abend ein Buch.\"（lesenを正しい形に）", choices: ["lese", "liest", "lesen", "lest"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。lesenは不規則動詞だがichの形は規則通りlese。" },
-    { question: "Ergänze: „Er ___ Lehrer.\"（seinを正しい形に）", choices: ["bin", "bist", "ist", "sind"], answerIndex: 2, explanation: "seinは完全不規則動詞。3人称単数（er）の形はist。" },
-    { question: "「nehmen」の意味として正しいものは？", choices: ["取る、（乗り物に）乗る", "与える、渡す", "買う、購入する", "見る、眺める"], answerIndex: 0, explanation: "nehmenは「取る」、乗り物と組み合わせると「（乗り物に）乗る」という意味になる。" },
-    { question: "「Küche（台所）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 1, explanation: "Kücheは女性名詞なのでdie Kücheが正解。" },
-    { question: "「Bruder（兄・弟）」の複数形は？", choices: ["die Brüder", "die Bruder", "die Brüders", "der Brüder"], answerIndex: 0, explanation: "複数形は die Brüder で、語幹の母音がウムラウト化するパターン（u→ü）。" },
-    { question: "「bequem」の意味として正しいものは？", choices: ["快適な、座り心地の良い", "うるさい", "遅い、ゆっくりの", "明るい"], answerIndex: 0, explanation: "bequemは家具や服・靴の快適さを表す形容詞。反対語はunbequem。" },
-    { question: "「Wie heißt du?」の意味は？", choices: ["お名前は？（くだけた言い方）", "元気？", "ごめんなさい", "おはよう"], answerIndex: 0, explanation: "「Wie heißt du?」はくだけた場面で名前を尋ねる定番フレーズ。フォーマルではWie heißen Sie?を使う。" }
-  ]
-}
-,
-{
   date: "2026-09-21",
   dateLabel: "2026年9月21日（月）",
   readTimeMin: 18,
@@ -1961,8 +1837,141 @@ const GERMAN_REPORTS = [
     { question: "„Ich lerne Deutsch, ___ ich nach Berlin fahren möchte.\"（weilを使う場合の正しい語順）", choices: ["weil ich nach Berlin fahren möchte", "weil möchte ich nach Berlin fahren", "weil ich möchte nach Berlin fahren", "weil fahren ich nach Berlin möchte"], answerIndex: 0, explanation: "weil（なぜなら）を使う従属文では、動詞（ここではmöchte）は文末に置かれる。" }
   ]
 }
+,
+{
+  date: "2026-10-07",
+  dateLabel: "2026年10月7日（水）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Termin", plural: "die Termine",
+      meaning_ja: "予定、約束の日時、面談",
+      examples: [
+        { de: "Ich habe heute einen Termin beim Arzt.", ja: "私は今日、医者の予約があります。" },
+        { de: "Wann ist dein nächster Termin?", ja: "あなたの次の予定はいつですか？" }
+      ],
+      related: [ { term: "der Kalender", note_ja: "「カレンダー、予定表」。Terminを管理するときに使う関連語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Termine で語尾に -e を付ける規則的なパターン。„einen Termin machen“（予約を取る）、„einen Termin haben“（予定がある）という組み合わせが頻出。"
+    },
+    {
+      type: "noun", term: "die Pause", plural: "die Pausen",
+      meaning_ja: "休憩",
+      examples: [
+        { de: "Wir machen jetzt eine Pause.", ja: "私たちは今休憩します。" },
+        { de: "Die Pause dauert zehn Minuten.", ja: "その休憩は10分間続きます。" }
+      ],
+      related: [ { term: "die Arbeit", note_ja: "「仕事」。„eine Pause von der Arbeit machen“（仕事の休憩を取る）のようにセットで使われる。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Pausen で語尾に -n を付ける規則的なパターン。„eine Pause machen“（休憩を取る）という動詞machenとの組み合わせが基本表現。"
+    },
+    {
+      type: "noun", term: "das Büro", plural: "die Büros",
+      meaning_ja: "事務所、オフィス",
+      examples: [
+        { de: "Mein Büro ist im Zentrum.", ja: "私のオフィスは中心街にあります。" },
+        { de: "Ich arbeite heute von zu Hause, nicht im Büro.", ja: "私は今日は会社ではなく、自宅から働きます。" }
+      ],
+      related: [ { term: "das Geschäft", note_ja: "「店、会社」。Büro（事務所）とは異なり、より広く商売・店を指す語。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Büros で外来語らしく語尾に -s を付けるパターン（das Autoと同じタイプ）。„im Büro“（オフィスで）、„ins Büro gehen“（オフィスへ行く）のように前置詞と組み合わせて使う。"
+    },
+    {
+      type: "verb", term: "anfangen", conjugation: "ich fange an / du fängst an / er-sie-es fängt an",
+      meaning_ja: "始める、始まる",
+      examples: [
+        { de: "Die Arbeit fängt um acht Uhr an.", ja: "仕事は8時に始まります。" },
+        { de: "Wann fängst du mit dem Projekt an?", ja: "あなたはそのプロジェクトをいつ始めますか？" }
+      ],
+      related: [ { term: "aufhören", note_ja: "「終える、やめる」。anfangenと対になる分離動詞。" } ],
+      explanation_ja: "分離動詞（不規則動詞、幹母音変化 a→ä）。前綴り an- は人称変化すると文末に移動する（„Die Arbeit fängt ... an.“）。du/erの形で fange→fängst/fängt に変化する点にも注意。"
+    },
+    {
+      type: "verb", term: "aufhören", conjugation: "ich höre auf / du hörst auf / er-sie-es hört auf",
+      meaning_ja: "やめる、終える",
+      examples: [
+        { de: "Ich höre um siebzehn Uhr mit der Arbeit auf.", ja: "私は17時に仕事を終えます。" },
+        { de: "Hör bitte auf zu reden!", ja: "どうかおしゃべりをやめてください！" }
+      ],
+      related: [ { term: "anfangen", note_ja: "「始める」。aufhörenと対になる分離動詞。" } ],
+      explanation_ja: "分離動詞（規則動詞）。前綴り auf- は人称変化すると文末に移動する。„aufhören + zu + 不定形“（〜するのをやめる）の形もよく使われる。"
+    },
+    {
+      type: "verb", term: "verdienen", conjugation: "ich verdiene / du verdienst / er-sie-es verdient",
+      meaning_ja: "（お金を）稼ぐ",
+      examples: [
+        { de: "Er verdient gut in seinem neuen Job.", ja: "彼は新しい仕事で良い収入を得ています。" },
+        { de: "Wie viel verdienst du pro Monat?", ja: "あなたは1か月にいくら稼ぎますか？" }
+      ],
+      related: [ { term: "das Geld", note_ja: "「お金」。verdienen（稼ぐ）と組み合わせて „Geld verdienen“（お金を稼ぐ）という頻出表現になる。" } ],
+      explanation_ja: "規則動詞。語幹 verdien- に -e/-st/-t を付けるだけ。„Geld verdienen“（お金を稼ぐ）の形で頻出し、前綴り ver- がつくことで „dienen“（仕える）とは異なる意味になる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "ruhig",
+      meaning_ja: "静かな、落ち着いた",
+      examples: [
+        { de: "Das Büro ist heute sehr ruhig.", ja: "そのオフィスは今日とても静かです。" },
+        { de: "Er bleibt auch in Stresssituationen ruhig.", ja: "彼はストレスの多い状況でも落ち着いています。" }
+      ],
+      related: [ { term: "laut", note_ja: "「うるさい」。ruhigの対義語。" } ],
+      explanation_ja: "場所の静けさだけでなく、人の性格の「落ち着き」も表せる基本形容詞。既出の laut（うるさい）と対で覚えると効率的。"
+    },
+    {
+      term: "beschäftigt",
+      meaning_ja: "忙しい",
+      examples: [
+        { de: "Ich bin heute sehr beschäftigt.", ja: "私は今日とても忙しいです。" },
+        { de: "Sie ist mit der Arbeit beschäftigt.", ja: "彼女は仕事で忙しくしています。" }
+      ],
+      related: [ { term: "die Beschäftigung", note_ja: "名詞形「仕事、活動」。beschäftigtと語源が同じ。" } ],
+      explanation_ja: "„beschäftigt sein“（忙しい）、„mit etwas beschäftigt sein“（〜で忙しくしている）のように sein や前置詞mitと組み合わせて使う。過去分詞から形容詞になった語（beschäftigen→beschäftigt）という作りにも注目。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Ich bin spät dran.",
+      meaning_ja: "遅れそうです、時間がありません",
+      examples: [
+        { de: "Ich bin spät dran, ich muss los!", ja: "もう行かないと、遅れちゃう！" },
+        { de: "Bist du spät dran?", ja: "あなたは遅れそうですか？" }
+      ],
+      explanation_ja: "„dran sein“という口語的な表現を使った「時間的に遅れている」という定番フレーズ。„zu spät kommen“（遅刻する）と似ているが、„spät dran sein“は今まさに時間が迫っている状況で使う。"
+    },
+    {
+      phrase: "Das macht nichts.",
+      meaning_ja: "大丈夫です、問題ありません",
+      examples: [
+        { de: "Entschuldigung, ich bin spät! – Das macht nichts.", ja: "ごめんね、遅れた！—大丈夫だよ。" },
+        { de: "Das macht nichts, versuch es einfach noch einmal.", ja: "問題ないよ、もう一度試してみて。" }
+      ],
+      explanation_ja: "相手の失敗やミスを気にしなくていいと伝える表現。„Kein Problem.“と似た場面で使われるが、„Das macht nichts.“の方がやや丁寧で落ち着いた響きを持つ。"
+    },
+    {
+      phrase: "Mach schnell!",
+      meaning_ja: "早くして！",
+      examples: [
+        { de: "Wir haben nicht viel Zeit, mach schnell!", ja: "時間があまりないから、早くして！" },
+        { de: "Mach schnell, der Bus kommt gleich!", ja: "早くして、バスがもうすぐ来るよ！" }
+      ],
+      explanation_ja: "schnell（速い、早く）を使った命令形のカジュアルな表現。親しい相手に急ぐよう伝えるときに使う。"
+    }
+  ],
+  grammarTip: {
+    title: "時を表す前置詞 um / am / im — 時刻・曜日・月の使い分け",
+    body_ja: "ドイツ語で「いつ」を言うときは、時間の単位によって使う前置詞が変わります。時刻には um を使い „um acht Uhr“（8時に）、曜日や日付には am を使い „am Montag“（月曜日に）、„am 3. Oktober“（10月3日に）、月や季節・年には im を使い „im Oktober“（10月に）、„im Winter“（冬に）となります。例外として夜は „in der Nacht“ のように in を使う点にも注意が必要です。umは「ピンポイントの時刻」、amは「特定の日」、imは「月・季節などの広い期間」と覚えると整理しやすくなります。"
+  },
+  todayQuiz: [
+    { question: "「Termin（予定・約束）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Terminは男性名詞なのでder Terminが正解。複数形はdie Termine。" },
+    { question: "Ergänze: „Die Arbeit ___ um acht Uhr an.\"（anfangenを正しい形に）", choices: ["fange an", "fängst an", "fängt an", "fangen an"], answerIndex: 2, explanation: "主語die Arbeitは3人称単数。anfangenは不規則動詞（a→ä）なのでfängt anになり、前綴りanは文末に置かれる。" },
+    { question: "Ergänze: „Ich ___ um fünf Uhr mit der Arbeit auf.\"（aufhörenを正しい形に）", choices: ["höre auf", "hörst auf", "hört auf", "hören auf"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。höre aufが正解。" },
+    { question: "「verdienen」の意味として正しいものは？", choices: ["（お金を）稼ぐ", "支払う", "貯める", "借りる"], answerIndex: 0, explanation: "verdienenは「（お金を）稼ぐ」という意味。„Geld verdienen“の形で頻出する。" },
+    { question: "「ruhig」の反対の意味を持つ形容詞は？", choices: ["laut", "beschäftigt", "müde", "traurig"], answerIndex: 0, explanation: "ruhig（静かな、落ち着いた）の反対はlaut（うるさい）。" },
+    { question: "「die Pause」の複数形は？", choices: ["die Pausen", "die Pause", "die Pausn", "der Pausen"], answerIndex: 0, explanation: "複数形はdie Pausenで、語尾に-nを付ける規則的なパターン。" },
+    { question: "時間的に遅れそうなときに使うフレーズはどれ？", choices: ["Ich bin spät dran.", "Das macht nichts.", "Mach schnell!", "Alles Gute!"], answerIndex: 0, explanation: "„Ich bin spät dran.“は時間が迫っていて遅れそうな状況で使う定番フレーズ。" },
+    { question: "時刻（〜時に）を表すときに使う前置詞はどれ？", choices: ["um", "am", "im", "in"], answerIndex: 0, explanation: "時刻にはumを使う（„um acht Uhr“）。曜日・日付はam、月・季節・年はimを使う。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-10-06)
+// ── END_DATA ──  (last sync: 2026-10-07)
 
 function esc(s){
   if(s===undefined||s===null) return '';
