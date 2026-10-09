@@ -146,139 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-09-21",
-  dateLabel: "2026年9月21日（月）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "der Monat", plural: "die Monate",
-      meaning_ja: "月（暦の）",
-      examples: [
-        { de: "Der nächste Monat ist Oktober.", ja: "来月は10月です。" },
-        { de: "Ich lerne seit einem Monat Deutsch.", ja: "私は1か月前からドイツ語を勉強しています。" }
-      ],
-      related: [ { term: "das Jahr", note_ja: "「年」。Monat（月）はJahr（年）の下位区分で、時間表現でセットで使う。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Monate で語尾に -e を付ける規則的なパターン。「〜か月前から」は seit + Dativ（3格）で表す点にも注意。"
-    },
-    {
-      type: "noun", term: "die Nacht", plural: "die Nächte",
-      meaning_ja: "夜",
-      examples: [
-        { de: "Die Nacht ist sehr ruhig.", ja: "夜はとても静かです。" },
-        { de: "Ich arbeite oft in der Nacht.", ja: "私はよく夜に働きます。" }
-      ],
-      related: [ { term: "der Tag", note_ja: "「昼、一日」。Nacht（夜）と対になる基本の時間区分の語。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Nächte で語幹の母音がウムラウト化するパターン（a→ä）。„in der Nacht“（夜に）のように前置詞inと3格（Dativ）を組み合わせて使う。"
-    },
-    {
-      type: "noun", term: "das Auto", plural: "die Autos",
-      meaning_ja: "車、自動車",
-      examples: [
-        { de: "Mein Auto ist rot.", ja: "私の車は赤です。" },
-        { de: "Wir fahren mit dem Auto nach Hamburg.", ja: "私たちは車でハンブルクへ行きます。" }
-      ],
-      related: [ { term: "der Bus", note_ja: "「バス」。„mit dem Auto/Bus fahren“（車・バスで行く）のように交通手段を表すときに使う仲間の語。" } ],
-      explanation_ja: "中性名詞（das）。複数形は die Autos で外来語らしく語尾に -s を付けるパターン（多くの名詞と異なる例外）。交通手段を言うときは „mit dem Auto“ のように前置詞mit＋3格を使う。"
-    },
-    {
-      type: "verb", term: "kochen", conjugation: "ich koche / du kochst / er-sie-es kocht",
-      meaning_ja: "料理する",
-      examples: [
-        { de: "Ich koche heute Abend Nudeln.", ja: "私は今夜パスタを作ります。" },
-        { de: "Kochst du gern?", ja: "あなたは料理するのが好きですか？" }
-      ],
-      related: [ { term: "die Küche", note_ja: "「台所」。kochen（料理する）とセットで覚えると効率的。" } ],
-      explanation_ja: "規則動詞。語幹 koch- に -e/-st/-t を付けるだけ。「〜するのが好き」は動詞+gernの組み合わせで表す（例: Kochst du gern?）。"
-    },
-    {
-      type: "verb", term: "lernen", conjugation: "ich lerne / du lernst / er-sie-es lernt",
-      meaning_ja: "学ぶ、勉強する",
-      examples: [
-        { de: "Ich lerne jeden Tag Deutsch.", ja: "私は毎日ドイツ語を勉強します。" },
-        { de: "Was lernst du in der Schule?", ja: "あなたは学校で何を学んでいますか？" }
-      ],
-      related: [ { term: "studieren", note_ja: "「（大学で）専攻する、勉強する」。lernenは日常的な学習全般、studierenは大学での専門的な学びを指す。" } ],
-      explanation_ja: "規則動詞。lernen＋4格（Akkusativ）の形で「〜を学ぶ」という意味になる。学習言語の話をするときの必須動詞。"
-    },
-    {
-      type: "verb", term: "treffen", conjugation: "ich treffe / du triffst / er-sie-es trifft",
-      meaning_ja: "会う",
-      examples: [
-        { de: "Ich treffe morgen meine Freunde.", ja: "私は明日友達に会います。" },
-        { de: "Triffst du sie oft?", ja: "あなたは彼女によく会いますか？" }
-      ],
-      related: [ { term: "das Treffen", note_ja: "名詞形「会合、待ち合わせ」。treffenと同じ語で、大文字にすると名詞になる。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形で treffe→triffst/trifft に変化するのがA2の重要ポイント。sprechenやhelfenと同じ変化パターンのグループ。treffen＋4格（人）で「〜と会う」という意味になる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "alt",
-      meaning_ja: "古い、年をとった",
-      examples: [
-        { de: "Das Haus ist sehr alt.", ja: "その家はとても古いです。" },
-        { de: "Wie alt bist du?", ja: "あなたは何歳ですか？" }
-      ],
-      related: [ { term: "neu", note_ja: "「新しい」。altの対義語。" } ],
-      explanation_ja: "„Wie alt bist du?“（何歳ですか）のように年齢を尋ねるときの必須表現。比較級は älter、最上級は am ältesten と不規則変化する。"
-    },
-    {
-      term: "kurz",
-      meaning_ja: "短い",
-      examples: [
-        { de: "Der Film war sehr kurz.", ja: "その映画はとても短かったです。" },
-        { de: "Ich habe nur kurz Zeit.", ja: "私は少しの時間しかありません。" }
-      ],
-      related: [ { term: "lang", note_ja: "「長い」。kurzの対義語。" } ],
-      explanation_ja: "長さ・時間の短さを表す基本形容詞。„kurz Zeit haben“（時間が少ししかない）のように時間表現にもよく使われる。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Bis bald!",
-      meaning_ja: "またすぐに！",
-      examples: [
-        { de: "Ich muss los. Bis bald!", ja: "もう行かなきゃ。またすぐにね！" },
-        { de: "Bis bald, ich melde mich!", ja: "またすぐに、連絡するね！" }
-      ],
-      explanation_ja: "別れ際の挨拶の一つ。„Bis später!“（またあとで）より少し先、近いうちにまた会う予定のときに使う。"
-    },
-    {
-      phrase: "Viel Spaß!",
-      meaning_ja: "楽しんでね！",
-      examples: [
-        { de: "Ihr geht ins Kino? Viel Spaß!", ja: "映画に行くの？楽しんでね！" },
-        { de: "Viel Spaß auf der Party!", ja: "パーティー楽しんでね！" }
-      ],
-      explanation_ja: "相手がこれから楽しいことをする前にかける定番フレーズ。„Viel Glück!“（頑張ってね／幸運を）と混同しやすいので区別する：Spaßは「楽しみ」、Glückは「幸運・成功」。"
-    },
-    {
-      phrase: "Wie bitte?",
-      meaning_ja: "え、何と言いましたか？（聞き返すとき）",
-      examples: [
-        { de: "Wie bitte? Ich habe dich nicht verstanden.", ja: "え、何ですか？聞き取れませんでした。" },
-        { de: "Wie bitte? Kannst du das wiederholen?", ja: "すみません、もう一度言ってもらえますか？" }
-      ],
-      explanation_ja: "相手の言葉が聞き取れなかったときに聞き返す丁寧な表現。„Ich verstehe nicht.“（理解できません）とは異なり、単純に「聞こえなかった」ときに使う。"
-    }
-  ],
-  grammarTip: {
-    title: "過去を語る第一歩：現在完了形（Perfekt）の作り方",
-    body_ja: "ドイツ語で過去のことを話すとき、日常会話では現在完了形（Perfekt）が最もよく使われます。作り方は「haben または sein（2番目の位置）＋ 過去分詞（文末）」という組み合わせです。規則動詞の過去分詞は ge-＋語幹＋-t（例: kochen→gekocht）、不規則動詞は ge-＋語幹（変化あり）＋-en（例: sehen→gesehen）になることが多いです。移動や状態変化を表す動詞（gehen, kommen, fahrenなど）は haben ではなく sein を使う点がA2の重要な注意点です。"
-  },
-  todayQuiz: [
-    { question: "「Monat（月）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Monatは男性名詞なのでder Monatが正解。複数形はdie Monate。" },
-    { question: "Ergänze: „Ich ___ heute Abend Nudeln.\"（kochenを正しい形に）", choices: ["koche", "kochst", "kocht", "kochen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。kocheが正解。" },
-    { question: "Ergänze: „Er ___ morgen seine Freunde.\"（treffenを正しい形に）", choices: ["treffe", "triffst", "trifft", "treffen"], answerIndex: 2, explanation: "treffenは不規則動詞（e→i）。3人称単数（er）の形はtrifftになる。" },
-    { question: "「alt」の反対の意味を持つ形容詞は？", choices: ["neu", "kurz", "lang", "kalt"], answerIndex: 0, explanation: "alt（古い、年をとった）の反対はneu（新しい）。" },
-    { question: "「die Nacht」の複数形は？", choices: ["die Nächte", "die Nachten", "die Nächt", "der Nächte"], answerIndex: 0, explanation: "複数形はdie Nächteで、語幹の母音がウムラウト化するパターン（a→ä）。" },
-    { question: "現在完了形（Perfekt）で使う2つの助動詞は？", choices: ["habenとsein", "könnenとmüssen", "werdenとsein", "habenとwerden"], answerIndex: 0, explanation: "Perfektはhaben またはsein＋過去分詞（文末）で作る。移動や状態変化の動詞はseinを使う。" },
-    { question: "相手が映画やパーティーに行く前にかける「楽しんでね！」というフレーズは？", choices: ["Viel Spaß!", "Bis bald!", "Wie bitte?", "Viel Glück!"], answerIndex: 0, explanation: "„Viel Spaß!“は「楽しんでね！」という定番フレーズ。Viel Glück!（幸運を）とは区別する。" },
-    { question: "「das Auto」の複数形は？", choices: ["die Autos", "die Auten", "die Autoe", "der Autos"], answerIndex: 0, explanation: "Autoは外来語らしく複数形は-sを付けてdie Autosになる。" }
-  ]
-}
-,
-{
   date: "2026-09-22",
   dateLabel: "2026年9月22日（火）",
   readTimeMin: 18,
@@ -1970,8 +1837,132 @@ const GERMAN_REPORTS = [
     { question: "時刻（〜時に）を表すときに使う前置詞はどれ？", choices: ["um", "am", "im", "in"], answerIndex: 0, explanation: "時刻にはumを使う（„um acht Uhr“）。曜日・日付はam、月・季節・年はimを使う。" }
   ]
 }
+,
+{
+  date: "2026-10-08",
+  dateLabel: "2026年10月8日（木）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "die Firma", plural: "die Firmen",
+      meaning_ja: "会社、企業",
+      examples: [
+        { de: "Ich arbeite bei einer großen Firma.", ja: "私は大きな会社で働いています。" },
+        { de: "Die Firma hat viele Mitarbeiter.", ja: "その会社には多くの社員がいます。" }
+      ],
+      related: [ { term: "das Unternehmen", note_ja: "「企業」。Firmaとほぼ同じ意味で使われる、より書き言葉的な類義語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Firmen で語尾に -n を付ける規則的なパターン。「〜で働く」は bei＋Dativ（3格）を使い、„bei einer Firma arbeiten“の形が基本。"
+    },
+    {
+      type: "noun", term: "der Chef", plural: "die Chefs",
+      meaning_ja: "上司、社長（男性）",
+      examples: [
+        { de: "Mein Chef ist sehr freundlich.", ja: "私の上司はとても親切です。" },
+        { de: "Ich muss mit meinem Chef sprechen.", ja: "私は上司と話さなければなりません。" }
+      ],
+      related: [ { term: "die Chefin", note_ja: "「上司、社長（女性）」。Chefの女性形で、-inを付けるパターン。" } ],
+      explanation_ja: "男性名詞（der）。複数形は外来語らしく die Chefs で -s を付ける。女性形は die Chefin（複数 die Chefinnen）になる点に注意。„mit dem Chef sprechen“（上司と話す）のようにmit＋Dativと組み合わせて使う。"
+    },
+    {
+      type: "noun", term: "die Arbeit", plural: "die Arbeiten",
+      meaning_ja: "仕事、作業",
+      examples: [
+        { de: "Ich gehe jeden Tag zur Arbeit.", ja: "私は毎日仕事に行きます。" },
+        { de: "Diese Arbeit ist sehr schwer.", ja: "この作業はとても大変です。" }
+      ],
+      related: [ { term: "arbeiten", note_ja: "動詞「働く」。die Arbeitと語源が同じ。" } ],
+      explanation_ja: "女性名詞（die）。「仕事」という意味では複数形を使わず単数のまま „viel Arbeit“ のように使うことが多いが、「個別の作業・工事」を指すときは複数形 die Arbeiten を使う。„zur Arbeit gehen“（仕事に行く）は zu＋Dativの決まり文句。"
+    },
+    {
+      type: "verb", term: "anrufen", conjugation: "ich rufe an / du rufst an / er-sie-es ruft an",
+      meaning_ja: "電話をかける",
+      examples: [
+        { de: "Ich rufe meinen Chef an.", ja: "私は上司に電話をかけます。" },
+        { de: "Rufst du mich nach der Arbeit an?", ja: "仕事の後に私に電話してくれますか？" }
+      ],
+      related: [ { term: "das Telefon", note_ja: "「電話（機）」。anrufenするときに使う道具。" } ],
+      explanation_ja: "分離動詞（rufen＋an）。文中では前綴り an が文末に移動する（例: Ich rufe dich an.）。rufenだけだと「呼ぶ」という意味で、anを付けることで「電話をかける」という意味に変わる。"
+    },
+    {
+      type: "verb", term: "einladen", conjugation: "ich lade ein / du lädst ein / er-sie-es lädt ein",
+      meaning_ja: "招待する",
+      examples: [
+        { de: "Ich lade meine Kollegen zur Party ein.", ja: "私は同僚をパーティーに招待します。" },
+        { de: "Lädst du deinen Chef auch ein?", ja: "あなたの上司も招待しますか？" }
+      ],
+      related: [ { term: "die Einladung", note_ja: "名詞形「招待（状）」。einladenと語源が同じ。" } ],
+      explanation_ja: "分離動詞（不規則動詞、幹母音変化 a→ä。lade→lädst/lädt）。前綴り ein- は人称変化すると文末に移動する。„einladen＋4格（人）＋zu＋3格（催し）“の形で「〜を〜に招待する」という文型になる。"
+    },
+    {
+      type: "verb", term: "antworten", conjugation: "ich antworte / du antwortest / er-sie-es antwortet",
+      meaning_ja: "答える、返事をする",
+      examples: [
+        { de: "Ich antworte meinem Chef sofort.", ja: "私は上司にすぐに返事をします。" },
+        { de: "Warum antwortest du nicht?", ja: "どうして返事をしないのですか？" }
+      ],
+      related: [ { term: "die Antwort", note_ja: "名詞形「答え、返事」。antwortenと語源が同じ。" } ],
+      explanation_ja: "規則動詞だが、語幹が -t で終わるため、du/erの語尾の前に発音しやすくするための余分な -e- が入る（antwortest, antwortet）。findenと同じパターン。antworten＋3格（人）で「〜に答える」という意味になる点に注意（4格ではなくDativ）。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "pünktlich",
+      meaning_ja: "時間通りの、時間に正確な",
+      examples: [
+        { de: "Er ist immer pünktlich.", ja: "彼はいつも時間通りです。" },
+        { de: "Bitte sei morgen pünktlich!", ja: "明日は時間通りに来てね！" }
+      ],
+      related: [ { term: "unpünktlich", note_ja: "「時間に遅れる、不正確な」。un-を付けると反対の意味になるパターン。" } ],
+      explanation_ja: "時間の正確さを表す基本形容詞。ドイツでは時間厳守が重視される文化があり、仕事や約束の場面で非常によく使われる語。"
+    },
+    {
+      term: "höflich",
+      meaning_ja: "礼儀正しい、丁寧な",
+      examples: [
+        { de: "Der neue Kollege ist sehr höflich.", ja: "その新しい同僚はとても礼儀正しいです。" },
+        { de: "Sei bitte höflich zu den Kunden!", ja: "お客様には丁寧にしてくださいね！" }
+      ],
+      related: [ { term: "unhöflich", note_ja: "「失礼な」。höflichの対義語。" } ],
+      explanation_ja: "人の態度・言葉遣いの丁寧さを表す基本形容詞。„höflich zu jemandem sein“（〜に対して礼儀正しい）のように前置詞zu＋Dativと組み合わせることが多い。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Ich habe zu tun.",
+      meaning_ja: "やることがあります、忙しいです",
+      examples: [
+        { de: "Ich kann heute nicht kommen, ich habe zu tun.", ja: "今日は行けません、やることがあるので。" },
+        { de: "Hast du jetzt zu tun?", ja: "今やることがありますか？" }
+      ],
+      explanation_ja: "„zu tun haben“（することがある）という決まり文句。忙しさを伝えるときの定番表現で、beschäftigt（忙しい）と似た場面で使われる。"
+    },
+    {
+      phrase: "Keine Ursache!",
+      meaning_ja: "どういたしまして、気にしないで",
+      examples: [
+        { de: "Danke für deine Hilfe! – Keine Ursache!", ja: "助けてくれてありがとう！—どういたしまして！" },
+        { de: "Keine Ursache, das mache ich gern.", ja: "気にしないで、喜んでやるよ。" }
+      ],
+      explanation_ja: "„Bitte schön!“と同様にお礼への返答として使える表現。直訳は「原因なし」で、「大したことではない」という気持ちを表す。"
+    }
+  ],
+  grammarTip: {
+    title: "いつもDativ（3格）を取る前置詞 — mit, nach, bei, von, zu, aus, seit",
+    body_ja: "ドイツ語の前置詞には、意味に関わらず常に特定の格を要求するものがあります。mit（〜と一緒に）、nach（〜の後に）、bei（〜のところで）、von（〜から）、zu（〜へ）、aus（〜から）、seit（〜以来）は、どんな文でも必ずDativ（3格）を取ります。例えば „bei einer Firma arbeiten“（会社で働く）、„nach der Arbeit“（仕事の後に）のように、後ろの名詞・冠詞がDativの形に変わります。Wechselpräpositionen（in, auf, anなど）のように意味によって格が変わるグループとは違い、このグループは常に同じ格になるので、前置詞ごとにセットで覚えるのが効率的です。"
+  },
+  todayQuiz: [
+    { question: "「die Firma」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 1, explanation: "Firmaは女性名詞なのでdie Firmaが正解。複数形はdie Firmen。" },
+    { question: "Ergänze: „Ich ___ meinen Chef an.“（anrufenを正しい形に）", choices: ["rufe an", "rufst an", "ruft an", "rufen an"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。分離動詞なのでanは文末に残り、rufe anが正解。" },
+    { question: "Ergänze: „___ du deinen Chef zur Party ein?“（einladenを正しい形に）", choices: ["Lade ein", "Lädst ein", "Lädt ein", "Laden ein"], answerIndex: 1, explanation: "einladenは不規則動詞（a→ä）。主語duの形はlädst einになる。" },
+    { question: "Ergänze: „Ich ___ meinem Chef sofort.“（antwortenを正しい形に）", choices: ["antworte", "antwortest", "antwortet", "antworten"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。語幹が-tで終わる動詞でも、duやerの形以外では余分な-e-は入らない。" },
+    { question: "常にDativ（3格）を取る前置詞はどれ？", choices: ["bei", "für", "durch", "ohne"], answerIndex: 0, explanation: "beiは常にDativを取る前置詞。für/durch/ohneは常にAkkusativを取る。" },
+    { question: "「antworten」は人を表す目的語に何格を使う？", choices: ["Dativ（3格）", "Akkusativ（4格）", "Nominativ（1格）", "Genitiv（2格）"], answerIndex: 0, explanation: "antworten＋3格（人）で「〜に答える」という意味になる。Dativを取る動詞の代表例。" },
+    { question: "「pünktlich」の反対の意味を持つ語はどれ？", choices: ["unpünktlich", "höflich", "unhöflich", "beschäftigt"], answerIndex: 0, explanation: "pünktlich（時間通りの）の反対はun-を付けたunpünktlich。" },
+    { question: "やることがあって忙しいと伝えるフレーズはどれ？", choices: ["Ich habe zu tun.", "Keine Ursache!", "Mach schnell!", "Das macht nichts."], answerIndex: 0, explanation: "„Ich habe zu tun.“は「やることがある、忙しい」という定番フレーズ。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-10-07)
+// ── END_DATA ──  (last sync: 2026-10-08)
 
 function esc(s){
   if(s===undefined||s===null) return '';
