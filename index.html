@@ -146,149 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-09-22",
-  dateLabel: "2026年9月22日（火）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "der Supermarkt", plural: "die Supermärkte",
-      meaning_ja: "スーパーマーケット",
-      examples: [
-        { de: "Ich kaufe Brot im Supermarkt.", ja: "私はスーパーでパンを買います。" },
-        { de: "Der Supermarkt ist um acht Uhr geöffnet.", ja: "そのスーパーは8時に開店します。" }
-      ],
-      related: [ { term: "das Geschäft", note_ja: "「店」全般を指すより広い語。Supermarktは食品などを扱う大型店を指す。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Supermärkte で語幹の母音がウムラウト化するパターン（a→ä）。„im Supermarkt“（前置詞in＋Dativ「〜の中で」）の形で場所を表すのが基本パターン。"
-    },
-    {
-      type: "noun", term: "das Geschenk", plural: "die Geschenke",
-      meaning_ja: "プレゼント、贈り物",
-      examples: [
-        { de: "Ich habe ein Geschenk für dich.", ja: "私はあなたへのプレゼントを持っています。" },
-        { de: "Das Geschenk ist sehr schön.", ja: "そのプレゼントはとても素敵です。" }
-      ],
-      related: [ { term: "der Geburtstag", note_ja: "「誕生日」。Geschenkは誕生日や記念日に贈る物としてセットで使われることが多い。" } ],
-      explanation_ja: "中性名詞（das）。複数形は die Geschenke で語尾に -e を付ける規則的なパターン。„ein Geschenk für jemanden“（〜へのプレゼント）のように前置詞 für＋Akkusativの形でよく使う。"
-    },
-    {
-      type: "noun", term: "der Zug", plural: "die Züge",
-      meaning_ja: "電車、列車",
-      examples: [
-        { de: "Der Zug kommt um neun Uhr.", ja: "その電車は9時に来ます。" },
-        { de: "Ich fahre mit dem Zug nach Hamburg.", ja: "私は電車でハンブルクへ行きます。" }
-      ],
-      related: [ { term: "der Bahnhof", note_ja: "「駅」。Zug（電車）に乗るための場所としてセットで覚える。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Züge で語幹の母音がウムラウト化するパターン（u→ü）。„mit dem Zug fahren“（電車で行く）は交通手段を表す最頻出パターンの一つ。"
-    },
-    {
-      type: "verb", term: "schreiben", conjugation: "ich schreibe / du schreibst / er-sie-es schreibt",
-      meaning_ja: "書く",
-      examples: [
-        { de: "Ich schreibe einen Brief an meine Mutter.", ja: "私は母に手紙を書きます。" },
-        { de: "Schreibst du eine E-Mail?", ja: "あなたはメールを書きますか？" }
-      ],
-      related: [ { term: "der Brief", note_ja: "名詞「手紙」。schreibenと組み合わせて使う最頻出の名詞。" } ],
-      explanation_ja: "規則動詞。語幹 schreib- に -e/-st/-t を付けるだけ。„an＋4格（Akkusativ）“で「〜宛てに」という相手を示すことが多い。"
-    },
-    {
-      type: "verb", term: "finden", conjugation: "ich finde / du findest / er-sie-es findet",
-      meaning_ja: "見つける、〜だと思う",
-      examples: [
-        { de: "Ich finde meinen Schlüssel nicht.", ja: "私は鍵が見つかりません。" },
-        { de: "Wie findest du das Buch?", ja: "あなたはその本をどう思いますか？" }
-      ],
-      related: [ { term: "suchen", note_ja: "「探す」。finden（見つける）は探した結果を表す動詞で、suchenとセットで使われることが多い。" } ],
-      explanation_ja: "規則動詞だが、語幹が -d で終わるため、du/erの語尾の前に発音しやすくするための余分な -e- が入る（findest, findet）。「〜を見つける」だけでなく「〜だと思う」という意見を表す意味でも非常によく使われる。"
-    },
-    {
-      type: "verb", term: "geben", conjugation: "ich gebe / du gibst / er-sie-es gibt",
-      meaning_ja: "与える、あげる",
-      examples: [
-        { de: "Ich gebe dir mein Buch.", ja: "私はあなたに私の本をあげます。" },
-        { de: "Gibst du mir bitte das Salz?", ja: "塩を取ってもらえますか？" }
-      ],
-      related: [ { term: "nehmen", note_ja: "「取る」。geben（与える）と対になる動詞。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形で gebe→gibst/gibt に変化する。「geben＋3格（人）＋4格（物）」の語順（〜に〜をあげる）がA2の重要な文型。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "leicht",
-      meaning_ja: "軽い、簡単な",
-      examples: [
-        { de: "Die Tasche ist sehr leicht.", ja: "そのバッグはとても軽いです。" },
-        { de: "Diese Übung ist leicht.", ja: "この練習問題は簡単です。" }
-      ],
-      related: [ { term: "schwer", note_ja: "「重い、難しい」。leichtの対義語。" } ],
-      explanation_ja: "「軽い」と「簡単な」の両方の意味を持つ語。文脈によって物理的な重さか難易度かを判断する。"
-    },
-    {
-      term: "schwer",
-      meaning_ja: "重い、難しい",
-      examples: [
-        { de: "Der Koffer ist sehr schwer.", ja: "そのスーツケースはとても重いです。" },
-        { de: "Die Prüfung war schwer.", ja: "その試験は難しかったです。" }
-      ],
-      related: [ { term: "leicht", note_ja: "「軽い、簡単な」。schwerの対義語。" } ],
-      explanation_ja: "leichtと同様に「重さ」と「難易度」の二つの意味を持つ基本形容詞。"
-    },
-    {
-      term: "freundlich",
-      meaning_ja: "親切な、フレンドリーな",
-      examples: [
-        { de: "Die Verkäuferin ist sehr freundlich.", ja: "その店員はとても親切です。" },
-        { de: "Er ist immer freundlich zu allen.", ja: "彼はいつも皆に親切です。" }
-      ],
-      related: [ { term: "unfreundlich", note_ja: "「不親切な」。un-を付けると反対の意味になるパターン。" } ],
-      explanation_ja: "人の性格を表す基本形容詞。„freundlich zu jemandem“（〜に対して親切）のように前置詞zu＋Dativと組み合わせることが多い。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Auf Wiedersehen!",
-      meaning_ja: "さようなら（フォーマル）",
-      examples: [
-        { de: "Auf Wiedersehen, bis morgen!", ja: "さようなら、また明日！" },
-        { de: "Vielen Dank und auf Wiedersehen!", ja: "どうもありがとうございました、さようなら。" }
-      ],
-      explanation_ja: "フォーマルな別れの挨拶。店員と客など、あまり親しくない相手との別れ際に使う。親しい相手には„Tschüss!“がよく使われる。"
-    },
-    {
-      phrase: "Ich weiß nicht.",
-      meaning_ja: "わかりません、知りません",
-      examples: [
-        { de: "Wo ist der Bahnhof? – Ich weiß nicht, tut mir leid.", ja: "駅はどこですか？—わかりません、すみません。" },
-        { de: "Ich weiß nicht, wie spät es ist.", ja: "今何時か私にはわかりません。" }
-      ],
-      explanation_ja: "„wissen“（知っている）の否定形。知識・情報を知らないときに使い、„Ich verstehe nicht.“（理解できない）とは区別する。"
-    },
-    {
-      phrase: "Herzlichen Glückwunsch!",
-      meaning_ja: "おめでとう！",
-      examples: [
-        { de: "Herzlichen Glückwunsch zum Geburtstag!", ja: "お誕生日おめでとう！" },
-        { de: "Herzlichen Glückwunsch zur bestandenen Prüfung!", ja: "試験合格おめでとう！" }
-      ],
-      explanation_ja: "お祝いの言葉。„zum/zur ...“（〜に対して）と組み合わせて何を祝うかを示すのが基本パターン。"
-    }
-  ],
-  grammarTip: {
-    title: "前置詞が格を選ぶ？ Wechselpräpositionen（3・4格を取る前置詞）",
-    body_ja: "in, auf, an, über, unter, vor, hinter, neben, zwischen などの前置詞は、意味によってAkkusativ（4格）とDativ（3格）を使い分けます。「どこへ？（wohin?）」という移動・方向を表すときはAkkusativ、「どこに？（wo?）」という場所・位置を表すときはDativを使います。例えば „Ich lege das Buch auf den Tisch.“（本をテーブルの上に置く＝移動＝Akkusativ）に対して、„Das Buch liegt auf dem Tisch.“（本はテーブルの上にある＝位置＝Dativ）のように変わります。legen（置く）／liegen（ある）のような動詞のペアと合わせて覚えると理解しやすくなります。"
-  },
-  todayQuiz: [
-    { question: "「Supermarkt（スーパー）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Supermarktは男性名詞なのでder Supermarktが正解。複数形はdie Supermärkte。" },
-    { question: "Ergänze: „Ich ___ einen Brief an meine Mutter.\"（schreibenを正しい形に）", choices: ["schreibe", "schreibst", "schreibt", "schreiben"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。schreibeが正解。" },
-    { question: "Ergänze: „Er ___ mir bitte das Salz.\"（gebenを正しい形に）", choices: ["gebe", "gibst", "gibt", "geben"], answerIndex: 2, explanation: "gebenは不規則動詞（e→i）。3人称単数（er）の形はgibt。" },
-    { question: "Ergänze: „Du ___ meinen Schlüssel nicht.\"（findenを正しい形に）", choices: ["finde", "findest", "findet", "finden"], answerIndex: 1, explanation: "語幹が-dで終わるため、duの語尾の前に-e-が入りfindestになる。" },
-    { question: "「schwer」の反対の意味を持つ形容詞は？", choices: ["leicht", "freundlich", "unfreundlich", "schnell"], answerIndex: 0, explanation: "schwer（重い・難しい）の反対はleicht（軽い・簡単な）。" },
-    { question: "フォーマルな別れの挨拶はどれ？", choices: ["Auf Wiedersehen!", "Ich weiß nicht.", "Herzlichen Glückwunsch!", "Guten Appetit!"], answerIndex: 0, explanation: "„Auf Wiedersehen!“はフォーマルな別れの挨拶。親しい相手にはTschüss!を使う。" },
-    { question: "„Ich lege das Buch auf ___ Tisch.\"（移動を表すのでAkkusativ）正しい形はどれ？", choices: ["der", "die", "das", "den"], answerIndex: 3, explanation: "移動（wohin?）を表すのでAkkusativになり、男性名詞der Tischはdenに変わる。" },
-    { question: "「der Zug」の複数形は？", choices: ["die Züge", "die Zuge", "die Zügen", "der Züge"], answerIndex: 0, explanation: "複数形はdie Zügeで、語幹の母音がウムラウト化するパターン（u→ü）。" }
-  ]
-}
-,
-{
   date: "2026-09-23",
   dateLabel: "2026年9月23日（水）",
   readTimeMin: 18,
@@ -1961,8 +1818,132 @@ const GERMAN_REPORTS = [
     { question: "やることがあって忙しいと伝えるフレーズはどれ？", choices: ["Ich habe zu tun.", "Keine Ursache!", "Mach schnell!", "Das macht nichts."], answerIndex: 0, explanation: "„Ich habe zu tun.“は「やることがある、忙しい」という定番フレーズ。" }
   ]
 }
+,
+{
+  date: "2026-10-10",
+  dateLabel: "2026年10月10日（土・復習）",
+  readTimeMin: 12,
+  coreItems: [
+    {
+      type: "noun", term: "die Firma", plural: "die Firmen",
+      meaning_ja: "会社、企業",
+      examples: [
+        { de: "Ich arbeite bei einer großen Firma.", ja: "私は大きな会社で働いています。" },
+        { de: "Die Firma hat viele Mitarbeiter.", ja: "その会社には多くの社員がいます。" }
+      ],
+      related: [ { term: "das Unternehmen", note_ja: "「企業」。Firmaとほぼ同じ意味で使われる、より書き言葉的な類義語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Firmen で語尾に -n を付ける規則的なパターン。「〜で働く」は bei＋Dativ（3格）を使い、„bei einer Firma arbeiten“の形が基本。"
+    },
+    {
+      type: "noun", term: "der Termin", plural: "die Termine",
+      meaning_ja: "予定、約束の日時、面談",
+      examples: [
+        { de: "Ich habe heute einen Termin beim Arzt.", ja: "私は今日、医者の予約があります。" },
+        { de: "Wann ist dein nächster Termin?", ja: "あなたの次の予定はいつですか？" }
+      ],
+      related: [ { term: "der Kalender", note_ja: "「カレンダー、予定表」。Terminを管理するときに使う関連語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Termine で語尾に -e を付ける規則的なパターン。„einen Termin machen“（予約を取る）、„einen Termin haben“（予定がある）という組み合わせが頻出。"
+    },
+    {
+      type: "noun", term: "der Schrank", plural: "die Schränke",
+      meaning_ja: "たんす、収納家具",
+      examples: [
+        { de: "Der Schrank ist voller Kleidung.", ja: "そのたんすは服でいっぱいです。" },
+        { de: "Ich räume meine Kleidung in den Schrank.", ja: "私は服をたんすにしまいます。" }
+      ],
+      related: [ { term: "das Regal", note_ja: "「棚」。Schrank（扉付きの収納家具）に対し、Regalは扉のない開いた棚を指す。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Schränke で語幹の母音がウムラウト化するパターン（a→ä）。der Garten→die Gärtenと同じタイプ。„in den Schrank räumen“（たんすにしまう）のように4格（Akkusativ）と組み合わせて使う。"
+    },
+    {
+      type: "verb", term: "anrufen", conjugation: "ich rufe an / du rufst an / er-sie-es ruft an",
+      meaning_ja: "電話をかける",
+      examples: [
+        { de: "Ich rufe meinen Chef an.", ja: "私は上司に電話をかけます。" },
+        { de: "Rufst du mich nach der Arbeit an?", ja: "仕事の後に私に電話してくれますか？" }
+      ],
+      related: [ { term: "das Telefon", note_ja: "「電話（機）」。anrufenするときに使う道具。" } ],
+      explanation_ja: "分離動詞（rufen＋an）。文中では前綴り an が文末に移動する（例: Ich rufe dich an.）。rufenだけだと「呼ぶ」という意味で、anを付けることで「電話をかける」という意味に変わる。"
+    },
+    {
+      type: "verb", term: "aufhören", conjugation: "ich höre auf / du hörst auf / er-sie-es hört auf",
+      meaning_ja: "やめる、終える",
+      examples: [
+        { de: "Ich höre um siebzehn Uhr mit der Arbeit auf.", ja: "私は17時に仕事を終えます。" },
+        { de: "Hör bitte auf zu reden!", ja: "どうかおしゃべりをやめてください！" }
+      ],
+      related: [ { term: "anfangen", note_ja: "「始める」。aufhörenと対になる分離動詞。" } ],
+      explanation_ja: "分離動詞（規則動詞）。前綴り auf- は人称変化すると文末に移動する。„aufhören + zu + 不定形“（〜するのをやめる）の形もよく使われる。"
+    },
+    {
+      type: "verb", term: "vergessen", conjugation: "ich vergesse / du vergisst / er-sie-es vergisst",
+      meaning_ja: "忘れる",
+      examples: [
+        { de: "Ich vergesse oft meinen Schlüssel.", ja: "私はよく鍵を忘れます。" },
+        { de: "Vergiss das nicht!", ja: "それを忘れないで！" }
+      ],
+      related: [ { term: "sich erinnern", note_ja: "「思い出す、覚えている」。vergessen（忘れる）と対になる再帰動詞。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i）。geben・nehmen・treffenと同じ変化パターンで、語幹が-ssで終わるためduとerの形がどちらも vergisst になる（heißenのheißtと同じ現象）。命令形„Vergiss (das) nicht!“は日常会話でよく使う。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "pünktlich",
+      meaning_ja: "時間通りの、時間に正確な",
+      examples: [
+        { de: "Er ist immer pünktlich.", ja: "彼はいつも時間通りです。" },
+        { de: "Bitte sei morgen pünktlich!", ja: "明日は時間通りに来てね！" }
+      ],
+      related: [ { term: "unpünktlich", note_ja: "「時間に遅れる、不正確な」。un-を付けると反対の意味になるパターン。" } ],
+      explanation_ja: "時間の正確さを表す基本形容詞。ドイツでは時間厳守が重視される文化があり、仕事や約束の場面で非常によく使われる語。"
+    },
+    {
+      term: "ruhig",
+      meaning_ja: "静かな、落ち着いた",
+      examples: [
+        { de: "Das Büro ist heute sehr ruhig.", ja: "そのオフィスは今日とても静かです。" },
+        { de: "Er bleibt auch in Stresssituationen ruhig.", ja: "彼はストレスの多い状況でも落ち着いています。" }
+      ],
+      related: [ { term: "laut", note_ja: "「うるさい」。ruhigの対義語。" } ],
+      explanation_ja: "場所の静けさだけでなく、人の性格の「落ち着き」も表せる基本形容詞。既出の laut（うるさい）と対で覚えると効率的。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Keine Ursache!",
+      meaning_ja: "どういたしまして、気にしないで",
+      examples: [
+        { de: "Danke für deine Hilfe! – Keine Ursache!", ja: "助けてくれてありがとう！—どういたしまして！" },
+        { de: "Keine Ursache, das mache ich gern.", ja: "気にしないで、喜んでやるよ。" }
+      ],
+      explanation_ja: "„Bitte schön!“と同様にお礼への返答として使える表現。直訳は「原因なし」で、「大したことではない」という気持ちを表す。"
+    },
+    {
+      phrase: "Setz dich!",
+      meaning_ja: "座って！",
+      examples: [
+        { de: "Setz dich bitte!", ja: "どうぞ座ってください！" },
+        { de: "Setz dich, das Essen ist fertig.", ja: "座って、料理ができたよ。" }
+      ],
+      explanation_ja: "再帰動詞 sich setzen（座る、動作）の命令形。すでに学んだ sitzen（座っている、状態）との違いに注意：setzenは「座る動作」、sitzenは「座っている状態」を表す。"
+    }
+  ],
+  grammarTip: {
+    title: "今週の復習：接続詞weil・時の前置詞・Dativ前置詞のまとめ",
+    body_ja: "今週は3つの重要文法を学びました。①weil（〜なので）で始まる理由を表す文では、動詞が必ず文末に移動します（通常の語順のままのdennとの違いに注意）。②時を表す前置詞は単位によって使い分け、時刻にはum（um acht Uhr）、曜日・日付にはam（am Montag）、月・季節・年にはim（im Oktober）を使います。③mit・nach・bei・von・zu・aus・seitは意味に関わらず常にDativ（3格）を取る前置詞です。どれも「文中の役割や決まりによって語順・語形が変わる」という共通点を意識して復習しましょう。"
+  },
+  todayQuiz: [
+    { question: "「die Firma」の複数形は？", choices: ["die Firmen", "die Firmas", "die Firma", "der Firmen"], answerIndex: 0, explanation: "-aで終わる女性名詞Firmaの複数形は語尾を-enに変えてdie Firmenになる。" },
+    { question: "「Termin」の意味として正しいものは？", choices: ["予定、約束の日時", "休憩", "会社、企業", "たんす"], answerIndex: 0, explanation: "Terminは「予定、約束の日時、面談」を意味する男性名詞。" },
+    { question: "「Schrank（たんす）」の複数形は？", choices: ["die Schränke", "die Schranke", "die Schränken", "der Schränke"], answerIndex: 0, explanation: "複数形はdie Schränkeで、語幹の母音がウムラウト化するパターン（a→ä）。" },
+    { question: "Ergänze: „___ du mich nach der Arbeit an?\"（anrufenを正しい形に）", choices: ["Rufe", "Rufst", "Ruft", "Rufen"], answerIndex: 1, explanation: "anrufenは分離動詞。主語duの形はrufstで、前綴りanは文末に残る。" },
+    { question: "Ergänze: „Du ___ oft deinen Schlüssel.\"（vergessenを正しい形に）", choices: ["vergesse", "vergisst", "vergesst", "vergessen"], answerIndex: 1, explanation: "vergessenは不規則動詞（e→i）で、語幹が-ssで終わるためduとerの形がどちらもvergisstになる。" },
+    { question: "「pünktlich」の反対の意味を持つ語は？", choices: ["unpünktlich", "unruhig", "unhöflich", "unordentlich"], answerIndex: 0, explanation: "pünktlich（時間通りの）の反対はun-を付けたunpünktlich。" },
+    { question: "„Ich bin müde, ___ ich schlecht geschlafen habe.\"（weilを使う場合の正しい語順）", choices: ["weil ich schlecht geschlafen habe", "weil habe ich schlecht geschlafen", "weil ich habe schlecht geschlafen", "weil geschlafen ich habe schlecht"], answerIndex: 0, explanation: "weil（〜なので）で始まる文では、動詞（ここではhabe）が文末に置かれる。" },
+    { question: "常にDativ（3格）を取る前置詞はどれ？", choices: ["seit", "für", "ohne", "durch"], answerIndex: 0, explanation: "seitは常にDativを取る前置詞。für/ohne/durchは常にAkkusativを取る。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-10-08)
+// ── END_DATA ──  (last sync: 2026-10-10)
 
 function esc(s){
   if(s===undefined||s===null) return '';
