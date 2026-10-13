@@ -146,149 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-09-23",
-  dateLabel: "2026年9月23日（水）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "der Mann", plural: "die Männer",
-      meaning_ja: "男性、夫",
-      examples: [
-        { de: "Der Mann dort ist mein Vater.", ja: "あそこの男性は私の父です。" },
-        { de: "Sie hat einen netten Mann.", ja: "彼女は優しい夫がいます。" }
-      ],
-      related: [ { term: "die Frau", note_ja: "「女性、妻」。Mannと対になる基本語。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Männer で語幹の母音がウムラウト化するパターン（a→ä）。「男性」だけでなく「夫」の意味でもよく使われ、文脈で判断する。"
-    },
-    {
-      type: "noun", term: "die Frau", plural: "die Frauen",
-      meaning_ja: "女性、妻",
-      examples: [
-        { de: "Die Frau neben mir heißt Anna.", ja: "私の隣の女性はアンナといいます。" },
-        { de: "Meine Frau arbeitet in Berlin.", ja: "私の妻はベルリンで働いています。" }
-      ],
-      related: [ { term: "der Mann", note_ja: "「男性、夫」。Frauと対になる基本語。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Frauen で語尾に -en を付ける規則的なパターン。既婚・未婚に関わらず成人女性を指す一般的な語。"
-    },
-    {
-      type: "noun", term: "der Vater", plural: "die Väter",
-      meaning_ja: "父",
-      examples: [
-        { de: "Mein Vater kocht sehr gut.", ja: "私の父はとても料理が上手です。" },
-        { de: "Ist das dein Vater?", ja: "これはあなたのお父さんですか？" }
-      ],
-      related: [ { term: "die Mutter", note_ja: "「母」。Vaterと対になる語で、両親をまとめて指すときは die Eltern を使う。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Väter で die Mutter→die Mütter と同じくウムラウト化するパターン（a→ä）。所有冠詞 mein/dein などと組み合わせて „mein Vater“（私の父）のように使うのが基本。"
-    },
-    {
-      type: "verb", term: "können", conjugation: "ich kann / du kannst / er-sie-es kann",
-      meaning_ja: "〜できる",
-      examples: [
-        { de: "Ich kann gut schwimmen.", ja: "私は上手に泳げます。" },
-        { de: "Kannst du mir helfen?", ja: "私を手伝ってもらえますか？" }
-      ],
-      related: [ { term: "das Können", note_ja: "名詞形「能力」。könnenを大文字にした名詞用法。" } ],
-      explanation_ja: "話法の助動詞（不規則変化）。ich・er/sie/esの形はどちらも kann で語尾がつかない点に注意。„können + 動詞の不定形（文末）“の形で使う。"
-    },
-    {
-      type: "verb", term: "kennen", conjugation: "ich kenne / du kennst / er-sie-es kennt",
-      meaning_ja: "（人・場所を）知っている",
-      examples: [
-        { de: "Ich kenne diese Stadt gut.", ja: "私はこの町をよく知っています。" },
-        { de: "Kennst du meinen Vater?", ja: "あなたは私の父を知っていますか？" }
-      ],
-      related: [ { term: "wissen", note_ja: "「（事実を）知っている」。kennenは人や場所など対象を直接知っている場合に、wissenは情報・事実を知っている場合に使う。" } ],
-      explanation_ja: "規則動詞。語幹 kenn- に -e/-st/-t を付ける。知っている対象が人・場所・物のときはkennenを、事実・情報のときはwissenを使う使い分けがA2の重要ポイント。"
-    },
-    {
-      type: "verb", term: "wissen", conjugation: "ich weiß / du weißt / er-sie-es weiß",
-      meaning_ja: "（事実を）知っている",
-      examples: [
-        { de: "Ich weiß die Antwort nicht.", ja: "私はその答えを知りません。" },
-        { de: "Weißt du, wie spät es ist?", ja: "今何時か知っていますか？" }
-      ],
-      related: [ { term: "kennen", note_ja: "「（人・場所を）知っている」。wissenは事実・情報について使う。" } ],
-      explanation_ja: "不規則動詞。ich・er/sie/esの形はどちらも weiß になる特殊な変化（duはweißt）。„Ich weiß nicht.“（わかりません）という形ですでに登場した基本動詞。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "stark",
-      meaning_ja: "強い",
-      examples: [
-        { de: "Er ist sehr stark.", ja: "彼はとても強いです。" },
-        { de: "Der Kaffee ist stark.", ja: "そのコーヒーは濃いです。" }
-      ],
-      related: [ { term: "schwach", note_ja: "「弱い」。starkの対義語。" } ],
-      explanation_ja: "力の強さだけでなく、味の濃さ（starker Kaffee＝濃いコーヒー）にも使える基本形容詞。"
-    },
-    {
-      term: "schwach",
-      meaning_ja: "弱い",
-      examples: [
-        { de: "Nach der Krankheit war er schwach.", ja: "病気の後、彼は弱っていました。" },
-        { de: "Das Signal ist schwach.", ja: "その信号は弱いです。" }
-      ],
-      related: [ { term: "stark", note_ja: "「強い」。schwachの対義語。" } ],
-      explanation_ja: "starkの対義語で、体力や電波・信号の弱さなど幅広く使われる基本形容詞。"
-    },
-    {
-      term: "glücklich",
-      meaning_ja: "幸せな",
-      examples: [
-        { de: "Ich bin sehr glücklich.", ja: "私はとても幸せです。" },
-        { de: "Sie hat ein glückliches Leben.", ja: "彼女は幸せな人生を送っています。" }
-      ],
-      related: [ { term: "traurig", note_ja: "「悲しい」。glücklichの対義語。" } ],
-      explanation_ja: "感情の「幸せ」を表す基本形容詞。名詞 das Glück（幸運）と語源が同じで、„Viel Glück!“（頑張って）ともつながる。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Danke schön!",
-      meaning_ja: "どうもありがとうございます",
-      examples: [
-        { de: "Danke schön für Ihre Hilfe!", ja: "お手伝いいただき、どうもありがとうございます！" },
-        { de: "Danke schön, das ist sehr nett von dir.", ja: "どうもありがとう、とても親切だね。" }
-      ],
-      explanation_ja: "„Danke.“よりも丁寧・強調した感謝の表現。schönを付けることで気持ちを強める、日常でもよく使われる言い方。"
-    },
-    {
-      phrase: "Bitte schön!",
-      meaning_ja: "どういたしまして／どうぞ",
-      examples: [
-        { de: "Danke schön! – Bitte schön!", ja: "どうもありがとう！—どういたしまして！" },
-        { de: "Hier ist Ihr Kaffee, bitte schön.", ja: "コーヒーをどうぞ。" }
-      ],
-      explanation_ja: "お礼への返答「どういたしまして」だけでなく、物を渡すときの「どうぞ」としても使える便利な表現。"
-    },
-    {
-      phrase: "Alles Gute!",
-      meaning_ja: "お元気で！、幸運を！",
-      examples: [
-        { de: "Zum Geburtstag alles Gute!", ja: "誕生日おめでとう（すべて良いことがありますように）！" },
-        { de: "Alles Gute für die Zukunft!", ja: "これからも幸せに！" }
-      ],
-      explanation_ja: "誕生日や別れ際など、相手の今後の幸運や健康を祈るときに使う万能な決まり文句。"
-    }
-  ],
-  grammarTip: {
-    title: "所有冠詞 mein / dein / sein / ihr — 「〜の」を表す言い方",
-    body_ja: "「私の」「あなたの」のように所有を表す語は所有冠詞（Possessivartikel）と呼ばれ、ich→mein、du→dein、er→sein、sie→ihr、wir→unser、ihr→euer、sie/Sie→ihr/Ihrのように変化します。これらは不定冠詞einと同じ変化パターンを取るため「ein型の語」とも呼ばれ、後ろに続く名詞の性・格に応じて語尾が変わります（例: mein Vater〈男性・Nominativ〉、meine Mutter〈女性〉、mein Kind〈中性〉）。まずは名詞の性を意識しながら、mein/dein/seinの基本形から練習するのが効率的です。"
-  },
-  todayQuiz: [
-    { question: "「Mann（男性）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Mannは男性名詞なのでder Mannが正解。複数形はdie Männer。" },
-    { question: "Ergänze: „Ich ___ gut schwimmen.\"（könnenを正しい形に）", choices: ["kann", "kannst", "könnt", "können"], answerIndex: 0, explanation: "話法の助動詞könnenはichの形で語尾がつかずkannになる。" },
-    { question: "Ergänze: „___ du meinen Vater?\"（kennenを正しい形に）", choices: ["kenne", "kennst", "kennt", "kennen"], answerIndex: 1, explanation: "主語がdu（2人称単数）なので語尾は-st。kennstが正解。" },
-    { question: "「事実・情報を知っている」という意味で使う動詞はどれ？", choices: ["kennen", "wissen", "kommen", "wohnen"], answerIndex: 1, explanation: "wissenは事実・情報について、kennenは人や場所について使う。" },
-    { question: "「stark」の反対の意味を持つ形容詞は？", choices: ["schwach", "glücklich", "traurig", "klein"], answerIndex: 0, explanation: "stark（強い）の反対はschwach（弱い）。" },
-    { question: "「Vater（父）」の複数形は？", choices: ["die Väter", "die Vaters", "die Vateren", "der Väter"], answerIndex: 0, explanation: "複数形はdie Väterで、語幹の母音がウムラウト化するパターン（a→ä）。" },
-    { question: "お礼を言われたときの返答として使えるフレーズはどれ？", choices: ["Bitte schön!", "Alles Gute!", "Guten Appetit!", "Viel Glück!"], answerIndex: 0, explanation: "„Bitte schön!“はDanke schön!への定番の返答。" },
-    { question: "所有冠詞で「彼の」を表す語はどれ？", choices: ["mein", "dein", "sein", "ihr"], answerIndex: 2, explanation: "erに対応する所有冠詞はsein。「彼女の」はihr。" }
-  ]
-}
-,
-{
   date: "2026-09-26",
   dateLabel: "2026年9月26日（土・復習）",
   readTimeMin: 12,
@@ -1942,8 +1799,151 @@ const GERMAN_REPORTS = [
     { question: "常にDativ（3格）を取る前置詞はどれ？", choices: ["seit", "für", "ohne", "durch"], answerIndex: 0, explanation: "seitは常にDativを取る前置詞。für/ohne/durchは常にAkkusativを取る。" }
   ]
 }
+,
+{
+  date: "2026-10-13",
+  dateLabel: "2026年10月13日（火）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Teller", plural: "die Teller",
+      meaning_ja: "皿",
+      examples: [
+        { de: "Der Teller ist leer.", ja: "その皿は空っぽです。" },
+        { de: "Ich brauche noch einen Teller.", ja: "私はもう一枚皿が必要です。" }
+      ],
+      related: [ { term: "die Schüssel", note_ja: "「深皿、ボウル」。Tellerは平皿を指し、スープなど汁物にはSchüsselを使うことが多い。" } ],
+      explanation_ja: "男性名詞（der）。複数形は単数形と同じ die Teller で変化しない無変化パターン（Schlüssel、Zimmerと同じグループ）。食卓で使う「平皿」を指し、深い器は die Schüssel と呼び分ける。"
+    },
+    {
+      type: "noun", term: "die Gabel", plural: "die Gabeln",
+      meaning_ja: "フォーク",
+      examples: [
+        { de: "Wo ist meine Gabel?", ja: "私のフォークはどこですか？" },
+        { de: "Iss bitte mit der Gabel.", ja: "フォークを使って食べてください。" }
+      ],
+      related: [ { term: "der Löffel", note_ja: "「スプーン」。Gabel・Messer・Löffelを合わせて das Besteck（カトラリー）と呼ぶ。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Gabeln で語尾に -n を付ける規則的なパターン。„mit der Gabel“（フォークで）のように前置詞mit＋Dativ（3格）で道具を表すのが基本。"
+    },
+    {
+      type: "noun", term: "das Messer", plural: "die Messer",
+      meaning_ja: "ナイフ、包丁",
+      examples: [
+        { de: "Das Messer ist sehr scharf.", ja: "そのナイフはとても鋭いです。" },
+        { de: "Sei vorsichtig mit dem Messer!", ja: "ナイフには気をつけてください！" }
+      ],
+      related: [ { term: "scharf", note_ja: "「鋭い」。Messerの切れ味を表すときによく使われる形容詞。" } ],
+      explanation_ja: "中性名詞（das）。複数形は単数形と同じ die Messer で変化しない無変化パターン（Fenster、Zimmerと同じグループ）。語尾が-erで終わる名詞は複数形が変化しないことが多い。"
+    },
+    {
+      type: "verb", term: "schneiden", conjugation: "ich schneide / du schneidest / er-sie-es schneidet",
+      meaning_ja: "切る",
+      examples: [
+        { de: "Ich schneide das Brot.", ja: "私はパンを切ります。" },
+        { de: "Schneidest du das Gemüse klein?", ja: "野菜を細かく切りますか？" }
+      ],
+      related: [ { term: "das Messer", note_ja: "「ナイフ」。schneiden（切る）の道具として使われる名詞。" } ],
+      explanation_ja: "規則動詞。語幹 schneid- が -d で終わるため、warten・öffnenと同じ理由でdu/erの形に -e- が入り schneidest/schneidet になる。過去形・過去分詞は不規則で schnitt／geschnitten となる。"
+    },
+    {
+      type: "verb", term: "decken", conjugation: "ich decke / du deckst / er-sie-es deckt",
+      meaning_ja: "覆う、（テーブルを）整える",
+      examples: [
+        { de: "Ich decke den Tisch.", ja: "私はテーブルの準備をします（食器を並べます）。" },
+        { de: "Deckst du bitte den Tisch?", ja: "テーブルの準備をしてもらえますか？" }
+      ],
+      related: [ { term: "der Tisch", note_ja: "「テーブル」。„den Tisch decken“（テーブルの準備をする）という決まった組み合わせでよく使われる。" } ],
+      explanation_ja: "規則動詞（語幹 deck- に -e/-st/-t を付ける）。„den Tisch decken“（食器を並べる）という決まった組み合わせでよく使われる、覚えておくと便利な表現。"
+    },
+    {
+      type: "verb", term: "spülen", conjugation: "ich spüle / du spülst / er-sie-es spült",
+      meaning_ja: "（食器を）洗う",
+      examples: [
+        { de: "Ich spüle das Geschirr.", ja: "私は食器を洗います。" },
+        { de: "Nach dem Essen spült er immer.", ja: "食事の後、彼はいつも食器を洗います。" }
+      ],
+      related: [ { term: "die Spülmaschine", note_ja: "「食器洗い機」。spülen（洗う）を使った複合語。" } ],
+      explanation_ja: "規則動詞（語幹 spül- に -e/-st/-t を付ける）。das Geschirr（食器、集合名詞）と組み合わせて „Geschirr spülen“（食器を洗う）の形で使うのが基本パターン。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "scharf",
+      meaning_ja: "鋭い、辛い",
+      examples: [
+        { de: "Das Messer ist scharf.", ja: "そのナイフは鋭いです。" },
+        { de: "Das Essen in Thailand ist sehr scharf.", ja: "タイの食べ物はとても辛いです。" }
+      ],
+      related: [ { term: "stumpf", note_ja: "「鈍い」。scharfの対義語。" } ],
+      explanation_ja: "刃物の「鋭さ」と料理の「辛さ」の両方を表す基本形容詞。食べ物の味を表すときにも日常的によく使う。"
+    },
+    {
+      term: "frisch",
+      meaning_ja: "新鮮な",
+      examples: [
+        { de: "Das Brot ist frisch.", ja: "そのパンは新鮮です。" },
+        { de: "Ich kaufe frisches Gemüse.", ja: "私は新鮮な野菜を買います。" }
+      ],
+      related: [ { term: "das Essen", note_ja: "「食べ物」。frisches Essen（新鮮な食べ物）のように名詞を修飾する形でよく使う。" } ],
+      explanation_ja: "食品の新鮮さを表す基本形容詞。名詞の前に置くときは語尾変化し„frisches Gemüse“（中性・Akkusativ）のようになる点に注意。"
+    },
+    {
+      term: "leer",
+      meaning_ja: "空っぽの、空の",
+      examples: [
+        { de: "Der Teller ist leer.", ja: "その皿は空っぽです。" },
+        { de: "Mein Glas ist leer.", ja: "私のグラスは空です。" }
+      ],
+      related: [ { term: "voll", note_ja: "「いっぱいの」。leerの対義語。" } ],
+      explanation_ja: "voll（いっぱいの）の対義語で、容器や空間が「空である」ことを表す基本形容詞。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Prost!",
+      meaning_ja: "乾杯！",
+      examples: [
+        { de: "Prost! Auf deine Gesundheit!", ja: "乾杯！健康を祝して！" },
+        { de: "Alle heben die Gläser: Prost!", ja: "みんながグラスを掲げます：乾杯！" }
+      ],
+      explanation_ja: "飲み物を飲む前に言う乾杯の言葉。グラスを合わせる動作（anstoßen）と一緒に使われることが多い、食事やパーティーで欠かせない表現。"
+    },
+    {
+      phrase: "Wo ist die Toilette?",
+      meaning_ja: "トイレはどこですか？",
+      examples: [
+        { de: "Entschuldigung, wo ist die Toilette?", ja: "すみません、トイレはどこですか？" },
+        { de: "Die Toilette ist dort hinten.", ja: "トイレはあの後ろにあります。" }
+      ],
+      explanation_ja: "レストランや公共の場でよく使う実用的なフレーズ。場所を尋ねる疑問詞woを使った基本文型で、答えるときはdort（そこに）やhier（ここに）で場所を示す。"
+    },
+    {
+      phrase: "Ich muss los.",
+      meaning_ja: "もう行かなくちゃ",
+      examples: [
+        { de: "Es ist spät, ich muss los.", ja: "もう遅いので、行かなくちゃ。" },
+        { de: "Tut mir leid, ich muss jetzt los.", ja: "すみません、もう行かないと。" }
+      ],
+      explanation_ja: "話法の助動詞müssenと副詞losを組み合わせた口語的な決まり文句で、„Ich muss gehen.“よりくだけた響きを持つ。別れ際に使う実用的な表現。"
+    }
+  ],
+  grammarTip: {
+    title: "場所を尋ねる疑問詞 wo / wohin / woher の使い分け",
+    body_ja: "場所を尋ねる疑問詞には3種類あります。wo（どこに）は位置を尋ね、„Wo wohnst du?“（どこに住んでいますか）のように使います。wohin（どこへ）は移動の方向を尋ね、„Wohin gehst du?“（どこへ行きますか）のように使います。woher（どこから）は出身や起点を尋ね、„Woher kommst du?“（どこから来ましたか）のように使います。wohin・woherはwoに方向を示すhin（へ）・her（から）を組み合わせた語だと覚えると整理しやすいです。"
+  },
+  todayQuiz: [
+    { question: "「Teller（皿）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Tellerは男性名詞なのでder Tellerが正解。複数形は単数形と同じdie Teller。" },
+    { question: "Ergänze: „Ich ___ das Brot.“（schneidenを正しい形に）", choices: ["schneide", "schneidest", "schneidet", "schneiden"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。schneideが正解。" },
+    { question: "Ergänze: „Er ___ den Tisch.“（deckenを正しい形に）", choices: ["decke", "deckst", "deckt", "decken"], answerIndex: 2, explanation: "主語がer（3人称単数）なので語尾は-t。deckenは規則動詞なのでdecktになる。" },
+    { question: "「Messer（ナイフ）」の複数形は？", choices: ["die Messer", "die Messers", "die Messern", "der Messer"], answerIndex: 0, explanation: "Messerは単数形と複数形が同じdie Messerになる無変化パターン。" },
+    { question: "「scharf」の意味として正しいものは？", choices: ["鋭い、辛い", "重い、難しい", "軽い、簡単な", "新鮮な"], answerIndex: 0, explanation: "scharfは刃物の鋭さや料理の辛さを表す形容詞。" },
+    { question: "「leer」の反対の意味を持つ形容詞は？", choices: ["voll", "schwer", "leicht", "klein"], answerIndex: 0, explanation: "leer（空っぽの）の反対はvoll（いっぱいの）。" },
+    { question: "「どこから来ましたか？」と尋ねる疑問詞はどれ？", choices: ["woher", "wohin", "wo", "was"], answerIndex: 0, explanation: "出身・起点を尋ねる疑問詞はwoher。wohinは「どこへ」、woは「どこに」を尋ねる。" },
+    { question: "食事の前に乾杯するときに使うフレーズはどれ？", choices: ["Prost!", "Kein Problem!", "Bis bald!", "Alles Gute!"], answerIndex: 0, explanation: "Prost!は飲み物を飲む前に言う乾杯の決まり文句。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-10-10)
+// ── END_DATA ──  (last sync: 2026-10-13)
 
 function esc(s){
   if(s===undefined||s===null) return '';
