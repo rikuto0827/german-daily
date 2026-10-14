@@ -146,110 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-09-26",
-  dateLabel: "2026年9月26日（土・復習）",
-  readTimeMin: 12,
-  coreItems: [
-    {
-      type: "noun", term: "die Woche", plural: "die Wochen",
-      meaning_ja: "週",
-      examples: [
-        { de: "Ich habe diese Woche viel Arbeit.", ja: "私は今週たくさんの仕事があります。" },
-        { de: "Nächste Woche fahre ich nach Berlin.", ja: "来週私はベルリンへ行きます。" }
-      ],
-      related: [ { term: "das Wochenende", note_ja: "「週末」。Wocheを含む複合語。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Wochen で語尾に -n を付ける規則的なパターン。„diese Woche“（今週）、„nächste Woche“（来週）など時間表現に必須の語。"
-    },
-    {
-      type: "noun", term: "der Zug", plural: "die Züge",
-      meaning_ja: "電車、列車",
-      examples: [
-        { de: "Der Zug kommt um neun Uhr.", ja: "その電車は9時に来ます。" },
-        { de: "Ich fahre mit dem Zug nach Hamburg.", ja: "私は電車でハンブルクへ行きます。" }
-      ],
-      related: [ { term: "der Bahnhof", note_ja: "「駅」。Zug（電車）に乗るための場所としてセットで覚える。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Züge で語幹の母音がウムラウト化するパターン（u→ü）。„mit dem Zug fahren“（電車で行く）は交通手段を表す最頻出パターンの一つ。"
-    },
-    {
-      type: "verb", term: "können", conjugation: "ich kann / du kannst / er-sie-es kann",
-      meaning_ja: "〜できる",
-      examples: [
-        { de: "Ich kann gut schwimmen.", ja: "私は上手に泳げます。" },
-        { de: "Kannst du mir helfen?", ja: "私を手伝ってもらえますか？" }
-      ],
-      related: [ { term: "das Können", note_ja: "名詞形「能力」。könnenを大文字にした名詞用法。" } ],
-      explanation_ja: "話法の助動詞（不規則変化）。ich・er/sie/esの形はどちらも kann で語尾がつかない点に注意。„können + 動詞の不定形（文末）“の形で使う。"
-    },
-    {
-      type: "verb", term: "treffen", conjugation: "ich treffe / du triffst / er-sie-es trifft",
-      meaning_ja: "会う",
-      examples: [
-        { de: "Ich treffe morgen meine Freunde.", ja: "私は明日友達に会います。" },
-        { de: "Triffst du sie oft?", ja: "あなたは彼女によく会いますか？" }
-      ],
-      related: [ { term: "das Treffen", note_ja: "名詞形「会合、待ち合わせ」。treffenと同じ語で、大文字にすると名詞になる。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→i）。du/erの形で treffe→triffst/trifft に変化するのがA2の重要ポイント。sprechenやhelfenと同じ変化パターンのグループ。treffen＋4格（人）で「〜と会う」という意味になる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "jung",
-      meaning_ja: "若い",
-      examples: [
-        { de: "Meine Schwester ist noch jung.", ja: "私の妹はまだ若いです。" },
-        { de: "Er sieht sehr jung aus.", ja: "彼はとても若く見えます。" }
-      ],
-      related: [ { term: "alt", note_ja: "「年をとった、古い」。jungの対義語。" } ],
-      explanation_ja: "年齢を表す基本形容詞。名詞の前に置くと語尾変化する（ein junger Mann）。„aussehen“（〜に見える）と組み合わせて外見の若さを表現できる。"
-    },
-    {
-      term: "freundlich",
-      meaning_ja: "親切な、フレンドリーな",
-      examples: [
-        { de: "Die Verkäuferin ist sehr freundlich.", ja: "その店員はとても親切です。" },
-        { de: "Er ist immer freundlich zu allen.", ja: "彼はいつも皆に親切です。" }
-      ],
-      related: [ { term: "unfreundlich", note_ja: "「不親切な」。un-を付けると反対の意味になるパターン。" } ],
-      explanation_ja: "人の性格を表す基本形容詞。„freundlich zu jemandem“（〜に対して親切）のように前置詞zu＋Dativと組み合わせることが多い。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Viel Glück!",
-      meaning_ja: "頑張って！（幸運を祈ります）",
-      examples: [
-        { de: "Morgen habe ich eine Prüfung. – Viel Glück!", ja: "明日試験があります。—頑張って！" },
-        { de: "Viel Glück bei der Arbeit!", ja: "お仕事頑張ってください！" }
-      ],
-      explanation_ja: "試験や大事な出来事の前に相手を励ますときの定型句。直訳は「たくさんの幸運を」。似た表現に „Viel Erfolg!“（成功を祈ります）もある。"
-    },
-    {
-      phrase: "Alles Gute!",
-      meaning_ja: "お元気で！、幸運を！",
-      examples: [
-        { de: "Zum Geburtstag alles Gute!", ja: "誕生日おめでとう（すべて良いことがありますように）！" },
-        { de: "Alles Gute für die Zukunft!", ja: "これからも幸せに！" }
-      ],
-      explanation_ja: "誕生日や別れ際など、相手の今後の幸運や健康を祈るときに使う万能な決まり文句。"
-    }
-  ],
-  grammarTip: {
-    title: "今週の復習：Perfekt・前置詞・所有冠詞のまとめ",
-    body_ja: "今週は3つの重要文法を学びました。①過去の出来事を語る現在完了形（Perfekt）は「haben/sein（2番目）＋過去分詞（文末）」という骨組みで作ります。②in・auf・anなどの前置詞は、「どこへ？」の移動ならAkkusativ、「どこに？」の位置ならDativを取ります（Wechselpräpositionen）。③「私の」「あなたの」を表す所有冠詞（mein/dein/sein/ihrなど）はeinと同じ変化パターンで、後ろの名詞の性・格に応じて語尾が変わります。どれも「語尾や語順が文中の役割によって変わる」という共通の感覚を意識して復習しましょう。"
-  },
-  todayQuiz: [
-    { question: "「die Woche（週）」の複数形は？", choices: ["die Wochen", "die Woche", "die Wochens", "der Wochen"], answerIndex: 0, explanation: "複数形はdie Wochenで、語尾に-nを付ける規則的なパターン。" },
-    { question: "Ergänze: „Wir ___ uns morgen im Park.\"（treffenを正しい形に）", choices: ["treffe", "triffst", "trefft", "treffen"], answerIndex: 3, explanation: "treffenの幹母音変化（e→i）はdu/erの形のみで起こる。wir（複数）はtreffenのまま変化しない。" },
-    { question: "「der Zug（電車）」の複数形は？", choices: ["die Züge", "die Zuge", "die Zügen", "der Züge"], answerIndex: 0, explanation: "複数形はdie Zügeで、語幹の母音がウムラウト化するパターン（u→ü）。" },
-    { question: "Ergänze: „Er ___ gut Deutsch sprechen.\"（könnenを正しい形に）", choices: ["kann", "kannst", "könnt", "können"], answerIndex: 0, explanation: "話法の助動詞könnenはich・er/sie/esの形がどちらもkannで語尾がつかない。" },
-    { question: "「jung」の反対の意味を持つ形容詞は？", choices: ["alt", "schnell", "gut", "klein"], answerIndex: 0, explanation: "jung（若い）の反対はalt（年をとった、古い）。" },
-    { question: "「freundlich」の意味として正しいものは？", choices: ["親切な、フレンドリーな", "重い、難しい", "軽い、簡単な", "強い"], answerIndex: 0, explanation: "freundlichは人の性格を表す「親切な」という意味の形容詞。反対語はunfreundlich。" },
-    { question: "試験前に相手を励ますときに使うフレーズはどれ？", choices: ["Viel Glück!", "Viel Spaß!", "Wie bitte?", "Auf Wiedersehen!"], answerIndex: 0, explanation: "„Viel Glück!“は試験や大事な出来事の前に励ますフレーズ。Viel Spaß!（楽しんでね）とは区別する。" },
-    { question: "現在完了形（Perfekt）で、過去分詞はどこに置かれる？", choices: ["文頭", "2番目", "文末", "助動詞の直前"], answerIndex: 2, explanation: "Perfektはhaben/seinが2番目、過去分詞は文末に置かれる。" }
-  ]
-}
-,
-{
   date: "2026-09-27",
   dateLabel: "2026年9月27日（日・復習）",
   readTimeMin: 12,
@@ -1942,8 +1838,141 @@ const GERMAN_REPORTS = [
     { question: "食事の前に乾杯するときに使うフレーズはどれ？", choices: ["Prost!", "Kein Problem!", "Bis bald!", "Alles Gute!"], answerIndex: 0, explanation: "Prost!は飲み物を飲む前に言う乾杯の決まり文句。" }
   ]
 }
+,
+{
+  date: "2026-10-14",
+  dateLabel: "2026年10月14日（水）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Kopf", plural: "die Köpfe",
+      meaning_ja: "頭",
+      examples: [
+        { de: "Mein Kopf tut weh.", ja: "頭が痛いです。" },
+        { de: "Er hat einen großen Kopf.", ja: "彼は頭が大きいです。" }
+      ],
+      related: [ { term: "der Bauch", note_ja: "「お腹」。体の部位を表す基本語として一緒に覚えておきたい。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Köpfe で語幹の母音がウムラウト化するパターン（o→ö）。„Kopfschmerzen“（頭痛）のように複合語としてもよく使われる、体の部位の基本語。"
+    },
+    {
+      type: "noun", term: "der Bauch", plural: "die Bäuche",
+      meaning_ja: "お腹、腹部",
+      examples: [
+        { de: "Mein Bauch tut weh.", ja: "お腹が痛いです。" },
+        { de: "Nach dem Essen ist mein Bauch voll.", ja: "食事の後、私のお腹はいっぱいです。" }
+      ],
+      related: [ { term: "der Kopf", note_ja: "「頭」。体の部位を表す基本語として一緒に覚えておきたい。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Bäuche で語幹の母音がウムラウト化するパターン（au→äu）。„Bauchschmerzen“（腹痛）のように„Schmerzen“と組み合わせて痛みを表すことが多い。"
+    },
+    {
+      type: "noun", term: "die Erkältung", plural: "die Erkältungen",
+      meaning_ja: "風邪",
+      examples: [
+        { de: "Ich habe eine Erkältung.", ja: "私は風邪をひいています。" },
+        { de: "Im Winter habe ich oft eine Erkältung.", ja: "冬に私はよく風邪をひきます。" }
+      ],
+      related: [ { term: "der Arzt / die Ärztin", note_ja: "「医者（男性形／女性形）」。Erkältungがひどいときに訪ねる相手。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Erkältungen で語尾に -en を付ける規則的なパターン。„eine Erkältung haben“（風邪をひいている）の形で使うのが基本で、動詞erkälten（冷やす）から派生した名詞。"
+    },
+    {
+      type: "verb", term: "husten", conjugation: "ich huste / du hustest / er-sie-es hustet",
+      meaning_ja: "咳をする",
+      examples: [
+        { de: "Ich huste seit zwei Tagen.", ja: "私は2日前から咳をしています。" },
+        { de: "Hustest du noch?", ja: "まだ咳が出ていますか？" }
+      ],
+      related: [ { term: "die Erkältung", note_ja: "「風邪」。hustenはErkältungの代表的な症状の一つ。" } ],
+      explanation_ja: "規則動詞だが、語幹 hust- が -t で終わるため、warten・öffnenと同じ理由で du/er の形に -e- が入り hustest/hustet になる。体の症状を伝える基本動詞の一つ。"
+    },
+    {
+      type: "verb", term: "sich fühlen", conjugation: "ich fühle mich / du fühlst dich / er-sie-es fühlt sich",
+      meaning_ja: "（自分が）〜だと感じる",
+      examples: [
+        { de: "Ich fühle mich heute nicht gut.", ja: "私は今日気分が良くありません。" },
+        { de: "Wie fühlst du dich?", ja: "気分はどうですか？" }
+      ],
+      related: [ { term: "fühlen", note_ja: "再帰代名詞sichを付けずに使うと「（物を）触って感じる」という別の意味になる。" } ],
+      explanation_ja: "再帰動詞（規則変化＋再帰代名詞）。主語に応じてmich/dich/sich等の4格の再帰代名詞を動詞の直後に置く。„sich fühlen＋形容詞“（〜な気分だ）の形で体調や気分を伝える頻出表現。"
+    },
+    {
+      type: "verb", term: "frieren", conjugation: "ich friere / du frierst / er-sie-es friert",
+      meaning_ja: "寒く感じる、凍える",
+      examples: [
+        { de: "Ich friere, mir ist kalt.", ja: "寒くて凍えそうです。" },
+        { de: "Im Winter friert sie oft.", ja: "冬、彼女はよく寒がります。" }
+      ],
+      related: [ { term: "kalt", note_ja: "「寒い」。frieren（凍える）の原因となる形容詞。" } ],
+      explanation_ja: "現在人称変化は規則的（過去形frorや過去分詞gefrorenは不規則）。„mir ist kalt“（私は寒い）と似た意味だが、frierenは主語（人）が「寒く感じる」ことを動詞で直接表す点が異なる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "krank",
+      meaning_ja: "病気の",
+      examples: [
+        { de: "Mein Bruder ist krank.", ja: "私の兄は病気です。" },
+        { de: "Ich bin seit gestern krank.", ja: "私は昨日から病気です。" }
+      ],
+      related: [ { term: "gesund", note_ja: "「健康な」。krankの対義語。" } ],
+      explanation_ja: "体調不良を表す基本形容詞。„krank sein“（病気である）の形で使い、学校や仕事を休む理由を説明するときに頻出する。"
+    },
+    {
+      term: "gesund",
+      meaning_ja: "健康な",
+      examples: [
+        { de: "Obst und Gemüse sind gesund.", ja: "果物と野菜は健康的です。" },
+        { de: "Zum Glück ist meine Familie gesund.", ja: "幸い、私の家族は健康です。" }
+      ],
+      related: [ { term: "krank", note_ja: "「病気の」。gesundの対義語。" } ],
+      explanation_ja: "krankの対義語で、人の健康状態だけでなく食べ物の「健康的さ」を表すときにも使う（gesundes Essen＝健康的な食事）。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Mir geht es nicht gut.",
+      meaning_ja: "気分が良くありません",
+      examples: [
+        { de: "Mir geht es heute nicht gut.", ja: "今日は気分が良くありません。" },
+        { de: "Mir geht es nicht gut, ich bleibe im Bett.", ja: "気分が良くないので、ベッドにいます。" }
+      ],
+      explanation_ja: "„Wie geht es dir?“（元気ですか？）への答えの否定バージョン。主語のように見えるesだが、実際に体調の主体はmir（私に、Dativ）で表される。"
+    },
+    {
+      phrase: "Ich habe Kopfschmerzen.",
+      meaning_ja: "頭痛がします",
+      examples: [
+        { de: "Ich habe seit heute Morgen Kopfschmerzen.", ja: "私は今朝から頭痛がします。" },
+        { de: "Hast du auch Kopfschmerzen?", ja: "あなたも頭痛がしますか？" }
+      ],
+      explanation_ja: "KopfとSchmerzen（痛み、常に複数形で使う）を組み合わせた複合語。„Bauchschmerzen“（腹痛）など他の体の部位にも同じ型が使える。"
+    },
+    {
+      phrase: "Gute Besserung!",
+      meaning_ja: "お大事に！（早く良くなりますように）",
+      examples: [
+        { de: "Du bist krank? Gute Besserung!", ja: "病気なの？お大事に！" },
+        { de: "Gute Besserung, ruh dich gut aus!", ja: "お大事に、ゆっくり休んでね！" }
+      ],
+      explanation_ja: "病気の人を気遣うときの定番フレーズ。直訳は「良い快復を」。Viel Glück!やAlles Gute!と同じく、名詞のみで動詞を省略した決まり文句。"
+    }
+  ],
+  grammarTip: {
+    title: "「Mir geht es gut」— Dativ（3格）が主語のように見える表現",
+    body_ja: "„Mir geht es gut.“（私は元気です）という文では、文法上の主語はes（それ）で、体調の主体である「私」はmir（Dativ、3格）で表されます。このように人をDativにして状態や感覚を表す表現はドイツ語に多くあります（例：„Das schmeckt mir.“味が私に合う＝美味しい、„Das gefällt mir.“それが私の気に入る）。日本語の「私は元気です」のように人を主語にしたくなりますが、ドイツ語ではDativの位置に置く点がA2で特に注意すべきポイントです。"
+  },
+  todayQuiz: [
+    { question: "「Kopf（頭）」の複数形は？", choices: ["die Köpfe", "die Kopfe", "die Köpfen", "der Köpfe"], answerIndex: 0, explanation: "複数形はdie Köpfeで、語幹の母音がウムラウト化するパターン（o→ö）。" },
+    { question: "Ergänze: „Ich ___ seit zwei Tagen.“（hustenを正しい形に）", choices: ["huste", "hustest", "hustet", "husten"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。husteが正解。" },
+    { question: "Ergänze: „Wie ___ du dich?“（sich fühlenを正しい形に）", choices: ["fühle", "fühlst", "fühlt", "fühlen"], answerIndex: 1, explanation: "主語がdu（2人称単数）なので語尾は-st。fühlstが正解（再帰代名詞はdich）。" },
+    { question: "「Bauch（お腹）」の複数形は？", choices: ["die Bäuche", "die Bauche", "die Bäuchen", "der Bäuche"], answerIndex: 0, explanation: "複数形はdie Bäucheで、語幹の母音がウムラウト化するパターン（au→äu）。" },
+    { question: "「krank」の反対の意味を持つ形容詞は？", choices: ["gesund", "müde", "traurig", "stark"], answerIndex: 0, explanation: "krank（病気の）の反対はgesund（健康な）。" },
+    { question: "Ergänze: „Es ist kalt, ich ___.“（frierenを正しい形に）", choices: ["friere", "frierst", "friert", "frieren"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。friereが正解。" },
+    { question: "病気の人を気遣うときに使うフレーズはどれ？", choices: ["Gute Besserung!", "Guten Appetit!", "Viel Spaß!", "Herzlichen Glückwunsch!"], answerIndex: 0, explanation: "„Gute Besserung!“は病気の人に「お大事に」と伝える定番フレーズ。" },
+    { question: "„Mir geht es gut.“でmirが表す格はどれ？", choices: ["Dativ（3格）", "Akkusativ（4格）", "Nominativ（1格）", "Genitiv（2格）"], answerIndex: 0, explanation: "mirは人称代名詞ichのDativ（3格）形で、体調の主体をDativで表す構文。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-10-13)
+// ── END_DATA ──  (last sync: 2026-10-14)
 
 function esc(s){
   if(s===undefined||s===null) return '';
