@@ -146,149 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-09-29",
-  dateLabel: "2026年9月29日（火）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "die Tante", plural: "die Tanten",
-      meaning_ja: "おば",
-      examples: [
-        { de: "Meine Tante wohnt in Hamburg.", ja: "私のおばはハンブルクに住んでいます。" },
-        { de: "Ich besuche meine Tante am Wochenende.", ja: "私は週末におばを訪ねます。" }
-      ],
-      related: [ { term: "der Onkel", note_ja: "「おじ」。Tanteと対になる家族を表す語。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Tanten で語尾に -n を付ける規則的なパターン。家族の呼び方は所有冠詞（meine Tante＝私のおば）とセットで使うことが多い。"
-    },
-    {
-      type: "noun", term: "der Onkel", plural: "die Onkel",
-      meaning_ja: "おじ",
-      examples: [
-        { de: "Mein Onkel arbeitet als Lehrer.", ja: "私のおじは教師として働いています。" },
-        { de: "Ist das dein Onkel?", ja: "これはあなたのおじですか？" }
-      ],
-      related: [ { term: "die Großeltern", note_ja: "「祖父母」。常に複数形で使われる家族名詞。" } ],
-      explanation_ja: "男性名詞（der）。複数形は単数形と同じ die Onkel で変化しない無変化パターン（Fenster、Schlüsselと同じグループ）。"
-    },
-    {
-      type: "noun", term: "das Handy", plural: "die Handys",
-      meaning_ja: "携帯電話、スマートフォン",
-      examples: [
-        { de: "Mein Handy ist kaputt.", ja: "私の携帯電話は壊れています。" },
-        { de: "Wo ist dein Handy?", ja: "あなたの携帯電話はどこですか？" }
-      ],
-      related: [ { term: "anrufen", note_ja: "「電話をかける」。Handyとセットでよく使われる分離動詞。" } ],
-      explanation_ja: "中性名詞（das）。英語由来の外来語で、複数形はドイツ語特有の変化パターンではなく英語式に -s を付けて die Handys になる。外来語にはこの -s 複数パターンが多い点を覚えておくと便利。"
-    },
-    {
-      type: "verb", term: "waschen", conjugation: "ich wasche / du wäschst / er-sie-es wäscht",
-      meaning_ja: "洗う",
-      examples: [
-        { de: "Ich wasche mein Auto am Samstag.", ja: "私は土曜日に車を洗います。" },
-        { de: "Wäschst du deine Hände vor dem Essen?", ja: "食事の前に手を洗いますか？" }
-      ],
-      related: [ { term: "sich waschen", note_ja: "再帰代名詞sichを付けると「自分の体を洗う」という意味の再帰動詞になる。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 a→ä）。du/erの形でwasche→wäschst/wäschtに変化する、tragenやfahrenと同じグループ。"
-    },
-    {
-      type: "verb", term: "putzen", conjugation: "ich putze / du putzt / er-sie-es putzt",
-      meaning_ja: "掃除する、磨く",
-      examples: [
-        { de: "Ich putze jeden Samstag die Wohnung.", ja: "私は毎週土曜日に部屋を掃除します。" },
-        { de: "Er putzt sich die Zähne.", ja: "彼は歯を磨きます。" }
-      ],
-      related: [ { term: "sauber", note_ja: "「きれいな」。putzenをした結果の状態を表す形容詞。" } ],
-      explanation_ja: "規則動詞だが、語幹が -z で終わるため du の形は wartest のように -st を付けず putzt になる（-s/-ß/-z/-xで終わる動詞はduに-tのみを付ける例外ルール）。"
-    },
-    {
-      type: "verb", term: "scheinen", conjugation: "ich scheine / du scheinst / er-sie-es scheint",
-      meaning_ja: "輝く、〜のように見える",
-      examples: [
-        { de: "Die Sonne scheint heute den ganzen Tag.", ja: "今日は一日中太陽が輝いています。" },
-        { de: "Er scheint müde zu sein.", ja: "彼は疲れているように見えます。" }
-      ],
-      related: [ { term: "die Sonne", note_ja: "「太陽」。„Die Sonne scheint.“（太陽が輝いている＝晴れている）は天気表現の定番。" } ],
-      explanation_ja: "規則動詞。「輝く」と「〜のように見える」という2つの意味を持つ点に注意。天気表現と、印象を述べる表現の両方で頻出する。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "nass",
-      meaning_ja: "濡れた",
-      examples: [
-        { de: "Meine Kleidung ist nass.", ja: "私の服は濡れています。" },
-        { de: "Es ist nass draußen.", ja: "外は濡れています（雨などで）。" }
-      ],
-      related: [ { term: "trocken", note_ja: "「乾いた」。nassの対義語。" } ],
-      explanation_ja: "天気や物の状態を表す基本形容詞。„Es ist nass.“のように非人称主語esと組み合わせて天気表現にも使う。"
-    },
-    {
-      term: "trocken",
-      meaning_ja: "乾いた",
-      examples: [
-        { de: "Das Handtuch ist trocken.", ja: "そのタオルは乾いています。" },
-        { de: "Im Sommer ist die Luft oft trocken.", ja: "夏は空気が乾燥していることが多いです。" }
-      ],
-      related: [ { term: "nass", note_ja: "「濡れた」。trockenの対義語。" } ],
-      explanation_ja: "nassの対義語で、天気・気候・洗濯物の状態などを表すときによく使う基本形容詞。"
-    },
-    {
-      term: "sauber",
-      meaning_ja: "きれいな、清潔な",
-      examples: [
-        { de: "Die Küche ist sauber.", ja: "台所はきれいです。" },
-        { de: "Bitte halte dein Zimmer sauber.", ja: "部屋をきれいに保ってください。" }
-      ],
-      related: [ { term: "schmutzig", note_ja: "「汚い」。sauberの対義語。" } ],
-      explanation_ja: "掃除（putzen）の結果の状態を表す形容詞。„sauber halten“（きれいに保つ）という表現でもよく使われる。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Wie ist das Wetter heute?",
-      meaning_ja: "今日の天気はどうですか？",
-      examples: [
-        { de: "Wie ist das Wetter heute in Berlin?", ja: "今日ベルリンの天気はどうですか？" },
-        { de: "Das Wetter ist heute schön.", ja: "今日の天気はいいです。" }
-      ],
-      explanation_ja: "天気を尋ねる基本フレーズ。答えるときは „Es ist ... “ の後に sonnig（晴れの）や regnerisch（雨の）などの形容詞を続ける。"
-    },
-    {
-      phrase: "Ich habe keine Ahnung.",
-      meaning_ja: "全然わかりません、見当もつきません",
-      examples: [
-        { de: "Wo ist der Bahnhof? – Ich habe keine Ahnung.", ja: "駅はどこですか？—全然分かりません。" },
-        { de: "Ich habe keine Ahnung, wie spät es ist.", ja: "今何時か全然分かりません。" }
-      ],
-      explanation_ja: "„Ich weiß nicht.“よりもカジュアルで強調的な「まったく分からない」という表現。"
-    },
-    {
-      phrase: "Mach's gut!",
-      meaning_ja: "じゃあね、元気でね（くだけた別れの挨拶）",
-      examples: [
-        { de: "Ich muss jetzt los. Mach's gut!", ja: "もう行かなきゃ。じゃあね！" },
-        { de: "Mach's gut, bis nächste Woche!", ja: "元気でね、また来週！" }
-      ],
-      explanation_ja: "親しい相手との別れ際に使うくだけた挨拶。„Mach es gut“の短縮形で、直訳は「うまくやってね」。"
-    }
-  ],
-  grammarTip: {
-    title: "自分に返ってくる動詞？再帰代名詞 sich の基本",
-    body_ja: "ドイツ語には、動作が主語自身に返ってくる「再帰動詞」があります。例えば „sich waschen“（自分の体を洗う）は、主語に合わせて再帰代名詞（mich, dich, sich, uns, euch, sich）を動詞の後ろに置きます：„Ich wasche mich.“（私は体を洗う）。再帰代名詞は基本的に4格（Akkusativ）ですが、体の部位など他に目的語がある場合は3格（Dativ）になります：„Er putzt sich die Zähne.“（彼は歯を磨く）。1・2人称は人称代名詞と同じ形で、3人称と敬称Sieはすべてsichになる点を覚えておきましょう。"
-  },
-  todayQuiz: [
-    { question: "「Handy（携帯電話）」の複数形は？", choices: ["die Handys", "die Handies", "die Handy", "die Hände"], answerIndex: 0, explanation: "Handyのような外来語（英語由来）の複数形は、ドイツ語特有のパターンではなく英語式に-sを付けることが多い。die Handysが正解。" },
-    { question: "Ergänze: „Du ___ deine Hände vor dem Essen.\"（waschenを正しい形に）", choices: ["wasche", "wäschst", "wäscht", "waschen"], answerIndex: 1, explanation: "waschenは不規則動詞（a→ä）。duの形はwäschstになる。" },
-    { question: "Ergänze: „Du ___ jeden Samstag die Wohnung.\"（putzenを正しい形に）", choices: ["putzst", "putzt", "putzest", "putzen"], answerIndex: 1, explanation: "putzenの語幹は-zで終わるため、duの形はputzstではなくputztになる（-s/-ß/-z/-xで終わる動詞は例外的にduに-stではなく-tのみを付ける）。" },
-    { question: "「Die Sonne scheint.」の意味は？", choices: ["太陽が輝いている（晴れている）", "雨が降っている", "風が吹いている", "雪が降っている"], answerIndex: 0, explanation: "scheinenは「輝く」という意味。天気表現でdie Sonne scheintは「晴れている」ことを表す。" },
-    { question: "「nass」の反対の意味を持つ形容詞は？", choices: ["trocken", "sauber", "schmutzig", "kalt"], answerIndex: 0, explanation: "nass（濡れた）の反対はtrocken（乾いた）。" },
-    { question: "天気を尋ねるときに使うフレーズはどれ？", choices: ["Wie ist das Wetter heute?", "Ich habe keine Ahnung.", "Mach's gut!", "Wie heißt du?"], answerIndex: 0, explanation: "„Wie ist das Wetter heute?“が天気を尋ねる基本フレーズ。" },
-    { question: "「Ich wasche ___.」（自分の体を洗う、と言いたいとき）に入る再帰代名詞は？", choices: ["mich", "mir", "dich", "sich"], answerIndex: 0, explanation: "主語がich（1人称単数）の場合、4格の再帰代名詞はmichになる。" },
-    { question: "「Onkel（おじ）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Onkelは男性名詞なのでder Onkelが正解。複数形はdie Onkel（無変化）。" }
-  ]
-}
-,
-{
   date: "2026-09-30",
   dateLabel: "2026年9月30日（水）",
   readTimeMin: 18,
@@ -1972,8 +1829,132 @@ const GERMAN_REPORTS = [
     { question: "「eng」の意味は？", choices: ["きつい、狭い", "長い", "流行の", "古い"], answerIndex: 0, explanation: "engは衣服の『きつさ』や道・場所の『狭さ』を表す形容詞。" }
   ]
 }
+,
+{
+  date: "2026-10-28",
+  dateLabel: "2026年10月28日（水）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Herbst", plural: "die Herbste",
+      meaning_ja: "秋",
+      examples: [
+        { de: "Der Herbst ist meine Lieblingsjahreszeit.", ja: "秋は私の一番好きな季節です。" },
+        { de: "Im Herbst werden die Tage kürzer.", ja: "秋は日が短くなります。" }
+      ],
+      related: [ { term: "die Jahreszeit", note_ja: "「季節」。Herbstはその一つ。" } ],
+      explanation_ja: "男性名詞（der）。複数形 die Herbste はほとんど使われず、通常単数形のまま使う。季節を言うときは前置詞im（in+dem）と組み合わせて „im Herbst“（秋に）の形になるのが基本。四季はすべて男性名詞（der Frühling, der Sommer, der Herbst, der Winter）という点も覚えておくと便利。"
+    },
+    {
+      type: "noun", term: "der Regenschirm", plural: "die Regenschirme",
+      meaning_ja: "傘",
+      examples: [
+        { de: "Ich brauche heute einen Regenschirm.", ja: "私は今日傘が必要です。" },
+        { de: "Hast du deinen Regenschirm dabei?", ja: "傘を持っていますか？" }
+      ],
+      related: [ { term: "der Regen", note_ja: "「雨」。Regenschirmはder Regen（雨）とder Schirm（遮るもの）の複合語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Regenschirme で語尾に -e を付ける規則的なパターン。既出動詞brauchenと組み合わせて„einen Regenschirm brauchen“（傘が必要）という表現でよく使われる。複合語の性は最後の要素（der Schirm）に合わせてderになる。"
+    },
+    {
+      type: "noun", term: "das Blatt", plural: "die Blätter",
+      meaning_ja: "葉、（紙の）一枚",
+      examples: [
+        { de: "Im Herbst fallen die Blätter von den Bäumen.", ja: "秋には木から葉が落ちます。" },
+        { de: "Kannst du mir ein Blatt Papier geben?", ja: "紙を一枚もらえますか？" }
+      ],
+      related: [ { term: "der Baum", note_ja: "「木」。Blatt（葉）が生えている対象として一緒に覚える。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Blätter で語尾に -er を付けてウムラウト化するパターン（das Haus→die Häuserと同じグループ）。「葉」のほかに「（紙の）一枚」という意味もあり、„ein Blatt Papier“（紙一枚）の形でよく使われる。"
+    },
+    {
+      type: "verb", term: "regnen", conjugation: "ich regne / du regnest / er-sie-es regnet",
+      meaning_ja: "雨が降る",
+      examples: [
+        { de: "Es regnet heute den ganzen Tag.", ja: "今日は一日中雨が降っています。" },
+        { de: "Morgen regnet es wahrscheinlich.", ja: "明日はおそらく雨が降るでしょう。" }
+      ],
+      related: [ { term: "der Regen", note_ja: "「雨」。regnenの名詞形。" } ],
+      explanation_ja: "規則動詞だが、主語は常にes（非人称）を使い „Es regnet.“（雨が降っている）の形でのみ使う点が特徴。既出のscheinen（輝く、„Die Sonne scheint.“）と対になる天気表現として覚えると効率的。語幹がregn-で終わるため、duの形はregnestのように-e-を挟む（öffnenと同じ理由によるパターン）。"
+    },
+    {
+      type: "verb", term: "fallen", conjugation: "ich falle / du fällst / er-sie-es fällt",
+      meaning_ja: "落ちる、倒れる",
+      examples: [
+        { de: "Die Blätter fallen im Herbst.", ja: "葉は秋に落ちます。" },
+        { de: "Pass auf, dass du nicht fällst!", ja: "転ばないように気をつけて！" }
+      ],
+      related: [ { term: "das Blatt", note_ja: "「葉」。fallen（落ちる）する対象としてセットで覚える。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 a→ä）。du/erの形でfalle→fällst/fälltに変化する、tragenやschlafenと同じグループ。現在完了形ではseinを使う（ich bin gefallen）、移動・状態変化を表す動詞の仲間。"
+    },
+    {
+      type: "verb", term: "mitnehmen", conjugation: "ich nehme mit / du nimmst mit / er-sie-es nimmt mit",
+      meaning_ja: "持って行く",
+      examples: [
+        { de: "Ich nehme einen Regenschirm mit.", ja: "私は傘を持って行きます。" },
+        { de: "Nimmst du dein Handy mit?", ja: "携帯電話を持って行きますか？" }
+      ],
+      related: [ { term: "nehmen", note_ja: "「取る」。mitnehmenの元になる動詞。" } ],
+      explanation_ja: "分離動詞（mit-が分離前綴り）。既出のnehmen（不規則動詞、e→i）の人称変化はそのまま保ち、前綴りmitだけが文末に移動する（ich nehme...mit）。「〜を持って一緒に行く」という意味で、天気が悪い日に傘を持参する場面などで頻出する。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "windig",
+      meaning_ja: "風が強い",
+      examples: [
+        { de: "Heute ist es sehr windig.", ja: "今日はとても風が強いです。" },
+        { de: "Im Herbst ist es oft windig.", ja: "秋はよく風が強いです。" }
+      ],
+      related: [ { term: "der Wind", note_ja: "「風」。windigの名詞形。" } ],
+      explanation_ja: "天気を表す基本形容詞の一つ。既出のkalt、nassと同様に „Es ist windig.“ のように非人称主語esと組み合わせて天気表現に使う。多くの天気形容詞は名詞に-igを付けて作られる（Wind→windig）。"
+    },
+    {
+      term: "bewölkt",
+      meaning_ja: "曇った",
+      examples: [
+        { de: "Der Himmel ist heute bewölkt.", ja: "今日は空が曇っています。" },
+        { de: "Es bleibt den ganzen Tag bewölkt.", ja: "一日中曇りの予報です。" }
+      ],
+      related: [ { term: "die Wolke", note_ja: "「雲」。bewölktの元になる名詞。" } ],
+      explanation_ja: "動詞bewölken（雲で覆う）の過去分詞がそのまま形容詞として使われる例。既出のschön（晴れて良い天気）と対比して天気の良し悪しを話すときによく使われる。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Nimm einen Regenschirm mit!",
+      meaning_ja: "傘を持って行きなさい！",
+      examples: [
+        { de: "Es regnet. Nimm einen Regenschirm mit!", ja: "雨が降っています。傘を持って行きなさい！" },
+        { de: "Vergiss nicht, einen Regenschirm mitzunehmen.", ja: "傘を持って行くのを忘れないで。" }
+      ],
+      explanation_ja: "mitnehmenの命令形（du形）。人称代名詞duを省き、不規則動詞nehmenの命令形はnimmのまま使う。分離動詞なので前綴りmitは文末に残る。"
+    },
+    {
+      phrase: "Wie wird das Wetter morgen?",
+      meaning_ja: "明日の天気はどうなりますか？",
+      examples: [
+        { de: "Wie wird das Wetter morgen in Berlin?", ja: "明日ベルリンの天気はどうなりますか？" },
+        { de: "Es wird wahrscheinlich regnen.", ja: "おそらく雨が降るでしょう。" }
+      ],
+      explanation_ja: "既出のフレーズ„Wie ist das Wetter heute?“（今日の天気はどう？）を未来の話に広げた表現。動詞werden（〜になる）を使うことで、まだ起きていない将来の天気を尋ねることができる。"
+    }
+  ],
+  grammarTip: {
+    title: "分離動詞と非分離動詞 — 前綴りで決まる重要な違い",
+    body_ja: "ドイツ語の動詞には、前綴りが文末に移動する「分離動詞」（auf-, an-, aus-, mit-, einなど）と、前綴りが動詞から離れない「非分離動詞」（be-, ver-, ent-, er-, zer-など）があります。„Ich nehme den Schirm mit.“（分離：mitが文末）に対し、„Ich besuche meine Oma.“（非分離：be-は離れない）のように見分けます。分離動詞の前綴りには常にアクセントが置かれ、非分離動詞の前綴りにはアクセントが置かれない点も聞き分けの目安になります。新しい動詞を覚えるときは、この2つのタイプを区別する習慣をつけましょう。"
+  },
+  todayQuiz: [
+    { question: "「Herbst（秋）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "四季（Frühling, Sommer, Herbst, Winter）はすべて男性名詞なのでder Herbstが正解。" },
+    { question: "Ergänze: „Es ___ heute den ganzen Tag.\"（regnenを正しい形に）", choices: ["regne", "regnest", "regnet", "regnen"], answerIndex: 2, explanation: "regnenは常にes（非人称）を主語にし、3人称単数の形regnetを使う。" },
+    { question: "Ergänze: „Die Blätter ___ im Herbst.\"（fallenを正しい形に）", choices: ["fällt", "fallen", "fällst", "falle"], answerIndex: 1, explanation: "主語が複数（die Blätter）なので、動詞は原形と同じfallenになる。ウムラウト変化はdu/erの単数形のみ。" },
+    { question: "「das Blatt（葉）」の複数形は？", choices: ["die Blätter", "die Blatte", "die Blätte", "der Blätter"], answerIndex: 0, explanation: "複数形はdie Blätterで、語尾に-erを付けてウムラウト化するパターン。" },
+    { question: "Ergänze: „Ich ___ einen Regenschirm ___.\"（mitnehmenを正しい形に）", choices: ["nehme / mit", "nimmst / mit", "nimmt / mit", "nehmen / mit"], answerIndex: 0, explanation: "主語がich。分離動詞mitnehmenはnehmeの部分だけ変化し、前綴りmitは文末に置かれる。" },
+    { question: "「bewölkt」の意味は？", choices: ["曇った", "風が強い", "晴れた", "雨の"], answerIndex: 0, explanation: "bewölktは「曇った」という意味の形容詞。" },
+    { question: "明日の天気を尋ねるフレーズはどれ？", choices: ["Wie wird das Wetter morgen?", "Wie ist das Wetter heute?", "Wie spät ist es?", "Was kostet das?"], answerIndex: 0, explanation: "„Wie wird das Wetter morgen?“はwerdenを使って明日の天気を尋ねる表現。" },
+    { question: "非分離動詞の前綴りに分類されるものはどれ？", choices: ["be-", "auf-", "an-", "mit-"], answerIndex: 0, explanation: "be-は非分離前綴りの代表例。auf-/an-/mit-はすべて分離前綴り。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-10-27)
+// ── END_DATA ──  (last sync: 2026-10-28)
 
 function esc(s){
   if(s===undefined||s===null) return '';
