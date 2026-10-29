@@ -146,149 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-09-30",
-  dateLabel: "2026年9月30日（水）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "das Brot", plural: "die Brote",
-      meaning_ja: "パン",
-      examples: [
-        { de: "Ich esse morgens gern Brot mit Butter.", ja: "私は朝、パンにバターを付けて食べるのが好きです。" },
-        { de: "Das Brot ist noch ganz frisch.", ja: "そのパンはまだとても新鮮です。" }
-      ],
-      related: [ { term: "backen", note_ja: "動詞「（パンなどを）焼く」。Brotと相性のいい関連語。" } ],
-      explanation_ja: "中性名詞（das）。複数形は die Brote で語尾に -e を付ける規則的なパターン。„Brot“は単数形で「パン」全体を指すことが多く、種類を数えるときは „ein Brot“（一個のパン）のように数える。"
-    },
-    {
-      type: "noun", term: "die Farbe", plural: "die Farben",
-      meaning_ja: "色",
-      examples: [
-        { de: "Welche Farbe hat dein neues Auto?", ja: "あなたの新しい車は何色ですか？" },
-        { de: "Rot ist meine Lieblingsfarbe.", ja: "赤は私の一番好きな色です。" }
-      ],
-      related: [ { term: "malen", note_ja: "動詞「（絵を）描く」。Farbe（色・絵の具）と一緒に使われることが多い関連語。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Farben で語尾に -n を付ける規則的なパターン。好きな色を聞く „Welche Farbe...?“ は日常会話でよく使う疑問文の形。"
-    },
-    {
-      type: "noun", term: "der Kaffee", plural: "die Kaffees",
-      meaning_ja: "コーヒー",
-      examples: [
-        { de: "Ich trinke jeden Morgen einen Kaffee.", ja: "私は毎朝コーヒーを一杯飲みます。" },
-        { de: "Möchtest du einen Kaffee?", ja: "コーヒーはいかがですか？" }
-      ],
-      related: [ { term: "der Tee", note_ja: "「お茶、紅茶」。Kaffeeとセットで飲み物の話題によく使われる語。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Kaffees で、外来語らしく語尾に -s を付けるパターン（das Autoと同じタイプ）。„Kaffee“は普通は数えない飲み物だが、„ein Kaffee“（コーヒー1杯）のように注文するときは数えられる名詞として使う。"
-    },
-    {
-      type: "verb", term: "wollen", conjugation: "ich will / du willst / er-sie-es will",
-      meaning_ja: "〜したい",
-      examples: [
-        { de: "Ich will heute Abend zu Hause bleiben.", ja: "私は今夜家にいたいです。" },
-        { de: "Was willst du essen?", ja: "あなたは何を食べたいですか？" }
-      ],
-      related: [ { term: "mögen", note_ja: "「〜が好き」。wollen（〜したい）より控えめな願望・好みを表す関連語。" } ],
-      explanation_ja: "話法の助動詞（不規則変化）。ich と er-sie-es の形がどちらも will になり、語尾がつかない点に注意（könnenのkannと同じパターン）。„wollen＋動詞の不定形（文末）“の形で使う。"
-    },
-    {
-      type: "verb", term: "sitzen", conjugation: "ich sitze / du sitzt / er-sie-es sitzt",
-      meaning_ja: "座っている",
-      examples: [
-        { de: "Ich sitze auf dem Stuhl.", ja: "私は椅子に座っています。" },
-        { de: "Wo sitzt du normalerweise?", ja: "あなたは普段どこに座っていますか？" }
-      ],
-      related: [ { term: "stehen", note_ja: "「立つ、立っている」。sitzen（座る）と対になる動作の動詞。" } ],
-      explanation_ja: "語幹が -tz で終わるため、du と er-sie-es の形がどちらも sitzt になる（heißenのheißtと同じ現象）。„auf＋Dativ（3格）“で「〜の上に座っている」という位置を表す、状態を表す動詞。"
-    },
-    {
-      type: "verb", term: "bezahlen", conjugation: "ich bezahle / du bezahlst / er-sie-es bezahlt",
-      meaning_ja: "支払う",
-      examples: [
-        { de: "Ich bezahle immer mit Karte.", ja: "私はいつもカードで支払います。" },
-        { de: "Bezahlst du bar oder mit Karte?", ja: "あなたは現金かカード、どちらで支払いますか？" }
-      ],
-      related: [ { term: "die Rechnung", note_ja: "「会計、請求書」。bezahlen（支払う）と一緒によく使われる関連語。" } ],
-      explanation_ja: "規則動詞。be- という前綴りが付くと自動詞 zahlen（支払う）が「〜を支払う」という他動詞的な意味を持つようになる。„mit Karte“（カードで）、„bar“（現金で）は支払い方法を表す基本表現。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "bunt",
-      meaning_ja: "色とりどりの、カラフルな",
-      examples: [
-        { de: "Der Rock ist sehr bunt.", ja: "そのスカートはとてもカラフルです。" },
-        { de: "Ich mag bunte Blumen.", ja: "私は色とりどりの花が好きです。" }
-      ],
-      related: [ { term: "einfarbig", note_ja: "「単色の」。buntの対義語に近い語。" } ],
-      explanation_ja: "複数の色が使われている様子を表す形容詞。名詞の前に置くと語尾変化する（bunte Blumen）点は他の形容詞と同じルール。"
-    },
-    {
-      term: "voll",
-      meaning_ja: "いっぱいの、混んでいる",
-      examples: [
-        { de: "Das Glas ist voll.", ja: "そのグラスはいっぱいです。" },
-        { de: "Der Bus ist heute sehr voll.", ja: "そのバスは今日とても混んでいます。" }
-      ],
-      related: [ { term: "leer", note_ja: "「空の」。vollの対義語。" } ],
-      explanation_ja: "物の中身がいっぱいの状態と、乗り物や場所が「混んでいる」状態の両方に使える基本形容詞。"
-    },
-    {
-      term: "hungrig",
-      meaning_ja: "お腹が空いた",
-      examples: [
-        { de: "Ich bin sehr hungrig.", ja: "私はとてもお腹が空いています。" },
-        { de: "Bist du schon hungrig?", ja: "あなたはもうお腹が空いていますか？" }
-      ],
-      related: [ { term: "durstig", note_ja: "「喉が渇いた」。hungrigと同じ形の形容詞で、身体感覚を表すときのペア。" } ],
-      explanation_ja: "„sein＋hungrig“（お腹が空いている）の形で使う。同じ意味を „haben＋Hunger“（Hungerを持っている）という表現で言うこともでき、両方の言い方がよく使われる。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Ich habe Hunger.",
-      meaning_ja: "お腹が空いた",
-      examples: [
-        { de: "Ich habe Hunger. Wollen wir essen gehen?", ja: "お腹が空きました。食事に行きませんか？" },
-        { de: "Hast du auch Hunger?", ja: "あなたもお腹が空いていますか？" }
-      ],
-      explanation_ja: "haben＋無冠詞の名詞Hungerで身体感覚を表す定型表現。„Ich bin hungrig.“と同じ意味だが、日常会話ではこちらもよく使われる。"
-    },
-    {
-      phrase: "Zahlen, bitte!",
-      meaning_ja: "お会計お願いします！",
-      examples: [
-        { de: "Entschuldigung, zahlen, bitte!", ja: "すみません、お会計お願いします！" },
-        { de: "Können wir zahlen, bitte?", ja: "お会計お願いできますか？" }
-      ],
-      explanation_ja: "レストランやカフェで会計を頼むときの定番フレーズ。動詞zahlenはbezahlenのより口語的で短い形。"
-    },
-    {
-      phrase: "Das schmeckt gut!",
-      meaning_ja: "これは美味しいです！",
-      examples: [
-        { de: "Das Brot schmeckt sehr gut!", ja: "このパンはとても美味しいです！" },
-        { de: "Schmeckt dir der Kaffee?", ja: "コーヒーは美味しいですか？" }
-      ],
-      explanation_ja: "食べ物・飲み物の味について感想を言う基本表現。動詞schmecken（美味しい、味がする）は「人に3格＋味の主語」の形をとる（„Schmeckt dir der Kaffee?“は直訳「コーヒーはあなたにとって美味しく味わえますか」）。"
-    }
-  ],
-  grammarTip: {
-    title: "「お腹が空いた」もhabenで表す？ 身体感覚を表すhaben＋名詞",
-    body_ja: "ドイツ語では「お腹が空いた」「喉が渇いた」「怖い」などの身体的・心理的な感覚を、„Ich bin hungrig.“のようにsein＋形容詞で表すだけでなく、haben＋無冠詞の名詞という形でもよく表現します。„Ich habe Hunger.“（お腹が空いた）、„Ich habe Durst.“（喉が渇いた）、„Ich habe Angst.“（怖い）のように、Hunger・Durst・Angstはいずれも冠詞をつけずに使うのが基本です。sein＋形容詞とhaben＋名詞、どちらの言い方にも慣れておくと表現の幅が広がります。"
-  },
-  todayQuiz: [
-    { question: "「Brot（パン）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Brotは中性名詞なのでdas Brotが正解。複数形はdie Brote。" },
-    { question: "Ergänze: „Was ___ du trinken?“（wollenを正しい形に）", choices: ["will", "willst", "wollt", "wollen"], answerIndex: 1, explanation: "主語がdu（2人称単数）。wollenは不規則変化するが、duの形はwillstになる。" },
-    { question: "Ergänze: „Ich ___ auf dem Stuhl.“（sitzenを正しい形に）", choices: ["sitze", "sitzt", "sitzen", "sitzest"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。sitzeが正解。" },
-    { question: "Ergänze: „___ du bar oder mit Karte?“（bezahlenを正しい形に、疑問文）", choices: ["bezahle", "bezahlst", "bezahlt", "bezahlen"], answerIndex: 1, explanation: "主語がdu（2人称単数）なので語尾は-st。bezahlstが正解。" },
-    { question: "「voll」の反対の意味を持つ形容詞は？", choices: ["leer", "bunt", "hungrig", "klein"], answerIndex: 0, explanation: "voll（いっぱいの）の反対はleer（空の）。" },
-    { question: "「die Farbe」の複数形は？", choices: ["die Farben", "die Farbe", "die Färben", "der Farben"], answerIndex: 0, explanation: "複数形はdie Farbenで、語尾に-nを付ける規則的なパターン。" },
-    { question: "お腹が空いたことを表すドイツ語の表現はどれ？", choices: ["Ich habe Hunger.", "Ich habe Angst.", "Das schmeckt gut!", "Zahlen, bitte!"], answerIndex: 0, explanation: "„Ich habe Hunger.“はhaben＋無冠詞名詞で身体感覚を表す定型表現。" },
-    { question: "レストランで会計を頼むときに使う表現はどれ？", choices: ["Zahlen, bitte!", "Das schmeckt gut!", "Guten Appetit!", "Ich habe Hunger."], answerIndex: 0, explanation: "„Zahlen, bitte!“は会計を頼むときの定番フレーズ。" }
-  ]
-}
-,
-{
   date: "2026-10-01",
   dateLabel: "2026年10月1日（木）",
   readTimeMin: 18,
@@ -1953,8 +1810,151 @@ const GERMAN_REPORTS = [
     { question: "非分離動詞の前綴りに分類されるものはどれ？", choices: ["be-", "auf-", "an-", "mit-"], answerIndex: 0, explanation: "be-は非分離前綴りの代表例。auf-/an-/mit-はすべて分離前綴り。" }
   ]
 }
+,
+{
+  date: "2026-10-29",
+  dateLabel: "2026年10月29日（木）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "das Hobby", plural: "die Hobbys",
+      meaning_ja: "趣味",
+      examples: [
+        { de: "Mein Hobby ist Fotografieren.", ja: "私の趣味は写真を撮ることです。" },
+        { de: "Was ist dein Hobby?", ja: "あなたの趣味は何ですか？" }
+      ],
+      related: [ { term: "der Sport", note_ja: "「スポーツ」。Hobbyの代表的な例としてよく一緒に挙げられる関連語。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Hobbys で、英語から来た外来語らしく語尾に -s を付けるパターン（der Kaffeeと同じタイプ）。„Hobbys haben“（趣味を持つ）という動詞habenとの組み合わせが基本。"
+    },
+    {
+      type: "noun", term: "das Fahrrad", plural: "die Fahrräder",
+      meaning_ja: "自転車",
+      examples: [
+        { de: "Ich fahre jeden Tag mit dem Fahrrad zur Arbeit.", ja: "私は毎日自転車で仕事に行きます。" },
+        { de: "Dein Fahrrad ist aber neu!", ja: "あなたの自転車は本当に新しいですね！" }
+      ],
+      related: [ { term: "fahren", note_ja: "「（乗り物で）行く」。Fahrradと一緒に „mit dem Fahrrad fahren“（自転車で行く）という形でよく使われる関連語。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Fahrräder で、語尾に -er を付けてウムラウト化するパターン（das Blatt→die Blätterと同じタイプ）。„mit dem Fahrrad“（自転車で）は交通手段を表す基本表現。"
+    },
+    {
+      type: "noun", term: "der Ball", plural: "die Bälle",
+      meaning_ja: "ボール",
+      examples: [
+        { de: "Die Kinder spielen mit dem Ball.", ja: "子供たちはボールで遊んでいます。" },
+        { de: "Wo ist mein Ball?", ja: "私のボールはどこですか？" }
+      ],
+      related: [ { term: "spielen", note_ja: "「遊ぶ、（スポーツを）する」。Ballと組み合わせて „mit dem Ball spielen“という形でよく使われる関連語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Bälle で、語尾に -e を付けてウムラウト化するパターン（der Stuhl→die Stühleと同じタイプ）。„mit dem Ball spielen“（ボールで遊ぶ）はスポーツ・遊びの話題でよく使う表現。"
+    },
+    {
+      type: "verb", term: "schwimmen", conjugation: "ich schwimme / du schwimmst / er-sie-es schwimmt",
+      meaning_ja: "泳ぐ",
+      examples: [
+        { de: "Ich schwimme gern im See.", ja: "私は湖で泳ぐのが好きです。" },
+        { de: "Schwimmst du jedes Wochenende?", ja: "あなたは毎週末泳ぎますか？" }
+      ],
+      related: [ { term: "das Schwimmbad", note_ja: "「プール、水泳場」。schwimmenをする場所を表す関連語。" } ],
+      explanation_ja: "規則動詞。語幹 schwimm- に -e/-st/-t を付けるだけで、現在形では幹母音変化がない。過去分詞は geschwommen と不規則で、現在完了形では sein と一緒に使う点に注意（移動・状態変化を表す動詞のグループ）。"
+    },
+    {
+      type: "verb", term: "singen", conjugation: "ich singe / du singst / er-sie-es singt",
+      meaning_ja: "歌う",
+      examples: [
+        { de: "Ich singe gern unter der Dusche.", ja: "私はシャワーの下で歌うのが好きです。" },
+        { de: "Sie singt sehr schön.", ja: "彼女はとても美しく歌います。" }
+      ],
+      related: [ { term: "das Lied", note_ja: "「歌」。singenの目的語としてよく使われる名詞。" } ],
+      explanation_ja: "規則動詞。語幹 sing- に -e/-st/-t を付けるだけで、現在形では幹母音変化がない。過去分詞は gesungen と不規則な強変化動詞だが、A2ではまず現在形の規則的な活用を押さえておけば十分。"
+    },
+    {
+      type: "verb", term: "tanzen", conjugation: "ich tanze / du tanzt / er-sie-es tanzt",
+      meaning_ja: "踊る",
+      examples: [
+        { de: "Wir tanzen gern auf Partys.", ja: "私たちはパーティーで踊るのが好きです。" },
+        { de: "Tanzt du auch Walzer?", ja: "あなたはワルツも踊りますか？" }
+      ],
+      related: [ { term: "die Musik", note_ja: "「音楽」。tanzenと一緒に使われることが多い関連語。" } ],
+      explanation_ja: "語幹が -z で終わるため、du と er-sie-es の形がどちらも tanzt になる（sitzenのsitztと同じ現象）。„tanzen gehen“（ダンスに行く）のように gehen と組み合わせて予定を表すこともできる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "fit",
+      meaning_ja: "健康で体力がある、フィットしている",
+      examples: [
+        { de: "Mein Vater ist sehr fit.", ja: "私の父はとても体力があります。" },
+        { de: "Ich möchte fit bleiben.", ja: "私は健康な状態を保ちたいです。" }
+      ],
+      related: [ { term: "der Sport", note_ja: "「スポーツ」。fitであるために行う活動としてセットで覚える語。" } ],
+      explanation_ja: "英語からの外来語で、語尾変化は他の形容詞と同じルールに従う。„fit bleiben“（健康な状態を保つ）、„fit sein“（体力がある）という組み合わせでよく使われる。"
+    },
+    {
+      term: "faul",
+      meaning_ja: "怠惰な、ものぐさな",
+      examples: [
+        { de: "Sei nicht so faul!", ja: "そんなに怠けないで！" },
+        { de: "Am Sonntag bin ich meistens faul.", ja: "日曜日は私はたいてい何もせずのんびりしています。" }
+      ],
+      related: [ { term: "fleißig", note_ja: "「勤勉な」。faulの対義語。" } ],
+      explanation_ja: "何もせずのんびりしている様子や、努力を避ける性格を表す形容詞。対義語fleißig（勤勉な）とセットで覚えると効率的。"
+    },
+    {
+      term: "beliebt",
+      meaning_ja: "人気のある",
+      examples: [
+        { de: "Dieser Sport ist bei Kindern sehr beliebt.", ja: "このスポーツは子供たちにとても人気があります。" },
+        { de: "Sie ist eine beliebte Lehrerin.", ja: "彼女は人気のある先生です。" }
+      ],
+      related: [ { term: "bekannt", note_ja: "「知られている、有名な」。beliebtと近い場面で使われる関連語。" } ],
+      explanation_ja: "„bei+Dativ（3格）“（〜の間で）と組み合わせて „bei Kindern beliebt“（子供たちに人気）のように、誰に人気なのかを表すのが基本パターン。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Was machst du in deiner Freizeit?",
+      meaning_ja: "あなたは自由時間に何をしますか？",
+      examples: [
+        { de: "Was machst du in deiner Freizeit? – Ich schwimme gern.", ja: "自由時間に何をしますか？—私は泳ぐのが好きです。" },
+        { de: "Was machst du am Wochenende in deiner Freizeit?", ja: "週末の自由時間には何をしますか？" }
+      ],
+      explanation_ja: "趣味や休日の過ごし方を尋ねる基本フレーズ。答えるときは „Ich...gern.“（私は〜するのが好きです）の形を使うことが多い。"
+    },
+    {
+      phrase: "Ich habe keine Zeit.",
+      meaning_ja: "時間がありません",
+      examples: [
+        { de: "Entschuldigung, ich habe heute keine Zeit.", ja: "すみません、今日は時間がありません。" },
+        { de: "Hast du morgen Zeit?", ja: "明日時間はありますか？" }
+      ],
+      explanation_ja: "否定のkeineを使った基本表現。Zeitは女性名詞だが無冠詞で使われることが多く、„keine Zeit haben“というセット表現として覚えるとよい。"
+    },
+    {
+      phrase: "Das macht Spaß!",
+      meaning_ja: "それは楽しいです！",
+      examples: [
+        { de: "Tanzen macht wirklich Spaß!", ja: "ダンスは本当に楽しいです！" },
+        { de: "Macht dir Schwimmen Spaß?", ja: "水泳は楽しいですか？" }
+      ],
+      explanation_ja: "動詞machenと名詞Spaß（楽しさ）を使った定型表現。„Macht dir...Spaß?“（〜は楽しいですか）という疑問文もよく使われる。"
+    }
+  ],
+  grammarTip: {
+    title: "形容詞の語尾変化：名詞の前に置くとき何が変わる？",
+    body_ja: "形容詞は „Das Buch ist gut.“ のように動詞の後に単独で使うときは語尾変化しませんが、„ein gutes Buch“ のように名詞の前に置くと、名詞の性・格に応じた語尾が必要になります。例えば男性名詞の前では „ein guter Tag“、女性名詞の前では „eine gute Idee“、中性名詞の前では „ein gutes Buch“ のように -er/-e/-es と変わります。まずは „ein/eine“ の後に続く形から覚え、名詞の性とセットで語尾を身につけていきましょう。"
+  },
+  todayQuiz: [
+    { question: "「Hobby（趣味）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Hobbyは中性名詞なのでdas Hobbyが正解。複数形はdie Hobbysで外来語らしく-sを付ける。" },
+    { question: "Ergänze: „Ich ___ gern im See.“（schwimmenを正しい形に）", choices: ["schwimme", "schwimmst", "schwimmt", "schwimmen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。schwimmeが正解。" },
+    { question: "Ergänze: „Er ___ sehr schön.“（singenを正しい形に）", choices: ["singe", "singst", "singt", "singen"], answerIndex: 2, explanation: "主語がer（3人称単数）なので語尾は-t。singtが正解。" },
+    { question: "Ergänze: „Wir ___ gern auf Partys.“（tanzenを正しい形に）", choices: ["tanze", "tanzt", "tanzen", "tanzst"], answerIndex: 2, explanation: "主語がwir（1人称複数）なので語尾は-en。tanzenが正解。" },
+    { question: "「faul」の反対の意味を持つ形容詞は？", choices: ["fleißig", "beliebt", "fit", "laut"], answerIndex: 0, explanation: "faul（怠惰な）の反対はfleißig（勤勉な）。" },
+    { question: "「das Fahrrad」の複数形は？", choices: ["die Fahrräder", "die Fahrrads", "die Fahrrad", "der Fahrräder"], answerIndex: 0, explanation: "複数形はdie Fahrräderで、das Blatt→die Blätterと同じく語尾に-erを付けてウムラウト化するパターン。" },
+    { question: "形容詞を名詞の前に置くとき正しい形はどれ？„Das ist ___ Tag.\"（gutを使って）", choices: ["ein guter", "ein gute", "ein gutes", "ein gut"], answerIndex: 0, explanation: "der Tagは男性名詞。ein＋男性名詞の前の形容詞はNominativで-er語尾になるのでein guterが正解。" },
+    { question: "「Was machst du in deiner Freizeit?」の意味は？", choices: ["あなたは自由時間に何をしますか？", "時間がありません", "それは楽しいです！", "お元気ですか？"], answerIndex: 0, explanation: "„Was machst du in deiner Freizeit?“は趣味や自由時間の過ごし方を尋ねる基本フレーズ。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-10-28)
+// ── END_DATA ──  (last sync: 2026-10-29)
 
 function esc(s){
   if(s===undefined||s===null) return '';
