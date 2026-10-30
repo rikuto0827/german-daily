@@ -146,149 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-10-01",
-  dateLabel: "2026年10月1日（木）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "der Freund", plural: "die Freunde",
-      meaning_ja: "友達、ボーイフレンド",
-      examples: [
-        { de: "Mein Freund heißt Paul.", ja: "私の友達はパウルという名前です。" },
-        { de: "Ich treffe heute meine Freunde.", ja: "私は今日友達に会います。" }
-      ],
-      related: [ { term: "die Freundin", note_ja: "「女友達、ガールフレンド」。Freundの女性形で、文脈によって『友達』『彼女』のどちらの意味にもなる。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Freunde で語尾に -e を付ける規則的なパターン。„mein Freund“は文脈により『男友達』だけでなく『彼（ボーイフレンド）』の意味にもなるため、女性形 die Freundin と合わせて使い分けに注意する。"
-    },
-    {
-      type: "noun", term: "die Wohnung", plural: "die Wohnungen",
-      meaning_ja: "住まい、アパートの一室",
-      examples: [
-        { de: "Meine Wohnung ist nicht sehr groß.", ja: "私の住まいはあまり大きくありません。" },
-        { de: "Wir suchen eine neue Wohnung.", ja: "私たちは新しい住まいを探しています。" }
-      ],
-      related: [ { term: "das Haus", note_ja: "「家、一戸建て」。Wohnungは建物内の一室（マンション・アパート）を指し、Hausは一戸建ての建物全体を指す。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Wohnungen で語尾に -en を付ける規則的なパターン。„in der Wohnung“（住まいの中で）のように前置詞inと組み合わせて場所を表すことが多い。"
-    },
-    {
-      type: "noun", term: "das Ei", plural: "die Eier",
-      meaning_ja: "卵",
-      examples: [
-        { de: "Ich esse morgens gern ein Ei.", ja: "私は朝、卵を1個食べるのが好きです。" },
-        { de: "Wir brauchen noch zwei Eier.", ja: "私たちはあと卵が2個必要です。" }
-      ],
-      related: [ { term: "das Brot", note_ja: "「パン」。Brotと一緒に朝食の話題でよく使われる基本的な食べ物の語。" } ],
-      explanation_ja: "中性名詞（das）。複数形は die Eier で語尾に -er を付けるパターン（ウムラウトなし）。das Kind→die Kinder と同じタイプの複数形で、数えるときは „zwei Eier“ のようにそのまま複数形を使う。"
-    },
-    {
-      type: "verb", term: "wohnen", conjugation: "ich wohne / du wohnst / er-sie-es wohnt",
-      meaning_ja: "住む",
-      examples: [
-        { de: "Ich wohne seit zwei Jahren in Berlin.", ja: "私は2年前からベルリンに住んでいます。" },
-        { de: "Wo wohnst du jetzt?", ja: "あなたは今どこに住んでいますか？" }
-      ],
-      related: [ { term: "die Wohnung", note_ja: "名詞形「住まい」。wohnenと語源が同じで、セットで覚えると効率的。" } ],
-      explanation_ja: "規則動詞。語幹 wohn- に -e/-st/-t を付けるだけ。„wohnen in + Dativ（3格）“の形で場所を表すのが基本パターンで、„Ich wohne in Berlin.“のように使う。歩いて移動するgehenとは異なり、『住む・暮らす』という状態を表す動詞。"
-    },
-    {
-      type: "verb", term: "mögen", conjugation: "ich mag / du magst / er-sie-es mag",
-      meaning_ja: "〜が好き",
-      examples: [
-        { de: "Ich mag Schokolade sehr.", ja: "私はチョコレートがとても好きです。" },
-        { de: "Magst du klassische Musik?", ja: "あなたはクラシック音楽が好きですか？" }
-      ],
-      related: [ { term: "möchten", note_ja: "「〜したい」。mögenから派生した控えめな願望表現で、wollenよりも丁寧な響きを持つ。" } ],
-      explanation_ja: "話法の助動詞の仲間（不規則変化）。ich と er-sie-es の形がどちらも mag になり、語尾がつかない点に注意（könnenのkannと同じパターン）。好きな対象（名詞）をそのまま4格（Akkusativ）で続けるのが基本で、„mögen + 動詞の不定形“はあまり使わず、代わりに派生形 möchten を使う点もA2の重要ポイント。"
-    },
-    {
-      type: "verb", term: "besuchen", conjugation: "ich besuche / du besuchst / er-sie-es besucht",
-      meaning_ja: "訪ねる、見学する",
-      examples: [
-        { de: "Ich besuche meine Freunde am Wochenende.", ja: "私は週末に友達を訪ねます。" },
-        { de: "Besuchst du oft deine Großeltern?", ja: "あなたは祖父母をよく訪ねますか？" }
-      ],
-      related: [ { term: "der Besuch", note_ja: "名詞形「訪問」。besuchenと語源が同じで、„zu Besuch kommen“（訪ねてくる）という表現にもつながる。" } ],
-      explanation_ja: "規則動詞。be-という前綴りが付くため分離しない非分離動詞で、文中でも常にひとまとまりのまま使う。訪ねる相手を4格（Akkusativ）の直接目的語で表すのが基本文型で、„Ich besuche dich.“（私はあなたを訪ねます）のように人称代名詞も4格になる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "müde",
-      meaning_ja: "疲れた、眠い",
-      examples: [
-        { de: "Ich bin heute sehr müde.", ja: "私は今日とても疲れています。" },
-        { de: "Die Kinder sind schon müde.", ja: "子供たちはもう眠そうです。" }
-      ],
-      related: [ { term: "schlafen", note_ja: "「眠る」。müde（疲れた）な状態のときに行う動作として組み合わせて使う動詞。" } ],
-      explanation_ja: "„sein + müde“の形で状態を表す基本形容詞。身体的な疲れだけでなく『眠い』というニュアンスでも使え、„Ich bin müde.“は日常会話で非常によく使われる一言。"
-    },
-    {
-      term: "traurig",
-      meaning_ja: "悲しい",
-      examples: [
-        { de: "Warum bist du so traurig?", ja: "なぜそんなに悲しいのですか？" },
-        { de: "Der Film war sehr traurig.", ja: "その映画はとても悲しかったです。" }
-      ],
-      related: [ { term: "glücklich", note_ja: "「幸せな」。traurigの対義語。" } ],
-      explanation_ja: "感情の『悲しさ』を表す基本形容詞。既出の glücklich（幸せな）と対になる語として覚えると効率的。„Warum bist du traurig?“のように理由を尋ねる疑問文でもよく使われる。"
-    },
-    {
-      term: "nett",
-      meaning_ja: "親切な、素敵な",
-      examples: [
-        { de: "Deine Freunde sind sehr nett.", ja: "あなたの友達はとても親切です。" },
-        { de: "Das ist sehr nett von dir.", ja: "それはとても親切ですね（あなたらしい優しさです）。" }
-      ],
-      related: [ { term: "freundlich", note_ja: "「親切な」。nettとほぼ同じ意味で使われる類義語。nettの方が少しくだけた響きを持つ。" } ],
-      explanation_ja: "freundlichとほぼ同義で使われる形容詞だが、より口語的で親しみのある響きを持つ。„Das ist nett von dir.“（それは親切ですね）は、相手の気遣いに感謝するときの定番表現。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Wie geht es dir?",
-      meaning_ja: "元気ですか？（くだけた言い方）",
-      examples: [
-        { de: "Hallo! Wie geht es dir?", ja: "こんにちは！元気ですか？" },
-        { de: "Wie geht es dir heute?", ja: "今日は元気ですか？" }
-      ],
-      explanation_ja: "親しい相手の様子を尋ねる基本フレーズ。答えるときは „Mir geht es gut/schlecht.“（私は元気です／元気じゃないです）のように人を3格（Dativ）にして答える。フォーマルな場面では „Wie geht es Ihnen?“ を使う。"
-    },
-    {
-      phrase: "Entschuldigung!",
-      meaning_ja: "すみません！、ごめんなさい！",
-      examples: [
-        { de: "Entschuldigung, wo ist der Bahnhof?", ja: "すみません、駅はどこですか？" },
-        { de: "Entschuldigung, das war mein Fehler.", ja: "ごめんなさい、それは私のミスでした。" }
-      ],
-      explanation_ja: "人に声をかけるときの『すみません』と、軽い謝罪の『ごめんなさい』の両方に使える便利な一言。より気持ちを込めて謝るときは „Es tut mir leid.“ を使う。"
-    },
-    {
-      phrase: "Komm rein!",
-      meaning_ja: "入って！（家に招き入れるとき）",
-      examples: [
-        { de: "Komm rein! Es ist kalt draußen.", ja: "入って！外は寒いよ。" },
-        { de: "Kommt rein und setzt euch!", ja: "入って座って！" }
-      ],
-      explanation_ja: "家や部屋に人を招き入れるときのくだけた表現。reinは hereinの口語的な短縮形で、分離動詞 „hereinkommen“（中に入ってくる）の命令形にあたる。"
-    }
-  ],
-  grammarTip: {
-    title: "4格の人称代名詞：mich / dich / ihn / sie / es の基本",
-    body_ja: "人称代名詞は目的語になるとAkkusativ（4格）の形に変化します。ich→mich、du→dich、er→ihn、sie→sie、es→esのように変わり、„Ich besuche dich.“（私はあなたを訪ねます）のように動詞の直後に置きます。dasを受けるときのesや、sieの単数（彼女）・複数（彼ら）が同じ形になる点に注意が必要です。これまで学んだDativ（mir/dir/ihm/ihr）と形を混同しやすいので、『〜を』ならAkkusativ、『〜に』ならDativという基本の役割分担をまず押さえましょう。"
-  },
-  todayQuiz: [
-    { question: "「Freund（友達）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Freundは男性名詞なのでder Freundが正解。女性形はdie Freundin。" },
-    { question: "Ergänze: „Ich ___ seit zwei Jahren in Berlin.\"（wohnenを正しい形に）", choices: ["wohne", "wohnst", "wohnt", "wohnen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。wohneが正解。" },
-    { question: "Ergänze: „Er ___ Schokolade sehr.\"（mögenを正しい形に）", choices: ["mag", "magst", "mögt", "mögen"], answerIndex: 0, explanation: "mögenは不規則動詞で、ich・er-sie-esの形がどちらもmagになり語尾がつかない。" },
-    { question: "Ergänze: „Ich ___ meine Freunde am Wochenende.\"（besuchenを正しい形に）", choices: ["besuche", "besuchst", "besucht", "besuchen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。besucheが正解。" },
-    { question: "「die Wohnung（住まい）」の複数形は？", choices: ["die Wohnungen", "die Wohnung", "die Wohnungse", "der Wohnungen"], answerIndex: 0, explanation: "複数形はdie Wohnungenで、語尾に-enを付ける規則的なパターン。" },
-    { question: "4格（Akkusativ）の人称代名詞でichはどう変わる？", choices: ["mich", "mir", "mein", "ich"], answerIndex: 0, explanation: "ichのAkkusativ形はmich。『〜に』を表すDativ形のmirと区別する。" },
-    { question: "「müde」の意味として正しいものは？", choices: ["疲れた、眠い", "悲しい", "親切な", "新しい"], answerIndex: 0, explanation: "müdeは『疲れた、眠い』という状態を表す基本形容詞。" },
-    { question: "家に人を招き入れるときに使うくだけた表現はどれ？", choices: ["Komm rein!", "Entschuldigung!", "Wie geht es dir?", "Bis bald!"], answerIndex: 0, explanation: "„Komm rein!“は家や部屋に人を招き入れるときのくだけた表現。" }
-  ]
-}
-,
-{
   date: "2026-10-02",
   dateLabel: "2026年10月2日（金）",
   readTimeMin: 18,
@@ -1952,9 +1809,151 @@ const GERMAN_REPORTS = [
     { question: "形容詞を名詞の前に置くとき正しい形はどれ？„Das ist ___ Tag.\"（gutを使って）", choices: ["ein guter", "ein gute", "ein gutes", "ein gut"], answerIndex: 0, explanation: "der Tagは男性名詞。ein＋男性名詞の前の形容詞はNominativで-er語尾になるのでein guterが正解。" },
     { question: "「Was machst du in deiner Freizeit?」の意味は？", choices: ["あなたは自由時間に何をしますか？", "時間がありません", "それは楽しいです！", "お元気ですか？"], answerIndex: 0, explanation: "„Was machst du in deiner Freizeit?“は趣味や自由時間の過ごし方を尋ねる基本フレーズ。" }
   ]
+},
+{
+  date: "2026-10-30",
+  dateLabel: "2026年10月30日（金）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "das Restaurant", plural: "die Restaurants",
+      meaning_ja: "レストラン",
+      examples: [
+        { de: "Wir gehen heute Abend ins Restaurant.", ja: "私たちは今晩レストランに行きます。" },
+        { de: "Das Restaurant ist sehr beliebt.", ja: "そのレストランはとても人気があります。" }
+      ],
+      related: [ { term: "die Speisekarte", note_ja: "「メニュー」。Restaurantで最初に受け取るもの。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Restaurants で、フランス語起源の外来語らしく語尾に -s を付ける珍しいパターン。„ins Restaurant gehen“（レストランへ行く）はinとAkkusativの組み合わせで、よく使う基本表現。"
+    },
+    {
+      type: "noun", term: "der Kellner / die Kellnerin", plural: "die Kellner / die Kellnerinnen",
+      meaning_ja: "ウェイター、ウェイトレス",
+      examples: [
+        { de: "Der Kellner bringt die Speisekarte.", ja: "ウェイターがメニューを持ってきます。" },
+        { de: "Ich frage die Kellnerin nach der Rechnung.", ja: "私はウェイトレスに会計について尋ねます。" }
+      ],
+      related: [ { term: "bestellen", note_ja: "「注文する」。Kellner / Kellnerinに対して行う基本の動作。" } ],
+      explanation_ja: "男性名詞 der Kellner と女性名詞 die Kellnerin のペア。der Lehrer / die Lehrerinと同じく-inを付けて女性形を作るパターン。複数形は die Kellner（男性、無変化）と die Kellnerinnen（女性、-nen）でそれぞれ異なる点に注意。"
+    },
+    {
+      type: "noun", term: "die Speisekarte", plural: "die Speisekarten",
+      meaning_ja: "メニュー（献立表）",
+      examples: [
+        { de: "Können wir die Speisekarte haben?", ja: "メニューをいただけますか？" },
+        { de: "Die Speisekarte ist auf Deutsch und Englisch.", ja: "メニューはドイツ語と英語で書かれています。" }
+      ],
+      related: [ { term: "bestellen", note_ja: "「注文する」。Speisekarteを見てから行う動作。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Speisekarten で語尾に -n を付ける規則的なパターン。Speise（料理）とKarte（カード、表）が組み合わさった複合名詞で、複合名詞の性は最後の語（Karte＝女性名詞）に従う。"
+    },
+    {
+      type: "verb", term: "bestellen", conjugation: "ich bestelle / du bestellst / er-sie-es bestellt",
+      meaning_ja: "注文する",
+      examples: [
+        { de: "Ich bestelle einen Kaffee.", ja: "私はコーヒーを1つ注文します。" },
+        { de: "Was bestellst du?", ja: "あなたは何を注文しますか？" }
+      ],
+      related: [ { term: "die Bestellung", note_ja: "名詞形「注文」。bestellenと語源が同じ。" } ],
+      explanation_ja: "規則動詞。be-という前綴りが付く非分離動詞で、常にひとまとまりのまま使う。注文する対象は4格（Akkusativ）で表し、„Ich bestelle einen Kaffee.“のようにeinenの形になる点に注意。"
+    },
+    {
+      type: "verb", term: "schmecken", conjugation: "ich schmecke / du schmeckst / er-sie-es schmeckt",
+      meaning_ja: "味がする、おいしい",
+      examples: [
+        { de: "Die Suppe schmeckt sehr gut.", ja: "そのスープはとてもおいしいです。" },
+        { de: "Schmeckt dir das Essen?", ja: "その料理はおいしいですか？" }
+      ],
+      related: [ { term: "lecker", note_ja: "「おいしい」。schmeckenの主語（料理）を直接形容する形容詞。" } ],
+      explanation_ja: "規則動詞。味の感想を言うときは„sein+形容詞“ではなく„schmecken+形容詞“を使うのがドイツ語らしい言い方。„Schmeckt dir...?“のように、感じる人をDativ（3格）で表す点がhelfenなどと同じパターン。"
+    },
+    {
+      type: "verb", term: "probieren", conjugation: "ich probiere / du probierst / er-sie-es probiert",
+      meaning_ja: "試す、味見する",
+      examples: [
+        { de: "Ich probiere den Kuchen.", ja: "私はそのケーキを味見します。" },
+        { de: "Probierst du den neuen Wein?", ja: "新しいワインを試してみますか？" }
+      ],
+      related: [ { term: "versuchen", note_ja: "「試みる、やってみる」。probierenと似ているが、probierenは食べ物や服など『試してみる』対象がある場合に使う。" } ],
+      explanation_ja: "規則動詞。語幹probier-に-e/-st/-tを付けるだけ。食べ物を『味見する』だけでなく、服を『試着する』ときにも使える便利な動詞。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "lecker",
+      meaning_ja: "おいしい",
+      examples: [
+        { de: "Das Essen war sehr lecker.", ja: "その料理はとてもおいしかったです。" },
+        { de: "Dieser Kuchen ist lecker!", ja: "このケーキはおいしいです！" }
+      ],
+      related: [ { term: "schmecken", note_ja: "「味がする」。leckerと組み合わせて„Das schmeckt lecker.“のようにも使われる。" } ],
+      explanation_ja: "食べ物のおいしさを表す最も基本的な形容詞のひとつ。„gut“よりも『味がおいしい』という点を強調したいときに使う、日常会話で非常によく使われる語。"
+    },
+    {
+      term: "süß",
+      meaning_ja: "甘い、かわいい",
+      examples: [
+        { de: "Der Kuchen ist mir zu süß.", ja: "そのケーキは私には甘すぎます。" },
+        { de: "Das Baby ist so süß!", ja: "その赤ちゃんはとてもかわいいです！" }
+      ],
+      related: [ { term: "sauer", note_ja: "「すっぱい」。süß（甘い）と対になる味の形容詞。" } ],
+      explanation_ja: "味の『甘い』だけでなく、人や物に対する『かわいい』という意味も持つ基本形容詞。„zu süß“（甘すぎる）のように„zu＋形容詞“で『〜すぎる』を表す表現もよく使われる。"
+    },
+    {
+      term: "satt",
+      meaning_ja: "満腹の",
+      examples: [
+        { de: "Ich bin satt, danke.", ja: "お腹がいっぱいです、ありがとう。" },
+        { de: "Bist du schon satt?", ja: "もうお腹いっぱいですか？" }
+      ],
+      related: [ { term: "hungrig", note_ja: "「お腹が空いた」。sattの対義語。" } ],
+      explanation_ja: "„sein + satt“の形で状態を表す基本形容詞。既出のhungrig（お腹が空いた）と対になる語として覚えると効率的。食事の後に„Ich bin satt.“と言うのは非常に自然な表現。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Ich habe Durst.",
+      meaning_ja: "のどが渇いています",
+      examples: [
+        { de: "Ich habe Durst. Hast du etwas zu trinken?", ja: "のどが渇いています。何か飲むものはありますか？" },
+        { de: "Nach dem Sport habe ich immer großen Durst.", ja: "スポーツの後はいつもすごくのどが渇きます。" }
+      ],
+      explanation_ja: "„Ich habe Hunger.“（お腹が空いた）と同じhaben＋無冠詞名詞の文型で、身体感覚を表す表現。形容詞durstigを使って„Ich bin durstig.“と言い換えることもできる。"
+    },
+    {
+      phrase: "Was empfehlen Sie?",
+      meaning_ja: "何がおすすめですか？",
+      examples: [
+        { de: "Was empfehlen Sie mir heute?", ja: "今日は何がおすすめですか？" },
+        { de: "Entschuldigung, was empfehlen Sie zum Trinken?", ja: "すみません、飲み物は何がおすすめですか？" }
+      ],
+      explanation_ja: "レストランなどでSie（敬称）を使って尋ねる丁寧な表現。動詞empfehlen（勧める）はhelfenと同じくe→iに変化する不規則動詞だが、Sieの形では語尾は変化しない。"
+    },
+    {
+      phrase: "Ist hier noch frei?",
+      meaning_ja: "ここ、まだ空いていますか？",
+      examples: [
+        { de: "Entschuldigung, ist hier noch frei?", ja: "すみません、ここまだ空いていますか？" },
+        { de: "Ja, der Platz ist noch frei.", ja: "はい、その席はまだ空いています。" }
+      ],
+      explanation_ja: "レストランやカフェで席が空いているかを確認するときの定番フレーズ。frei（自由な、空いている）はhier（ここ）やder Platz（席）と一緒によく使われる基本形容詞。"
+    }
+  ],
+  grammarTip: {
+    title: "疑問詞まとめ：wer / was / wann / warum / wie — W-Frageの基本",
+    body_ja: "ドイツ語の疑問詞（W-Frage）は文頭に置き、その直後に動詞を置くのが基本ルールです。wer（誰が）は人を主語として尋ね、was（何を）はものを尋ねます。wann（いつ）は時間、warum（なぜ）は理由、wie（どのように）は様子や方法を尋ねる疑問詞です。例えば„Wer bestellt die Pizza?“（誰がピザを注文しますか？）のように、疑問詞の直後に動詞、その後に残りの文が続きます。答えるときもこの語順を意識すると自然な文になります。"
+  },
+  todayQuiz: [
+    { question: "「Restaurant（レストラン）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Restaurantは中性名詞なのでdas Restaurantが正解。複数形はdie Restaurantsで外来語らしく-sを付ける。" },
+    { question: "Ergänze: „Ich ___ einen Kaffee.\"（bestellenを正しい形に）", choices: ["bestelle", "bestellst", "bestellt", "bestellen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。bestelleが正解。" },
+    { question: "Ergänze: „Die Suppe ___ sehr gut.\"（schmeckenを正しい形に）", choices: ["schmecke", "schmeckst", "schmeckt", "schmecken"], answerIndex: 2, explanation: "主語がdie Suppe（3人称単数）なので語尾は-t。schmecktが正解。" },
+    { question: "「die Speisekarte（メニュー）」の複数形は？", choices: ["die Speisekarten", "die Speisekarte", "die Speisekartes", "der Speisekarten"], answerIndex: 0, explanation: "複数形はdie Speisekartenで、語尾に-nを付ける規則的なパターン。" },
+    { question: "「lecker」の意味として正しいものは？", choices: ["おいしい", "甘い", "満腹の", "すっぱい"], answerIndex: 0, explanation: "leckerは「おいしい」という意味の基本形容詞。" },
+    { question: "「satt」の反対の意味を持つ形容詞は？", choices: ["hungrig", "süß", "lecker", "frisch"], answerIndex: 0, explanation: "satt（満腹の）の反対はhungrig（お腹が空いた）。" },
+    { question: "のどが渇いたときに使う表現はどれ？", choices: ["Ich habe Durst.", "Ich habe Hunger.", "Ich bin satt.", "Ich bin müde."], answerIndex: 0, explanation: "„Ich habe Durst.“は『のどが渇いている』という状態を表す表現。" },
+    { question: "レストランで店員に丁寧に「何がおすすめですか？」と尋ねるには？", choices: ["Was empfehlen Sie?", "Was bestellst du?", "Ist hier noch frei?", "Wie heißt du?"], answerIndex: 0, explanation: "„Was empfehlen Sie?“はSie（敬称）を使った丁寧なおすすめの尋ね方。" }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-10-29)
+// ── END_DATA ──  (last sync: 2026-10-30)
 
 function esc(s){
   if(s===undefined||s===null) return '';
