@@ -146,149 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-10-02",
-  dateLabel: "2026年10月2日（金）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "der Urlaub", plural: "die Urlaube",
-      meaning_ja: "休暇、バカンス",
-      examples: [
-        { de: "Ich mache im August Urlaub.", ja: "私は8月に休暇を取ります。" },
-        { de: "Wir fahren in den Urlaub nach Italien.", ja: "私たちはイタリアへ休暇旅行に行きます。" }
-      ],
-      related: [ { term: "die Ferien", note_ja: "「（学校の）休暇、長期休み」。Urlaubは主に仕事からの休暇を指し、Ferienは学校・大学の休みを指す関連語。" } ],
-      explanation_ja: "男性名詞（der）。複数形 die Urlaube はあまり使われず、通常は単数形のまま使う。„Urlaub machen“（休暇を取る）という動詞machenとの組み合わせが日常会話で最も頻出。"
-    },
-    {
-      type: "noun", term: "das Flugzeug", plural: "die Flugzeuge",
-      meaning_ja: "飛行機",
-      examples: [
-        { de: "Das Flugzeug fliegt um zehn Uhr.", ja: "その飛行機は10時に飛びます。" },
-        { de: "Ich habe Angst vor dem Flugzeug.", ja: "私は飛行機が怖いです。" }
-      ],
-      related: [ { term: "der Flughafen", note_ja: "「空港」。Flugzeug（飛行機）に乗るための場所としてセットで覚える。" } ],
-      explanation_ja: "中性名詞（das）。複数形は die Flugzeuge で語尾に -e を付ける規則的なパターン。„mit dem Flugzeug fliegen“（飛行機で行く）という前置詞mitとの組み合わせを覚えておくと便利。"
-    },
-    {
-      type: "noun", term: "der Koffer", plural: "die Koffer",
-      meaning_ja: "スーツケース",
-      examples: [
-        { de: "Mein Koffer ist sehr schwer.", ja: "私のスーツケースはとても重いです。" },
-        { de: "Ich packe meinen Koffer für die Reise.", ja: "私は旅行のためにスーツケースに荷物を詰めます。" }
-      ],
-      related: [ { term: "packen", note_ja: "動詞「荷造りする」。Kofferと組み合わせて „den Koffer packen“（スーツケースに荷物を詰める）という表現でよく使われる。" } ],
-      explanation_ja: "男性名詞（der）。複数形は単数形と同じ die Koffer で変化しない、das Zimmerと同じ無変化パターン。„den Koffer packen“という動詞packenとのセット表現が頻出。"
-    },
-    {
-      type: "verb", term: "fliegen", conjugation: "ich fliege / du fliegst / er-sie-es fliegt",
-      meaning_ja: "飛ぶ、飛行機で行く",
-      examples: [
-        { de: "Ich fliege morgen nach Spanien.", ja: "私は明日スペインへ飛行機で行きます。" },
-        { de: "Fliegst du gern?", ja: "あなたは飛行機に乗るのが好きですか？" }
-      ],
-      related: [ { term: "das Flugzeug", note_ja: "「飛行機」。fliegen（飛ぶ）で使う乗り物としてセットで覚える。" } ],
-      explanation_ja: "現在形では語幹が変化しない動詞（過去分詞はgeflogenと不規則）。„mit dem Flugzeug fliegen“の形でFlugzeugとセットで使われることが多い。"
-    },
-    {
-      type: "verb", term: "helfen", conjugation: "ich helfe / du hilfst / er-sie-es hilft",
-      meaning_ja: "手伝う、助ける",
-      examples: [
-        { de: "Kannst du mir helfen?", ja: "私を手伝ってくれますか？" },
-        { de: "Er hilft seiner Mutter in der Küche.", ja: "彼は台所で母親を手伝います。" }
-      ],
-      related: [ { term: "die Hilfe", note_ja: "名詞形「助け、手伝い」。helfenと語源が同じ。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→i）。helfenは目的語にAkkusativではなくDativを取る動詞で、„mir“（私に）のようにDativ形を使う点がA2の重要ポイント。"
-    },
-    {
-      type: "verb", term: "packen", conjugation: "ich packe / du packst / er-sie-es packt",
-      meaning_ja: "荷造りする、詰める",
-      examples: [
-        { de: "Ich packe meine Tasche für die Schule.", ja: "私は学校のためにカバンに荷物を詰めます。" },
-        { de: "Packst du heute deinen Koffer?", ja: "今日スーツケースに荷造りしますか？" }
-      ],
-      related: [ { term: "der Koffer", note_ja: "「スーツケース」。packen（荷造りする）とセットで使われる最頻出の名詞。" } ],
-      explanation_ja: "規則動詞。語幹 pack- に -e/-st/-t を付けるだけ。„den Koffer packen“という形でKofferとセットで使われる基本表現。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "weit",
-      meaning_ja: "遠い",
-      examples: [
-        { de: "Der Flughafen ist weit von hier.", ja: "空港はここから遠いです。" },
-        { de: "Das ist ein weiter Weg.", ja: "それは遠い道のりです。" }
-      ],
-      related: [ { term: "nah", note_ja: "「近い」。weitの対義語。" } ],
-      explanation_ja: "距離の遠さを表す基本形容詞。名詞の前に置くと語尾変化する（ein weiter Weg）。対義語nahとセットで覚える。"
-    },
-    {
-      term: "nah",
-      meaning_ja: "近い",
-      examples: [
-        { de: "Die Schule ist ganz nah.", ja: "学校はとても近いです。" },
-        { de: "Wohnst du in der Nähe?", ja: "あなたは近くに住んでいますか？" }
-      ],
-      related: [ { term: "weit", note_ja: "「遠い」。nahの対義語。" } ],
-      explanation_ja: "weitの対義語で、距離の近さを表す基本形容詞。名詞化した„die Nähe“（近所、近く）という表現もよく使われる。"
-    },
-    {
-      term: "wichtig",
-      meaning_ja: "重要な",
-      examples: [
-        { de: "Diese Prüfung ist sehr wichtig.", ja: "この試験はとても重要です。" },
-        { de: "Es ist wichtig, pünktlich zu sein.", ja: "時間を守ることは重要です。" }
-      ],
-      related: [ { term: "unwichtig", note_ja: "「重要でない」。un-を付けると反対の意味になるパターン。" } ],
-      explanation_ja: "重要性を表す基本形容詞。„Es ist wichtig, ... zu ...“（〜することは重要だ）という構文でよく使われる。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Gute Reise!",
-      meaning_ja: "良い旅を！",
-      examples: [
-        { de: "Du fliegst morgen? Gute Reise!", ja: "明日飛行機で行くの？良い旅を！" },
-        { de: "Gute Reise und viel Spaß!", ja: "良い旅を、楽しんできてね！" }
-      ],
-      explanation_ja: "旅行に出発する人にかける定番のあいさつ。直訳は「良い旅を」で、空港や駅での見送りの場面でよく使われる。"
-    },
-    {
-      phrase: "Ich bin fertig.",
-      meaning_ja: "終わりました、準備ができました",
-      examples: [
-        { de: "Ich bin fertig mit dem Packen.", ja: "荷造りが終わりました。" },
-        { de: "Bist du schon fertig?", ja: "もう準備できた？" }
-      ],
-      explanation_ja: "「終わった、準備ができた」という状態を表す基本表現。„fertig mit...“（〜を終えて）の形で何を終えたかを付け加えられる。"
-    },
-    {
-      phrase: "Wie lange dauert das?",
-      meaning_ja: "それはどのくらいかかりますか？",
-      examples: [
-        { de: "Wie lange dauert der Flug?", ja: "そのフライトはどのくらいかかりますか？" },
-        { de: "Die Reise dauert drei Stunden.", ja: "その旅は3時間かかります。" }
-      ],
-      explanation_ja: "所要時間を尋ねる基本表現。動詞dauern（かかる、続く）を使った定型的な聞き方で、答えるときも„Das dauert...“の形を使う。"
-    }
-  ],
-  grammarTip: {
-    title: "命令形（Imperativ）— du / ihr / Sie で言い方が変わる",
-    body_ja: "ドイツ語の命令形は話しかける相手によって形が変わります。duに対しては動詞の語幹だけを使い（kommen→Komm!）、e→iに変化する不規則動詞はその変化を保ったまま語尾を取ります（helfen→Hilf!）。ihrに対してはihrの現在人称変化形をそのまま使い（Kommt!／Helft!）、Sieに対しては現在形と語順を入れ替えて動詞を文頭に置きます（Kommen Sie!）。du形は発音しやすくするために語尾に-eを付けることもあります（Komme!）。"
-  },
-  todayQuiz: [
-    { question: "「Koffer（スーツケース）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Kofferは男性名詞なのでder Kofferが正解。複数形は単数形と同じdie Koffer。" },
-    { question: "Ergänze: „Ich ___ nach Berlin.\"（fliegenを正しい形に）", choices: ["fliege", "fliegst", "fliegt", "fliegen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。fliegeが正解。" },
-    { question: "Ergänze: „Er ___ mir.\"（helfenを正しい形に）", choices: ["helfe", "hilfst", "hilft", "helfen"], answerIndex: 2, explanation: "helfenは不規則動詞（e→i）。3人称単数（er）の形はhilft。また、helfenはDativ支配動詞なのでmir（私に）を使う。" },
-    { question: "「weit」の反対の意味を持つ形容詞は？", choices: ["nah", "wichtig", "klein", "kalt"], answerIndex: 0, explanation: "weit（遠い）の反対はnah（近い）。" },
-    { question: "命令形でduに対してhelfenを使うとどうなる？", choices: ["Hilf!", "Hilfst!", "Helfe!", "Helfst!"], answerIndex: 0, explanation: "du命令形は語幹のみを使い、e→iに変化する不規則動詞はその変化を保つのでHilf!になる。" },
-    { question: "「Gute Reise!」の意味は？", choices: ["良い旅を！", "おやすみなさい！", "頑張って！", "はじめまして！"], answerIndex: 0, explanation: "„Gute Reise!“は旅行に出発する人にかける定番のあいさつ。" },
-    { question: "「das Flugzeug」の複数形は？", choices: ["die Flugzeuge", "die Flugzeug", "die Flugzeugen", "der Flugzeuge"], answerIndex: 0, explanation: "複数形はdie Flugzeugeで、語尾に-eを付ける規則的なパターン。" },
-    { question: "Ergänze: „Ich ___ meinen Koffer.\"（packenを正しい形に）", choices: ["packe", "packst", "packt", "packen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。packeが正解。" }
-  ]
-}
-,
-{
   date: "2026-10-03",
   dateLabel: "2026年10月3日（土・復習）",
   readTimeMin: 12,
@@ -1952,8 +1809,141 @@ const GERMAN_REPORTS = [
     { question: "レストランで店員に丁寧に「何がおすすめですか？」と尋ねるには？", choices: ["Was empfehlen Sie?", "Was bestellst du?", "Ist hier noch frei?", "Wie heißt du?"], answerIndex: 0, explanation: "„Was empfehlen Sie?“はSie（敬称）を使った丁寧なおすすめの尋ね方。" }
   ]
 }
+,
+{
+  date: "2026-11-17",
+  dateLabel: "2026年11月17日（火）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "die Ecke", plural: "die Ecken",
+      meaning_ja: "角、コーナー",
+      examples: [
+        { de: "Die Bäckerei ist gleich um die Ecke.", ja: "そのパン屋はすぐ角を曲がったところにあります。" },
+        { de: "An der Ecke steht ein Briefkasten.", ja: "その角には郵便ポストが立っています。" }
+      ],
+      related: [ { term: "die Kreuzung", note_ja: "「交差点」。Eckeより大きな、道が複数交わる地点を指す関連語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Ecken で語尾に -n を付ける規則的なパターン。„um die Ecke“（角を曲がって、すぐ近くに）は道案内で非常によく使われる決まった言い方。"
+    },
+    {
+      type: "noun", term: "die Kreuzung", plural: "die Kreuzungen",
+      meaning_ja: "交差点",
+      examples: [
+        { de: "An der Kreuzung musst du links abbiegen.", ja: "その交差点で左に曲がらなければいけません。" },
+        { de: "Die Kreuzung ist sehr groß.", ja: "その交差点はとても大きいです。" }
+      ],
+      related: [ { term: "die Ampel", note_ja: "「信号機」。多くのKreuzung（交差点）に設置されている関連語。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Kreuzungen で語尾に -en を付ける規則的なパターン。分離動詞 abbiegen（曲がる）と組み合わせて „an der Kreuzung abbiegen“ の形で使われることが多い。"
+    },
+    {
+      type: "noun", term: "die Ampel", plural: "die Ampeln",
+      meaning_ja: "信号機",
+      examples: [
+        { de: "Die Ampel ist rot.", ja: "信号は赤です。" },
+        { de: "Warte, bis die Ampel grün wird!", ja: "信号が青になるまで待って！" }
+      ],
+      related: [ { term: "die Kreuzung", note_ja: "「交差点」。Ampel（信号機）が設置されている場所。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Ampeln で語尾に -n を付ける規則的なパターン。„bei Rot“（赤信号のとき）、„bei Grün“（青信号のとき）のように信号の色と組み合わせて使う。"
+    },
+    {
+      type: "verb", term: "abbiegen", conjugation: "ich biege ab / du biegst ab / er-sie-es biegt ab",
+      meaning_ja: "曲がる",
+      examples: [
+        { de: "Biegen Sie an der Ampel rechts ab.", ja: "信号のところで右に曲がってください。" },
+        { de: "Ich biege hier links ab.", ja: "私はここで左に曲がります。" }
+      ],
+      related: [ { term: "die Kreuzung", note_ja: "「交差点」。abbiegen（曲がる）する場所として頻出。" } ],
+      explanation_ja: "分離動詞。前綴り ab- が文末に移動し、„Ich biege links ab.“のように枠構造を作る。命令文（Sie形）では „Biegen Sie ... ab.“のように動詞が文頭、abが文末に残る。"
+    },
+    {
+      type: "verb", term: "folgen", conjugation: "ich folge / du folgst / er-sie-es folgt",
+      meaning_ja: "従う、ついて行く",
+      examples: [
+        { de: "Folgen Sie einfach der Straße.", ja: "そのまま道に沿って進んでください。" },
+        { de: "Der Hund folgt seinem Besitzer.", ja: "その犬は飼い主についていきます。" }
+      ],
+      related: [ { term: "die Straße", note_ja: "「道、通り」。folgen（従う）とセットで „der Straße folgen“（道に沿って進む）という道案内表現になる。" } ],
+      explanation_ja: "規則動詞だが、目的語をAkkusativではなくDativで取る点がA2の重要ポイント（helfenと同じグループ）。„der Straße folgen“は道案内で非常によく使われる表現。"
+    },
+    {
+      type: "verb", term: "überqueren", conjugation: "ich überquere / du überquerst / er-sie-es überquert",
+      meaning_ja: "横断する",
+      examples: [
+        { de: "Wir überqueren die Straße an der Ampel.", ja: "私たちは信号のところで道路を横断します。" },
+        { de: "Überquere die Straße nicht bei Rot!", ja: "赤信号のときは道路を横断しないで！" }
+      ],
+      related: [ { term: "die Straße", note_ja: "「道、通り」。überqueren（横断する）の目的語としてセットで使われる。" } ],
+      explanation_ja: "非分離動詞（über-は分離しない前綴り）。規則動詞で、„die Straße überqueren“（道路を横断する）という4格（Akkusativ）の組み合わせが基本。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "richtig",
+      meaning_ja: "正しい",
+      examples: [
+        { de: "Das ist der richtige Weg zum Bahnhof.", ja: "それは駅への正しい道です。" },
+        { de: "Deine Antwort ist richtig.", ja: "あなたの答えは正しいです。" }
+      ],
+      related: [ { term: "falsch", note_ja: "「間違った」。richtigの対義語。" } ],
+      explanation_ja: "正しさを表す基本形容詞。„auf dem richtigen Weg sein“（正しい道の上にいる＝正しい方向に進んでいる）は道案内でもよく使われる比喩的な表現。"
+    },
+    {
+      term: "falsch",
+      meaning_ja: "間違った",
+      examples: [
+        { de: "Du bist falsch gegangen.", ja: "あなたは間違った道を行きました。" },
+        { de: "Das ist die falsche Richtung.", ja: "それは間違った方向です。" }
+      ],
+      related: [ { term: "richtig", note_ja: "「正しい」。falschの対義語。" } ],
+      explanation_ja: "richtigの対義語。„die falsche Richtung“（間違った方向）、„der falsche Weg“（間違った道）のように名詞と組み合わせてよく使う。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Wie komme ich zum Bahnhof?",
+      meaning_ja: "駅へはどうやって行けばいいですか？",
+      examples: [
+        { de: "Entschuldigung, wie komme ich zum Bahnhof?", ja: "すみません、駅へはどうやって行けばいいですか？" },
+        { de: "Wie komme ich am besten zur Post?", ja: "郵便局へはどう行くのが一番いいですか？" }
+      ],
+      explanation_ja: "道を尋ねるときの基本フレーズ。„Wie komme ich zu...?“（〜へはどう行けばいいですか）の形で行き先を変えて使える。zuはDativ（3格）を取る前置詞なので、„zum“（zu dem）、„zur“（zu der）のように変化する点に注意。"
+    },
+    {
+      phrase: "Gehen Sie geradeaus!",
+      meaning_ja: "直進してください！",
+      examples: [
+        { de: "Gehen Sie hier geradeaus, dann sehen Sie die Kirche.", ja: "ここを直進すると、教会が見えます。" },
+        { de: "Gehen Sie geradeaus bis zur Ampel.", ja: "信号まで直進してください。" }
+      ],
+      explanation_ja: "道案内でよく使う命令文（Sie形）。geradeaus（直進して）は変化しない副詞で、„dann“（それから）と組み合わせて次の指示を続けるパターンが頻出。"
+    },
+    {
+      phrase: "Ist das weit von hier?",
+      meaning_ja: "それはここから遠いですか？",
+      examples: [
+        { de: "Ist das weit von hier, oder kann ich zu Fuß gehen?", ja: "それはここから遠いですか、それとも歩いて行けますか？" },
+        { de: "Nein, das ist nicht weit von hier.", ja: "いいえ、それはここから遠くないです。" }
+      ],
+      explanation_ja: "距離を尋ねる基本フレーズ。„zu Fuß“（歩いて）という頻出表現も合わせて覚えておくと道案内の会話がスムーズになる。"
+    }
+  ],
+  grammarTip: {
+    title: "いつもAkkusativ（4格）を取る前置詞 — durch, für, gegen, ohne, um",
+    body_ja: "durch, für, gegen, ohne, um という5つの前置詞は、後ろに来る名詞を必ずAkkusativ（4格）にします。„durch den Park“（公園を通って）、„um die Ecke“（角を曲がって）のように、der→den、die→dieのように冠詞が変化します。すでに学んだmit, nach, beiなど常にDativを取る前置詞とは逆のグループで、どちらの前置詞がどの格を取るかはセットで覚えるしかありません。道案内の表現„um die Ecke“や„durch die Straße“もこのグループに属するので、場所の表現と一緒に覚えると効率的です。"
+  },
+  todayQuiz: [
+    { question: "「die Ecke」の複数形は？", choices: ["die Ecken", "die Ecke", "die Eckes", "der Ecken"], answerIndex: 0, explanation: "複数形は die Ecken で、語尾に -n を付ける規則的なパターン。" },
+    { question: "Ergänze: „Ich ___ hier links ab.\"（abbiegenを正しい形に）", choices: ["biege ab", "biegst ab", "biegt ab", "biegen ab"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。分離動詞なので前綴りabは文末に置き、biege abが正解。" },
+    { question: "Ergänze: „Er ___ der Straße.\"（folgenを正しい形に）", choices: ["folge", "folgst", "folgt", "folgen"], answerIndex: 2, explanation: "主語がer（3人称単数）なので語尾は-t。folgtが正解。またfolgenはDativ支配動詞。" },
+    { question: "「richtig」の反対の意味を持つ形容詞は？", choices: ["falsch", "wichtig", "weit", "nah"], answerIndex: 0, explanation: "richtig（正しい）の反対はfalsch（間違った）。" },
+    { question: "前置詞umが取る格はどれ？", choices: ["Akkusativ（4格）", "Dativ（3格）", "Genitiv（2格）", "Nominativ（1格）"], answerIndex: 0, explanation: "umはdurch, für, gegen, ohneと同じAkkusativ支配の前置詞。" },
+    { question: "「die Ampel」の意味は？", choices: ["信号機", "交差点", "角", "歩道"], answerIndex: 0, explanation: "die Ampelは「信号機」という意味の女性名詞。" },
+    { question: "道を尋ねるときに使う基本フレーズはどれ？", choices: ["Wie komme ich zum Bahnhof?", "Gute Reise!", "Setz dich!", "Ich bin fertig."], answerIndex: 0, explanation: "„Wie komme ich zum Bahnhof?“は道を尋ねるときの基本フレーズ。" },
+    { question: "Ergänze: „Wir ___ die Straße an der Ampel.\"（überquerenを正しい形に）", choices: ["überquere", "überquerst", "überqueren", "überquert"], answerIndex: 2, explanation: "主語がwir（1人称複数）なので語尾は-en。überquerenが正解。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-10-30)
+// ── END_DATA ──  (last sync: 2026-11-17)
 
 function esc(s){
   if(s===undefined||s===null) return '';
