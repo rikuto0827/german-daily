@@ -146,110 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-10-04",
-  dateLabel: "2026年10月4日（日・復習）",
-  readTimeMin: 12,
-  coreItems: [
-    {
-      type: "noun", term: "der Freund", plural: "die Freunde",
-      meaning_ja: "友達、ボーイフレンド",
-      examples: [
-        { de: "Mein Freund heißt Paul.", ja: "私の友達はパウルという名前です。" },
-        { de: "Ich treffe heute meine Freunde.", ja: "私は今日友達に会います。" }
-      ],
-      related: [ { term: "die Freundin", note_ja: "「女友達、ガールフレンド」。Freundの女性形で、文脈によって『友達』『彼女』のどちらの意味にもなる。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Freunde で語尾に -e を付ける規則的なパターン。„mein Freund“は文脈により『男友達』だけでなく『彼（ボーイフレンド）』の意味にもなるため、女性形 die Freundin と合わせて使い分けに注意する。"
-    },
-    {
-      type: "noun", term: "die Wohnung", plural: "die Wohnungen",
-      meaning_ja: "住まい、アパートの一室",
-      examples: [
-        { de: "Meine Wohnung ist nicht sehr groß.", ja: "私の住まいはあまり大きくありません。" },
-        { de: "Wir suchen eine neue Wohnung.", ja: "私たちは新しい住まいを探しています。" }
-      ],
-      related: [ { term: "das Haus", note_ja: "「家、一戸建て」。Wohnungは建物内の一室（マンション・アパート）を指し、Hausは一戸建ての建物全体を指す。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Wohnungen で語尾に -en を付ける規則的なパターン。„in der Wohnung“（住まいの中で）のように前置詞inと組み合わせて場所を表すことが多い。"
-    },
-    {
-      type: "verb", term: "mögen", conjugation: "ich mag / du magst / er-sie-es mag",
-      meaning_ja: "〜が好き",
-      examples: [
-        { de: "Ich mag Schokolade sehr.", ja: "私はチョコレートがとても好きです。" },
-        { de: "Magst du klassische Musik?", ja: "あなたはクラシック音楽が好きですか？" }
-      ],
-      related: [ { term: "möchten", note_ja: "「〜したい」。mögenから派生した控えめな願望表現で、wollenよりも丁寧な響きを持つ。" } ],
-      explanation_ja: "話法の助動詞の仲間（不規則変化）。ich と er-sie-es の形がどちらも mag になり、語尾がつかない点に注意（könnenのkannと同じパターン）。好きな対象（名詞）をそのまま4格（Akkusativ）で続けるのが基本で、„mögen + 動詞の不定形“はあまり使わず、代わりに派生形 möchten を使う点もA2の重要ポイント。"
-    },
-    {
-      type: "verb", term: "fliegen", conjugation: "ich fliege / du fliegst / er-sie-es fliegt",
-      meaning_ja: "飛ぶ、飛行機で行く",
-      examples: [
-        { de: "Ich fliege morgen nach Spanien.", ja: "私は明日スペインへ飛行機で行きます。" },
-        { de: "Fliegst du gern?", ja: "あなたは飛行機に乗るのが好きですか？" }
-      ],
-      related: [ { term: "das Flugzeug", note_ja: "「飛行機」。fliegen（飛ぶ）で使う乗り物としてセットで覚える。" } ],
-      explanation_ja: "現在形では語幹が変化しない動詞（過去分詞はgeflogenと不規則）。„mit dem Flugzeug fliegen“の形でFlugzeugとセットで使われることが多い。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "interessant",
-      meaning_ja: "面白い、興味深い",
-      examples: [
-        { de: "Das Buch ist sehr interessant.", ja: "その本はとても面白いです。" },
-        { de: "Ich finde Deutsch interessant.", ja: "私はドイツ語が面白いと思います。" }
-      ],
-      related: [ { term: "langweilig", note_ja: "「退屈な」。interessantの対義語。" } ],
-      explanation_ja: "„finden + 4格 + 形容詞“（〜を〜だと思う）という文型でよく使われる形容詞。„Ich finde es interessant.“のパターンは感想を述べるときに頻出。"
-    },
-    {
-      term: "wichtig",
-      meaning_ja: "重要な",
-      examples: [
-        { de: "Diese Prüfung ist sehr wichtig.", ja: "この試験はとても重要です。" },
-        { de: "Es ist wichtig, pünktlich zu sein.", ja: "時間を守ることは重要です。" }
-      ],
-      related: [ { term: "unwichtig", note_ja: "「重要でない」。un-を付けると反対の意味になるパターン。" } ],
-      explanation_ja: "重要性を表す基本形容詞。„Es ist wichtig, ... zu ...“（〜することは重要だ）という構文でよく使われる。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Ich habe eine Frage.",
-      meaning_ja: "質問があります",
-      examples: [
-        { de: "Entschuldigung, ich habe eine Frage.", ja: "すみません、質問があります。" },
-        { de: "Ich habe noch eine Frage zur Hausaufgabe.", ja: "宿題についてもう一つ質問があります。" }
-      ],
-      explanation_ja: "授業や会話の中で質問を切り出すときの定番フレーズ。„eine Frage haben“（質問を持っている＝質問がある）という基本文型。"
-    },
-    {
-      phrase: "Wie lange dauert das?",
-      meaning_ja: "それはどのくらいかかりますか？",
-      examples: [
-        { de: "Wie lange dauert der Flug?", ja: "そのフライトはどのくらいかかりますか？" },
-        { de: "Die Reise dauert drei Stunden.", ja: "その旅は3時間かかります。" }
-      ],
-      explanation_ja: "所要時間を尋ねる基本表現。動詞dauern（かかる、続く）を使った定型的な聞き方で、答えるときも„Das dauert...“の形を使う。"
-    }
-  ],
-  grammarTip: {
-    title: "比べてみよう！形容詞の比較級・最上級（Komparativ/Superlativ）",
-    body_ja: "ドイツ語の形容詞は、比較するときに語尾を変化させます。比較級（〜より）は語尾に -er を付け（schnell→schneller）、最上級（一番〜）は am -sten の形にします（schnell→am schnellsten）。1音節の多くの形容詞は母音がウムラウト化します（groß→größer→am größten、alt→älter→am ältesten）。gut→besser→am besten、viel→mehr→am meisten のように不規則に変化する重要な単語もあるので、基本パターンと合わせて個別に覚えておきましょう。"
-  },
-  todayQuiz: [
-    { question: "「der Freund」の複数形は？", choices: ["die Freunde", "die Freunds", "die Freunden", "der Freunde"], answerIndex: 0, explanation: "複数形は die Freunde で、語尾に -e を付ける規則的なパターン。" },
-    { question: "「Wohnung（住まい）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 1, explanation: "Wohnungは女性名詞なのでdie Wohnungが正解。複数形はdie Wohnungen。" },
-    { question: "「mögen」の意味として正しいものは？", choices: ["〜が好き", "〜ができる", "〜しなければならない", "〜したい"], answerIndex: 0, explanation: "mögenは「〜が好き」という意味の話法の助動詞の仲間。「〜したい」はmöchten。" },
-    { question: "Ergänze: „___ du gern?\"（fliegenを正しい形に、疑問文）", choices: ["Fliege", "Fliegst", "Fliegt", "Fliegen"], answerIndex: 1, explanation: "主語がdu（2人称単数）なので語尾は-st。Fliegstが正解。" },
-    { question: "「interessant」の反対の意味を持つ形容詞は？", choices: ["langweilig", "wichtig", "müde", "traurig"], answerIndex: 0, explanation: "interessant（面白い）の反対はlangweilig（退屈な）。" },
-    { question: "「wichtig」の意味として正しいものは？", choices: ["重要な", "面白い", "退屈な", "親切な"], answerIndex: 0, explanation: "wichtigは「重要な」という意味の基本形容詞。反対語はunwichtig。" },
-    { question: "質問を切り出すときに使うフレーズはどれ？", choices: ["Ich habe eine Frage.", "Wie lange dauert das?", "Komm rein!", "Gute Reise!"], answerIndex: 0, explanation: "„Ich habe eine Frage.“は質問を切り出すときの定番フレーズ。" },
-    { question: "「schnell」の比較級（〜より）の形はどれ？", choices: ["schneller", "schnellst", "am schnellsten", "schnellen"], answerIndex: 0, explanation: "比較級は語尾に-erを付けるのでschnellerが正解。最上級はam schnellsten。" }
-  ]
-}
-,
-{
   date: "2026-10-06",
   dateLabel: "2026年10月6日（火）",
   readTimeMin: 18,
@@ -1962,8 +1858,132 @@ const GERMAN_REPORTS = [
     { question: "„Wenn ich Zeit habe, ___ ich dich.\"（besuchenを正しい形に、倒置に注意）", choices: ["besuche", "besuchst", "besucht", "besuchen"], answerIndex: 0, explanation: "wennで始まる従属文のあとにメイン文が続くとき、動詞は主語より前に来る倒置が起こる。主語ichなのでbesucheが正解。" }
   ]
 }
+,
+{
+  date: "2026-11-19",
+  dateLabel: "2026年11月19日（木）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Pass", plural: "die Pässe",
+      meaning_ja: "パスポート",
+      examples: [
+        { de: "Hast du deinen Pass dabei?", ja: "パスポートを持っていますか？" },
+        { de: "Ich brauche meinen Pass für den Flug.", ja: "私はそのフライトのためにパスポートが必要です。" }
+      ],
+      related: [ { term: "der Ausweis", note_ja: "「身分証明書」。Pass（パスポート）より広く、国内で使う身分証も含む語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Pässe で語幹の母音がウムラウト化するパターン（a→ä、der Schrank→die Schränkeと同じタイプ）。„etwas dabei haben“（〜を持っている、携帯している）とセットで使われることが多い。"
+    },
+    {
+      type: "noun", term: "das Ticket", plural: "die Tickets",
+      meaning_ja: "乗車券、搭乗券、チケット",
+      examples: [
+        { de: "Ich habe mein Ticket schon gebucht.", ja: "私はすでにチケットを予約しました。" },
+        { de: "Wo ist mein Ticket?", ja: "私のチケットはどこですか？" }
+      ],
+      related: [ { term: "buchen", note_ja: "「予約する」。Ticketを手配するときによく使う動詞。" } ],
+      explanation_ja: "中性名詞（das）。複数形は外来語らしく die Tickets で -s を付けるパターン（das Büro→die Bürosと同じタイプ）。英語からの外来語で、ドイツ語の日常会話でもそのまま使われる。"
+    },
+    {
+      type: "noun", term: "die Ankunft", plural: "die Ankünfte",
+      meaning_ja: "到着",
+      examples: [
+        { de: "Die Ankunft ist um neun Uhr.", ja: "到着は9時です。" },
+        { de: "Wir warten auf die Ankunft des Zuges.", ja: "私たちは電車の到着を待っています。" }
+      ],
+      related: [ { term: "ankommen", note_ja: "動詞「到着する」。die Ankunftと語源が同じ。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Ankünfte で語幹の母音がウムラウト化するパターン。動詞ankommen（到着する）の名詞形で、空港や駅の「到着案内板」などでよく見かける語。"
+    },
+    {
+      type: "verb", term: "buchen", conjugation: "ich buche / du buchst / er-sie-es bucht",
+      meaning_ja: "予約する",
+      examples: [
+        { de: "Ich buche das Hotel online.", ja: "私はホテルをオンラインで予約します。" },
+        { de: "Hast du die Tickets schon gebucht?", ja: "チケットはもう予約しましたか？" }
+      ],
+      related: [ { term: "die Buchung", note_ja: "名詞形「予約」。buchenと語源が同じ。" } ],
+      explanation_ja: "規則動詞。語幹 buch- に -e/-st/-t を付けるだけ。buchenはホテル・チケット・フライトなど旅行関連の予約で使う基本動詞（レストランの予約には „reservieren“ を使うことが多い）。"
+    },
+    {
+      type: "verb", term: "ankommen", conjugation: "ich komme an / du kommst an / er-sie-es kommt an",
+      meaning_ja: "到着する",
+      examples: [
+        { de: "Der Zug kommt um neun Uhr an.", ja: "その電車は9時に到着します。" },
+        { de: "Wann kommst du an?", ja: "あなたはいつ到着しますか？" }
+      ],
+      related: [ { term: "abfahren", note_ja: "「出発する」。ankommenと対になる分離動詞。" } ],
+      explanation_ja: "分離動詞（kommen＋an）。前綴り an- は人称変化すると文末に移動する。kommenは語幹が変化しない動詞なので、du/erの形も規則的に -st/-t を付けるだけ（komme→kommst/kommt）。"
+    },
+    {
+      type: "verb", term: "sich freuen auf", conjugation: "ich freue mich auf / du freust dich auf / er-sie-es freut sich auf",
+      meaning_ja: "〜を楽しみにする",
+      examples: [
+        { de: "Ich freue mich auf die Reise.", ja: "私はその旅行を楽しみにしています。" },
+        { de: "Freust du dich auf den Urlaub?", ja: "あなたは休暇を楽しみにしていますか？" }
+      ],
+      related: [ { term: "sich freuen über", note_ja: "「〜について（すでに起きたことを）喜ぶ」。aufは未来の出来事、überは既に起きた出来事に使う違いがある。" } ],
+      explanation_ja: "再帰動詞＋前置詞auf（＋Akkusativ）の組み合わせ。主語に応じて再帰代名詞（mich/dich/sich）の形が変わる点に注意。これから起こることへの期待・楽しみを表す頻出表現。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "aufgeregt",
+      meaning_ja: "興奮した、緊張した",
+      examples: [
+        { de: "Ich bin vor der Reise immer aufgeregt.", ja: "私は旅行前はいつも興奮しています。" },
+        { de: "Sie ist sehr aufgeregt wegen der Prüfung.", ja: "彼女は試験のことでとても緊張しています。" }
+      ],
+      related: [ { term: "ruhig", note_ja: "「落ち着いた」。aufgeregtの対義語。" } ],
+      explanation_ja: "過去分詞から形容詞になった語（aufregen→aufgeregt）。„aufgeregt sein“（興奮・緊張している）の形で使う。旅行前や試験前など、わくわく・不安どちらの緊張感にも使える。"
+    },
+    {
+      term: "spannend",
+      meaning_ja: "わくわくする、ハラハラする",
+      examples: [
+        { de: "Der Film ist sehr spannend.", ja: "その映画はとてもわくわくします。" },
+        { de: "Unsere Reise war wirklich spannend.", ja: "私たちの旅行は本当にわくわくするものでした。" }
+      ],
+      related: [ { term: "langweilig", note_ja: "「退屈な」。spannendの対義語。" } ],
+      explanation_ja: "映画・本・旅行など「刺激的でわくわくする」ものを表す形容詞。動詞spannen（張る、緊張させる）から派生した語で、langweilig（退屈な）と対で覚えると効率的。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Gute Reise!",
+      meaning_ja: "良い旅を！",
+      examples: [
+        { de: "Du fliegst morgen? Gute Reise!", ja: "明日飛行機で行くの？良い旅を！" },
+        { de: "Vielen Dank, gute Reise euch auch!", ja: "ありがとう、あなたたちも良い旅を！" }
+      ],
+      explanation_ja: "旅立つ人を見送るときの定番フレーズ。Gute Besserung!（お大事に！）やGute Nacht!（おやすみ！）と同じ „Gute + 名詞!“ のパターン。"
+    },
+    {
+      phrase: "Wann kommen wir an?",
+      meaning_ja: "私たちはいつ到着しますか？",
+      examples: [
+        { de: "Wann kommen wir in Berlin an?", ja: "私たちはいつベルリンに到着しますか？" },
+        { de: "Entschuldigung, wann kommt der Bus an?", ja: "すみません、そのバスはいつ到着しますか？" }
+      ],
+      explanation_ja: "分離動詞ankommenを使った疑問文。前綴りanが文末に残る形（„Wann kommen wir ... an?“）に注目。到着時刻を尋ねるときの基本表現。"
+    }
+  ],
+  grammarTip: {
+    title: "zu Hause と nach Hause — 前置詞なしで使う「家」の言い方",
+    body_ja: "「家」を表すHausは、特別な慣用表現では前置詞なしの特殊な形で使われます。すでに家にいる場所を言うときは „zu Hause“（家で）を使い、„Ich bin zu Hause.“（私は家にいます）となります。一方、家という方向へ向かう動きを言うときは „nach Hause“（家へ）を使い、„Ich gehe nach Hause.“（私は家に帰ります）となります。どちらもHausの前に冠詞（das, dem など）を付けない決まり文句なので、一つのセットとして覚えましょう。「家にいる＝zu Hause」「家に帰る＝nach Hause」と動作の方向で区別するのがポイントです。"
+  },
+  todayQuiz: [
+    { question: "「der Pass」の複数形は？", choices: ["die Pässe", "die Passe", "die Pässen", "der Pässe"], answerIndex: 0, explanation: "複数形は die Pässe で語幹がウムラウト化するパターン（a→ä）。" },
+    { question: "Ergänze: „Ich ___ das Hotel online.\"（buchenを正しい形に）", choices: ["buche", "buchst", "bucht", "buchen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。bucheが正解。" },
+    { question: "Ergänze: „Der Zug ___ um neun Uhr ___.\"（ankommenを正しい形に）", choices: ["kommt / an", "komme / an", "kommst / an", "kommen / an"], answerIndex: 0, explanation: "主語der Zugは3人称単数。kommt anが正解で、分離動詞の前綴りanは文末に置かれる。" },
+    { question: "「die Ankunft」の複数形は？", choices: ["die Ankünfte", "die Ankunfte", "die Ankunften", "der Ankünfte"], answerIndex: 0, explanation: "複数形は die Ankünfte で語幹がウムラウト化するパターン。動詞ankommenの名詞形。" },
+    { question: "「spannend」の反対の意味を持つ形容詞は？", choices: ["langweilig", "aufgeregt", "ruhig", "modern"], answerIndex: 0, explanation: "spannend（わくわくする）の反対はlangweilig（退屈な）。" },
+    { question: "旅立つ人を見送るときに使うフレーズはどれ？", choices: ["Gute Reise!", "Wann kommen wir an?", "Mach schnell!", "Keine Ursache!"], answerIndex: 0, explanation: "„Gute Reise!“は旅立つ人への「良い旅を！」という定番フレーズ。" },
+    { question: "家に帰るという「動き」を表すときに使う表現はどれ？", choices: ["nach Hause", "zu Hause", "in Hause", "im Haus"], answerIndex: 0, explanation: "家という方向への移動には前置詞なしの „nach Hause“ を使う。すでに家にいる状態は„zu Hause“。" },
+    { question: "「sich freuen auf」の意味として正しいものは？", choices: ["〜を楽しみにする", "〜に驚く", "〜を忘れる", "〜を手伝う"], answerIndex: 0, explanation: "„sich freuen auf“＋Akkusativは「これから起こる〜を楽しみにする」という意味。既に起きたことを喜ぶときは„sich freuen über“を使う。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-11-18)
+// ── END_DATA ──  (last sync: 2026-11-19)
 
 function esc(s){
   if(s===undefined||s===null) return '';
