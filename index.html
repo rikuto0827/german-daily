@@ -146,139 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-10-06",
-  dateLabel: "2026年10月6日（火）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "der Schrank", plural: "die Schränke",
-      meaning_ja: "たんす、収納家具",
-      examples: [
-        { de: "Der Schrank ist voller Kleidung.", ja: "そのたんすは服でいっぱいです。" },
-        { de: "Ich räume meine Kleidung in den Schrank.", ja: "私は服をたんすにしまいます。" }
-      ],
-      related: [ { term: "das Regal", note_ja: "「棚」。Schrank（扉付きの収納家具）に対し、Regalは扉のない開いた棚を指す。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Schränke で語幹の母音がウムラウト化するパターン（a→ä）。der Garten→die Gärtenと同じタイプ。„in den Schrank räumen“（たんすにしまう）のように4格（Akkusativ）と組み合わせて使う。"
-    },
-    {
-      type: "noun", term: "das Bett", plural: "die Betten",
-      meaning_ja: "ベッド",
-      examples: [
-        { de: "Das Bett steht im Schlafzimmer.", ja: "ベッドは寝室にあります。" },
-        { de: "Ich gehe früh ins Bett.", ja: "私は早くベッドに入ります（早く寝ます）。" }
-      ],
-      related: [ { term: "das Schlafzimmer", note_ja: "「寝室」。Bett（ベッド）が置かれている部屋。" } ],
-      explanation_ja: "中性名詞（das）。複数形は die Betten で語尾に -en を付ける規則的なパターン（ウムラウトなし）。„ins Bett gehen“（寝る、直訳「ベッドの中へ行く」）は日常会話の頻出表現。"
-    },
-    {
-      type: "noun", term: "die Lampe", plural: "die Lampen",
-      meaning_ja: "ランプ、照明",
-      examples: [
-        { de: "Die Lampe steht auf dem Tisch.", ja: "そのランプはテーブルの上にあります。" },
-        { de: "Kannst du die Lampe anmachen?", ja: "ランプをつけてもらえますか？" }
-      ],
-      related: [ { term: "das Licht", note_ja: "「光、電気の明かり」。Lampe（照明器具そのもの）とLicht（光そのもの）は区別して覚える。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Lampen で、-eで終わる女性名詞らしく語尾に -n を付ける規則的なパターン（die Küche→die Küchenと同じタイプ）。"
-    },
-    {
-      type: "verb", term: "brauchen", conjugation: "ich brauche / du brauchst / er-sie-es braucht",
-      meaning_ja: "〜が必要である",
-      examples: [
-        { de: "Ich brauche ein neues Bett.", ja: "私は新しいベッドが必要です。" },
-        { de: "Brauchst du Hilfe?", ja: "助けが必要ですか？" }
-      ],
-      related: [ { term: "die Hilfe", note_ja: "「助け」。brauchenと組み合わせて „Hilfe brauchen“（助けが必要）という表現になる。" } ],
-      explanation_ja: "規則動詞。brauchen＋4格（Akkusativ）の形で「〜が必要だ」という意味になる。wollen（〜したい）とは違い、必要性を表す点に注意。"
-    },
-    {
-      type: "verb", term: "hören", conjugation: "ich höre / du hörst / er-sie-es hört",
-      meaning_ja: "聞く、聴く",
-      examples: [
-        { de: "Ich höre gern Musik.", ja: "私は音楽を聴くのが好きです。" },
-        { de: "Hörst du mich?", ja: "私の声が聞こえますか？" }
-      ],
-      related: [ { term: "die Musik", note_ja: "「音楽」。hörenと組み合わせて „Musik hören“（音楽を聴く）という頻出表現になる。" } ],
-      explanation_ja: "規則動詞。語幹 hör- に -e/-st/-t を付けるだけ。„Musik hören“のように4格（Akkusativ）の対象と組み合わせて使う基本動詞。"
-    },
-    {
-      type: "verb", term: "vergessen", conjugation: "ich vergesse / du vergisst / er-sie-es vergisst",
-      meaning_ja: "忘れる",
-      examples: [
-        { de: "Ich vergesse oft meinen Schlüssel.", ja: "私はよく鍵を忘れます。" },
-        { de: "Vergiss das nicht!", ja: "それを忘れないで！" }
-      ],
-      related: [ { term: "sich erinnern", note_ja: "「思い出す、覚えている」。vergessen（忘れる）と対になる再帰動詞。" } ],
-      explanation_ja: "不規則動詞（幹母音変化 e→i）。geben・nehmen・treffenと同じ変化パターンで、語幹が-ssで終わるためduとerの形がどちらも vergisst になる（heißenのheißtと同じ現象）。命令形„Vergiss (das) nicht!“は日常会話でよく使う。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "ordentlich",
-      meaning_ja: "きちんとした、整理された",
-      examples: [
-        { de: "Mein Zimmer ist sehr ordentlich.", ja: "私の部屋はとても整理されています。" },
-        { de: "Er ist ein ordentlicher Mensch.", ja: "彼はきちんとした人です。" }
-      ],
-      related: [ { term: "unordentlich", note_ja: "「散らかった、整理されていない」。ordentlichの対義語。" } ],
-      explanation_ja: "部屋や人の整理整頓されている様子を表す形容詞。un-を付けると反対の意味になる、unbequem・unfreundlichと同じパターン。"
-    },
-    {
-      term: "modern",
-      meaning_ja: "現代的な、モダンな",
-      examples: [
-        { de: "Die Lampe ist sehr modern.", ja: "そのランプはとてもモダンです。" },
-        { de: "Das Haus sieht modern aus.", ja: "その家は現代的に見えます。" }
-      ],
-      related: [ { term: "altmodisch", note_ja: "「古風な、旧式の」。modernの対義語。" } ],
-      explanation_ja: "家具やデザインを評価するときによく使う形容詞。„aussehen“（〜に見える）と組み合わせた„modern aussehen“（現代的に見える）もよく使われる表現。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Ich bin gleich zurück.",
-      meaning_ja: "すぐに戻ります",
-      examples: [
-        { de: "Ich hole nur meine Tasche. Ich bin gleich zurück.", ja: "バッグを取ってくるだけです。すぐに戻ります。" },
-        { de: "Warte hier, ich bin gleich zurück.", ja: "ここで待ってて、すぐに戻るから。" }
-      ],
-      explanation_ja: "少しその場を離れるときに使う表現。gleichは「すぐに、間もなく」、zurückは「戻って」という意味。"
-    },
-    {
-      phrase: "Mach dir keine Sorgen!",
-      meaning_ja: "心配しないで！",
-      examples: [
-        { de: "Mach dir keine Sorgen, alles wird gut!", ja: "心配しないで、すべてうまくいくよ！" },
-        { de: "Mach dir keine Sorgen um mich.", ja: "私のことは心配しないで。" }
-      ],
-      explanation_ja: "相手を励ますときの定番フレーズ。元の表現 „sich Sorgen machen“（心配する）の否定命令形。"
-    },
-    {
-      phrase: "Setz dich!",
-      meaning_ja: "座って！",
-      examples: [
-        { de: "Setz dich bitte!", ja: "どうぞ座ってください！" },
-        { de: "Setz dich, das Essen ist fertig.", ja: "座って、料理ができたよ。" }
-      ],
-      explanation_ja: "再帰動詞 sich setzen（座る、動作）の命令形。すでに学んだ sitzen（座っている、状態）との違いに注意：setzenは「座る動作」、sitzenは「座っている状態」を表す。"
-    }
-  ],
-  grammarTip: {
-    title: "weil（なぜなら）— 従属接続詞で動詞が文末に行く仕組み",
-    body_ja: "weil（〜なので）で始まる理由を表す文（従属文）では、動詞が文の最後に移動します。例えば „Ich lerne Deutsch, weil ich nach Berlin fahren möchte.“（私はベルリンへ行きたいので、ドイツ語を勉強しています）のように、möchteが文末に来ます。これは、同じ「理由」を表す denn（なぜなら）との大きな違いです。denn を使うときは通常の語順のまま（„..., denn ich möchte nach Berlin fahren.“）なので、weilとdennは意味が似ていても語順のルールが違う点に注意しましょう。"
-  },
-  todayQuiz: [
-    { question: "「Schrank（たんす）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Schrankは男性名詞なのでder Schrankが正解。複数形はdie Schränke。" },
-    { question: "「das Bett」の複数形は？", choices: ["die Betten", "die Bätter", "die Bette", "der Betten"], answerIndex: 0, explanation: "複数形はdie Bettenで、語尾に-enを付ける規則的なパターン（ウムラウトなし）。" },
-    { question: "Ergänze: „Ich ___ ein neues Bett.\"（brauchenを正しい形に）", choices: ["brauche", "brauchst", "braucht", "brauchen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。braucheが正解。" },
-    { question: "Ergänze: „Er ___ oft seinen Schlüssel.\"（vergessenを正しい形に）", choices: ["vergesse", "vergisst", "vergessen", "vergesst"], answerIndex: 1, explanation: "vergessenは不規則動詞（e→i）。3人称単数（er）の形はvergisst。" },
-    { question: "「ordentlich」の反対の意味を持つ形容詞は？", choices: ["unordentlich", "modern", "altmodisch", "bequem"], answerIndex: 0, explanation: "ordentlich（きちんとした）の反対はunordentlich（散らかった）。" },
-    { question: "「die Lampe」の複数形は？", choices: ["die Lampen", "die Lämpe", "die Lampe", "der Lampen"], answerIndex: 0, explanation: "-eで終わる女性名詞は多くの場合-nを付けて複数形にする（die Küche→die Küchenと同じパターン）。" },
-    { question: "相手を落ち着かせたいときに使うフレーズはどれ？", choices: ["Mach dir keine Sorgen!", "Setz dich!", "Ich bin gleich zurück.", "Vergiss das nicht!"], answerIndex: 0, explanation: "„Mach dir keine Sorgen!“は「心配しないで！」と相手を励ますときの表現。" },
-    { question: "„Ich lerne Deutsch, ___ ich nach Berlin fahren möchte.\"（weilを使う場合の正しい語順）", choices: ["weil ich nach Berlin fahren möchte", "weil möchte ich nach Berlin fahren", "weil ich möchte nach Berlin fahren", "weil fahren ich nach Berlin möchte"], answerIndex: 0, explanation: "weil（なぜなら）を使う従属文では、動詞（ここではmöchte）は文末に置かれる。" }
-  ]
-}
-,
-{
   date: "2026-10-07",
   dateLabel: "2026年10月7日（水）",
   readTimeMin: 18,
@@ -1982,8 +1849,142 @@ const GERMAN_REPORTS = [
     { question: "「sich freuen auf」の意味として正しいものは？", choices: ["〜を楽しみにする", "〜に驚く", "〜を忘れる", "〜を手伝う"], answerIndex: 0, explanation: "„sich freuen auf“＋Akkusativは「これから起こる〜を楽しみにする」という意味。既に起きたことを喜ぶときは„sich freuen über“を使う。" }
   ]
 }
+,
+{
+  date: "2026-11-20",
+  dateLabel: "2026年11月20日（金）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Kühlschrank", plural: "die Kühlschränke",
+      meaning_ja: "冷蔵庫",
+      examples: [
+        { de: "Der Kühlschrank ist fast leer.", ja: "冷蔵庫はほとんど空っぽです。" },
+        { de: "Ich stelle die Milch in den Kühlschrank.", ja: "私は牛乳を冷蔵庫に入れます。" }
+      ],
+      related: [ { term: "der Herd", note_ja: "「コンロ、レンジ」。冷やすKühlschrankと熱するHerdは家電としてよく対で話題になる。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Kühlschränke で語幹の母音がウムラウト化するパターン（der Schrank→die Schränkeと同じタイプ）。Kühl-（冷たい）＋Schrank（収納家具）の合成語。„in den Kühlschrank stellen“のように4格（Akkusativ）と組み合わせて使う。"
+    },
+    {
+      type: "noun", term: "der Herd", plural: "die Herde",
+      meaning_ja: "コンロ、レンジ",
+      examples: [
+        { de: "Der Herd ist sehr heiß.", ja: "そのコンロはとても熱いです。" },
+        { de: "Pass auf, der Herd ist noch an!", ja: "気をつけて、コンロはまだついているよ！" }
+      ],
+      related: [ { term: "kochen", note_ja: "「料理する」。Herdを使って行う基本的な動作。" } ],
+      explanation_ja: "男性名詞（der）。複数形die Herdeは動物の「群れ」と同じ形だが、文脈で簡単に区別できる。„der Herd ist an/aus“（コンロがついている/消えている）という状態表現が日常で頻出する。"
+    },
+    {
+      type: "noun", term: "die Waschmaschine", plural: "die Waschmaschinen",
+      meaning_ja: "洗濯機",
+      examples: [
+        { de: "Die Waschmaschine ist kaputt.", ja: "洗濯機が壊れています。" },
+        { de: "Ich mache gerade Wäsche in der Waschmaschine.", ja: "私は今洗濯機で洗濯をしています。" }
+      ],
+      related: [ { term: "waschen", note_ja: "「洗う」。Waschmaschineと語源が同じ動詞。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Waschmaschinen で、-eで終わる女性名詞らしく語尾に -n を付ける規則的なパターン。waschen（洗う）＋Maschine（機械）の合成語。"
+    },
+    {
+      type: "verb", term: "einschalten", conjugation: "ich schalte ein / du schaltest ein / er-sie-es schaltet ein",
+      meaning_ja: "（電源を）入れる、スイッチを入れる",
+      examples: [
+        { de: "Ich schalte den Fernseher ein.", ja: "私はテレビの電源を入れます。" },
+        { de: "Schaltest du das Licht ein?", ja: "電気をつけますか？" }
+      ],
+      related: [ { term: "ausschalten", note_ja: "「電源を切る」。einschaltenと対になる分離動詞。" } ],
+      explanation_ja: "分離動詞（規則動詞）。前綴り ein- は人称変化すると文末に移動する。語幹 schalt- が -t で終わるため、du/erの形では発音しやすくするための余分な -e- が入る（schaltest, schaltet）。"
+    },
+    {
+      type: "verb", term: "ausschalten", conjugation: "ich schalte aus / du schaltest aus / er-sie-es schaltet aus",
+      meaning_ja: "（電源を）切る",
+      examples: [
+        { de: "Bitte schalte den Herd aus!", ja: "コンロの電源を切ってください！" },
+        { de: "Ich schalte den Computer vor dem Schlafen aus.", ja: "私は寝る前にパソコンの電源を切ります。" }
+      ],
+      related: [ { term: "einschalten", note_ja: "「電源を入れる」。ausschaltenと対になる分離動詞。" } ],
+      explanation_ja: "分離動詞（規則動詞）。前綴り aus- は人称変化すると文末に移動する。einschaltenと同じく語幹が -t で終わるため、du/erの形に -e- が入る活用パターン。"
+    },
+    {
+      type: "verb", term: "funktionieren", conjugation: "ich funktioniere / du funktionierst / er-sie-es funktioniert",
+      meaning_ja: "作動する、機能する",
+      examples: [
+        { de: "Die Waschmaschine funktioniert nicht mehr.", ja: "その洗濯機はもう動きません。" },
+        { de: "Funktioniert der Kühlschrank richtig?", ja: "冷蔵庫は正常に動いていますか？" }
+      ],
+      related: [ { term: "kaputt", note_ja: "「壊れている」。„nicht funktionieren“（機能しない）とほぼ同じ場面で使われる形容詞。" } ],
+      explanation_ja: "規則動詞だが、-ierenで終わる動詞は過去分詞にge-を付けない特殊なグループ。機械やシステムが「正常に動く」ことを表し、主語は人ではなく物であることが多い。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "kaputt",
+      meaning_ja: "壊れている、故障した",
+      examples: [
+        { de: "Mein Handy ist kaputt.", ja: "私の携帯は壊れています。" },
+        { de: "Die Lampe im Bad ist kaputt.", ja: "浴室のランプは壊れています。" }
+      ],
+      related: [ { term: "funktionieren", note_ja: "「機能する」。kaputt（壊れている）とは反対の状態を表す動詞。" } ],
+      explanation_ja: "日常会話で非常に頻出する形容詞。物が「壊れた、故障した」という意味で使う基本語で、„Das ist kaputt.“のようにistと組み合わせて状態を表す。"
+    },
+    {
+      term: "praktisch",
+      meaning_ja: "実用的な、便利な",
+      examples: [
+        { de: "Die neue Waschmaschine ist sehr praktisch.", ja: "新しい洗濯機はとても便利です。" },
+        { de: "Ein Regenschirm im Auto ist praktisch.", ja: "車に傘があると便利です。" }
+      ],
+      related: [ { term: "nützlich", note_ja: "「役に立つ」。praktisch（使って便利）と似た意味で使われる形容詞。" } ],
+      explanation_ja: "道具や方法が「使いやすい、実用的」であることを表す形容詞。英語のpracticalと同じ語源で、意味も近いので覚えやすい。"
+    },
+    {
+      term: "elektrisch",
+      meaning_ja: "電気の、電動の",
+      examples: [
+        { de: "Wir haben einen elektrischen Herd.", ja: "私たちは電気コンロを持っています。" },
+        { de: "Das Fahrrad ist elektrisch.", ja: "その自転車は電動です。" }
+      ],
+      related: [ { term: "der Strom", note_ja: "「電気、電流」。elektrisch（電気の）に関連する名詞。" } ],
+      explanation_ja: "名詞の前に置くときは語尾変化に注意（„ein elektrischer Herd“、„ein elektrisches Fahrrad“）。「電気で動く」機器を説明するときに使う基本語。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Es ist kaputt.",
+      meaning_ja: "壊れています",
+      examples: [
+        { de: "Entschuldigung, es ist kaputt.", ja: "すみません、壊れています。" },
+        { de: "Mein Computer – es ist kaputt!", ja: "私のパソコン—壊れてる！" }
+      ],
+      explanation_ja: "物が壊れている・故障していることを伝える基本フレーズ。esは話題になっている物（冷蔵庫・洗濯機など）を指す。"
+    },
+    {
+      phrase: "Das funktioniert nicht.",
+      meaning_ja: "それは動きません、うまくいきません",
+      examples: [
+        { de: "Die Heizung funktioniert nicht.", ja: "暖房が動きません。" },
+        { de: "Das funktioniert nicht, probier es noch einmal.", ja: "それはうまくいかないよ、もう一回試して。" }
+      ],
+      explanation_ja: "機械の不具合だけでなく、計画や方法が「うまくいかない」ときにも使える汎用的な表現。"
+    }
+  ],
+  grammarTip: {
+    title: "dürfen（〜してもよい）と können（〜できる）の違い",
+    body_ja: "können（〜できる）は能力や可能性を表すのに対し、dürfen（〜してもよい）は許可を表します。例えば „Ich kann kochen.“（私は料理ができる＝能力）と „Ich darf hier nicht rauchen.“（私はここでタバコを吸ってはいけない＝許可の有無）は意味が大きく異なります。否定文„nicht dürfen“は「禁止」を表すので、「できない」のnicht könnenと混同しないよう注意しましょう。dürfenの人称変化はich darf / du darfst / er-sie-es darf / wir dürfen / ihr dürft / sie dürfenで、könnenと同じく語幹の母音がウムラウト化する不規則動詞です。"
+  },
+  todayQuiz: [
+    { question: "「Kühlschrank（冷蔵庫）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Kühlschrankは男性名詞なのでder Kühlschrankが正解。複数形はdie Kühlschränke。" },
+    { question: "「die Waschmaschine」の複数形は？", choices: ["die Waschmaschinen", "die Waschmaschine", "die Waschmaschinä", "der Waschmaschinen"], answerIndex: 0, explanation: "-eで終わる女性名詞は語尾に-nを付けて複数形にする。die Waschmaschinenが正解。" },
+    { question: "Ergänze: „Ich ___ den Fernseher ein.\"（einschaltenを正しい形に）", choices: ["schalte ein", "schaltest ein", "schaltet ein", "schalten ein"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。分離動詞なのでeinは文末に残り、schalte einが正解。" },
+    { question: "Ergänze: „___ du das Licht aus?\"（ausschaltenを正しい形に）", choices: ["Schalte", "Schaltest", "Schaltet", "Schalten"], answerIndex: 1, explanation: "主語duの形はSchaltestで、語幹が-tで終わるため余分な-e-が入る。前綴りausは文末に残る。" },
+    { question: "「funktionieren」の意味として正しいものは？", choices: ["作動する、機能する", "修理する", "購入する", "掃除する"], answerIndex: 0, explanation: "funktionierenは「作動する、機能する」という意味。主語は機械などの物であることが多い。" },
+    { question: "「kaputt」の意味として正しいものは？", choices: ["壊れている", "実用的な", "電気の", "新しい"], answerIndex: 0, explanation: "kaputtは「壊れている、故障した」という意味の頻出形容詞。" },
+    { question: "物が故障していることを伝えるフレーズはどれ？", choices: ["Es ist kaputt.", "Das macht nichts.", "Viel Glück!", "Ich habe zu tun."], answerIndex: 0, explanation: "„Es ist kaputt.“は物が壊れていることを伝える基本フレーズ。" },
+    { question: "「能力」ではなく「許可」を表す助動詞はどれ？", choices: ["dürfen", "können", "müssen", "wollen"], answerIndex: 0, explanation: "dürfenは「〜してもよい」という許可を表す。könnenは能力・可能性を表す。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-11-19)
+// ── END_DATA ──  (last sync: 2026-11-20)
 
 function esc(s){
   if(s===undefined||s===null) return '';
