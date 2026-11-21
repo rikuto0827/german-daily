@@ -2563,8 +2563,141 @@ const GERMAN_REPORTS = [
     { question: "「schnell」の比較級（〜より）の形はどれ？", choices: ["schneller", "schnellst", "am schnellsten", "schnellen"], answerIndex: 0, explanation: "比較級は語尾に-erを付けるのでschnellerが正解。最上級はam schnellsten。" }
   ]
 }
+,
+{
+  date: "2026-10-06",
+  dateLabel: "2026年10月6日（火）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "der Schrank", plural: "die Schränke",
+      meaning_ja: "たんす、収納家具",
+      examples: [
+        { de: "Der Schrank ist voller Kleidung.", ja: "そのたんすは服でいっぱいです。" },
+        { de: "Ich räume meine Kleidung in den Schrank.", ja: "私は服をたんすにしまいます。" }
+      ],
+      related: [ { term: "das Regal", note_ja: "「棚」。Schrank（扉付きの収納家具）に対し、Regalは扉のない開いた棚を指す。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Schränke で語幹の母音がウムラウト化するパターン（a→ä）。der Garten→die Gärtenと同じタイプ。„in den Schrank räumen“（たんすにしまう）のように4格（Akkusativ）と組み合わせて使う。"
+    },
+    {
+      type: "noun", term: "das Bett", plural: "die Betten",
+      meaning_ja: "ベッド",
+      examples: [
+        { de: "Das Bett steht im Schlafzimmer.", ja: "ベッドは寝室にあります。" },
+        { de: "Ich gehe früh ins Bett.", ja: "私は早くベッドに入ります（早く寝ます）。" }
+      ],
+      related: [ { term: "das Schlafzimmer", note_ja: "「寝室」。Bett（ベッド）が置かれている部屋。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Betten で語尾に -en を付ける規則的なパターン（ウムラウトなし）。„ins Bett gehen“（寝る、直訳「ベッドの中へ行く」）は日常会話の頻出表現。"
+    },
+    {
+      type: "noun", term: "die Lampe", plural: "die Lampen",
+      meaning_ja: "ランプ、照明",
+      examples: [
+        { de: "Die Lampe steht auf dem Tisch.", ja: "そのランプはテーブルの上にあります。" },
+        { de: "Kannst du die Lampe anmachen?", ja: "ランプをつけてもらえますか？" }
+      ],
+      related: [ { term: "das Licht", note_ja: "「光、電気の明かり」。Lampe（照明器具そのもの）とLicht（光そのもの）は区別して覚える。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Lampen で、-eで終わる女性名詞らしく語尾に -n を付ける規則的なパターン（die Küche→die Küchenと同じタイプ）。"
+    },
+    {
+      type: "verb", term: "brauchen", conjugation: "ich brauche / du brauchst / er-sie-es braucht",
+      meaning_ja: "〜が必要である",
+      examples: [
+        { de: "Ich brauche ein neues Bett.", ja: "私は新しいベッドが必要です。" },
+        { de: "Brauchst du Hilfe?", ja: "助けが必要ですか？" }
+      ],
+      related: [ { term: "die Hilfe", note_ja: "「助け」。brauchenと組み合わせて „Hilfe brauchen“（助けが必要）という表現になる。" } ],
+      explanation_ja: "規則動詞。brauchen＋4格（Akkusativ）の形で「〜が必要だ」という意味になる。wollen（〜したい）とは違い、必要性を表す点に注意。"
+    },
+    {
+      type: "verb", term: "hören", conjugation: "ich höre / du hörst / er-sie-es hört",
+      meaning_ja: "聞く、聴く",
+      examples: [
+        { de: "Ich höre gern Musik.", ja: "私は音楽を聴くのが好きです。" },
+        { de: "Hörst du mich?", ja: "私の声が聞こえますか？" }
+      ],
+      related: [ { term: "die Musik", note_ja: "「音楽」。hörenと組み合わせて „Musik hören“（音楽を聴く）という頻出表現になる。" } ],
+      explanation_ja: "規則動詞。語幹 hör- に -e/-st/-t を付けるだけ。„Musik hören“のように4格（Akkusativ）の対象と組み合わせて使う基本動詞。"
+    },
+    {
+      type: "verb", term: "vergessen", conjugation: "ich vergesse / du vergisst / er-sie-es vergisst",
+      meaning_ja: "忘れる",
+      examples: [
+        { de: "Ich vergesse oft meinen Schlüssel.", ja: "私はよく鍵を忘れます。" },
+        { de: "Vergiss das nicht!", ja: "それを忘れないで！" }
+      ],
+      related: [ { term: "sich erinnern", note_ja: "「思い出す、覚えている」。vergessen（忘れる）と対になる再帰動詞。" } ],
+      explanation_ja: "不規則動詞（幹母音変化 e→i）。geben・nehmen・treffenと同じ変化パターンで、語幹が-ssで終わるためduとerの形がどちらも vergisst になる（heißenのheißtと同じ現象）。命令形„Vergiss (das) nicht!“は日常会話でよく使う。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "ordentlich",
+      meaning_ja: "きちんとした、整理された",
+      examples: [
+        { de: "Mein Zimmer ist sehr ordentlich.", ja: "私の部屋はとても整理されています。" },
+        { de: "Er ist ein ordentlicher Mensch.", ja: "彼はきちんとした人です。" }
+      ],
+      related: [ { term: "unordentlich", note_ja: "「散らかった、整理されていない」。ordentlichの対義語。" } ],
+      explanation_ja: "部屋や人の整理整頓されている様子を表す形容詞。un-を付けると反対の意味になる、unbequem・unfreundlichと同じパターン。"
+    },
+    {
+      term: "modern",
+      meaning_ja: "現代的な、モダンな",
+      examples: [
+        { de: "Die Lampe ist sehr modern.", ja: "そのランプはとてもモダンです。" },
+        { de: "Das Haus sieht modern aus.", ja: "その家は現代的に見えます。" }
+      ],
+      related: [ { term: "altmodisch", note_ja: "「古風な、旧式の」。modernの対義語。" } ],
+      explanation_ja: "家具やデザインを評価するときによく使う形容詞。„aussehen“（〜に見える）と組み合わせた„modern aussehen“（現代的に見える）もよく使われる表現。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Ich bin gleich zurück.",
+      meaning_ja: "すぐに戻ります",
+      examples: [
+        { de: "Ich hole nur meine Tasche. Ich bin gleich zurück.", ja: "バッグを取ってくるだけです。すぐに戻ります。" },
+        { de: "Warte hier, ich bin gleich zurück.", ja: "ここで待ってて、すぐに戻るから。" }
+      ],
+      explanation_ja: "少しその場を離れるときに使う表現。gleichは「すぐに、間もなく」、zurückは「戻って」という意味。"
+    },
+    {
+      phrase: "Mach dir keine Sorgen!",
+      meaning_ja: "心配しないで！",
+      examples: [
+        { de: "Mach dir keine Sorgen, alles wird gut!", ja: "心配しないで、すべてうまくいくよ！" },
+        { de: "Mach dir keine Sorgen um mich.", ja: "私のことは心配しないで。" }
+      ],
+      explanation_ja: "相手を励ますときの定番フレーズ。元の表現 „sich Sorgen machen“（心配する）の否定命令形。"
+    },
+    {
+      phrase: "Setz dich!",
+      meaning_ja: "座って！",
+      examples: [
+        { de: "Setz dich bitte!", ja: "どうぞ座ってください！" },
+        { de: "Setz dich, das Essen ist fertig.", ja: "座って、料理ができたよ。" }
+      ],
+      explanation_ja: "再帰動詞 sich setzen（座る、動作）の命令形。すでに学んだ sitzen（座っている、状態）との違いに注意：setzenは「座る動作」、sitzenは「座っている状態」を表す。"
+    }
+  ],
+  grammarTip: {
+    title: "weil（なぜなら）— 従属接続詞で動詞が文末に行く仕組み",
+    body_ja: "weil（〜なので）で始まる理由を表す文（従属文）では、動詞が文の最後に移動します。例えば „Ich lerne Deutsch, weil ich nach Berlin fahren möchte.“（私はベルリンへ行きたいので、ドイツ語を勉強しています）のように、möchteが文末に来ます。これは、同じ「理由」を表す denn（なぜなら）との大きな違いです。denn を使うときは通常の語順のまま（„..., denn ich möchte nach Berlin fahren.“）なので、weilとdennは意味が似ていても語順のルールが違う点に注意しましょう。"
+  },
+  todayQuiz: [
+    { question: "「Schrank（たんす）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Schrankは男性名詞なのでder Schrankが正解。複数形はdie Schränke。" },
+    { question: "「das Bett」の複数形は？", choices: ["die Betten", "die Bätter", "die Bette", "der Betten"], answerIndex: 0, explanation: "複数形はdie Bettenで、語尾に-enを付ける規則的なパターン（ウムラウトなし）。" },
+    { question: "Ergänze: „Ich ___ ein neues Bett.\"（brauchenを正しい形に）", choices: ["brauche", "brauchst", "braucht", "brauchen"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。braucheが正解。" },
+    { question: "Ergänze: „Er ___ oft seinen Schlüssel.\"（vergessenを正しい形に）", choices: ["vergesse", "vergisst", "vergessen", "vergesst"], answerIndex: 1, explanation: "vergessenは不規則動詞（e→i）。3人称単数（er）の形はvergisst。" },
+    { question: "「ordentlich」の反対の意味を持つ形容詞は？", choices: ["unordentlich", "modern", "altmodisch", "bequem"], answerIndex: 0, explanation: "ordentlich（きちんとした）の反対はunordentlich（散らかった）。" },
+    { question: "「die Lampe」の複数形は？", choices: ["die Lampen", "die Lämpe", "die Lampe", "der Lampen"], answerIndex: 0, explanation: "-eで終わる女性名詞は多くの場合-nを付けて複数形にする（die Küche→die Küchenと同じパターン）。" },
+    { question: "相手を落ち着かせたいときに使うフレーズはどれ？", choices: ["Mach dir keine Sorgen!", "Setz dich!", "Ich bin gleich zurück.", "Vergiss das nicht!"], answerIndex: 0, explanation: "„Mach dir keine Sorgen!“は「心配しないで！」と相手を励ますときの表現。" },
+    { question: "„Ich lerne Deutsch, ___ ich nach Berlin fahren möchte.\"（weilを使う場合の正しい語順）", choices: ["weil ich nach Berlin fahren möchte", "weil möchte ich nach Berlin fahren", "weil ich möchte nach Berlin fahren", "weil fahren ich nach Berlin möchte"], answerIndex: 0, explanation: "weil（なぜなら）を使う従属文では、動詞（ここではmöchte）は文末に置かれる。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-11-19)
+// ── END_DATA ──  (last sync: 2026-11-20)
 
 function esc(s){
   if(s===undefined||s===null) return '';
