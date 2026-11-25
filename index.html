@@ -146,139 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-10-07",
-  dateLabel: "2026年10月7日（水）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "der Termin", plural: "die Termine",
-      meaning_ja: "予定、約束の日時、面談",
-      examples: [
-        { de: "Ich habe heute einen Termin beim Arzt.", ja: "私は今日、医者の予約があります。" },
-        { de: "Wann ist dein nächster Termin?", ja: "あなたの次の予定はいつですか？" }
-      ],
-      related: [ { term: "der Kalender", note_ja: "「カレンダー、予定表」。Terminを管理するときに使う関連語。" } ],
-      explanation_ja: "男性名詞（der）。複数形は die Termine で語尾に -e を付ける規則的なパターン。„einen Termin machen“（予約を取る）、„einen Termin haben“（予定がある）という組み合わせが頻出。"
-    },
-    {
-      type: "noun", term: "die Pause", plural: "die Pausen",
-      meaning_ja: "休憩",
-      examples: [
-        { de: "Wir machen jetzt eine Pause.", ja: "私たちは今休憩します。" },
-        { de: "Die Pause dauert zehn Minuten.", ja: "その休憩は10分間続きます。" }
-      ],
-      related: [ { term: "die Arbeit", note_ja: "「仕事」。„eine Pause von der Arbeit machen“（仕事の休憩を取る）のようにセットで使われる。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Pausen で語尾に -n を付ける規則的なパターン。„eine Pause machen“（休憩を取る）という動詞machenとの組み合わせが基本表現。"
-    },
-    {
-      type: "noun", term: "das Büro", plural: "die Büros",
-      meaning_ja: "事務所、オフィス",
-      examples: [
-        { de: "Mein Büro ist im Zentrum.", ja: "私のオフィスは中心街にあります。" },
-        { de: "Ich arbeite heute von zu Hause, nicht im Büro.", ja: "私は今日は会社ではなく、自宅から働きます。" }
-      ],
-      related: [ { term: "das Geschäft", note_ja: "「店、会社」。Büro（事務所）とは異なり、より広く商売・店を指す語。" } ],
-      explanation_ja: "中性名詞（das）。複数形は die Büros で外来語らしく語尾に -s を付けるパターン（das Autoと同じタイプ）。„im Büro“（オフィスで）、„ins Büro gehen“（オフィスへ行く）のように前置詞と組み合わせて使う。"
-    },
-    {
-      type: "verb", term: "anfangen", conjugation: "ich fange an / du fängst an / er-sie-es fängt an",
-      meaning_ja: "始める、始まる",
-      examples: [
-        { de: "Die Arbeit fängt um acht Uhr an.", ja: "仕事は8時に始まります。" },
-        { de: "Wann fängst du mit dem Projekt an?", ja: "あなたはそのプロジェクトをいつ始めますか？" }
-      ],
-      related: [ { term: "aufhören", note_ja: "「終える、やめる」。anfangenと対になる分離動詞。" } ],
-      explanation_ja: "分離動詞（不規則動詞、幹母音変化 a→ä）。前綴り an- は人称変化すると文末に移動する（„Die Arbeit fängt ... an.“）。du/erの形で fange→fängst/fängt に変化する点にも注意。"
-    },
-    {
-      type: "verb", term: "aufhören", conjugation: "ich höre auf / du hörst auf / er-sie-es hört auf",
-      meaning_ja: "やめる、終える",
-      examples: [
-        { de: "Ich höre um siebzehn Uhr mit der Arbeit auf.", ja: "私は17時に仕事を終えます。" },
-        { de: "Hör bitte auf zu reden!", ja: "どうかおしゃべりをやめてください！" }
-      ],
-      related: [ { term: "anfangen", note_ja: "「始める」。aufhörenと対になる分離動詞。" } ],
-      explanation_ja: "分離動詞（規則動詞）。前綴り auf- は人称変化すると文末に移動する。„aufhören + zu + 不定形“（〜するのをやめる）の形もよく使われる。"
-    },
-    {
-      type: "verb", term: "verdienen", conjugation: "ich verdiene / du verdienst / er-sie-es verdient",
-      meaning_ja: "（お金を）稼ぐ",
-      examples: [
-        { de: "Er verdient gut in seinem neuen Job.", ja: "彼は新しい仕事で良い収入を得ています。" },
-        { de: "Wie viel verdienst du pro Monat?", ja: "あなたは1か月にいくら稼ぎますか？" }
-      ],
-      related: [ { term: "das Geld", note_ja: "「お金」。verdienen（稼ぐ）と組み合わせて „Geld verdienen“（お金を稼ぐ）という頻出表現になる。" } ],
-      explanation_ja: "規則動詞。語幹 verdien- に -e/-st/-t を付けるだけ。„Geld verdienen“（お金を稼ぐ）の形で頻出し、前綴り ver- がつくことで „dienen“（仕える）とは異なる意味になる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "ruhig",
-      meaning_ja: "静かな、落ち着いた",
-      examples: [
-        { de: "Das Büro ist heute sehr ruhig.", ja: "そのオフィスは今日とても静かです。" },
-        { de: "Er bleibt auch in Stresssituationen ruhig.", ja: "彼はストレスの多い状況でも落ち着いています。" }
-      ],
-      related: [ { term: "laut", note_ja: "「うるさい」。ruhigの対義語。" } ],
-      explanation_ja: "場所の静けさだけでなく、人の性格の「落ち着き」も表せる基本形容詞。既出の laut（うるさい）と対で覚えると効率的。"
-    },
-    {
-      term: "beschäftigt",
-      meaning_ja: "忙しい",
-      examples: [
-        { de: "Ich bin heute sehr beschäftigt.", ja: "私は今日とても忙しいです。" },
-        { de: "Sie ist mit der Arbeit beschäftigt.", ja: "彼女は仕事で忙しくしています。" }
-      ],
-      related: [ { term: "die Beschäftigung", note_ja: "名詞形「仕事、活動」。beschäftigtと語源が同じ。" } ],
-      explanation_ja: "„beschäftigt sein“（忙しい）、„mit etwas beschäftigt sein“（〜で忙しくしている）のように sein や前置詞mitと組み合わせて使う。過去分詞から形容詞になった語（beschäftigen→beschäftigt）という作りにも注目。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Ich bin spät dran.",
-      meaning_ja: "遅れそうです、時間がありません",
-      examples: [
-        { de: "Ich bin spät dran, ich muss los!", ja: "もう行かないと、遅れちゃう！" },
-        { de: "Bist du spät dran?", ja: "あなたは遅れそうですか？" }
-      ],
-      explanation_ja: "„dran sein“という口語的な表現を使った「時間的に遅れている」という定番フレーズ。„zu spät kommen“（遅刻する）と似ているが、„spät dran sein“は今まさに時間が迫っている状況で使う。"
-    },
-    {
-      phrase: "Das macht nichts.",
-      meaning_ja: "大丈夫です、問題ありません",
-      examples: [
-        { de: "Entschuldigung, ich bin spät! – Das macht nichts.", ja: "ごめんね、遅れた！—大丈夫だよ。" },
-        { de: "Das macht nichts, versuch es einfach noch einmal.", ja: "問題ないよ、もう一度試してみて。" }
-      ],
-      explanation_ja: "相手の失敗やミスを気にしなくていいと伝える表現。„Kein Problem.“と似た場面で使われるが、„Das macht nichts.“の方がやや丁寧で落ち着いた響きを持つ。"
-    },
-    {
-      phrase: "Mach schnell!",
-      meaning_ja: "早くして！",
-      examples: [
-        { de: "Wir haben nicht viel Zeit, mach schnell!", ja: "時間があまりないから、早くして！" },
-        { de: "Mach schnell, der Bus kommt gleich!", ja: "早くして、バスがもうすぐ来るよ！" }
-      ],
-      explanation_ja: "schnell（速い、早く）を使った命令形のカジュアルな表現。親しい相手に急ぐよう伝えるときに使う。"
-    }
-  ],
-  grammarTip: {
-    title: "時を表す前置詞 um / am / im — 時刻・曜日・月の使い分け",
-    body_ja: "ドイツ語で「いつ」を言うときは、時間の単位によって使う前置詞が変わります。時刻には um を使い „um acht Uhr“（8時に）、曜日や日付には am を使い „am Montag“（月曜日に）、„am 3. Oktober“（10月3日に）、月や季節・年には im を使い „im Oktober“（10月に）、„im Winter“（冬に）となります。例外として夜は „in der Nacht“ のように in を使う点にも注意が必要です。umは「ピンポイントの時刻」、amは「特定の日」、imは「月・季節などの広い期間」と覚えると整理しやすくなります。"
-  },
-  todayQuiz: [
-    { question: "「Termin（予定・約束）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 0, explanation: "Terminは男性名詞なのでder Terminが正解。複数形はdie Termine。" },
-    { question: "Ergänze: „Die Arbeit ___ um acht Uhr an.\"（anfangenを正しい形に）", choices: ["fange an", "fängst an", "fängt an", "fangen an"], answerIndex: 2, explanation: "主語die Arbeitは3人称単数。anfangenは不規則動詞（a→ä）なのでfängt anになり、前綴りanは文末に置かれる。" },
-    { question: "Ergänze: „Ich ___ um fünf Uhr mit der Arbeit auf.\"（aufhörenを正しい形に）", choices: ["höre auf", "hörst auf", "hört auf", "hören auf"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。höre aufが正解。" },
-    { question: "「verdienen」の意味として正しいものは？", choices: ["（お金を）稼ぐ", "支払う", "貯める", "借りる"], answerIndex: 0, explanation: "verdienenは「（お金を）稼ぐ」という意味。„Geld verdienen“の形で頻出する。" },
-    { question: "「ruhig」の反対の意味を持つ形容詞は？", choices: ["laut", "beschäftigt", "müde", "traurig"], answerIndex: 0, explanation: "ruhig（静かな、落ち着いた）の反対はlaut（うるさい）。" },
-    { question: "「die Pause」の複数形は？", choices: ["die Pausen", "die Pause", "die Pausn", "der Pausen"], answerIndex: 0, explanation: "複数形はdie Pausenで、語尾に-nを付ける規則的なパターン。" },
-    { question: "時間的に遅れそうなときに使うフレーズはどれ？", choices: ["Ich bin spät dran.", "Das macht nichts.", "Mach schnell!", "Alles Gute!"], answerIndex: 0, explanation: "„Ich bin spät dran.“は時間が迫っていて遅れそうな状況で使う定番フレーズ。" },
-    { question: "時刻（〜時に）を表すときに使う前置詞はどれ？", choices: ["um", "am", "im", "in"], answerIndex: 0, explanation: "時刻にはumを使う（„um acht Uhr“）。曜日・日付はam、月・季節・年はimを使う。" }
-  ]
-}
-,
-{
   date: "2026-10-08",
   dateLabel: "2026年10月8日（木）",
   readTimeMin: 18,
@@ -1983,8 +1850,141 @@ const GERMAN_REPORTS = [
     { question: "「能力」ではなく「許可」を表す助動詞はどれ？", choices: ["dürfen", "können", "müssen", "wollen"], answerIndex: 0, explanation: "dürfenは「〜してもよい」という許可を表す。könnenは能力・可能性を表す。" }
   ]
 }
+,
+{
+  date: "2026-11-25",
+  dateLabel: "2026年11月25日（水）",
+  readTimeMin: 18,
+  coreItems: [
+    {
+      type: "noun", term: "das Konto", plural: "die Konten",
+      meaning_ja: "銀行口座",
+      examples: [
+        { de: "Ich habe ein Konto bei dieser Bank.", ja: "私はこの銀行に口座を持っています。" },
+        { de: "Mein Konto ist fast leer.", ja: "私の口座はほとんど空です。" }
+      ],
+      related: [ { term: "die Bank", note_ja: "「銀行」。Kontoを開設する場所。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Konten で語尾に -en を付けるパターン。„ein Konto eröffnen“（口座を開設する）、„ein Konto haben“（口座を持っている）という組み合わせが頻出。"
+    },
+    {
+      type: "noun", term: "der Geldautomat", plural: "die Geldautomaten",
+      meaning_ja: "ATM、現金自動預け払い機",
+      examples: [
+        { de: "Der Geldautomat ist um die Ecke.", ja: "そのATMは角のところにあります。" },
+        { de: "Ich hole Geld am Geldautomaten.", ja: "私はATMでお金をおろします。" }
+      ],
+      related: [ { term: "das Geld", note_ja: "「お金」。Geldautomat（お金＋自動機）の構成要素になる複合語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Geldautomaten で語尾に -en を付ける。das Geld（お金）＋der Automat（自動機）が組み合わさった複合語で、複合語の性は最後の語（der Automat）が決める。"
+    },
+    {
+      type: "noun", term: "die Kreditkarte", plural: "die Kreditkarten",
+      meaning_ja: "クレジットカード",
+      examples: [
+        { de: "Ich bezahle mit Kreditkarte.", ja: "私はクレジットカードで払います。" },
+        { de: "Akzeptieren Sie Kreditkarten?", ja: "クレジットカードは使えますか（受け付けていますか）？" }
+      ],
+      related: [ { term: "bezahlen", note_ja: "「支払う」。Kreditkarteを使うときに一緒に使う動詞。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Kreditkarten で語尾に -n を付ける規則的なパターン。„mit Kreditkarte bezahlen“（クレジットカードで払う）のように前置詞mitは無冠詞で使われることが多い。"
+    },
+    {
+      type: "verb", term: "abheben", conjugation: "ich hebe ab / du hebst ab / er-sie-es hebt ab",
+      meaning_ja: "（お金を）おろす、持ち上げる",
+      examples: [
+        { de: "Ich hebe hundert Euro ab.", ja: "私は100ユーロをおろします。" },
+        { de: "Hebst du am Automaten Geld ab?", ja: "あなたはATMでお金をおろしますか？" }
+      ],
+      related: [ { term: "einzahlen", note_ja: "「預け入れる」。abhebenと対になる分離動詞。" } ],
+      explanation_ja: "分離動詞（heben＋ab）。前綴り ab- は人称変化すると文末に移動する。heben自体は「持ち上げる」という意味で、abを付けると「（お金を）おろす」という意味になる。"
+    },
+    {
+      type: "verb", term: "einzahlen", conjugation: "ich zahle ein / du zahlst ein / er-sie-es zahlt ein",
+      meaning_ja: "預け入れる、支払い込む",
+      examples: [
+        { de: "Ich zahle Geld auf mein Konto ein.", ja: "私は自分の口座にお金を預け入れます。" },
+        { de: "Wo kann ich Bargeld einzahlen?", ja: "どこで現金を預け入れられますか？" }
+      ],
+      related: [ { term: "abheben", note_ja: "「おろす」。einzahlenと対になる分離動詞。" } ],
+      explanation_ja: "分離動詞（規則動詞）。前綴り ein- は人称変化すると文末に移動する。„Geld auf ein Konto einzahlen“（口座にお金を預け入れる）のように前置詞aufと組み合わせて使う。"
+    },
+    {
+      type: "verb", term: "überweisen", conjugation: "ich überweise / du überweist / er-sie-es überweist",
+      meaning_ja: "（お金を）振り込む",
+      examples: [
+        { de: "Ich überweise dir das Geld morgen.", ja: "私は明日あなたにお金を振り込みます。" },
+        { de: "Wie lange dauert eine Überweisung?", ja: "振込にはどのくらい時間がかかりますか？" }
+      ],
+      related: [ { term: "die Überweisung", note_ja: "名詞形「振込」。überweisenと語源が同じ。" } ],
+      explanation_ja: "非分離動詞（前綴り über- は常に動詞にくっついたまま）。語幹が-sで終わるため、duとerの形がどちらもüberweistになる点に注意（heißenと同じパターン）。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "wichtig",
+      meaning_ja: "重要な",
+      examples: [
+        { de: "Die PIN ist sehr wichtig.", ja: "暗証番号はとても重要です。" },
+        { de: "Es ist wichtig, das Passwort nicht zu vergessen.", ja: "パスワードを忘れないことが重要です。" }
+      ],
+      related: [ { term: "unwichtig", note_ja: "「重要でない」。wichtigの対義語。" } ],
+      explanation_ja: "日常会話でも頻出の基本形容詞。„es ist wichtig, ... zu + 不定形“（〜することが重要だ）という形でよく使われる。"
+    },
+    {
+      term: "sicher",
+      meaning_ja: "安全な、確実な",
+      examples: [
+        { de: "Online-Banking ist heute sehr sicher.", ja: "オンラインバンキングは今日とても安全です。" },
+        { de: "Bist du sicher?", ja: "あなたは確実ですか（確かですか）？" }
+      ],
+      related: [ { term: "unsicher", note_ja: "「不安な、不確実な」。sicherの対義語。" } ],
+      explanation_ja: "「安全」という物理的な意味と「確実、確信している」という心理的な意味の両方を持つ基本形容詞。„Bist du sicher?“（本当に？）は会話で非常によく使う表現。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Wo ist der nächste Geldautomat?",
+      meaning_ja: "一番近いATMはどこですか？",
+      examples: [
+        { de: "Entschuldigung, wo ist der nächste Geldautomat?", ja: "すみません、一番近いATMはどこですか？" },
+        { de: "Der nächste Geldautomat ist im Supermarkt.", ja: "一番近いATMはスーパーの中にあります。" }
+      ],
+      explanation_ja: "nächste（最も近い）を使った実用的な道案内フレーズ。「一番近い〜はどこですか」はWo ist der/die/das nächste ...?の形で色々な名詞に応用できる。"
+    },
+    {
+      phrase: "Kann ich mit Karte bezahlen?",
+      meaning_ja: "カードで払えますか？",
+      examples: [
+        { de: "Kann ich mit Karte bezahlen, oder nur bar?", ja: "カードで払えますか、それとも現金のみですか？" },
+        { de: "Ja, Karte ist kein Problem.", ja: "はい、カードで問題ありません。" }
+      ],
+      explanation_ja: "お店での支払い方法を確認する決まり文句。„mit Karte“（カードで）と „bar“（現金で）はセットで覚えると便利。"
+    },
+    {
+      phrase: "Ich habe meine PIN vergessen.",
+      meaning_ja: "暗証番号を忘れました。",
+      examples: [
+        { de: "Ich habe meine PIN vergessen, was soll ich tun?", ja: "暗証番号を忘れました、どうすればいいですか？" },
+        { de: "Keine Sorge, Sie können eine neue PIN beantragen.", ja: "ご心配なく、新しい暗証番号を申請できます。" }
+      ],
+      explanation_ja: "すでに学んだ動詞vergessen（忘れる）を使った実用フレーズ。銀行や窓口で困ったときに使える表現。"
+    }
+  ],
+  grammarTip: {
+    title: "man — 「人は」を表す不定代名詞の使い方",
+    body_ja: "ドイツ語には日本語の「人は」「誰でも」に近い意味を表す不定代名詞 man があります。man は常に3人称単数として扱われ、動詞も er/sie/es と同じ形に変化します（例: Man muss ein Konto eröffnen. 口座を開設しなければならない）。所有冠詞や再帰代名詞で受けるときは sein / sich を使います（例: Man wäscht sich die Hände. 人は手を洗う）。一般的な規則や習慣を述べるときに便利な表現です。"
+  },
+  todayQuiz: [
+    { question: "「das Konto（口座）」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 2, explanation: "Kontoは中性名詞なのでdas Kontoが正解。複数形はdie Konten。" },
+    { question: "Ergänze: „Ich ___ hundert Euro ab.\"（abhebenを正しい形に）", choices: ["hebe ab", "hebst ab", "hebt ab", "heben ab"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。分離動詞なのでabは文末に残り、hebe abが正解。" },
+    { question: "Ergänze: „Er ___ Geld auf sein Konto ein.\"（einzahlenを正しい形に）", choices: ["zahle ein", "zahlst ein", "zahlt ein", "zahlen ein"], answerIndex: 2, explanation: "主語がer（3人称単数）なので語尾は-t。zahlt einが正解。" },
+    { question: "「überweisen」の意味として正しいものは？", choices: ["（お金を）振り込む", "（お金を）おろす", "借りる", "現金で払う"], answerIndex: 0, explanation: "überweisenは「（お金を）振り込む」という意味。名詞形はdie Überweisung（振込）。" },
+    { question: "「wichtig」の反対の意味を持つ語はどれ？", choices: ["unwichtig", "unsicher", "unfreundlich", "unbequem"], answerIndex: 0, explanation: "wichtig（重要な）の反対はun-を付けたunwichtig。" },
+    { question: "「die Kreditkarte」の複数形は？", choices: ["die Kreditkarten", "die Kreditkarte", "die Kreditkarts", "der Kreditkarten"], answerIndex: 0, explanation: "複数形はdie Kreditkartenで、語尾に-nを付ける規則的なパターン。" },
+    { question: "ATMの場所を尋ねるフレーズはどれ？", choices: ["Wo ist der nächste Geldautomat?", "Kann ich mit Karte bezahlen?", "Ich habe meine PIN vergessen.", "Ich habe eine Frage."], answerIndex: 0, explanation: "「一番近いATMはどこですか？」はWo ist der nächste Geldautomat?。" },
+    { question: "不定代名詞manの動詞の人称変化はどれと同じ？", choices: ["er/sie/es", "ich", "du", "wir"], answerIndex: 0, explanation: "manは常に3人称単数として扱われるため、動詞はer/sie/esと同じ形になる。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-11-20)
+// ── END_DATA ──  (last sync: 2026-11-25)
 
 function esc(s){
   if(s===undefined||s===null) return '';
