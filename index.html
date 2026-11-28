@@ -146,130 +146,6 @@ a{color:#1d4ed8}
 // ── START_DATA ──
 const GERMAN_REPORTS = [
 {
-  date: "2026-10-08",
-  dateLabel: "2026年10月8日（木）",
-  readTimeMin: 18,
-  coreItems: [
-    {
-      type: "noun", term: "die Firma", plural: "die Firmen",
-      meaning_ja: "会社、企業",
-      examples: [
-        { de: "Ich arbeite bei einer großen Firma.", ja: "私は大きな会社で働いています。" },
-        { de: "Die Firma hat viele Mitarbeiter.", ja: "その会社には多くの社員がいます。" }
-      ],
-      related: [ { term: "das Unternehmen", note_ja: "「企業」。Firmaとほぼ同じ意味で使われる、より書き言葉的な類義語。" } ],
-      explanation_ja: "女性名詞（die）。複数形は die Firmen で語尾に -n を付ける規則的なパターン。「〜で働く」は bei＋Dativ（3格）を使い、„bei einer Firma arbeiten“の形が基本。"
-    },
-    {
-      type: "noun", term: "der Chef", plural: "die Chefs",
-      meaning_ja: "上司、社長（男性）",
-      examples: [
-        { de: "Mein Chef ist sehr freundlich.", ja: "私の上司はとても親切です。" },
-        { de: "Ich muss mit meinem Chef sprechen.", ja: "私は上司と話さなければなりません。" }
-      ],
-      related: [ { term: "die Chefin", note_ja: "「上司、社長（女性）」。Chefの女性形で、-inを付けるパターン。" } ],
-      explanation_ja: "男性名詞（der）。複数形は外来語らしく die Chefs で -s を付ける。女性形は die Chefin（複数 die Chefinnen）になる点に注意。„mit dem Chef sprechen“（上司と話す）のようにmit＋Dativと組み合わせて使う。"
-    },
-    {
-      type: "noun", term: "die Arbeit", plural: "die Arbeiten",
-      meaning_ja: "仕事、作業",
-      examples: [
-        { de: "Ich gehe jeden Tag zur Arbeit.", ja: "私は毎日仕事に行きます。" },
-        { de: "Diese Arbeit ist sehr schwer.", ja: "この作業はとても大変です。" }
-      ],
-      related: [ { term: "arbeiten", note_ja: "動詞「働く」。die Arbeitと語源が同じ。" } ],
-      explanation_ja: "女性名詞（die）。「仕事」という意味では複数形を使わず単数のまま „viel Arbeit“ のように使うことが多いが、「個別の作業・工事」を指すときは複数形 die Arbeiten を使う。„zur Arbeit gehen“（仕事に行く）は zu＋Dativの決まり文句。"
-    },
-    {
-      type: "verb", term: "anrufen", conjugation: "ich rufe an / du rufst an / er-sie-es ruft an",
-      meaning_ja: "電話をかける",
-      examples: [
-        { de: "Ich rufe meinen Chef an.", ja: "私は上司に電話をかけます。" },
-        { de: "Rufst du mich nach der Arbeit an?", ja: "仕事の後に私に電話してくれますか？" }
-      ],
-      related: [ { term: "das Telefon", note_ja: "「電話（機）」。anrufenするときに使う道具。" } ],
-      explanation_ja: "分離動詞（rufen＋an）。文中では前綴り an が文末に移動する（例: Ich rufe dich an.）。rufenだけだと「呼ぶ」という意味で、anを付けることで「電話をかける」という意味に変わる。"
-    },
-    {
-      type: "verb", term: "einladen", conjugation: "ich lade ein / du lädst ein / er-sie-es lädt ein",
-      meaning_ja: "招待する",
-      examples: [
-        { de: "Ich lade meine Kollegen zur Party ein.", ja: "私は同僚をパーティーに招待します。" },
-        { de: "Lädst du deinen Chef auch ein?", ja: "あなたの上司も招待しますか？" }
-      ],
-      related: [ { term: "die Einladung", note_ja: "名詞形「招待（状）」。einladenと語源が同じ。" } ],
-      explanation_ja: "分離動詞（不規則動詞、幹母音変化 a→ä。lade→lädst/lädt）。前綴り ein- は人称変化すると文末に移動する。„einladen＋4格（人）＋zu＋3格（催し）“の形で「〜を〜に招待する」という文型になる。"
-    },
-    {
-      type: "verb", term: "antworten", conjugation: "ich antworte / du antwortest / er-sie-es antwortet",
-      meaning_ja: "答える、返事をする",
-      examples: [
-        { de: "Ich antworte meinem Chef sofort.", ja: "私は上司にすぐに返事をします。" },
-        { de: "Warum antwortest du nicht?", ja: "どうして返事をしないのですか？" }
-      ],
-      related: [ { term: "die Antwort", note_ja: "名詞形「答え、返事」。antwortenと語源が同じ。" } ],
-      explanation_ja: "規則動詞だが、語幹が -t で終わるため、du/erの語尾の前に発音しやすくするための余分な -e- が入る（antwortest, antwortet）。findenと同じパターン。antworten＋3格（人）で「〜に答える」という意味になる点に注意（4格ではなくDativ）。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "pünktlich",
-      meaning_ja: "時間通りの、時間に正確な",
-      examples: [
-        { de: "Er ist immer pünktlich.", ja: "彼はいつも時間通りです。" },
-        { de: "Bitte sei morgen pünktlich!", ja: "明日は時間通りに来てね！" }
-      ],
-      related: [ { term: "unpünktlich", note_ja: "「時間に遅れる、不正確な」。un-を付けると反対の意味になるパターン。" } ],
-      explanation_ja: "時間の正確さを表す基本形容詞。ドイツでは時間厳守が重視される文化があり、仕事や約束の場面で非常によく使われる語。"
-    },
-    {
-      term: "höflich",
-      meaning_ja: "礼儀正しい、丁寧な",
-      examples: [
-        { de: "Der neue Kollege ist sehr höflich.", ja: "その新しい同僚はとても礼儀正しいです。" },
-        { de: "Sei bitte höflich zu den Kunden!", ja: "お客様には丁寧にしてくださいね！" }
-      ],
-      related: [ { term: "unhöflich", note_ja: "「失礼な」。höflichの対義語。" } ],
-      explanation_ja: "人の態度・言葉遣いの丁寧さを表す基本形容詞。„höflich zu jemandem sein“（〜に対して礼儀正しい）のように前置詞zu＋Dativと組み合わせることが多い。"
-    }
-  ],
-  phrases: [
-    {
-      phrase: "Ich habe zu tun.",
-      meaning_ja: "やることがあります、忙しいです",
-      examples: [
-        { de: "Ich kann heute nicht kommen, ich habe zu tun.", ja: "今日は行けません、やることがあるので。" },
-        { de: "Hast du jetzt zu tun?", ja: "今やることがありますか？" }
-      ],
-      explanation_ja: "„zu tun haben“（することがある）という決まり文句。忙しさを伝えるときの定番表現で、beschäftigt（忙しい）と似た場面で使われる。"
-    },
-    {
-      phrase: "Keine Ursache!",
-      meaning_ja: "どういたしまして、気にしないで",
-      examples: [
-        { de: "Danke für deine Hilfe! – Keine Ursache!", ja: "助けてくれてありがとう！—どういたしまして！" },
-        { de: "Keine Ursache, das mache ich gern.", ja: "気にしないで、喜んでやるよ。" }
-      ],
-      explanation_ja: "„Bitte schön!“と同様にお礼への返答として使える表現。直訳は「原因なし」で、「大したことではない」という気持ちを表す。"
-    }
-  ],
-  grammarTip: {
-    title: "いつもDativ（3格）を取る前置詞 — mit, nach, bei, von, zu, aus, seit",
-    body_ja: "ドイツ語の前置詞には、意味に関わらず常に特定の格を要求するものがあります。mit（〜と一緒に）、nach（〜の後に）、bei（〜のところで）、von（〜から）、zu（〜へ）、aus（〜から）、seit（〜以来）は、どんな文でも必ずDativ（3格）を取ります。例えば „bei einer Firma arbeiten“（会社で働く）、„nach der Arbeit“（仕事の後に）のように、後ろの名詞・冠詞がDativの形に変わります。Wechselpräpositionen（in, auf, anなど）のように意味によって格が変わるグループとは違い、このグループは常に同じ格になるので、前置詞ごとにセットで覚えるのが効率的です。"
-  },
-  todayQuiz: [
-    { question: "「die Firma」の正しい冠詞はどれ？", choices: ["der", "die", "das", "die（複数形のみ）"], answerIndex: 1, explanation: "Firmaは女性名詞なのでdie Firmaが正解。複数形はdie Firmen。" },
-    { question: "Ergänze: „Ich ___ meinen Chef an.“（anrufenを正しい形に）", choices: ["rufe an", "rufst an", "ruft an", "rufen an"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。分離動詞なのでanは文末に残り、rufe anが正解。" },
-    { question: "Ergänze: „___ du deinen Chef zur Party ein?“（einladenを正しい形に）", choices: ["Lade ein", "Lädst ein", "Lädt ein", "Laden ein"], answerIndex: 1, explanation: "einladenは不規則動詞（a→ä）。主語duの形はlädst einになる。" },
-    { question: "Ergänze: „Ich ___ meinem Chef sofort.“（antwortenを正しい形に）", choices: ["antworte", "antwortest", "antwortet", "antworten"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。語幹が-tで終わる動詞でも、duやerの形以外では余分な-e-は入らない。" },
-    { question: "常にDativ（3格）を取る前置詞はどれ？", choices: ["bei", "für", "durch", "ohne"], answerIndex: 0, explanation: "beiは常にDativを取る前置詞。für/durch/ohneは常にAkkusativを取る。" },
-    { question: "「antworten」は人を表す目的語に何格を使う？", choices: ["Dativ（3格）", "Akkusativ（4格）", "Nominativ（1格）", "Genitiv（2格）"], answerIndex: 0, explanation: "antworten＋3格（人）で「〜に答える」という意味になる。Dativを取る動詞の代表例。" },
-    { question: "「pünktlich」の反対の意味を持つ語はどれ？", choices: ["unpünktlich", "höflich", "unhöflich", "beschäftigt"], answerIndex: 0, explanation: "pünktlich（時間通りの）の反対はun-を付けたunpünktlich。" },
-    { question: "やることがあって忙しいと伝えるフレーズはどれ？", choices: ["Ich habe zu tun.", "Keine Ursache!", "Mach schnell!", "Das macht nichts."], answerIndex: 0, explanation: "„Ich habe zu tun.“は「やることがある、忙しい」という定番フレーズ。" }
-  ]
-}
-,
-{
   date: "2026-10-10",
   dateLabel: "2026年10月10日（土・復習）",
   readTimeMin: 12,
@@ -1983,8 +1859,132 @@ const GERMAN_REPORTS = [
     { question: "不定代名詞manの動詞の人称変化はどれと同じ？", choices: ["er/sie/es", "ich", "du", "wir"], answerIndex: 0, explanation: "manは常に3人称単数として扱われるため、動詞はer/sie/esと同じ形になる。" }
   ]
 }
+,
+{
+  date: "2026-11-28",
+  dateLabel: "2026年11月28日（土・復習）",
+  readTimeMin: 12,
+  coreItems: [
+    {
+      type: "noun", term: "das Konto", plural: "die Konten",
+      meaning_ja: "銀行口座",
+      examples: [
+        { de: "Ich habe ein Konto bei dieser Bank.", ja: "私はこの銀行に口座を持っています。" },
+        { de: "Mein Konto ist fast leer.", ja: "私の口座はほとんど空です。" }
+      ],
+      related: [ { term: "die Bank", note_ja: "「銀行」。Kontoを開設する場所。" } ],
+      explanation_ja: "中性名詞（das）。複数形は die Konten で語尾に -en を付けるパターン。„ein Konto eröffnen“（口座を開設する）、„ein Konto haben“（口座を持っている）という組み合わせが頻出。"
+    },
+    {
+      type: "noun", term: "der Pass", plural: "die Pässe",
+      meaning_ja: "パスポート",
+      examples: [
+        { de: "Hast du deinen Pass dabei?", ja: "パスポートを持っていますか？" },
+        { de: "Ich brauche meinen Pass für den Flug.", ja: "私はそのフライトのためにパスポートが必要です。" }
+      ],
+      related: [ { term: "der Ausweis", note_ja: "「身分証明書」。Pass（パスポート）より広く、国内で使う身分証も含む語。" } ],
+      explanation_ja: "男性名詞（der）。複数形は die Pässe で語幹の母音がウムラウト化するパターン（a→ä、der Schrank→die Schränkeと同じタイプ）。„etwas dabei haben“（〜を持っている、携帯している）とセットで使われることが多い。"
+    },
+    {
+      type: "noun", term: "die Ampel", plural: "die Ampeln",
+      meaning_ja: "信号機",
+      examples: [
+        { de: "Die Ampel ist rot.", ja: "信号は赤です。" },
+        { de: "Warte, bis die Ampel grün wird!", ja: "信号が青になるまで待って！" }
+      ],
+      related: [ { term: "die Kreuzung", note_ja: "「交差点」。Ampel（信号機）が設置されている場所。" } ],
+      explanation_ja: "女性名詞（die）。複数形は die Ampeln で語尾に -n を付ける規則的なパターン。„bei Rot“（赤信号のとき）、„bei Grün“（青信号のとき）のように信号の色と組み合わせて使う。"
+    },
+    {
+      type: "verb", term: "buchen", conjugation: "ich buche / du buchst / er-sie-es bucht",
+      meaning_ja: "予約する",
+      examples: [
+        { de: "Ich buche das Hotel online.", ja: "私はホテルをオンラインで予約します。" },
+        { de: "Hast du die Tickets schon gebucht?", ja: "チケットはもう予約しましたか？" }
+      ],
+      related: [ { term: "die Buchung", note_ja: "名詞形「予約」。buchenと語源が同じ。" } ],
+      explanation_ja: "規則動詞。語幹 buch- に -e/-st/-t を付けるだけ。buchenはホテル・チケット・フライトなど旅行関連の予約で使う基本動詞（レストランの予約には „reservieren“ を使うことが多い）。"
+    },
+    {
+      type: "verb", term: "abbiegen", conjugation: "ich biege ab / du biegst ab / er-sie-es biegt ab",
+      meaning_ja: "曲がる",
+      examples: [
+        { de: "Biegen Sie an der Ampel rechts ab.", ja: "信号のところで右に曲がってください。" },
+        { de: "Ich biege hier links ab.", ja: "私はここで左に曲がります。" }
+      ],
+      related: [ { term: "die Kreuzung", note_ja: "「交差点」。abbiegen（曲がる）する場所として頻出。" } ],
+      explanation_ja: "分離動詞。前綴り ab- が文末に移動し、„Ich biege links ab.“のように枠構造を作る。命令文（Sie形）では „Biegen Sie ... ab.“のように動詞が文頭、abが文末に残る。"
+    },
+    {
+      type: "verb", term: "überweisen", conjugation: "ich überweise / du überweist / er-sie-es überweist",
+      meaning_ja: "（お金を）振り込む",
+      examples: [
+        { de: "Ich überweise dir das Geld morgen.", ja: "私は明日あなたにお金を振り込みます。" },
+        { de: "Wie lange dauert eine Überweisung?", ja: "振込にはどのくらい時間がかかりますか？" }
+      ],
+      related: [ { term: "die Überweisung", note_ja: "名詞形「振込」。überweisenと語源が同じ。" } ],
+      explanation_ja: "非分離動詞（前綴り über- は常に動詞にくっついたまま）。語幹が-sで終わるため、duとerの形がどちらもüberweistになる点に注意（heißenと同じパターン）。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "aufgeregt",
+      meaning_ja: "興奮した、緊張した",
+      examples: [
+        { de: "Ich bin vor der Reise immer aufgeregt.", ja: "私は旅行前はいつも興奮しています。" },
+        { de: "Sie ist sehr aufgeregt wegen der Prüfung.", ja: "彼女は試験のことでとても緊張しています。" }
+      ],
+      related: [ { term: "ruhig", note_ja: "「落ち着いた」。aufgeregtの対義語。" } ],
+      explanation_ja: "過去分詞から形容詞になった語（aufregen→aufgeregt）。„aufgeregt sein“（興奮・緊張している）の形で使う。旅行前や試験前など、わくわく・不安どちらの緊張感にも使える。"
+    },
+    {
+      term: "praktisch",
+      meaning_ja: "実用的な、便利な",
+      examples: [
+        { de: "Die neue Waschmaschine ist sehr praktisch.", ja: "新しい洗濯機はとても便利です。" },
+        { de: "Ein Regenschirm im Auto ist praktisch.", ja: "車に傘があると便利です。" }
+      ],
+      related: [ { term: "nützlich", note_ja: "「役に立つ」。praktisch（使って便利）と似た意味で使われる形容詞。" } ],
+      explanation_ja: "道具や方法が「使いやすい、実用的」であることを表す形容詞。英語のpracticalと同じ語源で、意味も近いので覚えやすい。"
+    }
+  ],
+  phrases: [
+    {
+      phrase: "Wie komme ich zum Bahnhof?",
+      meaning_ja: "駅へはどうやって行けばいいですか？",
+      examples: [
+        { de: "Entschuldigung, wie komme ich zum Bahnhof?", ja: "すみません、駅へはどうやって行けばいいですか？" },
+        { de: "Wie komme ich am besten zur Post?", ja: "郵便局へはどう行くのが一番いいですか？" }
+      ],
+      explanation_ja: "道を尋ねるときの基本フレーズ。„Wie komme ich zu...?“（〜へはどう行けばいいですか）の形で行き先を変えて使える。zuはDativ（3格）を取る前置詞なので、„zum“（zu dem）、„zur“（zu der）のように変化する点に注意。"
+    },
+    {
+      phrase: "Kann ich mit Karte bezahlen?",
+      meaning_ja: "カードで払えますか？",
+      examples: [
+        { de: "Kann ich mit Karte bezahlen, oder nur bar?", ja: "カードで払えますか、それとも現金のみですか？" },
+        { de: "Ja, Karte ist kein Problem.", ja: "はい、カードで問題ありません。" }
+      ],
+      explanation_ja: "お店での支払い方法を確認する決まり文句。„mit Karte“（カードで）と „bar“（現金で）はセットで覚えると便利。"
+    }
+  ],
+  grammarTip: {
+    title: "今週の復習：前置詞・従属接続詞・助動詞・不定代名詞のまとめ",
+    body_ja: "ここまで学んだ文法をまとめて復習しましょう。①durch, für, gegen, ohne, um はいつもAkkusativ（4格）を取る前置詞です。②wenn（〜するとき・もし〜なら）で始まる文では動詞が文末に移動し、続くメイン文では主語と動詞の順番が入れ替わる倒置が起こります。③zu Hause（家にいる）と nach Hause（家へ帰る）は前置詞なしで使う決まり文句で、状態か移動かで区別します。④dürfen（してもよい）と können（できる）は「許可」と「能力」の違いに注意しましょう。⑤不定代名詞 man は常に3人称単数として扱われ、動詞は er/sie/es と同じ形になります。どれも日常会話に直結する重要なポイントです。"
+  },
+  todayQuiz: [
+    { question: "「das Konto」の複数形は？", choices: ["die Konten", "die Kontos", "die Konte", "der Konten"], answerIndex: 0, explanation: "複数形は die Konten で、語尾に -en を付けるパターン。" },
+    { question: "Ergänze: „Ich ___ dir das Geld morgen.\"（überweisenを正しい形に）", choices: ["überweise", "überweist", "überweisen", "überweisst"], answerIndex: 0, explanation: "主語がich（1人称単数）なので語尾は-e。überweiseが正解。" },
+    { question: "「der Pass」の意味として正しいものは？", choices: ["パスポート", "チケット", "口座", "切符"], answerIndex: 0, explanation: "der Passは「パスポート」という意味の男性名詞。" },
+    { question: "Ergänze: „___ du das Hotel schon?\"（buchenを正しい形に、疑問文）", choices: ["Buchst", "Buche", "Bucht", "Buchen"], answerIndex: 0, explanation: "主語duの語尾は-st。Buchstが正解。" },
+    { question: "Ergänze: „Biegen Sie an der Ampel rechts ___.\"（abbiegenを正しい形に、命令文）", choices: ["ab", "an", "auf", "aus"], answerIndex: 0, explanation: "abbiegenの前綴りabは文末に残る。命令文でも同じルール。" },
+    { question: "「praktisch」の意味として正しいものは？", choices: ["実用的な、便利な", "壊れている", "重要な", "安全な"], answerIndex: 0, explanation: "praktischは「実用的な、便利な」という意味。" },
+    { question: "「aufgeregt」の対義語はどれ？", choices: ["ruhig", "spannend", "wichtig", "sicher"], answerIndex: 0, explanation: "aufgeregt（興奮した、緊張した）の対義語はruhig（落ち着いた）。" },
+    { question: "カードで支払えるか確認したいときに使うフレーズはどれ？", choices: ["Kann ich mit Karte bezahlen?", "Wie komme ich zum Bahnhof?", "Ich habe meine PIN vergessen.", "Gute Reise!"], answerIndex: 0, explanation: "「カードで払えますか？」は Kann ich mit Karte bezahlen? という。" }
+  ]
+}
 ];
-// ── END_DATA ──  (last sync: 2026-11-25)
+// ── END_DATA ──  (last sync: 2026-11-28)
 
 function esc(s){
   if(s===undefined||s===null) return '';
